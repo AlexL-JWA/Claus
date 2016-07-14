@@ -1,0 +1,359 @@
+.bth_green_snip {
+  background: #83c124;
+  border: 1px solid #a5ca94;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+.bth_green_snip:hover {
+  background: #59DE00;
+  border-color: #bcf662;
+}
+.bth_green_snip:focus {
+  background: #489C5A;
+  border-color: #659914;
+}
+.bth_grey_snip {
+  background: #727272;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+.bth_grey_snip:hover {
+  background: #acacac;
+}
+.bth_grey_snip:focus {
+  background: #454444;
+}
+html {
+  position: relative;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0 none;
+}
+body {
+  height: 100%;
+  background: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+.onj_table {
+  margin-top: 20px;
+}
+.onj_table.without_edit .second_col {
+  width: 24.9%;
+}
+.onj_table.without_edit .table_edit tbody tr {
+  line-height: 106px;
+}
+.onj_table .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #727272;
+  margin-bottom: 40px;
+}
+.onj_table .table_edit {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.onj_table .table_edit thead tr th {
+  font-size: 24px;
+  color: #454545;
+  padding-bottom: 22px;
+}
+.onj_table .table_edit tbody {
+  background: #fff;
+  border: 1px solid #dedede;
+}
+.onj_table .table_edit tbody tr {
+  line-height: 104px;
+  border-bottom: 1px solid #dedede;
+}
+.onj_table .table_edit tbody tr td {
+  font-size: 24px;
+  font-weight: 600;
+  color: #727272;
+}
+.onj_table .table_edit tbody tr .first_col {
+  color: #83c124;
+  width: 35%;
+}
+.onj_table .table_edit tbody tr .first_col span {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-position: 50% 0 !important;
+  background-size: cover !important;
+  box-shadow: inset 0 0 0 4px #fff;
+  border: 1px solid #cfcfcf;
+  display: block;
+  margin-left: 18px;
+  margin-top: 17px;
+}
+.onj_table .table_edit tbody tr .second_col {
+  width: 22%;
+}
+.onj_table .table_edit tbody tr .third_col {
+  width: 15%;
+}
+.onj_table .table_edit tbody tr .third_col span {
+  color: #83c124;
+  font-size: 28px;
+  margin-left: 15px;
+}
+.onj_table .table_edit tbody tr .third_col span:before {
+  position: relative;
+  top: -4px;
+}
+.onj_table .table_edit tbody tr .four_col {
+  width: 10%;
+}
+.onj_table .table_edit tbody tr .four_col a {
+  color: #727272;
+  font-size: 34px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.onj_table .table_edit tbody tr .four_col a span {
+  display: inline-block;
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.onj_table .table_edit tbody tr .four_col a span.icon-pencil:before {
+  position: relative;
+  top: 6px;
+}
+.onj_table .table_edit tbody tr .four_col a:hover {
+  color: #acacac;
+}
+.onj_table .table_edit tbody tr .four_col a:focus {
+  color: #454444;
+}
+.onj_table .table_edit tbody tr .last_col {
+  width: 18%;
+}
+.onj_table .table_edit .first_col {
+  padding-left: 15px;
+}
+.onj_table .table_edit.table_contracts tbody tr {
+  line-height: 1.25;
+}
+.onj_table .table_edit.table_contracts tbody tr td {
+  padding: 20px 0;
+}
+.onj_table .table_edit.table_contracts tbody tr .first_col {
+  width: 215px;
+  padding-left: 15px;
+}
+.onj_table .table_edit.table_contracts tbody tr .second_col {
+  width: 230px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 15px;
+}
+.onj_table .table_edit.table_contracts tbody tr .last_col {
+  width: 370px;
+}
+.onj_table .form_button {
+  margin-bottom: 70px;
+}
+.onj_table .form_button input {
+  color: #fff;
+  font-size: 18px;
+  width: 160px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 16px;
+}
+.clj_nav ul li {
+  position: relative;
+}
+.clj_nav ul li span img {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+.clj_nav ul li span i {
+  position: relative;
+  top: -1px;
+  z-index: 2;
+  color: #727272;
+  font-style: normal;
+  display: inline-block;
+  width: 36.5px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 16px;
+}
+nav.clj_nav ul li a {
+  display: inline-block;
+}
+nav.clj_nav ul li:last-of-type a {
+  float: right;
+}
+/*media*/
+@media only screen and (max-width: 1199px) {
+  nav.clj_nav.clj_msg ul li {
+    width: calc(78%/5);
+    width: -moz-calc(78%/5);
+    width: -webkit-calc(78%/5);
+    width: -o-calc(78%/5);
+  }
+  nav.clj_nav.clj_msg ul li:nth-of-type(2) {
+    width: 22%;
+  }
+  nav.clj_nav.clj_msg ul li:nth-of-type(2) a {
+    padding-left: 40px;
+  }
+  nav.clj_nav.clj_msg ul li:nth-of-type(3) a {
+    padding-left: 30px;
+  }
+  nav.clj_nav.clj_msg ul li:nth-of-type(4) a {
+    padding-left: 5px;
+  }
+  nav.clj_nav.clj_msg ul li:nth-of-type(5) a {
+    padding-left: 5px;
+  }
+  .onj_table .table_edit tbody tr .first_col {
+    width: 30%;
+  }
+  .onj_table .table_edit tbody tr .second_col {
+    width: 17%;
+  }
+  .onj_table .table_edit tbody tr .second_col span {
+    margin-left: 15px;
+  }
+  .onj_table .table_edit tbody tr .last_col {
+    width: 16%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /*table*/
+  .onj_table .title {
+    margin-bottom: 20px;
+  }
+  .onj_table .table_edit {
+    margin-bottom: 15px;
+  }
+  .onj_table.without_edit .second_col {
+    width: 24.9%;
+  }
+  .onj_table.without_edit .table_edit tbody tr {
+    line-height: 60px;
+  }
+  .onj_table .table_edit thead {
+    text-align: right;
+    display: none;
+  }
+  .onj_table .table_edit tbody {
+    border-width: 2px;
+    border-bottom: 0;
+  }
+  .onj_table .table_edit tbody tr {
+    display: block;
+    line-height: 60px;
+    margin-bottom: 10px;
+    border-top: 2px solid #dedede;
+    border-width: 2px;
+  }
+  .onj_table .table_edit tbody tr:last-of-type {
+    margin-bottom: 0;
+  }
+  .onj_table .table_edit tbody tr .second_col span:before {
+    top: 0;
+  }
+  .onj_table .table_edit tbody tr:first-of-type {
+    border-top: 0;
+  }
+  .onj_table .table_edit tbody tr td {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: block;
+    font-size: 20px;
+    width: 100% !important;
+    text-align: right;
+    border-bottom: 1px solid #dedede;
+  }
+  .onj_table .table_edit tbody tr td:last-of-type {
+    border-bottom: 0;
+  }
+  .onj_table .table_edit tbody tr td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .onj_table .title {
+    margin-bottom: 20px;
+  }
+  .onj_table .table_edit {
+    margin-bottom: 15px;
+  }
+  .onj_table .table_edit.table_contracts tbody tr td {
+    padding: 15px;
+    text-align: center !important;
+  }
+  .onj_table .table_edit.table_contracts tbody tr td.first_col span {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav.clj_nav.clj_msg ul li {
+    width: 100%;
+  }
+  nav.clj_nav.clj_msg ul li span {
+    display: none;
+  }
+  nav.clj_nav.clj_msg ul li:nth-of-type(2) {
+    width: 100%;
+  }
+  nav.clj_nav.clj_msg ul li:last-of-type a {
+    float: none;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .onj_table .table_edit tbody tr td {
+    font-size: 17px;
+  }
+  .onj_table .table_edit tbody tr .third_col a {
+    font-size: 28px;
+  }
+  .onj_table .table_edit tbody tr .third_col a span.icon-pencil:before {
+    top: 3px;
+  }
+}

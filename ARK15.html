@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ark_15</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/media.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+<!--START HEADER-->
+<!-- header -->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
+					<span class="greeting">WELCOME</span>
+					<a href="" class="log-view">&lt; iloveart &gt;</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- navigation -->
+	<nav class="clj_nav">
+		<div class="container">
+			<span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
+			<ul>
+				<li><a href="#">My open jobs</a></li>
+				<li><a href="#">find freelancer</a></li>
+				<li><a href="#">all jobs</a></li>
+				<li><a href="#">Post a job</a></li>
+				<li><a href="#">My Profile</a></li>
+				<li>
+					<a href="#">Messages
+						<span>
+							<img src="img/messages.png">
+							<i>15</i>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!--END HEADER-->
+
+<!--START CONTENT-->
+<section>
+	<div class="container view-participant hiring-page">
+		<div class="row">
+			<div class="col-lg-10">
+				<div class="hiring-aspirant">
+					<a href="#" class="logo-view"></a>
+					<p class="view-logo_caption">Hire Olga Kolesnikova</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="hiring-description">
+					<h3>Hiring detailes</h3>
+					<p class="hiring-title">Related job: <b>Logo design</b></p>
+					<form action="">
+						<input id="close_post" class="hire_checkbox" type="checkbox" hidden />
+        				<label for="close_post"> <p>Close the post if the freelancer accepts this offer
+							(You can always repost it later)</p></label>
+					</form>
+					<div class="quest-hint_container">
+						<p class="hiring-title pre-quest">Suggested Hourly Rate by Olga</p>
+						<div class="hire-hint">
+							<i><img src="img/question-icon.png" alt=""></i>
+							<div class="hint-block">
+								You can offer a lower and higher rate
+								that the profile and suggested rate.
+								Remember rhat the lower you set the
+								rate the chances that the freelancer
+								will accept the offer will decrease
+							</div>
+						</div>
+
+					</div>
+					<div class="clearfix"></div>
+					<form action="">
+						<span>$</span>
+						<input type="text" placeholder="20,00" name="hourly-rate" class="hourly-rate">
+						<label for="hourly-rate">/hr</label>
+						<p class="profile-rate">Profile rate is 20$ /hr</p>
+					</form>
+					<p class="hiring-title">Maximum of hours Freelancer is allowed to work</p>
+					<div class="clearfix"></div>
+					<form action="">
+						<input type="text" placeholder="40,00" name="hourly-rate" class="hourly-rate max-hours">
+						<label for="hourly-rate">hrs/week</label><br>
+						<input id="allow_log" class="hire_checkbox" type="checkbox" hidden />
+        				<label for="allow_log"> <p>Allow freelancer to log time manually if needed</p></label>
+					</form>
+					<p class="hiring-title">Message to freelancer</p>
+					<div class="clearfix"></div>
+					<form action="#">
+						<textarea name="" id="message_to" rows="9"></textarea>
+						<div class="add-files">
+							<input type="file" id="files"><label for="files" class="file">Attach document (max 2 MB)</label>
+							<ul>
+								<li><a href="#"><span>Document1.doc</span> (331KB)</a> <a href="#">X</a></li>
+								<li><a href="#"><span>Document1.doc</span> (331KB)</a> <a href="#">X</a></li>
+								<li><a href="#"><span>Document1.doc</span> (331KB)</a> <a href="#">X</a></li>
+
+							</ul>
+						</div>
+						<input id="accept_all" class="hire_checkbox" type="checkbox" hidden />
+        				<label for="accept_all"> <p>I agree and accept the terms of services, including the private policy</p></label>
+        				<div class="hire-buttons">
+							<a href="#" class="button-contact">Hire</a>
+							<a href="#" class="button-grey">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--END CONTENT-->
+
+
+<!--START FOOTER-->
+<footer>
+<section>
+    <div class="wrapper footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</footer>
+<!--END FOOTER-->
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jscript.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
