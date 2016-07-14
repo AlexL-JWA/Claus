@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HowTo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-ht.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/superslides.css">
+</head>
+<body>
+<!--START HEADER-->
+	<!-- header -->
+	<header class="clj_header header-ht header-ht-slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-8 col-sm-9 col-xs-9 col-logo">
+					<a href="index.html" class="logo">
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+					<div class="search">
+						<span><input type="search" placeholder="Search Freelancer"><input type="submit"></span>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-4 col-sm-3 col-xs-3 personal">
+
+					<div class="sign_up">
+						<a href="#">
+							<span class="icon-check31-01"></span>
+							<b>Sign-up</b>
+						</a>
+					</div>
+					<div class="login">
+						<a href="#">
+							<span class="icon-login"></span>
+							<b>LOGIN</b>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<!--END HEADER-->
+
+<!--START CONTENT-->
+<!-- <section class="banner-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="p-h1">Get the job done right</p>
+				<p class="p-h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</p>
+				<a href="" class="ht-button">Get started</a>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section class="slider-categories">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul>
+					<li id="0" class="active"><a href="">post a job</a></li>
+					<li id="1"><a href="">hiring</a></li>
+					<li id="2"><a href="">get to work</a></li>
+					<li id="3"><a href="">pay</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div id="slides">
+  <ul class="slides-container">
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>post a job</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>hiring</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>get to work</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>pay</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+  </ul>
+  <nav class="slides-navigation">
+    <a href="#" class="next"></a>
+    <a href="#" class="prev"></a>
+  </nav>
+</div>
+<!--END CONTENT-->
+
+
+
+	<!--<script src="js/jquery-2.1.4.min.js"></script>-->
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/js-ht.js"></script>
+	<script src="js/jquery.superslides.js"></script>
+	<script>
+	$('#slides').superslides({
+		pagination:false
+	});
+	$(document).ready(function(){
+		$('.slides-navigation a').click(function(){
+			$('.slider-categories ul').find('li').removeClass('active');
+			var curSlide = $('#slides').superslides('next');
+			console.log(curSlide);
+			$('.slider-categories ul').find('li#' + curSlide).addClass('active');
+		});
+	});
+
+	</script>
+
+
+</body>
+</html>

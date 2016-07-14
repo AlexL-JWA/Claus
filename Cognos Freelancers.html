@@ -25,7 +25,7 @@
 			<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
 					<a href="index.html" class="logo">					
-						<img src="img/logo.png" alt="">
+						<img src="img/logo(black-background).svg" alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right personal">
@@ -33,7 +33,7 @@
 					<div class="sign_up">
 						<a href="#">
 							<span class="icon-check31-01"></span>
-							Sing-up	
+							Sign-up	
 						</a>
 					</div>
 					<div class="login pull-right">
@@ -282,7 +282,7 @@
 			<div class="row ">
 				<div class="col-lg-10 col-lg-offset-1 item">
 					<div class="logo">
-						<div class="logo_img" style="background: url(img/men.jpg);"></div>
+						<div class="logo_img" style="background: url(img/50.jpg);"></div>
 					</div>
 					<div class="information">
 						<div class="title pull-left">
@@ -317,7 +317,7 @@
 						<div class="clearfix"></div>
 
 						<div class="about">
-							<p>COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1– Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools. Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools.</p>
+							<p class="text-hidden">COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1– Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools. Event Studio, COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1– Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools. Event Studio </p>
 						</div>		
 					</div>
 
@@ -325,7 +325,7 @@
 
 					<div class="skills">
 						<ul>
-							<li class="skills_li">Skils:</li>
+							<li class="skills_li">Skills:</li>
 							<li>Cognos</li>
 							<li>Photoshop</li>
 							<li>Adobe PDF</li>
@@ -369,7 +369,7 @@
 						<div class="clearfix"></div>
 
 						<div class="about">
-							<p>COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1– Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools. Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools.</p>
+							<p  class="text-hidden">COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1– Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools. Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools.</p>
 						</div>		
 					</div>
 
@@ -377,7 +377,7 @@
 
 					<div class="skills">
 						<ul>
-							<li class="skills_li">Skils:</li>
+							<li class="skills_li">Skills:</li>
 							<li>Web Design</li>
 							<li>Cognos</li>
 							<li>SAS</li>
@@ -430,5 +430,71 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+$(document).ready(function(){
+   //плагин
+    jQuery.fn.liTextLength = function(options){
+    // настройки по умолчанию
+    var o = jQuery.extend({
+        length: 620,                                    //Видимое кол-во символов
+        afterLength: '...',                                //Текст после видимого содержания        
+        fullText:true,                                    //Добавить ссылку для отображения скрытого текста
+        moreText: '<br>полный&nbsp;текст',                //Текст ссылки до показа скрытого содержания
+        lessText: '<br>скрыть&nbsp;полный&nbsp;текст'    //Текст ссылки после показа скрытого содержания
+    },options);
+    return this.each(function(){
+        var 
+        $el = $(this),
+        elText = $.trim($el.text()),
+        elLength = elText.length;
+        if(elLength > o.length){ 
+            var 
+            textSlice = $.trim(elText.substr(0,o.length)),
+            textSliced = $.trim(elText.substr(o.length));
+            if(textSlice.length < o.length){
+                var 
+                textVisible = textSlice,
+                textHidden = $.trim(elText.substr(o.length));
+            }else{    
+                var 
+                arrSlice = textSlice.split(' '),
+                popped = arrSlice.pop(),
+                textVisible = arrSlice.join(' ') + ' ',
+                textHidden = popped + textSliced  + ' ';
+            };
+            var 
+            $elTextHidden = $('<span>').addClass('elTextHidden').html(textHidden),
+            $afterLength = $('<span>').addClass('afterLength').html(o.afterLength + ' '),
+            $more = $('<span>').addClass('more').html(o.moreText);
+            $el.text(textVisible).append($afterLength).append($elTextHidden);
+            var displayStyle = $elTextHidden.css('display');
+            $elTextHidden.hide();
+            if(o.fullText){
+                $el.append($more);
+                $more.click(function(){
+                    if($elTextHidden.is(':hidden')){
+                        $elTextHidden.css({display:displayStyle})    ;
+                        $more.html(o.lessText);
+                        $afterLength.hide();
+                    }else{
+                        $elTextHidden.hide();
+                        $more.html(o.moreText);
+                        $afterLength.show();
+                    };
+                    return false;
+                });
+            }else{
+                $elTextHidden.remove();
+            };
+        };
+    });
+};
+	$('.text-hidden').liTextLength({
+		length: 620,                                    
+		afterLength: '...',                                    
+		fullText:false
+	});
+});
+	</script>
 </body>
 </html>

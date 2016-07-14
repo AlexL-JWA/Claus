@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>End Contract</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/media.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+<!--START HEADER-->
+<!-- header -->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">						
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance"> 
+					<span class="greeting">WELCOME</span> 
+					<a href="" class="log-view">&lt; iloveart &gt;</a> 
+					<a href="#" class="greeting logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- navigation -->
+	<nav class="clj_nav">
+		<div class="container">
+			<span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
+			<ul>
+				<li><a href="#">My jobs</a></li>
+				<li><a href="#">Post a Job</a></li>
+				<li><a href="#">Contracts</a></li>
+				<li><a href="#">find freelancer</a></li>
+				<li><a href="#">Reports</a></li>
+				<li class="myProfile">
+					<a href="#">My Profile</a>
+<!-- 					<ul class="submenu">
+						<li><a href="#"><img src="images/photo.png" alt="">Zaitsev Nikita</a></li>
+						<li><a href="#">Reports</a></li>
+					</ul> -->
+				</li>
+				<li>
+					<a href="#">Messages 
+						<span>
+							<img src="img/messages.png">
+							<i>15</i>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!--END HEADER-->
+
+<!--START CONTENT-->
+<section class="ndra-container">
+	<div class="container hiring-page-b end-page">
+		<div class="row">
+			<div class="col-lg-12">		
+			<h2 class="ttl">End Contract with <a href="" class="green">Alexandr</a> ( Website - Development )</h2>
+				<div class="hiring-description exp-description">
+				<p class="exp-ttl">Share your experience</p>
+					<form action="">
+						<p for="">Reason for ending contract</p>
+						<div class="select-style">
+						  <select>
+							<option value="">Please select...</option>
+						    <option value="first">Job was completed successfully</option>
+						    <option value="second">Freelancer not responsive</option>
+						    <option value="third">Hired a different freelancer</option>
+						    <option value="fourth">No longer need this work completed</option>
+						    <option value="fifth">Freelancer misrepresented his/her skills</option>
+						  </select>
+						</div>
+
+						<p for="">How likely are you to recommend this freelancer to a friend or a colleague?</p>
+						<span class="vis-mobile">From not at all likely to extremely likely</span>
+						<span class="vis-screen">Not at all likely</span>
+						<input type="radio" id="rate-1" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-1"></label>
+						<input type="radio" id="rate-2" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-2"></label>
+						<input type="radio" id="rate-3" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-3"></label>
+						<input type="radio" id="rate-4" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-4"></label>
+				        <input type="radio" id="rate-5" class="radio-deposit" name="radio-deposit" hidden />
+				        <label for="rate-5"></label>
+
+				        <input type="radio" id="rate-6" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-6"></label>
+						<input type="radio" id="rate-7" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-7"></label>
+						<input type="radio" id="rate-8" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-8"></label>
+						<input type="radio" id="rate-9" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-9"></label>
+						<input type="radio" id="rate-10" class="radio-deposit" name="radio-deposit" checked hidden />
+				        <label for="rate-10"></label>
+				        <input type="radio" id="rate-11" class="radio-deposit" name="radio-deposit" hidden />
+				        <label for="rate-11"></label>
+
+				        <span class="vis-screen">Extremely likely</span>
+						
+						<p for="">Would you like to hire again?</p>
+
+						<input type="radio" id="like-1" class="radio-deposit radio-liking" name="liking" checked hidden />
+				        <label for="like-1">Yes</label>
+				        <input type="radio" id="like-2" class="radio-deposit radio-liking" name="liking" hidden />
+				        <label for="like-2">No</label>
+
+				        <p>Share your experience with this freelancer to the MYLOGO community:</p>
+				        <textarea name="exp-text" id="exp-text"></textarea><br>
+
+						<span>See an <a href="" class="green">example of appropriate feedback</a></span>
+
+						<p class="note">Ending this contract will permanently lock your freelancer’s Work Diary for this project. We’ll let your freelancer know the job is done and send you a final statement for any unpaid work</p>
+
+						<a href="" class="button-contact" data-toggle="modal" data-target="#jb_cancel">End contract</a>
+						<a href="" class="green">Cancel</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+<!--END CONTENT-->
+
+<!--START MOdaL-->
+<div class="modal fade payment_modal close-job_modal" id="jb_cancel" tabindex="-1" data-role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+		<div class="modal-header">
+	       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	       <h4 class="modal-title">Close / cancel job</h4>
+	    </div>
+	    <div class="modal-body">
+	        <span class="note">Use this to close your job to new applicants and notify current applicants. Those you have hired will not be affected.</span>
+	        <p class="rsn">Reason for cancelling the job</p>
+	        <form action="">
+		        <span>
+		        	<input type="radio" name="reasRad" id="rr-1" class="radio-deposit">
+		        	<label for="rr-1">Accidental opening creation</label>
+		        </span>		        
+		        <span>
+		        	<input type="radio" name="reasRad" id="rr-2" class="radio-deposit">
+		        	<label for="rr-2">All positions filled </label>
+		        </span>		        
+		        <span>
+		        	<input type="radio" name="reasRad" id="rr-3" class="radio-deposit">
+		        	<label for="rr-3">Filled by alternate source </label>
+		        </span>		        
+		        <span>
+		        	<input type="radio" name="reasRad" id="rr-4" class="radio-deposit">
+		        	<label for="rr-4">Project was cancelled </label>
+		        </span>		        
+		        <span>
+		        	<input type="radio" name="reasRad" id="rr-5" class="radio-deposit">
+		        	<label for="rr-5">No developer for requested skills</label>
+		        </span>
+
+	        </form>
+            <a href="" class="button-contact">Close job</a>
+            <a href="" class="button-contact button-grey">Cancel</a>
+	       </form>
+	    </div>
+    </div>
+  </div>
+
+
+<!--END MODaL-->
+
+<!--START FOOTER-->
+<footer>
+<section>
+    <div class="wrapper footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+</footer>
+<!--END FOOTER-->
+
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jscript.js"></script> 
+	<script src="js/main.js"></script> 
+</body>
+</html>

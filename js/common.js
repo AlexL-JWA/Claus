@@ -15,14 +15,14 @@
    $('.slider-2').slider({full_width: true});
  }
 });
- $(document).on("scroll",function(){
-   if($(document).scrollTop()>650){
-    $(".header-mnu").removeClass("large").addClass("black-header");
-  }
-  else{
-    $(".header-mnu").removeClass("black-header").addClass("large");
-  }
-});
+// $(document).on("scroll",function(){
+//   if($(document).scrollTop()>650){
+//    $(".header-mnu").removeClass("large").addClass("black-header");
+//  }
+//  else{
+//    $(".header-mnu").removeClass("black-header").addClass("large");
+//  }
+//});
 
  $(function() {
   if($("form[enctype='multipart/form-data']").length) {

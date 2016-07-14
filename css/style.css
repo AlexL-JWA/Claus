@@ -1,0 +1,302 @@
+.signUp {
+  background: #f7f7f7 url(../images/icons-bg-form.png) no-repeat;
+  background-position: center 35px;
+  min-height: calc(100vh - 70px - 105px);
+  /*password strong bar*/
+}
+
+.signUp input, .signUp textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+
+@media (max-width: 530px) {
+  .signUp {
+    min-height: auto;
+    min-height: 0;
+  }
+}
+
+.signUp h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 95px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #83c124;
+}
+
+@media (max-width: 767px) {
+  .signUp h3 {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+}
+
+.signUp h3 + p {
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+  font-weight: lighter;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+  .signUp h3 + p {
+    font-size: 14px;
+  }
+}
+
+.signUp form {
+  max-width: 590px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .signUp form {
+    margin-bottom: 20px;
+  }
+}
+
+.signUp .inputWrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+  .signUp .inputWrapper {
+    margin-bottom: 20px;
+  }
+}
+
+.signUp .inputWrapper.checkParent {
+  line-height: 46px;
+}
+
+@media (max-width: 450px) {
+  .signUp .inputWrapper.checkParent label {
+    display: block;
+    line-height: 1.2;
+  }
+}
+
+.signUp .inputWrapper.withStrongPass {
+  margin-bottom: 10px;
+}
+
+.signUp input:not([type=submit]):not([type=checkbox]) {
+  font-size: 18px;
+  color: #666666;
+  background: #f7f7f7;
+  border: 1px solid #cccccc;
+  padding-left: 25px;
+  padding-right: 10px;
+  height: 37px;
+}
+
+.signUp input:not([type=submit]):not([type=checkbox]).error {
+  border-color: #cc3333;
+}
+
+.signUp input:not([type=submit]):not([type=checkbox]):focus {
+  border-color: #99cc33;
+}
+
+.signUp input[type=submit] {
+  float: right;
+  color: #ffffff;
+  background: #83c124;
+  font-size: 16px;
+  border: 1px solid #a5ca94;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 767px) {
+  .signUp input[type=submit] {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .signUp input[type=submit] {
+    width: 100%;
+  }
+}
+
+.signUp input[type=submit][disabled] {
+  background: #ccc !important;
+  border-color: #ccc !important;
+}
+
+.signUp input[type=submit]:hover {
+  background: #59de00;
+  border-color: #bcf662;
+}
+
+.signUp input[type=submit]:focus {
+  background: #489c5a;
+  border-color: #659914;
+}
+
+.signUp input[type=email] {
+  width: 100%;
+}
+
+.signUp input[type=text], .signUp input[type=password] {
+  width: calc(100%/2 - 7.5px);
+  float: left;
+}
+
+@media (max-width: 380px) {
+  .signUp input[type=text], .signUp input[type=password] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.signUp input[type=text] + [type=text], .signUp input[type=text] + [type=password], .signUp input[type=password] + [type=text], .signUp input[type=password] + [type=password] {
+  float: right;
+}
+
+@media (max-width: 380px) {
+  .signUp input[type=text] + [type=text], .signUp input[type=text] + [type=password], .signUp input[type=password] + [type=text], .signUp input[type=password] + [type=password] {
+    margin-bottom: 0;
+  }
+}
+
+.signUp .formPassStrong {
+  width: calc(50% - 7.5px);
+}
+
+@media (max-width: 380px) {
+  .signUp .formPassStrong {
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 5;
+  }
+}
+
+.signUp .singUpWithSocial {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .signUp .singUpWithSocial {
+    margin-top: 30px;
+  }
+}
+
+.signUp .singUpWithSocial span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #666666;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+@media (max-width: 450px) {
+  .signUp .singUpWithSocial span {
+    margin-right: 0;
+    font-size: 16px;
+  }
+}
+
+.signUp .singUpWithSocial ul {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.signUp .singUpWithSocial ul li {
+  display: inline-block;
+  margin: 0 17px;
+}
+
+.signUp .singUpWithSocial ul li a {
+  line-height: 1;
+  font-size: 38px;
+  display: block;
+  color: #83c124;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 450px) {
+  .signUp .singUpWithSocial ul li a {
+    font-size: 30px;
+  }
+}
+
+.signUp .singUpWithSocial ul li a:hover {
+  color: #59de00;
+}
+
+.signUp .singUpWithSocial ul li a:focus {
+  color: #489c5a;
+}
+
+.signUp .str-box {
+  position: relative;
+  width: 25%;
+  height: 5px;
+  float: left;
+  margin-top: 6px;
+}
+
+@media (max-width: 380px) {
+  .signUp .str-box {
+    height: 3px;
+  }
+}
+
+.signUp .str-box div {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.signUp .short .str-box.box1 div {
+  background: #cc3333;
+  width: 100%;
+}
+
+.signUp .weak {
+  color: #E66C2C;
+}
+
+.signUp .weak .str-box.box1 div, .signUp .weak .str-box.box2 div {
+  background: #f8cd23;
+  width: 100%;
+}
+
+.signUp .good .str-box.box1 div, .signUp .good .str-box.box2 div, .signUp .good .str-box.box3 div {
+  background: #83c124;
+  width: 100%;
+}
+
+.signUp .strong .str-box.box1 div, .signUp .strong .str-box.box2 div, .signUp .strong .str-box.box3 div, .signUp .strong .str-box.box4 div {
+  background: #288c31;
+  width: 100%;
+}

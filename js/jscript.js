@@ -93,5 +93,3 @@ $(window).resize(function(){
     }
 });
 
-
-

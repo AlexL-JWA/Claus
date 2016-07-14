@@ -29,12 +29,13 @@
 			<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
 					<a href="index.html" class="logo">
-						<img src="img/logo.png" alt="">
+						<img src="img/logo(black-background).svg" alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
 					<span class="greeting">WELCOME</span>
 					<a href="" class="log-view">&lt; iloveart &gt;</a>
+					<a href="#" class="greeting logout">Logout</a>
 				</div>
 			</div>
 		</div>
@@ -45,11 +46,18 @@
 		<div class="container">
 			<span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
 			<ul>
-				<li><a href="#">My open jobs</a></li>
+				<li><a href="#">My jobs</a></li>
+				<li><a href="#">Post a Job</a></li>
+				<li><a href="#">Contracts</a></li>
 				<li><a href="#">find freelancer</a></li>
-				<li><a href="#">all jobs</a></li>
-				<li><a href="#">Post a job</a></li>
-				<li><a href="#">My Profile</a></li>
+				<li><a href="#">Reports</a></li>
+				<li class="myProfile">
+					<a href="#">My Profile</a>
+<!-- 					<ul class="submenu">
+						<li><a href="#"><img src="images/photo.png" alt="">Zaitsev Nikita</a></li>
+						<li><a href="#">Reports</a></li>
+					</ul> -->
+				</li>
 				<li>
 					<a href="#">Messages
 						<span>
@@ -63,11 +71,11 @@
 	</nav>	<!-- end navigation -->
 
 
-	<section> <!-- onj_table -->
-		<div class="container onj_table">
+	<section class="ndra-container"> <!-- onj_table -->
+		<div class="container onj_table onj-ark-2">
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="title">Open Job Postings</p>
+					<p class="title">Offers/Hires</p>
 				</div>
 			</div>
 
@@ -76,7 +84,7 @@
 					<tr>
 						<th class="first_col">Job</th>
 						<th class="second_col">Applicants</th>
-						<th class="third_col">Status</th>
+						<th class="third_col">Offers/Hires</th>
 						<th class="four_col">Edit</th>
 						<th class="last_col">Data Posted</th>
 					</tr>
@@ -85,21 +93,21 @@
 					<tr>
 						<td data-label="Job" class="first_col"><a href="">Web design </a></td>
 						<td data-label="Applicants" class="second_col"> 3 (1 new) </td>
-						<td data-label="Status"class="third_col"> Open <span class="icon-correct"></span> </td>
+						<td data-label="Status"class="third_col"> 1/1 </td>
 						<td data-label="Edit" class="four_col"> <a href="#"><span class="icon-pencil"></span></a> </td>
 						<td data-label="Data Posted" class="last_col"> 01.07.2015 </td>
 					</tr>
 					<tr>
 						<td data-label="Job" class="first_col"><a href="">Web portal</a></td>
 						<td data-label="Applicants" class="second_col"> 7 (1 new)</td>
-						<td data-label="Status" class="third_col">Open <span class="icon-correct"></span> </td>
+						<td data-label="Status" class="third_col">0/0 </td>
 						<td data-label="Edit" class="four_col"><a href="#"><span class="icon-pencil"></span></a></td>
 						<td data-label="Data Posted" class="last_col"> 01.07.2015 </td>
 					</tr>
 					<tr>
 						<td data-label="Job" class="first_col"><a href="">Server php set up</a></td>
 						<td data-label="Applicants" class="second_col">21 (8 new)</td>
-						<td data-label="Status" class="third_col">Open <span class="icon-correct"></span></td>
+						<td data-label="Status" class="third_col">1/0</td>
 						<td data-label="Edit" class="four_col"><a href="#"><span class="icon-pencil"></span></a></td>
 						<td data-label="Data Posted" class="last_col">01.07.2015</td>
 					</tr>
@@ -107,43 +115,85 @@
 			</table>
 
 			<!-- table_contact -->
+			<h2 class="tabs-heading">
+				Contracts
+			</h2>
+			<div class="tabs">
+				<ul>
+					<li>Active (2)</li>
+					<li>Completed (4)</li>
+				</ul>
+				<div>
+					<div class="table">
+						<table class="table_edit table_contracts">
+							<tbody>
+								<tr>
+									<td  class="first_col">
+										Server Set-Up
+										<a href=""><span style="background: url(img/hire-page-1.jpg);"></span></a>
+									</td>
+									<td class="second_col">
+										<a href="">Olga Ronson</a>
+									</td>
+									<td  class="last_col">
+										Milestone 1: 1st Delivery	$150,00 in Escrow - release now
+									</td>
+									<td></td> <!-- do not delete ! -->
+								</tr>
 
-			<table class="table_edit table_contracts">
-				<thead>
-					<tr>
-						<th class="first_col">Contracts</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td  class="first_col">
-							Server Set-Up
-							<a href=""><span style="background: url(img/hire-page-1.jpg);"></span></a>
-						</td>
-						<td class="second_col">
-							<a href="">Olga Ronson</a>
-						</td>
-						<td  class="last_col">
-							Milestone 1: 1st Delivery	$150,00 in Escrow - release now
-						</td>
-						<td></td> <!-- do not delete ! -->
-					</tr>
+								<tr>
+									<td class="first_col">
+										PHP Code review
+										<a href=""><span style="background: url(img/portrait.jpg);"></span></a>
+									</td>
+									<td class="second_col">
+										<a href="">Mike Bloom</a>
+									</td>
+									<td class="last_col">
+										Hourly Rate $22
+									</td>
+									<td> </td> <!-- do not delete ! -->
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table">
+						<table class="table_edit table_contracts">
+							<tbody>
+								<tr>
+									<td  class="first_col">
+										Server Set-Up
+										<a href=""><span style="background: url(img/hire-page-1.jpg);"></span></a>
+									</td>
+									<td class="second_col">
+										<a href="">Some Name</a>
+									</td>
+									<td  class="last_col">
+										Milestone 1: 1st Delivery	$150,00 in Escrow - release now
+									</td>
+									<td></td> <!-- do not delete ! -->
+								</tr>
 
-					<tr>
-						<td class="first_col">
-							PHP Code review
-							<a href=""><span style="background: url(img/portrait.jpg);"></span></a>
-						</td>
-						<td class="second_col">
-							<a href="">Mike Bloom</a>
-						</td>
-						<td class="last_col">
-							Hourly Rate $22
-						</td>
-						<td> </td> <!-- do not delete ! -->
-					</tr>
-				</tbody>
-			</table>
+								<tr>
+									<td class="first_col">
+										PHP Code review
+										<a href=""><span style="background: url(img/portrait.jpg);"></span></a>
+									</td>
+									<td class="second_col">
+										<a href="">Mike Surname</a>
+									</td>
+									<td class="last_col">
+										Hourly Rate $22
+									</td>
+									<td> </td> <!-- do not delete ! -->
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
 
 			<div class="clearfix"></div>
 			<div class="col-lg-12 form_button">
