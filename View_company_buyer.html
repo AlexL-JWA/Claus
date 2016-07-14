@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>View_company_buyer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/media.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+<!--START HEADER-->
+<!-- header -->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
+					<span class="greeting">WELCOME</span>
+					<a href="" class="log-view">&lt; iloveart &gt;</a>
+					<a href="#" class="greeting logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- navigation -->
+	<nav class="clj_nav">
+		<div class="container">
+			<span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
+			<ul class="no-messages">
+				<li><a href="#">My jobs</a></li>
+				<li><a href="#">Post a Job</a></li>
+				<li><a href="#">Contracts</a></li>
+				<li><a href="#">find freelancer</a></li>
+				<li><a href="#">Reports</a></li>
+				<li class="myProfile">
+					<a href="#">My Profile</a>
+<!-- 					<ul class="submenu">
+						<li><a href="#"><img src="images/photo.png" alt="">Zaitsev Nikita</a></li>
+						<li><a href="#">Reports</a></li>
+					</ul> -->
+				</li>
+				<li>
+					<a href="#">Messages</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!--END HEADER-->
+
+<!--START CONTENT-->
+<section class="ndra-container">
+	<div class="container detailed-view_container">
+		<div class="row">
+			<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 view-logo_cont">
+				<div>
+					<a href="#" class="logo-view"></a>
+					<span class="view-logo_caption">WebStudio</span>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 view-rating">
+				<p class="currency">$11-$22,00/hr</p>
+				<div class="line-rating">
+					<i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star grey-star"></i>
+				</div>
+				<p class="job-success">88% Job Success</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<a href="#" class="button-contact" data-toggle="modal" data-target="#modal-contact">Contact</a>
+				<!-- Button trigger modal -->
+			</div>
+		</div>
+
+		<div class="row row-overview">
+			<div class="col-lg-7  col-md-7 col-sm-12  col-xs-12 overview">
+				<h3>Overview</h3>
+				<p>Auurtot is a team of website developers from Poland. Our country is recognized as having the best programmers in the world and apart from that we only employ the best of the best. When you decide to become our client, rest assured that we will deliver your project on time and within budget – creating and utilizing the most efficient solutions and technology. <br>
+				We look forward to participating in ambitious, long-term projects with clients from all over the world. Our aim is to contribute first-class solutions to your projects and gain recognition as a professional company you can truly rely on.
+				Check out the live chat on our website if you need to contact us promptly.
+				</p>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+				<div class="view-calculate">
+					<div class="line">
+						<i class="icon-update"></i>
+						<span class="left-s">Total Hours Worked</span>
+						<span class="right-s">10.234</span>
+					</div>
+					<div class="line">
+						<i class="icon-placeholder"></i>
+						<span class="left-s">Location</span>
+						<span class="right-s">Copenhagen, Denmark</span>
+					</div>
+					<div class="line">
+						<i class="icon-undo"></i>
+						<span class="left-s">Last Worked</span>
+						<span class="right-s">December 15, 2015</span>
+					</div>
+					<div class="line">
+						<i class="icon-lightning"></i>
+						<span class="left-s">Current Jobs</span>
+						<span class="right-s">21</span>
+					</div>
+					<div class="line">
+						<i class="icon-black301-01"></i>
+						<span class="left-s">Total Jobs</span>
+						<span class="right-s">134</span>
+					</div>
+					<div class="line">
+						<i class="icon-users"></i>
+						<span class="left-s">Current Freelancers</span>
+						<span class="right-s">13</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+				<div class="work-history">
+					<div class="history-header">Recent Work History & Feedback</div>
+					<div class="wrapper-history" id = "history-company">
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelamcers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelancers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelamcers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelamcers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelamcers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelamcers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelamcers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+						<div class="history-line">
+							<span class="line-rubric">PhonaGap App – Duplicate existing mobile site</span>
+							<span class="line-author">Contractor:<a href="#"> Alpesh H.</a></span>
+							<span class="line-article">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star grey-star"></i>
+								Alpesh and his team are by far the best freelamcers I kave worhed with. We hope to continue to work them a lot in the future.
+							</span>
+							<span class="data-history">
+								Aug 2015 – Dec 2015
+								Fixed Price Project
+							</span>
+						</div>
+					</div>
+					<div class="history-view-more">
+						<p>View more</p>
+						<a id="show-history" class="icon-arrow"></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+				<div class="managers-list">
+					<div class="managers">
+						<h4>Staffing Managers</h4>
+						<div class="personal-card">
+							<i></i>
+							<p class="manager-name">Virender Sharma</p>
+							<p class="work-timing">Last worked: 15 days ago</p>
+						</div>
+					</div>
+					<div class="managers manager-agency">
+						<h4>Agency contractors</h4>
+						<div class="personal-card clearfix">
+							<i></i>
+							<p class="manager-name">Amit Kumar</p>
+							<p class="job-s">Job Success: 86%</p>
+							<p class="work-timing">Last worked: 9 days ago</p>
+						</div>
+						<div class="personal-card clearfix">
+							<i></i>
+							<p class="manager-name">Amit Kumar</p>
+							<p class="job-s">Job Success: 86%</p>
+							<p class="work-timing">Last worked: 9 days ago</p>
+						</div>
+						<div class="personal-card clearfix">
+							<i></i>
+							<p class="manager-name">Surender Kumar Bhardwaj</p>
+							<p class="job-s">Job Success: 86%</p>
+							<p class="work-timing">Last worked: 9 days ago</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade modal-contact_form" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Send Message</h4>
+			    	</div>
+				    <div class="modal-body">
+						<div class="account">
+							<p class="f-capt">To</p>
+							<a href="#" class="logo-view"></a>
+							<p class="view-logo_caption">Olga Ronson</p>
+							<p class="participant-specialty">E-Books, Logo Design, Branding, Infographics, Web, Print Graphics</p>
+						</div>
+						<div class="onj_form_content">
+								<div>
+									<p class="f-capt">Job Posting</p>
+									<div class="select_arrow">
+										<select>
+											<option>PSD to HTMLS</option>
+											<option>PSD to HTML5</option>
+											<option>PSD to HTML5</option>
+											<option>PSD to HTML5</option>
+											<option>PSD to HTML5</option>
+										</select>
+									</div>
+								</div>
+								<div>
+									<p class="f-capt">Job Posting</p>
+									<textarea name="mess-mod" id="mess-mod"></textarea>
+								</div>
+							</div>
+					   	</div>
+				   	<div class="clearfix"></div>
+				    <div class="modal-footer">
+				    	<a href="" class="button-contact b-attach">Attach a file</a>
+				    	<div>
+					    	<a href="" class="button-contact">Send</a>
+					    	<a href="" class="button-contact button-grey" data-dismiss="modal">Cancel</a>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!--End modal window-->
+
+	</div>
+</section>
+<!--END CONTENT-->
+
+<!--START FOOTER-->
+<footer>
+<section>
+    <div class="wrapper footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</footer>
+<!--END FOOTER-->
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jscript.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

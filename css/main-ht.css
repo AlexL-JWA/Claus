@@ -67,6 +67,9 @@ a.gs-button{
 	line-height: 1.42;
 	text-align: center;
 }
+.bottom-banner a.ht-button{
+
+}
 .header-ht .head-button a:hover,
 a.ht-button:hover{
 	background-color: #8fdd17;
@@ -82,7 +85,7 @@ a.ht-button:active{
 	color:#fff;
 }
 /*Start Banner*/
-/*section.banner-area{
+section.banner-area{
 	background: url('../img/banner-ht.jpg') no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -91,7 +94,7 @@ a.ht-button:active{
 	color:#fff;
 	padding-top: 160px;
 	padding-bottom: 75px;
-}*/
+}
 
 /**/
 .slider-categories{
@@ -185,7 +188,7 @@ a.ht-button:active{
 
 
 /*****************************************************************************/
-/*section.banner-area p{
+section.banner-area p{
 	text-align: center;
 	text-shadow:2px 2px 1px rgba(0,0,0,.2);
 	margin-top: 0;
@@ -209,9 +212,9 @@ section.banner-area p.p-h4{
 	padding: 10px;
 	margin: 0 auto;
 	text-transform: uppercase;
-}*/
+}
 /*Start Navigation*/
-/*section.navigation{
+section.navigation{
 	background: #83c124;
 	font-weight: 500;
 	box-shadow: 0px 4px 4px 7px rgba(0,0,0,.15);
@@ -250,9 +253,9 @@ section.navigation a.gs-button{
 	float: right;
 	padding: 8px;
 	text-transform: uppercase;
-}*/
+}
 /*Start Protection*/
-/*section.protection{
+section.protection{
 	background: #fff;
 	font-size: 22px;
 	font-weight: 400;
@@ -310,9 +313,9 @@ section.sect-ht ul li:before{
 	position: absolute;
 	left:0;
 	top:15px;
-}*/
+}
 /*Start Hiring*/
-/*section.hiring{
+section.hiring{
 	font-size: 22px;
 	min-height: 725px;
 	color:#fff;
@@ -492,14 +495,14 @@ section.banner-area.bottom-banner{
     background: url('../img/arrArr.png') no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-}*/
+}
 
-/*@media screen and (max-width:1550px){
+@media screen and (max-width:1550px){
 	.text-column::after{
 		width: 100%;
 		left:104%;
 	}
-}*/
+}
 @media screen and (max-width:1199px){
 	header.clj_header.header-ht{
 		height:auto;
@@ -518,7 +521,7 @@ section.banner-area.bottom-banner{
 	.header-ht .head-button{
 		margin-top: 13px;
 	}
-/*	section.navigation .nav{
+	section.navigation .nav{
 		width: 80%;
 	}
 	section.protection .col-protect-pad{
@@ -580,7 +583,7 @@ section.banner-area.bottom-banner{
 	}
 	.scrollup{
 		right: 75px;
-	}*/
+	}
 	/*slider vers*/
 	.slider-categories{
 		top:60px;
@@ -588,7 +591,7 @@ section.banner-area.bottom-banner{
 }
 
 @media screen and (max-width:991px){
-/*	.navigation{
+	.navigation{
 		font-size: 17px;
 	}
 	section.navigation .nav{
@@ -633,7 +636,7 @@ section.banner-area.bottom-banner{
 	}
 	.scrollup {
 	    right: 15px;
-	}*/
+	}
 
 	/*slider vers*/
 	header.clj_header.header-ht-slider .personal .sign_up span+b,
@@ -651,7 +654,7 @@ section.banner-area.bottom-banner{
 	header.clj_header.header-ht .personal{
 		text-align: left;
 	}
-/*	section.navigation{
+	section.navigation{
 		display: none;
 	}
 	section.question .col-quest-img{
@@ -696,7 +699,7 @@ section.banner-area.bottom-banner{
 	 section.hiring,
 	  section.protection{
 		min-height: 400px;
-	}*/
+	}
 
 
 	/*slider vers*/
@@ -732,7 +735,7 @@ section.banner-area.bottom-banner{
 }
 
 @media screen and (max-width:630px){
-/*	.header-ht .search{
+	.header-ht .search{
 		width: 63%;
 		float: right;
 	}
@@ -748,7 +751,7 @@ section.banner-area.bottom-banner{
 	}
 	section.banner-area p.p-h4{
 		line-height: 1.2;
-	}*/
+	}
 	/*slider vers*/
 
 	#slides h1 {

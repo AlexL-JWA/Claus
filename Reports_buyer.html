@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Reports_buyer</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/Glyphter.css">
+</head>
+<body>
+	<!--START HEADER-->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
+					<span class="greeting">WELCOME</span>
+					<a href="" class="log-view">&lt; iloveart &gt;</a>
+					<a href="#" class="greeting logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- navigation -->
+	<nav class="clj_nav">
+		<div class="container"> <span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
+			<ul class="no-messages">
+				<li><a href="#">My jobs</a></li>
+				<li><a href="#">Post a Job</a></li>
+				<li><a href="#">Contracts</a></li>
+				<li><a href="#">find freelancer</a></li>
+				<li><a href="#">Reports</a></li>
+				<li class="myProfile">
+					<a href="#">My Profile</a>
+<!-- 					<ul class="submenu">
+						<li><a href="#"><img src="images/photo.png" alt="">Zaitsev Nikita</a></li>
+						<li><a href="#">Reports</a></li>
+					</ul> -->
+				</li>
+				<li>
+					<a href="#">Messages
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--START SEARCH-->
+	<section class="ndra-container">
+		<div class="wrapper transaction">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2 class="title">Reports</h2>
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#Transactions" data-toggle="tab">Transactions</a></li>
+							<li><a href="#Timesheet" data-toggle="tab">Timesheet</a></li>
+							<li><a href="#Invoices" data-toggle="tab">Invoices</a></li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="Transactions">
+								<div class="dates">
+									<div class="data">
+										<input  class="inputDate currentDate" type="text" value="Jan 31, 2015 - Jan 31, 2016"> <i class="fa fa-calendar calendar" aria-hidden="true"></i>
+										<ul>
+											<li>
+												<div class="input_date date input-daterange">
+													<input class="prevDate" readonly="" value="mm/yy"><i class="fa fa-calendar calendar" aria-hidden="true"></i></div>
+												<div class="input_date date input-daterange">
+													<input class="nextDate" readonly="" value="mm/yy"><i class="fa fa-calendar calendar" aria-hidden="true"></i></div>
+												<input type="submit" value="Go"> </li>
+											<li><a href="#" class="thisWeek">This week</a></li>
+											<li><a href="#" class="lastWeek">Last week</a></li>
+											<li><a href="#" class="thisMonth">This month - Jan, 2016</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="select">
+									<ul class="menu">
+										<li> <a href="#">All transactions</a>
+											<ul class="subMenu">
+												<li><a href="#">Debits</a></li>
+												<li><a href="#">Credits</a></li>
+												<li><a href="#">Hourly</a></li>
+												<li><a href="#">Fixed price</a></li>
+											</ul>
+										</li>
+										<li> <a href="#">Freelancer</a>
+											<ul class="subMenu">
+												<li><a href="#">Freelancer</a></li>
+												<li><a href="#">Freelancer</a></li>
+												<li><a href="#">Freelancer</a></li>
+												<li><a href="#">Freelancer</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="table">
+									<div class="tr">
+										<div class="th">
+											<h5>Date</h5> </div>
+										<div class="th">
+											<h5>Type</h5> </div>
+										<div class="th">
+											<h5>Description</h5> </div>
+										<div class="th">
+											<h5>Freelancer/<br>Agency</h5> </div>
+										<div class="th">
+											<h5>Amount/<br>Balance</h5> </div>
+										<div class="th">
+											<h5>Ref ID</h5> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Jun 23, 2015</p>
+										</div>
+										<div class="td">
+											<p>Payment</p>
+										</div>
+										<div class="td">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										</div>
+										<div class="td">
+											<p>Zaitsev Nikita</p>
+										</div>
+										<div class="td">
+											<p>50,00 $</p>
+										</div>
+										<div class="td"> <a href="#"><span>96543654</span></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Jun 23, 2015</p>
+										</div>
+										<div class="td">
+											<p>Payment</p>
+										</div>
+										<div class="td">
+											<p>Lorem ipsum dolor sit amet, consectetur</p>
+										</div>
+										<div class="td">
+											<p>Zaitsev Nikita</p>
+										</div>
+										<div class="td">
+											<p>50,00 $</p>
+										</div>
+										<div class="td"> <a href="#"><span>96543654</span></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Jun 23, 2015</p>
+										</div>
+										<div class="td">
+											<p>Payment</p>
+										</div>
+										<div class="td">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										</div>
+										<div class="td">
+											<p>Zaitsev Nikita</p>
+										</div>
+										<div class="td">
+											<p>50,00 $</p>
+										</div>
+										<div class="td"> <a href="#"><span>96543654</span></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Jun 23, 2015</p>
+										</div>
+										<div class="td">
+											<p>Payment</p>
+										</div>
+										<div class="td">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										</div>
+										<div class="td">
+											<p>Zaitsev Nikita</p>
+										</div>
+										<div class="td">
+											<p>50,00 $</p>
+										</div>
+										<div class="td"> <a href="#"><span>96543654</span></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Jun 23, 2015</p>
+										</div>
+										<div class="td">
+											<p>Payment</p>
+										</div>
+										<div class="td">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										</div>
+										<div class="td">
+											<p>Zaitsev Nikita</p>
+										</div>
+										<div class="td">
+											<p>50,00 $</p>
+										</div>
+										<div class="td"> <a href="#"><a href="#"><span>96543654</span></a></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Jun 23, 2015</p>
+										</div>
+										<div class="td">
+											<p>Payment</p>
+										</div>
+										<div class="td">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										</div>
+										<div class="td">
+											<p>Zaitsev Nikita</p>
+										</div>
+										<div class="td">
+											<p>50,00 $</p>
+										</div>
+										<div class="td"> <a href="#"><span>96543654</span></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Jun 23, 2015</p>
+										</div>
+										<div class="td">
+											<p>Payment</p>
+										</div>
+										<div class="td">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										</div>
+										<div class="td">
+											<p>Zaitsev Nikita</p>
+										</div>
+										<div class="td">
+											<p>50,00 $</p>
+										</div>
+										<div class="td"> <a href="#"><span>96543654</span></a> </div>
+									</div>
+
+									<div class="price">
+										<div class="tableprice">
+											<h5>Statement period</h5>
+											<p>Jan 31, 2015 to Jan 31, 2016</p>
+											<h5>Beginning balance<span>0,00$</span></h5>
+											<hr class="sline">
+											<p>Total debits<span>400,00$</span></p>
+											<hr class="sline">
+											<p>Total credits<span>400,00$</span></p>
+											<hr class="sline">
+											<p>Total change<span>0,00$</span></p>
+											<hr class="sline">
+											<h5>Ending balance<span>0,00$</span></h5> </div>
+									</div>
+								</div>
+								<div class="table-mobile">
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+										<div class="table-object">
+											<div class="tr name">
+												<div class="td"><p>Zaitsev Nikita</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Date</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Jun 23, 2015</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Type</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>Payment</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Description</h5></div>
+											</div>
+											<div class="tr text">
+												<div class="td"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Amount / Balance</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><p>50,00 $</p></div>
+											</div>
+											<div class="tr">
+												<div class="th"><h5>Ref ID</h5></div>
+											</div>
+											<div class="tr">
+												<div class="td"><a href="#"><span>96543654</span></a></div>
+											</div>
+										</div>
+
+										<div class="price">
+										<div class="tableprice">
+											<h5>Statement period</h5>
+											<p>Jan 31, 2015 to Jan 31, 2016</p>
+											<h5>Beginning balance<span>0,00$</span></h5>
+											<hr class="sline">
+											<p>Total debits<span>400,00$</span></p>
+											<hr class="sline">
+											<p>Total credits<span>400,00$</span></p>
+											<hr class="sline">
+											<p>Total change<span>0,00$</span></p>
+											<hr class="sline">
+											<h5>Ending balance<span>0,00$</span></h5> </div>
+										</div>
+									</div>
+							</div>
+							<div class="tab-pane Timesheet"  id="Timesheet">
+								<div class="dates">
+									<div class="data">
+										<input class="inputDate currentDate" type="text" value="Jan 31, 2015 - Jan 31, 2016"> <i class="fa fa-calendar calendar" aria-hidden="true"></i>
+										<ul>
+											<li>
+												<div class="input_date date input-daterange">
+													<input class="prevDate" readonly="" value="mm/yy"><i class="fa fa-calendar calendar" aria-hidden="true"></i></div>
+												<div class="input_date date input-daterange">
+													<input class="nextDate" readonly="" value="mm/yy"><i class="fa fa-calendar calendar" aria-hidden="true"></i></div>
+												<input type="submit" value="Go"> </li>
+											<li><a href="#" class="thisWeek">This week</a></li>
+											<li><a href="#" class="lastWeek">Last week</a></li>
+											<li><a href="#" class="last7Deys">Last 7 days</a></li>
+											<li><a href="#" class="last30Deys">Last 30 days</a></li>
+											<li><a href="#" class="monthDate">Month to date</a></li>
+											<li><a href="#" class="yearDate">Year to date</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="select">
+									<ul class="menu">
+										<li> <a href="#">Freelancer</a>
+											<ul class="subMenu">
+												<li><a href="#">Freelancer</a></li>
+												<li><a href="#">Freelancer</a></li>
+												<li><a href="#">Freelancer</a></li>
+												<li><a href="#">Freelancer</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<ul class="days">
+									<li class="active"><a href="#Timesheet1" data-toggle="tab">In days</a></li>
+									<li><a href="#Timesheet2" data-toggle="tab">In weeks</a></li>
+									<li><a href="#Timesheet3" data-toggle="tab">In months</a></li>
+								</ul>
+								<div class="table">
+									<div class="tr">
+										<div class="th"><h5>Date</h5></div>
+										<div class="th"><h5>Freelancer</h5></div>
+										<div class="th"><h5>Hours</h5></div>
+										<div class="th"><h5>Amount</h5></div>
+									</div>
+									<div class="tableDate">
+										<p class="date">Wed Feb 10</p>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="th"><h5>Total for Wed Feb 10</h5></div>
+											<div class="th"><h5>4:20</h5></div>
+											<div class="th"><h5>100,00</h5></div>
+										</div>
+									</div>
+									<div class="tableDate">
+										<p class="date">Wed Feb 10</p>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="th"><h5>Total for Wed Feb 10</h5></div>
+											<div class="th"><h5>4:20</h5></div>
+											<div class="th"><h5>100,00</h5></div>
+										</div>
+									</div>
+									<div class="tableDate">
+										<p class="date">Wed Feb 10</p>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="th"><h5>Total for Wed Feb 10</h5></div>
+											<div class="th"><h5>4:20</h5></div>
+											<div class="th"><h5>100,00</h5></div>
+										</div>
+									</div>
+									<div class="tableDate">
+										<p class="date">Wed Feb 10</p>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="td"> <img src="images/photo.png" alt="">
+												<p>Zaitsev Nikita</p>
+											</div>
+											<div class="td"> <span>1:40</span> </div>
+											<div class="td">
+												<p>50,00$</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="th"><h5>Total for Wed Feb 10</h5></div>
+											<div class="th"><h5>6:00</h5></div>
+											<div class="th"><h5>150,00</h5></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<div class="tab-pane" id="Invoices">
+								<div class="dates">
+									<div class="data">
+										<input class="inputDate currentDate" type="text" value="Jan 31, 2015 - Jan 31, 2016"> <i class="fa fa-calendar calendar" aria-hidden="true"></i>
+										<ul>
+											<li>
+												<div class="input_date date input-daterange">
+													<input class="prevDate" readonly="" value="mm/yy"><i class="fa fa-calendar calendar" aria-hidden="true"></i></div>
+												<div class="input_date date input-daterange">
+													<input class="nextDate" readonly="" value="mm/yy"><i class="fa fa-calendar calendar" aria-hidden="true"></i></div>
+												<input type="submit" value="Go"> </li>
+											<li><a href="#" class="thisWeek">This week</a></li>
+											<li><a href="#" class="lastWeek">Last week</a></li>
+											<li><a href="#" class="thisMonth">This month - Jan, 2016</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="table">
+									<div class="tr">
+										<div class="th">
+											<h5>Invoice#</h5> </div>
+										<div class="th">
+											<h5>Date</h5> </div>
+										<div class="th">
+											<h5>Status</h5> </div>
+										<div class="th">
+											<h5>Total</h5> </div>
+										<div class="th">
+											<h5>PDF</h5> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+										<div class="td">
+											<p>Paid</p>
+										</div>
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+										<div class="td"> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+									</div>
+								</div>
+								<div class="tabel-mobile">
+									<div class="table-object">
+									<div class="tr name">
+										<div class="th">
+											<h5>Invoice#</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Date</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Status</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Paid</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Total</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>PDF</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+										</div>
+									</div>
+									</div>
+
+									<div class="table-object">
+									<div class="tr name">
+										<div class="th">
+											<h5>Invoice#</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Date</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Status</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Paid</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Total</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>PDF</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+										</div>
+									</div>
+									</div>
+
+									<div class="table-object">
+									<div class="tr name">
+										<div class="th">
+											<h5>Invoice#</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Date</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Status</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Paid</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Total</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>PDF</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+										</div>
+									</div>
+									</div>
+
+									<div class="table-object">
+									<div class="tr name">
+										<div class="th">
+											<h5>Invoice#</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Date</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Status</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Paid</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Total</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>PDF</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+										</div>
+									</div>
+									</div>
+
+									<div class="table-object">
+									<div class="tr name">
+										<div class="th">
+											<h5>Invoice#</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>123</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Date</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>02.11.2016</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Status</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>Paid</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>Total</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<p>100,00$</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="th">
+											<h5>PDF</h5>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td">
+											<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END SEARCH-->
+	<!--END HEADER-->
+	<!--START FOOTER-->
+	<footer>
+		<div class="wrapper footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="footer-menu">
+							<li><a href="#">Terms and conditions</a></li>
+							<li><a href="#">News</a></li>
+							<li class="active"><a href="#">About Us</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--END FOOTER-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		var clickDate = 0;
+		var menuHover = 0;
+		var subMenuOpen
+		$('.submenu').hide();
+		$('.data ul').hide();
+
+		$(document).ready(function () {
+					$('.select .menu li').each(function () {
+						$(this).hover(function () {
+							if (menuHover) {
+								$(this).removeClass('active');
+								menuHover = 0
+							}
+							else {
+								menuHover = 1 ;
+								$(this).addClass('active')
+							}
+						});
+					});
+					$('.inputDate').click(function () {
+						if (clickDate) {
+							clickDate = 0
+							$('.data ul').hide();
+						}
+						else {
+							clickDate = 1
+								$('.data ul').show();
+								$('.transaction .data ul a').click(function(){
+								$(".transaction .data ul").hide();
+							});
+						}
+					});
+					var subMenuOpen
+					$('.submenu').hide();
+					$('.clj_nav .myProfile').click(function () {
+						if (subMenuOpen) {
+							subMenuOpen = 0
+							$('.submenu').hide();
+						}
+						else {
+							subMenuOpen = 1
+								$('.submenu').show();
+							}
+					});
+
+
+
+
+			$('.prevDate').change(function () {
+				var prevVal = $(this).val();
+				var nextVal = $('.nextDate').val();
+				$('.currentDate').val(prevVal + ' - ' + nextVal);
+			});
+			$('.nextDate').change(function () {
+				var nextVal = $(this).val();
+				var prevVal = $('.prevDate').val();
+				$('.currentDate').val(prevVal + ' - ' + nextVal);
+			});
+			$(".thisWeek").click(function (e) {
+				e.preventDefault();
+				$('.currentDate').val($(this).text());
+			});
+			$(".lastWeek").click(function (e) {
+				e.preventDefault();
+				$('.currentDate').val($(this).text());
+			});
+			$(".thisMonth").click(function (e) {
+				e.preventDefault();
+				$('.currentDate').val($(this).text());
+			});
+			$(".last7Deys").click(function (e) {
+				e.preventDefault();
+				$('.currentDate').val($(this).text());
+			});
+			$(".last30Deys").click(function (e) {
+				e.preventDefault();
+				$('.currentDate').val($(this).text());
+			});
+			$(".monthDate").click(function (e) {
+				e.preventDefault();
+				$('.currentDate').val($(this).text());
+			});
+			$(".yearDate").click(function (e) {
+				e.preventDefault();
+				$('.currentDate').val($(this).text());
+			});
+			$('.datepicker').click(function(){
+				$(".transaction .data ul").show();
+			});
+			$(document).mouseup(function (e)  {
+				var folder = $(".transaction .data ul , .datepicker, .submenu");
+				if (!folder.is(e.target) && folder.has(e.target).length === 0) {
+					folder.hide();
+
+				}
+			});
+
+		});
+	</script>
+</body>
+
+</html>

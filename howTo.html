@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 <!--<meta name="viewport" content="width=device-width">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>HowTo</title>
+    <title>Howto</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,39 +14,36 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/superslides.css">
 </head>
 <body>
 <!--START HEADER-->
 	<!-- header -->
-	<header class="clj_header header-ht">
+	<header class="clj_header header-ht header-ht-slider">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7 col-md-12 col-logo">
+				<div class="col-lg-7 col-md-8 col-sm-9 col-xs-9 col-logo">
 					<a href="index.html" class="logo">
 						<img src="img/logo(black-background).svg" alt="">
 					</a>
 					<div class="search">
 						<span><input type="search" placeholder="Search Freelancer"><input type="submit"></span>
 					</div>
-<!-- 					<div class="text-line"><a href="">HOW IT WORKS</a></div>
- -->				</div>
-				<div class="col-lg-5 col-md-12 personal">
+				</div>
+				<div class="col-lg-5 col-md-4 col-sm-3 col-xs-3 personal">
 
 					<div class="sign_up">
 						<a href="#">
 							<span class="icon-check31-01"></span>
-							Sign-up
+							<b>Sign-up</b>
 						</a>
 					</div>
 					<div class="login">
 						<a href="#">
 							<span class="icon-login"></span>
-							LOGIN
+							<b>LOGIN</b>
 						</a>
 					</div>
-<!-- 					<div class="head-button">
-						<a href="">Become a Freelancer</a>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -54,7 +51,7 @@
 <!--END HEADER-->
 
 <!--START CONTENT-->
-<section class="banner-area">
+<!-- <section class="banner-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -64,9 +61,74 @@
 			</div>
 		</div>
 	</div>
+</section> -->
+
+<section class="slider-categories">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul>
+					<li id="0"><a href="#postJob">post a job</a></li>
+					<li id="1"><a href="#hiring">hiring</a></li>
+					<li id="2"><a href="#getWork">get to work</a></li>
+					<li id="3"><a href="#pay">pay</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </section>
 
-<section class="navigation">
+
+<div id="slides">
+  <ul class="slides-container">
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>Get the job done right</h1>
+        <h4>Start working right away. Get amazing results from a talented professional or entire team of skilled experts</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>post a job</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>hiring</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>get to work</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/banner-ht.jpg" alt="">
+      <div class="container cont-description">
+        <h1>pay</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat repellendus, sit iste laboriosam odio suscipit, delectus temporibus minus impedit. Nulla, consequuntur. Debitis nostrum</h4>
+		<a href="" class="ht-button">Get started</a>
+      </div>
+    </li>
+  </ul>
+  <nav class="slides-navigation">
+    <a href="#" class="next"></a>
+    <a href="#" class="prev"></a>
+  </nav>
+</div>
+
+<!-- <section class="navigation">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -81,9 +143,9 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
-<section class="protection sect-ht" id="block-1">
+<section class="protection sect-ht" id="hiring">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-12 pull-right col-protect-pad">
@@ -100,7 +162,7 @@
 	</div>
 </section>
 
-<section class="hiring sect-ht" id="block-2">
+<section class="hiring sect-ht" id="postJob">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 bg pull-left text-column">
@@ -118,7 +180,7 @@
 		</div>
 </section>
 
-<section class="payments sect-centr-ht" id="block-3">
+<section class="payments sect-centr-ht" id="pay">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -144,11 +206,11 @@
 	</div>
 </section>
 
-<section class="monitoring hiring sect-ht" id="block-4">
+<section class="monitoring hiring sect-ht" id="getWork">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 bg pull-left text-column">
-					<p class="p-h1">How do I know the number of productive hours?</p>
+					<p class="p-h1">Get to work</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnased do eiusmod tempor incididunt ut labore et dolore magna</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt o eiusmod tempor incididunt o eiusmod tempor incididunt o eiusmod tempor incididunt ut labore et dolore magna</p>
 				</div>
@@ -223,14 +285,47 @@
 </footer>
 
 <a href="#" class="scrollup">Scroll</a>
+<!--END CONTENT-->
 
- <!--END FOOTER-->
+
+
 	<!--<script src="js/jquery-2.1.4.min.js"></script>-->
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/js-ht.js"></script>
+	<script src="js/jquery.superslides.js"></script>
+	<script>
+	$('#slides').superslides({
+		pagination:false
+	});
+	// $(document).ready(function(){
+	// 	$('.slides-navigation a').click(function(){
+	// 		$('.slider-categories ul').find('li').removeClass('active');
+	// 		var curSlide = $('#slides').superslides('next');
+	// 		console.log(curSlide);
+	// 		$('.slider-categories ul').find('li#' + curSlide).addClass('active');
+	// 	});
+	// });
+
+	</script>
+	 <script>
+	// 	$('.slider-categories ul li a').on('click',function () {
+	// 		elementClick = $(this).attr("href");
+	// 		$.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
+	// 		// вычитаем высоту «шапки»
+	// 		destination = $(elementClick).offset().top-145;
+
+	// 		if($.browser.safari || $.browser.chrome){
+	// 			$('body').animate( { scrollTop: destination }, 1100 );
+	// 		}else{
+	// 			$('html').animate( { scrollTop: destination }, 1100 );
+	// 		}
+	// 		return false;
+	// 	});
+	 </script>
+
 
 </body>
 </html>

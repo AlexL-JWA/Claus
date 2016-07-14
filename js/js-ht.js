@@ -7,7 +7,7 @@ $( ".quest span" ).each(function(){
     });
 });
 
-$('.nav a').on('click',function () {
+$('.slider-categories ul li a').on('click',function () {
         elementClick = $(this).attr("href");
         $.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
         // вычитаем высоту «шапки»
