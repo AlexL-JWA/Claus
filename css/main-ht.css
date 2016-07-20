@@ -129,13 +129,50 @@ section.banner-area{
 	color:#000;
 }
 #slides .slides-navigation a{
+/*
 	width: 40px;
 	height: 40px;
 	background: url('../img/leftSl.png') no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
+*/
+    color: #fff;
 	opacity: .8;
 	transition:.3s;
+}
+.slides-pagination
+{
+    top: 82px;
+    bottom: initial !important;
+    z-index: 10000
+}
+.slides-pagination a
+{
+    border: none !important;
+}
+.slides-pagination a.current
+{
+
+}
+.slides-pagination a:nth-of-type(1)
+{
+    width: 106px;
+    margin-right: 30px;
+}
+.slides-pagination a:nth-of-type(2)
+{
+    width: 67px;
+    margin-right: 30px;
+}
+.slides-pagination a:nth-of-type(3)
+{
+    width: 132px;
+    margin-right: 30px;
+}
+.slides-pagination a:nth-of-type(4)
+{
+    width: 67px;
+    margin-right: 30px;
 }
 #slides .slides-navigation a:hover{
 	opacity: 1;
@@ -144,8 +181,23 @@ section.banner-area{
 	left:15px;
 }
 #slides .slides-navigation a.next{
-	background-image: url('../img/rightSl.png');
+/*	background-image: url('../img/rightSl.png');*/
 	right:15px;
+}
+#slides .slides-navigation a i:before
+{
+    font-size: 112px;
+    opacity: 0.8;
+    text-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+}
+#slides .slides-navigation a:hover
+{
+    color: #fff;
+}
+#slides .slides-navigation a:hover i:before
+{
+    color: #fff;
+    opacity: 1;
 }
 #slides h1{
 	font-size: 60px;
@@ -281,14 +333,33 @@ section.protection .col-protect-pad{
 section.protection .col-protect-pad{
 	padding-left: 60px;
 }
-section.sect-ht{
+.sect-ht{
 	box-shadow: inset 4px 4px 12px 0px rgba(0,0,0,0.15);
+    background: #fff;
+    position: relative;
 }
-section.sect-ht p{
+.sect-ht .container,
+.hiring .container,
+.payments .container
+{
+    position: relative;
+    height: 100vh;
+}
+.payments .paytmen
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -332.5px;
+}
+.hiring .text-column
+{
+    position: absolute;
+}
+.sect-ht p{
 	margin-bottom: 15px;
 	line-height: 1.6;
 }
-section.sect-ht p.p-h1{
+.sect-ht p.p-h1{
 	font-size: 46px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -296,15 +367,15 @@ section.sect-ht p.p-h1{
 	margin-bottom: 30px;
 	margin-top: 100px;
 }
-section.sect-ht ul{
+.sect-ht ul{
 	margin-bottom: 15px;
 	line-height: 1.6;
 }
-section.sect-ht ul li{
+.sect-ht ul li{
 	position: relative;
 	padding-left: 20px;
 }
-section.sect-ht ul li:before{
+.sect-ht ul li:before{
 	content:'';
 	display: inline-block;
 	width: 7px;
@@ -314,8 +385,15 @@ section.sect-ht ul li:before{
 	left:0;
 	top:15px;
 }
+.col-protect-pad
+{
+    position: absolute;
+    margin-top: -262px;
+    top: 50%;
+    right: 0;
+}
 /*Start Hiring*/
-section.hiring{
+.hiring{
 	font-size: 22px;
 	min-height: 725px;
 	color:#fff;
@@ -343,17 +421,21 @@ section.hiring{
 	top:10%;
 	left:110%;
 }
-section.sect-ht.hiring ul li:before{
+.sect-ht.hiring ul li:before{
 	background: #fff;
 }
-section.hiring.sect-ht p{
+.hiring.sect-ht p{
 	color:#fff;
 }
-section.hiring .bg{
-	min-height: 735px;
+.hiring .bg{
+/*	min-height: 735px;*/
 	background: transparent;
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -355px;
 }
-section.hiring .bg:before{
+.hiring .bg:before{
 	border-right: 30px solid #f5f5f8;
 	top: 50%;
 	right: 0px;
