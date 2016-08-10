@@ -17,10 +17,10 @@ Superslides = function(el, options) {
     hashchange: false,
     scrollable: true,
     elements: {
-      preserve: '.preserve',
-      nav: '.slides-navigation',
-      container: '.slides-container',
-      pagination: '.slides-pagination'
+    preserve: '.preserve',
+    nav: '.slides-navigation',
+    container: '.slides-container',
+    pagination: '.slides-pagination'
     }
   }, options);
 

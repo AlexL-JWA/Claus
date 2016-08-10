@@ -347,12 +347,6 @@
 	 		console.log(curSlide);
 	 		$('.slider-categories ul').find('li#' + curSlide).addClass('active');
 	 	});
-	 	$('.slider-categories ul li').click(function(){
-	 		$('.slider-categories ul').find('li').removeClass('active');
-	 		curNav = $(this).attr('id');
-	 		$('#slides').superslides('animate' , curNav);
-	 		$(this).addClass('active');
-	 	});
 	 });
 
 	</script>
