@@ -1,7 +1,7 @@
 html {
 	position: relative;
 }
-
+body{padding: 0 !important;}
 input:focus,
 select:focus,
 textarea:focus {
@@ -611,7 +611,7 @@ footer {
 .footer-menu li {
 	display: inline-block;
 	border-left: 1px solid #fff;
-	padding: 5px 96px;
+	padding: 5px 89px;
 	margin-top: 34px;
 }
 
@@ -1963,6 +1963,7 @@ h5.title-2 img {
 	font-weight: 400;
 	line-height: 70px;
 	padding-left: 39px;
+    display: inline-block;
 }
 
 .modal-header .close {
@@ -2046,20 +2047,28 @@ h5.title-2 img {
 }
 
 .password-upd .modal-content,
-.profile-upd .modal-content {
+.profile-upd .modal-content
+{
 	width: 302px;
 	height: 142px;
 	text-align: center;
 }
-
+.thanks .modal-content
+{
+    width: 530px;
+	height: 142px;
+	text-align: center;
+}
 .password-upd p,
-.profile-upd p {
+.profile-upd p,
+.thanks p{
 	font-size: 16px;
 	margin-top: 28px;
 }
 
 .password-upd a.button,
-.profile-upd a.button {
+.profile-upd a.button,
+.thanks a.button{
 	margin: 15px auto;
 	width: 150px;
 	height: 35px;
@@ -7680,7 +7689,88 @@ select {
 
 
 
-
+.profil-2 .checkboxs {
+    margin: 0;
+}
+.profil-2 .checkboxs.active + .hide-block {
+    display: block;
+}
+.profil-2 .checkboxs label {
+    margin-left: 0;
+}
+.profil-2 .checkboxs [type="checkbox"]:not(:checked) + label:before,
+.profil-2 .checkboxs [type="checkbox"]:checked + label:before {
+    top: -13px;
+    width: 22px;
+    height: 22px;
+}
+.profil-2 .checkboxs [type="checkbox"]:not(:checked) + label:after,
+.profil-2 .checkboxs [type="checkbox"]:checked + label:after {
+    top: -9px;
+    left: 4px;
+}
+.profil-2 .checkboxs b {
+    margin-top: 20px;
+    display: inline-block;
+    color: #bba9a9;
+}
+.profil-2 .checkboxs + .hide-block input:first-child {
+    margin-top: 15px;
+}
+.profil-2 .hide-block {
+    display: none;
+}
+.modal.contact-form .modal-content {
+    width: 500px;
+    height: auto;
+    padding-bottom: 50px;
+}
+.modal.contact-form .modal-content .button {
+    width: 208px;
+    height: 43px;
+    text-align: center;
+    padding: 0;
+    line-height: 43px;
+}
+.modal.contact-form .modal-content .button:nth-of-type(1) {
+    margin-left: 10%;
+}
+.modal.contact-form .modal-content .button:nth-of-type(2) {
+    width: auto;
+    background: transparent;
+    border: none;
+    color: #000;
+}
+.modal.contact-form form {
+    padding: 0 10%;
+}
+.modal.contact-form form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424242;
+}
+.modal.contact-form form input {
+    width: 100%;
+    height: 40px;
+}
+.modal.contact-form form input[type="text"],
+.modal.contact-form form input[type="email"] {
+    padding: 0 20px;
+}
+.modal.contact-form form textarea {
+    width: 100%;
+    height: 110px;
+    padding: 10px 20px;
+}
+.modal.contact-form .captcha {
+    width: 245px;
+    margin-top: 20px;
+}
+.modal.contact-form .captcha img {
+    width: 100%;
+}
 
 
 

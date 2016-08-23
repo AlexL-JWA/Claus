@@ -2133,6 +2133,7 @@
 }
 
 @media only screen and (max-width: 580px) {
+
 	.width-mob {
 		width: 100%;
 	}
@@ -2324,6 +2325,10 @@
 	.transaction .Timesheet .table .tr:first-of-type .th:nth-of-type(4) {
 		width: 30.3%;
 	}
+    .thanks .modal-content
+    {
+        width: 280px;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -2532,6 +2537,16 @@
 	.modal-contact_form .f-capt {
 		width: 29%;
 	}
+    .modal.contact-form .modal-content
+    {
+        width: 280px;
+    }
+    .modal.contact-form .captcha
+    {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 
