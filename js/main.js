@@ -235,7 +235,6 @@ $(document).ready(function () {
 
     $('.next-modal').click(function (e) {
         $('html').attr("class", "modal-open");
-        console.log('dsdsadfsd');
     });
 });
 
