@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-<!--<meta name="viewport" content="width=device-width">-->
+    <!--<meta name="viewport" content="width=device-width">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Payment-add method</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,195 +15,197 @@
     <link rel="stylesheet" href="css/Glyphter.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body>
-<!--START HEADER-->
-<header class="clj_header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-					<a href="index.html" class="logo">
-						<img src="img/logo(black-background).svg" alt="">
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
-					<span class="greeting">WELCOME</span>
-					<a href="" class="log-view">&lt; iloveart &gt;</a>
-					<a href="#" class="greeting logout">Logout</a>
-				</div>
-			</div>
-		</div>
-	</header>
-<!--END HEADER-->
 
-<!--START CONTENT-->
-<section class="ndra-container">
-    <div class="payment_wrapper">
+<body>
+    <!--START HEADER-->
+    <header class="clj_header">
         <div class="container">
             <div class="row">
-            	<div class="col-lg-12">
-            		<h3>Add payment method</h3>
-            		<ul class="method-item add-method-item clearfix">
-						<li class="img_itm">
-							<img src="img/payment-1.png" alt="">
-						</li>
-						<li>
-							<p><b>Credit or Debit Card</b></p>
-							<p>In order to verify your card, <b>we may make a temporary charge of $10</b></p>
-							<p>These charges will be refunded to your card within 10 days</p>
-						</li>
-						<li class="right_itm">
-							<a href="" class="button-contact" data-toggle="modal" data-target="#pm_add">Set up</a>
-						</li>
-					</ul>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo(black-background).svg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
+                    <span class="greeting">WELCOME</span>
+                    <a href="" class="log-view">&lt; iloveart &gt;</a>
+                    <a href="#" class="greeting logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
 
-					<ul class="method-item add-method-item clearfix">
-						<li class="img_itm">
-							<img src="img/payment-2.png" alt="">
-						</li>
-						<li>
-							<p><b>PayPal</b></p>
-							<p>You must have a verified PayPal account</p>
-							<p>Don't have a verified PayPal account? <a href="https://www.paypal.com/">Visit PayPal</a></p>
-						</li>
-						<li class="right_itm">
-							<a href="https://www.paypal.com/" class="button-contact">Set up</a>
-						</li>
-					</ul>
+    <!--START CONTENT-->
+    <section class="ndra-container">
+        <div class="payment_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Add payment method</h3>
+                        <ul class="method-item add-method-item clearfix">
+                            <li class="img_itm">
+                                <img src="img/payment-1.png" alt="">
+                            </li>
+                            <li>
+                                <p><b>Credit or Debit Card</b></p>
+                                <p>In order to verify your card, <b>we may make a temporary charge of $10</b></p>
+                                <p>These charges will be refunded to your card within 10 days</p>
+                            </li>
+                            <li class="right_itm">
+                                <a href="" class="button-contact" data-toggle="modal" data-target="#pm_add">Set up</a>
+                            </li>
+                        </ul>
 
-            	</div>
+                        <ul class="method-item add-method-item clearfix">
+                            <li class="img_itm">
+                                <img src="img/payment-2.png" alt="">
+                            </li>
+                            <li>
+                                <p><b>PayPal</b></p>
+                                <p>You must have a verified PayPal account</p>
+                                <p>Don't have a verified PayPal account? <a href="https://www.paypal.com/">Visit PayPal</a></p>
+                            </li>
+                            <li class="right_itm">
+                                <a href="https://www.paypal.com/" class="button-contact">Set up</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END CONTENT-->
+
+    <!--START FOOTER-->
+    <footer>
+        <div class="wrapper footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="footer-menu">
+                            <li><a href="#">Terms and conditions</a></li>
+                            <li><a href="#">News</a></li>
+                            <li class="active"><a href="#">About Us</a></li>
+                            <li><a href="#" data-toggle="modal" data-target=".contact-form" data-dismiss="modal" data-aria-hidden="true">Contact US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
+    <!--START MODAL-->
+    <div class="modal fade payment_modal" id="pm_add" tabindex="-1" data-role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add card</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="" class="st-pm_label">Name and surname</label>
+                        <input type="text" class="st-pm_input" placeholder="Name Surname">
+                        <label for="" class="st-pm_label">Card number</label>
+                        <input type="text" class="st-pm_input" placeholder="087654983134353">
+                        <label for="" class="st-pm_label">Expiration date</label>
+                        <div class="select-wrap">
+                            <select name="month" id="month">
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="select-wrap">
+                            <select name="year" id="year">
+                                <option value="1">2016</option>
+                                <option value="2">2017</option>
+                                <option value="3">2018</option>
+                                <option value="4">2019</option>
+                                <option value="5">2020</option>
+                                <option value="6">2021</option>
+                                <option value="7">2022</option>
+                                <option value="8">2023</option>
+                                <option value="9">2024</option>
+                            </select>
+                        </div>
+                        <label for="" class="st-pm_label">Security code</label>
+                        <input type="text" class="st-pm_input sm-pm_input" placeholder="353">
+                        <span class="st-pm_capt">The last three digits displayed on the back of your card</span>
+                        <a href="" class="button-contact">Add card</a>
+                        <span class="note">By clicking this button, you authorize the use of your credit card for this deposit and future payments.</span>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<!--END CONTENT-->
-
-<!--START FOOTER-->
-<footer>
-	<div class="wrapper footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<ul class="footer-menu">
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">News</a></li>
-						<li class="active"><a href="#">About Us</a></li>
-						<li><a href="#" data-toggle="modal" data-target=".contact-form" data-dismiss="modal" data-aria-hidden="true">Contact US</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
- <!--END FOOTER-->
-
-<!--START MODAL-->
-<div class="modal fade payment_modal" id="pm_add" tabindex="-1" data-role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-		<div class="modal-header">
-	       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	       <h4 class="modal-title">Add card</h4>
-	    </div>
-	    <div class="modal-body">
-	       <form action="">
-		       <label for="" class="st-pm_label">Name and surname</label>
-		       <input type="text" class="st-pm_input" placeholder="Name Surname">
-		       <label for="" class="st-pm_label">Card number</label>
-		       <input type="text" class="st-pm_input" placeholder="087654983134353">
-		       <label for="" class="st-pm_label">Expiration date</label>
-		       <div class="select-wrap">
-			       <select name="month" id="month">
-			       		<option value="1">01</option>
-			       		<option value="2">02</option>
-			       		<option value="3">03</option>
-			       		<option value="4">04</option>
-			       		<option value="5">05</option>
-			       		<option value="6">06</option>
-			       		<option value="7">07</option>
-			       		<option value="8">08</option>
-			       		<option value="9">09</option>
-			       		<option value="10">10</option>
-			       		<option value="11">11</option>
-			       		<option value="12">12</option>
-			       	</select>
-		       	</div>
-		       	<div class="select-wrap">
-			       <select name="year" id="year">
-			       		<option value="1">2016</option>
-			       		<option value="2">2017</option>
-			       		<option value="3">2018</option>
-			       		<option value="4">2019</option>
-			       		<option value="5">2020</option>
-			       		<option value="6">2021</option>
-			       		<option value="7">2022</option>
-			       		<option value="8">2023</option>
-			       		<option value="9">2024</option>
-			       	</select>
-		       	</div>
-		       	<label for="" class="st-pm_label">Security code</label>
-		       	<input type="text" class="st-pm_input sm-pm_input" placeholder="353">
-		       	<span class="st-pm_capt">The last three digits displayed on the back of your card</span>
-                <a href="" class="button-contact">Add card</a>
-                <span class="note">By clicking this button, you authorize the use of your credit card for this deposit and future payments.</span>
-	       </form>
-	    </div>
-    </div>
-  </div>
-</div>
 
 
 
 
-<div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <div class="modal-header">
-        <h4 class="modal-title">Contact Form</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      </div>
-      <form action="#">
-      	<label for="#">First name</label>
-      	<input type="text">
-      	<label for="#">Second name</label>
-      	<input type="text">
-      	<label for="#">E-mail</label>
-      	<input type="email">
-      	<label for="#">Subject</label>
-      	<input type="text">
-      	<label for="#">Message</label>
-      	<textarea></textarea>
+    <div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact Form</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <form action="#">
+                    <label for="#">First name</label>
+                    <input type="text">
+                    <label for="#">Second name</label>
+                    <input type="text">
+                    <label for="#">E-mail</label>
+                    <input type="email">
+                    <label for="#">Subject</label>
+                    <input type="text">
+                    <label for="#">Message</label>
+                    <textarea></textarea>
 
-      	<div class="captcha">
-            <img src="img/captcha.jpg" alt="captcha">
+                    <div class="captcha">
+                        <img src="img/captcha.jpg" alt="captcha">
+                    </div>
+                </form>
+                <div class="center-button">
+                    <a href="#" class="button next-modal" data-toggle="modal" data-target=".thanks" data-dismiss="modal" data-aria-hidden="true">Submit</a>
+                    <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                </div>
+            </div>
         </div>
-      </form>
-		<div class="center-button">
-			<a href="#" class="button" data-toggle="modal" data-target=".thanks"  data-dismiss="modal" data-aria-hidden="true">Submit</a>
-			<a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
-		</div>
     </div>
-  </div>
-</div>
 
-<div class="modal fade thanks" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <p>Thanks for contacting us. We will get back to you within 24 hours</p>
-      <a href="#" class="button"  data-dismiss="modal" data-aria-hidden="true">OK</a>
+    <div class="modal fade thanks" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <p>Thanks for contacting us. We will get back to you within 24 hours</p>
+                <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">OK</a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
-<!--END MODAL-->
+    <!--END MODAL-->
 
 
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/jquery.uploadThumbs.js"></script>
-	<script src="js/fixed.js"></script>
-	<script src="js/browser.js"></script>
-	<script src="js/common.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/jquery.uploadThumbs.js"></script>
+    <script src="js/fixed.js"></script>
+    <script src="js/browser.js"></script>
+    <script src="js/common.js"></script>
 </body>
+
 </html>
