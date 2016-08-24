@@ -13,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/Glyphter.css">
-
+    
 </head>
 <body>
 <!--START HEADER-->
@@ -109,7 +109,7 @@
                             <input type="text" placeholder="Country">
                         </div>
                     </div>
-
+                    
 
                 <a href="" class="edit_payment valid_payment"><i class="bgcard"></i>Payment options <i class="card card-ok" title="Valid payment method"></i> <i class="card card-no" title="No valid payment method"></i> </a>
                 <!--to change icon toggle classes valid_payment and unvalid_payment in wrapper link-->
@@ -223,7 +223,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
      <div class="modal-header">
-        <h4 class="modal-title">Contact Form</h4>
+        <h4 class="modal-title">Contact Form</h4> 
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <form action="#">
@@ -237,7 +237,7 @@
       	<input type="text">
       	<label for="#">Message</label>
       	<textarea></textarea>
-
+      	
       	<div class="captcha">
             <img src="img/captcha.jpg" alt="captcha">
         </div>
@@ -272,18 +272,18 @@
 	<script src="js/common.js"></script>
 	<script>
     var hideBlock = 1
-
+        
 //    $(document).ready(function(){
        $('body').on('click', '.checkboxs', function(){
            if ($(this).find("input[type='checkbox']").prop('checked') === true){
                $(this).addClass('active');
                hideBlock = 1;
            }else{
-               $(this).removeClass('active');
+               $(this).removeClass('active'); 
                hideBlock = 0;
            }
-
-
+       
+          
        });
 //    });
     </script>

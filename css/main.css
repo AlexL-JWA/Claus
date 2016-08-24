@@ -7697,22 +7697,27 @@ select {
 }
 .profil-2 .checkboxs label {
     margin-left: 0;
+    height: 23px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 .profil-2 .checkboxs [type="checkbox"]:not(:checked) + label:before,
 .profil-2 .checkboxs [type="checkbox"]:checked + label:before {
-    top: -13px;
+    top: 0px;
     width: 22px;
     height: 22px;
 }
 .profil-2 .checkboxs [type="checkbox"]:not(:checked) + label:after,
 .profil-2 .checkboxs [type="checkbox"]:checked + label:after {
-    top: -9px;
+    top: 4px;
     left: 4px;
 }
 .profil-2 .checkboxs b {
     margin-top: 20px;
     display: inline-block;
     color: #bba9a9;
+    vertical-align: middle;
 }
 .profil-2 .checkboxs + .hide-block input:first-child {
     margin-top: 15px;

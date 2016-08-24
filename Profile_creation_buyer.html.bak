@@ -90,43 +90,38 @@
                         <input type="text" placeholder="Mobile">
                         <input type="text" placeholder="Password">
                         <input type="text" placeholder="Repeate password">
-
+                        <img src="images/capcha.png" alt="">
+                        <input type="text" placeholder="">
+                        <p class="checkbox-form">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">I accept the terms and conditions</label>
+                        </p>
                         <div class="profil-2">
-
-
-                            <p class="checkboxs">
-                                <input id="checkbox-5" type="checkbox">
-                                <label for="checkbox-5"></label>
-                                <b>Add company details</b>
-                            </p>
-                            <div class="hide-block">
-                                <input type="text" placeholder="Company name">
-                                <input type="text" placeholder="VAT/Tax number">
-                                <p class="checkboxs">
-                                    <input id="checkbox-6" type="checkbox">
-                                    <label for="checkbox-6"></label>
-                                    <b>If company address is different <br> from the address above</b>
-                                </p>
-                                <div class="hide-block">
-                                    <input type="text" placeholder="Address line 1">
-                                    <input type="text" placeholder="Address line 2">
-                                    <input type="text" placeholder="City">
-                                    <input type="text" placeholder="Postal code">
-                                    <input type="text" placeholder="Country">
-                                </div>
-                            </div>
-                            <img src="images/capcha.png" alt="">
-                            <input type="text" placeholder="">
-                            <p class="checkboxs">
-                                <input type="checkbox" id="checkbox">
-                                <label for="checkbox"></label>
-                                <b>I accept the terms and conditions</b>
-                            </p>
+                            
                         </div>
-
-
+                        <p class="checkboxs">
+                        <input id="checkbox-5" type="checkbox">
+                        <label for="checkbox-5"></label>
+                        <b>Add company details</b>
+                    </p>
+                    <div class="hide-block">
+                        <input type="text" placeholder="Company name">
+                        <input type="text" placeholder="VAT/Tax number">
+                        <p class="checkboxs">
+                            <input id="checkbox-6" type="checkbox">
+                            <label for="checkbox-6"></label>
+                            <b>If company address is different <br> from the address above</b>
+                        </p>
+                        <div class="hide-block">
+                            <input type="text" placeholder="Address line 1">
+                            <input type="text" placeholder="Address line 2">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="Postal code">
+                            <input type="text" placeholder="Country">
+                        </div>
+                    </div>
                         <input type="submit" class="create-buyer" value="Create Buyer">
-
+                        
                     </form>
                 </div>
             </div>
@@ -153,14 +148,14 @@
 	</div>
 </footer>
  <!--END FOOTER-->
-
-
- <!--START MODAL-->
+ 
+ 
+ <!--START MODAL-->                  
 <div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
      <div class="modal-header">
-        <h4 class="modal-title">Contact Form</h4>
+        <h4 class="modal-title">Contact Form</h4> 
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <form action="#">
@@ -174,7 +169,7 @@
       	<input type="text">
       	<label for="#">Message</label>
       	<textarea></textarea>
-
+      	
       	<div class="captcha">
             <img src="img/captcha.jpg" alt="captcha">
         </div>
@@ -195,25 +190,25 @@
     </div>
   </div>
 </div>
-<!--END MODAL-->
+<!--END MODAL-->    
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/common.js"></script>
     <script>
     var hideBlock = 1
-
+        
 //    $(document).ready(function(){
        $('body').on('click', '.checkboxs', function(){
            if ($(this).find("input[type='checkbox']").prop('checked') === true){
                $(this).addClass('active');
                hideBlock = 1;
            }else{
-               $(this).removeClass('active');
+               $(this).removeClass('active'); 
                hideBlock = 0;
            }
-
-
+       
+          
        });
 //    });
     </script>
