@@ -1,137 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width">-->
+	<!--<meta name="viewport" content="width=device-width">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/Glyphter.css">
     <link rel="stylesheet" href="css/media.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-    <script src="js/jquery-2.1.4.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.4.min.js"></script>
 
 </head>
-
 <body>
-    <!--START HEADER-->
-    <!-- header -->
-    <header class="clj_header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <a href="index.html" class="logo">
-                        <img src="img/logo(black-background).svg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right personal">
+<!--START HEADER-->
+<!-- header -->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right personal">
 
-                    <div class="sign_up">
-                        <a href="#">
-                            <span class="icon-check31-01"></span> Sign-up
-                        </a>
-                    </div>
-                    <!-- 					<div class="login pull-right">
+					<div class="sign_up">
+						<a href="#">
+							<span class="icon-check31-01"></span>
+							Sign-up
+						</a>
+					</div>
+<!-- 					<div class="login pull-right">
 						<a href="#">
 							<span class="icon-login"></span>
 							LOGIN
 
 						</a>
 					</div> -->
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--END HEADER-->
+				</div>
+			</div>
+		</div>
+	</header>
+<!--END HEADER-->
 
-    <!--START CONTENT-->
-    <section class="ndra-container">
-        <div class="container form-13-main">
+<!--START CONTENT-->
+<section class="ndra-container">
+	<div class="container form-13-main">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="form-13_container">
+					<form>
+						<p class="form-13_caption">Log in</p>
+						<input type="text" id="user_email" placeholder="E-mail">
+						<input type="password" id="user_password" placeholder="Password">
+						<input id="r_password" type="checkbox" checked hidden />
+        				<label for="r_password">Remember me next time</label>
+						<a href="" class="f_password">Forgot password?</a>
+						<a href="" class="form-13-login">Login</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--END CONTENT-->
+<!--START FOOTER-->
+<footer>
+<section>
+    <div class="wrapper footer">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="form-13_container">
-                        <form>
-                            <p class="form-13_caption">Log in</p>
-                            <input type="text" id="user_email" placeholder="E-mail">
-                            <input type="password" id="user_password" placeholder="Password">
-                            <input id="r_password" type="checkbox" checked hidden />
-                            <label for="r_password">Remember me next time</label>
-                            <a href="" class="f_password">Forgot password?</a>
-                            <a href="" class="form-13-login">Login</a>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--END CONTENT-->
-    <!--START FOOTER-->
-    <footer>
-        <section>
-            <div class="wrapper footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <ul class="footer-menu">
-                                <li><a href="#">Terms and conditions</a></li>
-                                <li><a href="#">News</a></li>
-                                <li class="active"><a href="#">About Us</a></li>
-                                <li><a href="#" data-toggle="modal" data-target=".contact-form" data-dismiss="modal" data-aria-hidden="true">Contact US</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <!--END FOOTER-->
-    <!--START MODAL-->
-    <div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Contact Form</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <form action="#">
-                    <label for="#">First name</label>
-                    <input type="text">
-                    <label for="#">Second name</label>
-                    <input type="text">
-                    <label for="#">E-mail</label>
-                    <input type="email">
-                    <label for="#">Subject</label>
-                    <input type="text">
-                    <label for="#">Message</label>
-                    <textarea></textarea>
-
-                    <div class="captcha">
-                        <img src="img/captcha.jpg" alt="captcha">
-                    </div>
-                </form>
-                <div class="center-button">
-                    <a href="#" class="button next-modal" data-toggle="modal" data-target=".thanks" data-dismiss="modal" data-aria-hidden="true">Submit</a>
-                    <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    <ul class="footer-menu">
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".contact-form" data-dismiss="modal" data-aria-hidden="true">Contact US</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</section>
+</footer>
+<!--END FOOTER-->
+<!--START MODAL-->
+<div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="modal-header">
+        <h4 class="modal-title">Contact Form</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <form action="#">
+      	<label for="#">First name</label>
+      	<input type="text">
+      	<label for="#">Second name</label>
+      	<input type="text">
+      	<label for="#">E-mail</label>
+      	<input type="email">
+      	<label for="#">Subject</label>
+      	<input type="text">
+      	<label for="#">Message</label>
+      	<textarea></textarea>
 
-    <div class="modal fade thanks" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <p>Thanks for contacting us. We will get back to you within 24 hours</p>
-                <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">OK</a>
-            </div>
+      	<div class="captcha">
+            <img src="img/captcha.jpg" alt="captcha">
         </div>
+      </form>
+		<div class="center-button">
+			<a href="#" class="button" data-toggle="modal" data-target=".thanks"  data-dismiss="modal" data-aria-hidden="true">Submit</a>
+			<a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+		</div>
     </div>
-    <!--END MODAL-->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jscript.js"></script>
-    <script src="js/main.js"></script>
+  </div>
+</div>
+
+<div class="modal fade thanks" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <p>Thanks for contacting us. We will get back to you within 24 hours</p>
+      <a href="#" class="button"  data-dismiss="modal" data-aria-hidden="true">OK</a>
+    </div>
+  </div>
+</div>
+<!--END MODAL-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jscript.js"></script>
 </body>
-
 </html>

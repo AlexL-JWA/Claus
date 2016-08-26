@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,237 +19,238 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <!-- header -->
-    <header class="clj_header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <a href="index.html" class="logo">
-                        <img src="img/logo(black-background).svg" alt="">
+<!-- header -->
+<header class="clj_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <a href="index.html" class="logo">
+                    <img src="img/logo(black-background).svg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right personal">
+
+                <div class="sign_up">
+                    <a href="#">
+                        <span class="icon-check31-01"></span>
+                        Sign-up
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right personal">
+                <div class="login pull-right">
+                    <a href="#">
+                        <span class="icon-login"></span>
+                        LOGIN
 
-                    <div class="sign_up">
-                        <a href="#">
-                            <span class="icon-check31-01"></span> Sign-up
-                        </a>
-                    </div>
-                    <div class="login pull-right">
-                        <a href="#">
-                            <span class="icon-login"></span> LOGIN
-
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!--START CONTENT-->
-    <section>
-        <div class="signUp">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <h3>Sign up</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor urna odio, pretium tincidunt dui consectetur eget. Phasellus a tortor tincidunt. Duis pulvinar egestas justo, a mattis.
-                        </p>
-                        <form>
-                            <div class="inputWrapper">
-                                <input type="text" class="firstName error" placeholder="First name">
-                                <input type="text" class="secondName" placeholder="Second name">
-                            </div>
+<!--START CONTENT-->
+<section>
+    <div class="signUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <h3>Sign up</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor urna odio, pretium
+                        tincidunt dui consectetur eget. Phasellus a tortor tincidunt. Duis pulvinar egestas justo, a
+                        mattis.</p>
+                    <form>
+                        <div class="inputWrapper">
+                            <input type="text" class="firstName error" placeholder="First name">
+                            <input type="text" class="secondName" placeholder="Second name">
+                        </div>
 
-                            <div class="inputWrapper">
-                                <input type="email" placeholder="E-mail">
-                            </div>
+                        <div class="inputWrapper">
+                            <input type="email" placeholder="E-mail">
+                        </div>
 
-                            <div class="inputWrapper withStrongPass">
-                                <input type="password" class="pass" placeholder="Password" id="user_password">
-                                <input type="password" class="re-pass" placeholder="Re-Type Password">
-                                <div class="clearfix"></div>
-                                <div class="formPassStrong ">
-                                    <div id="strength">
+                        <div class="inputWrapper withStrongPass">
+                            <input type="password" class="pass" placeholder="Password" id="user_password">
+                            <input type="password" class="re-pass" placeholder="Re-Type Password">
+                            <div class="clearfix"></div>
+                            <div class="formPassStrong ">
+                                <div id="strength">
 
-                                        <span class="str-box box1">
+			                         <span class="str-box box1">
 			                        	<div></div>
 			                         </span>
-                                        <span class="str-box box2">
+			                         <span class="str-box box2">
 			                        	<div></div>
 			                         </span>
-                                        <span class="str-box box3">
+			                         <span class="str-box box3">
 			                        	<div></div>
 			                         </span>
-                                        <span class="str-box box4">
+			                         <span class="str-box box4">
 			                        	<div></div>
 			                         </span>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="inputWrapper checkParent">
-                                <input type="checkbox" id="signUpAccept">
-                                <label for="signUpAccept"> I accept the terms and conditions</label>
-                                <input type="submit" value="Submit" disabled id="singUpSubmit">
+                        <div class="inputWrapper checkParent">
+                            <input type="checkbox" id="signUpAccept">
+                            <label for="signUpAccept"> I accept the terms and conditions</label>
+                            <input type="submit" value="Submit" disabled id="singUpSubmit">
 
-                            </div>
+                        </div>
 
-                            <div class="captcha">
-                                <img src="img/captcha.jpg" alt="captcha">
-                            </div>
-
-
-                            <div class="singUpWithSocial">
-                                <span>Sign up with social:</span>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </form>
+                        <div class="captcha">
+                            <img src="img/captcha.jpg" alt="captcha">
+                        </div>
 
 
+                        <div class="singUpWithSocial">
+                            <span>Sign up with social:</span>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--END CONTENT-->
+
+
+<!--START FOOTER-->
+<footer>
+    <section>
+        <div class="wrapper footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="footer-menu">
+                            <li><a href="#">Terms and conditions</a></li>
+                            <li><a href="#">News</a></li>
+                            <li class="active"><a href="#">About Us</a></li>
+                            <li><a href="#" data-toggle="modal" data-target=".contact-form" data-dismiss="modal" data-aria-hidden="true">Contact US</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--END CONTENT-->
+</footer>
+<!--END FOOTER-->
+<!--START MODAL-->
+<div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="modal-header">
+        <h4 class="modal-title">Contact Form</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <form action="#">
+      	<label for="#">First name</label>
+      	<input type="text">
+      	<label for="#">Second name</label>
+      	<input type="text">
+      	<label for="#">E-mail</label>
+      	<input type="email">
+      	<label for="#">Subject</label>
+      	<input type="text">
+      	<label for="#">Message</label>
+      	<textarea></textarea>
 
-
-    <!--START FOOTER-->
-    <footer>
-        <section>
-            <div class="wrapper footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <ul class="footer-menu">
-                                <li><a href="#">Terms and conditions</a></li>
-                                <li><a href="#">News</a></li>
-                                <li class="active"><a href="#">About Us</a></li>
-                                <li><a href="#" data-toggle="modal" data-target=".contact-form" data-dismiss="modal" data-aria-hidden="true">Contact US</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <!--END FOOTER-->
-    <!--START MODAL-->
-    <div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Contact Form</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <form action="#">
-                    <label for="#">First name</label>
-                    <input type="text">
-                    <label for="#">Second name</label>
-                    <input type="text">
-                    <label for="#">E-mail</label>
-                    <input type="email">
-                    <label for="#">Subject</label>
-                    <input type="text">
-                    <label for="#">Message</label>
-                    <textarea></textarea>
-
-                    <div class="captcha">
-                        <img src="img/captcha.jpg" alt="captcha">
-                    </div>
-                </form>
-                <div class="center-button">
-                    <a href="#" class="button next-modal" data-toggle="modal" data-target=".thanks" data-dismiss="modal" data-aria-hidden="true">Submit</a>
-                    <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
-                </div>
-            </div>
+      	<div class="captcha">
+            <img src="img/captcha.jpg" alt="captcha">
         </div>
+      </form>
+		<div class="center-button">
+			<a href="#" class="button" data-toggle="modal" data-target=".thanks"  data-dismiss="modal" data-aria-hidden="true">Submit</a>
+			<a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+		</div>
     </div>
+  </div>
+</div>
 
-    <div class="modal fade thanks" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <p>Thanks for contacting us. We will get back to you within 24 hours</p>
-                <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">OK</a>
-            </div>
-        </div>
+<div class="modal fade thanks" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <p>Thanks for contacting us. We will get back to you within 24 hours</p>
+      <a href="#" class="button"  data-dismiss="modal" data-aria-hidden="true">OK</a>
     </div>
-    <!--END MODAL-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+  </div>
+</div>
+<!--END MODAL-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-    <script>
-        $('#signUpAccept').change(function () {
-            $('#singUpSubmit').prop('disabled') == true ? $('#singUpSubmit').prop('disabled', false) : $('#singUpSubmit').prop('disabled', true)
-        });
+<script>
+    $('#signUpAccept').change(function () {
+        $('#singUpSubmit').prop('disabled') == true ? $('#singUpSubmit').prop('disabled', false) : $('#singUpSubmit').prop('disabled', true)
+    });
 
-        // Dynamic Password Strength Validation
-        var result = $("#strength");
+    // Dynamic Password Strength Validation
+    var result = $("#strength");
 
-        $('#user_password').keyup(function () {
-            checkStrength($('#user_password').val())
-        })
+    $('#user_password').keyup(function () {
+        checkStrength($('#user_password').val())
+    })
 
-        function checkStrength(password) {
+    function checkStrength(password) {
 
-            //initial strength
-            var strength = 0
+        //initial strength
+        var strength = 0
 
-            if (password.length == 0) {
-                result.removeClass()
-                return ''
-            }
-            //if the password length is less than 6, return message.
-            if (password.length < 6) {
-                result.removeClass()
-                result.addClass('short')
-                return ''
-            }
-
-            //length is ok, lets continue.
-
-            //if length is 8 characters or more, increase strength value
-            if (password.length > 7) strength += 1
-
-            //if password contains both lower and uppercase characters, increase strength value
-            if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1
-
-            //if it has numbers and characters, increase strength value
-            if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1
-
-            //if it has one special character, increase strength value
-            if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
-
-            //if it has two special characters, increase strength value
-            if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) strength += 1
-
-            //now we have calculated strength value, we can return messages
-
-            //if value is less than 2
-            if (strength < 2) {
-                result.removeClass()
-                result.addClass('weak')
-                return ''
-            } else if (strength == 2) {
-                result.removeClass()
-                result.addClass('good')
-                return ''
-            } else {
-                result.removeClass()
-                result.addClass('strong')
-                return ''
-            }
+        if (password.length == 0) {
+            result.removeClass()
+            return ''
         }
-    </script>
-</body>
+        //if the password length is less than 6, return message.
+        if (password.length < 6) {
+            result.removeClass()
+            result.addClass('short')
+            return ''
+        }
 
+        //length is ok, lets continue.
+
+        //if length is 8 characters or more, increase strength value
+        if (password.length > 7) strength += 1
+
+        //if password contains both lower and uppercase characters, increase strength value
+        if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/))  strength += 1
+
+        //if it has numbers and characters, increase strength value
+        if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/))  strength += 1
+
+        //if it has one special character, increase strength value
+        if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/))  strength += 1
+
+        //if it has two special characters, increase strength value
+        if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+
+        //now we have calculated strength value, we can return messages
+
+        //if value is less than 2
+        if (strength < 2) {
+            result.removeClass()
+            result.addClass('weak')
+            return ''
+        } else if (strength == 2) {
+            result.removeClass()
+            result.addClass('good')
+            return ''
+        } else {
+            result.removeClass()
+            result.addClass('strong')
+            return ''
+        }
+    }
+</script>
+</body>
 </html>

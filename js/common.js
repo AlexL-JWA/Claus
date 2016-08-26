@@ -1,6 +1,10 @@
  $(document).ready(function(){
-  $('.carousel').carousel();
 
+  $('.carousel').carousel({
+       time_constant:100,
+       dist:-200,
+
+  });
   $(".prev_link").click(function(){
     $('.carousel').carousel('prev');
   });
