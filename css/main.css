@@ -1,7 +1,7 @@
 html {
 	position: relative;
 }
-body{padding: 0 !important;}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -611,7 +611,7 @@ footer {
 .footer-menu li {
 	display: inline-block;
 	border-left: 1px solid #fff;
-	padding: 5px 89px;
+	padding: 5px 96px;
 	margin-top: 34px;
 }
 
@@ -1417,7 +1417,7 @@ h5.title-2 img {
 }
 
 .block-4 .text.white h3 {
-	margin-top: 30px;
+	margin-top: 133px;
 	letter-spacing: 1.4px;
 }
 
@@ -1425,20 +1425,7 @@ h5.title-2 img {
 	letter-spacing: 1px;
 	letter-spacing: 0.8px;
 	padding: 0 20px 0 0;
-    margin-bottom: 30px;
-}
-.block-4 .text.white ul
-{
-    margin-left: 88px;
-    margin-top: 40px;
-}
-.block-4 .text.white ul li
-{
-    font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 26px;
-    color: #fff;
-    list-style: inherit;
+	margin-bottom: 100px;
 }
 
 .block-5 {
@@ -1976,7 +1963,6 @@ h5.title-2 img {
 	font-weight: 400;
 	line-height: 70px;
 	padding-left: 39px;
-    display: inline-block;
 }
 
 .modal-header .close {
@@ -2060,28 +2046,20 @@ h5.title-2 img {
 }
 
 .password-upd .modal-content,
-.profile-upd .modal-content
-{
+.profile-upd .modal-content {
 	width: 302px;
 	height: 142px;
 	text-align: center;
 }
-.thanks .modal-content
-{
-    width: 530px;
-	height: 142px;
-	text-align: center;
-}
+
 .password-upd p,
-.profile-upd p,
-.thanks p{
+.profile-upd p {
 	font-size: 16px;
 	margin-top: 28px;
 }
 
 .password-upd a.button,
-.profile-upd a.button,
-.thanks a.button{
+.profile-upd a.button {
 	margin: 15px auto;
 	width: 150px;
 	height: 35px;
@@ -2276,13 +2254,13 @@ ul.star {
 }
 
 .slider-2 .indicators {
-	    position: relative;
-    text-align: center;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    margin: 0;
-    z-index: 100;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 53px;
+	margin: 0;
+	z-index: 100;
 }
 
 .slider-2 .indicators .indicator-item {
@@ -6805,7 +6783,7 @@ select {
 .wrapper.copiright p {
 	color: #fff;
 	display: inline-block;
-	margin: 0 10px 0;
+	margin-bottom: 0;
 	font-size: 18px;
 	font-weight: 200;
 	font-family: 'Source Sans Pro';
@@ -7702,93 +7680,7 @@ select {
 
 
 
-.profil-2 .checkboxs {
-    margin: 0;
-}
-.profil-2 .checkboxs.active + .hide-block {
-    display: block;
-}
-.profil-2 .checkboxs label {
-    margin-left: 0;
-    height: 23px;
-    vertical-align: middle;
-    margin-bottom: 0;
-    margin-top: 20px;
-}
-.profil-2 .checkboxs [type="checkbox"]:not(:checked) + label:before,
-.profil-2 .checkboxs [type="checkbox"]:checked + label:before {
-    top: 0px;
-    width: 22px;
-    height: 22px;
-}
-.profil-2 .checkboxs [type="checkbox"]:not(:checked) + label:after,
-.profil-2 .checkboxs [type="checkbox"]:checked + label:after {
-    top: 4px;
-    left: 4px;
-}
-.profil-2 .checkboxs b {
-    margin-top: 20px;
-    display: inline-block;
-    color: #bba9a9;
-    vertical-align: middle;
-}
-.profil-2 .checkboxs + .hide-block input:first-child {
-    margin-top: 15px;
-}
-.profil-2 .hide-block {
-    display: none;
-}
-.modal.contact-form .modal-content {
-    width: 500px;
-    height: auto;
-    padding-bottom: 50px;
-}
-.modal.contact-form .modal-content .button {
-    width: 208px;
-    height: 43px;
-    text-align: center;
-    padding: 0;
-    line-height: 43px;
-}
-.modal.contact-form .modal-content .button:nth-of-type(1) {
-    margin-left: 10%;
-}
-.modal.contact-form .modal-content .button:nth-of-type(2) {
-    width: auto;
-    background: transparent;
-    border: none;
-    color: #000;
-}
-.modal.contact-form form {
-    padding: 0 10%;
-}
-.modal.contact-form form label {
-    display: block;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #424242;
-}
-.modal.contact-form form input {
-    width: 100%;
-    height: 40px;
-}
-.modal.contact-form form input[type="text"],
-.modal.contact-form form input[type="email"] {
-    padding: 0 20px;
-}
-.modal.contact-form form textarea {
-    width: 100%;
-    height: 110px;
-    padding: 10px 20px;
-}
-.modal.contact-form .captcha {
-    width: 245px;
-    margin-top: 20px;
-}
-.modal.contact-form .captcha img {
-    width: 100%;
-}
+
 
 
 

@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/Glyphter.css">
-
 </head>
 <body>
 <!--START HEADER-->
@@ -80,7 +78,7 @@
                 <div class="row">
                 <div class="profil-2">
                 	<input type="text" placeholder="Peter" class="edit-input">
-				    <a href="#" class="edit"><i class="icon-pencils"></i></a>
+					       <a href="#" class="edit"><i class="icon-pencils"></i></a>
                 	<input type="text" placeholder="Patrik" >
                 	<input type="text" placeholder="23">
                 	<input type="text" placeholder="Nikolejs Plads 77">
@@ -88,28 +86,6 @@
                 	<input type="text" placeholder="Copenhagen">
                 	<input type="email" placeholder="XXX@accur.dk">
                 	<input type="text" placeholder="123456">
-                	<p class="checkboxs">
-                        <input id="checkbox-5" type="checkbox">
-                        <label for="checkbox-5"></label>
-                        <b>Add company details</b>
-                    </p>
-                    <div class="hide-block">
-                        <input type="text" placeholder="Company name">
-                        <input type="text" placeholder="VAT/Tax number">
-                        <p class="checkboxs">
-                            <input id="checkbox-6" type="checkbox">
-                            <label for="checkbox-6"></label>
-                            <b>If company address is different <br> from the address above</b>
-                        </p>
-                        <div class="hide-block">
-                            <input type="text" placeholder="Address line 1">
-                            <input type="text" placeholder="Address line 2">
-                            <input type="text" placeholder="City">
-                            <input type="text" placeholder="Postal code">
-                            <input type="text" placeholder="Country">
-                        </div>
-                    </div>
-
 
                 <a href="" class="edit_payment valid_payment"><i class="bgcard"></i>Payment options <i class="card card-ok" title="Valid payment method"></i> <i class="card card-no" title="No valid payment method"></i> </a>
                 <!--to change icon toggle classes valid_payment and unvalid_payment in wrapper link-->
@@ -138,7 +114,7 @@
 						<li><a href="#">Terms and conditions</a></li>
 						<li><a href="#">News</a></li>
 						<li class="active"><a href="#">About Us</a></li>
-						<li><a href="#" data-toggle="modal" data-target=".contact-form" data-dismiss="modal" data-aria-hidden="true">Contact US</a></li>
+						<li><a href="#">FAQ</a></li>
 					</ul>
 				</div>
 			</div>
@@ -214,52 +190,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-<div class="modal fade contact-form" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <div class="modal-header">
-        <h4 class="modal-title">Contact Form</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      </div>
-      <form action="#">
-      	<label for="#">First name</label>
-      	<input type="text">
-      	<label for="#">Second name</label>
-      	<input type="text">
-      	<label for="#">E-mail</label>
-      	<input type="email">
-      	<label for="#">Subject</label>
-      	<input type="text">
-      	<label for="#">Message</label>
-      	<textarea></textarea>
-
-      	<div class="captcha">
-            <img src="img/captcha.jpg" alt="captcha">
-        </div>
-      </form>
-		<div class="center-button">
-			<a href="#" class="button" data-toggle="modal" data-target=".thanks"  data-dismiss="modal" data-aria-hidden="true">Submit</a>
-			<a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
-		</div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="modal fade thanks" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <p>Thanks for contacting us. We will get back to you within 24 hours</p>
-      <a href="#" class="button"  data-dismiss="modal" data-aria-hidden="true">OK</a>
-    </div>
-  </div>
-</div>
 <!--END MODEL-->
 
 
@@ -270,22 +200,5 @@
 	<script src="js/fixed.js"></script>
 	<script src="js/browser.js"></script>
 	<script src="js/common.js"></script>
-	<script>
-    var hideBlock = 1
-
-//    $(document).ready(function(){
-       $('body').on('click', '.checkboxs', function(){
-           if ($(this).find("input[type='checkbox']").prop('checked') === true){
-               $(this).addClass('active');
-               hideBlock = 1;
-           }else{
-               $(this).removeClass('active');
-               hideBlock = 0;
-           }
-
-
-       });
-//    });
-    </script>
 </body>
 </html>
