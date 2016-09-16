@@ -1,0 +1,80 @@
+@media only screen and (max-height: 768px) {
+  /* line 5, D:/claus/css/styles.scss */
+  #describe
+.block-right {
+    background-size: 55%; }
+    /* line 10, D:/claus/css/styles.scss */
+    #describe
+.block-right
+ul
+li {
+      line-height: 22px; }
+    /* line 15, D:/claus/css/styles.scss */
+    #describe
+.block-right
+p.text {
+      line-height: 22px; }
+  /* line 22, D:/claus/css/styles.scss */
+  #describe
+.block-left
+h5.title {
+    margin-bottom: 0; }
+  /* line 26, D:/claus/css/styles.scss */
+  #describe
+.block-left
+p.text {
+    line-height: 22px; }
+  /* line 31, D:/claus/css/styles.scss */
+  #describe
+.container {
+    margin-top: -225.5px; }
+  /* line 38, D:/claus/css/styles.scss */
+  .sect-centr-ht
+p.ht-title {
+    font-size: 40px;
+    margin-bottom: 10px; }
+  /* line 43, D:/claus/css/styles.scss */
+  .sect-centr-ht
+p {
+    line-height: 1.4;
+    margin-bottom: 5px; }
+  /* line 53, D:/claus/css/styles.scss */
+  .payments
+.methods
+.method-item {
+    width: 170px; }
+  /* line 58, D:/claus/css/styles.scss */
+  .payments
+.paytmen {
+    margin-top: -297.5px; }
+  /* line 66, D:/claus/css/styles.scss */
+  .sect-ht
+p.p-h1 {
+    line-height: 35px;
+    font-size: 31px;
+    margin-bottom: 10px; }
+  /* line 74, D:/claus/css/styles.scss */
+  .sect-ht
+ul
+li {
+    line-height: 24px; }
+    /* line 78, D:/claus/css/styles.scss */
+    .sect-ht
+ul
+li:before {
+      top: 9px; }
+  /* line 85, D:/claus/css/styles.scss */
+  .col-protect-pad {
+    margin-top: -280px; }
+    /* line 89, D:/claus/css/styles.scss */
+    .col-protect-pad:before {
+      width: 70%;
+      top: 18%;
+      left: -80%; }
+  /* line 97, D:/claus/css/styles.scss */
+  .text-column:after {
+    left: 115%;
+    top: 19%;
+    background-size: 78%; } }
+
+/*# sourceMappingURL=styles.css.map */

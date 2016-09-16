@@ -1,0 +1,103 @@
+@media only screen and (max-height: 768px)
+{
+    #describe
+    {
+        .block-right
+        {
+            background-size: 55%;
+            ul
+            {
+                li
+                {
+                    line-height: 22px;
+                }
+            }
+             p.text
+            {
+                line-height: 22px;
+            }
+        }
+        .block-left
+        {
+            h5.title
+            {
+                margin-bottom: 0;
+            }
+            p.text
+            {
+                line-height: 22px;
+            }
+        }
+        .container
+        {
+            margin-top: -225.5px;
+        }
+    }
+    .sect-centr-ht
+    {
+        p.ht-title
+        {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        p
+        {
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+    }
+    .payments
+    {
+        .methods
+        {
+            .method-item
+            {
+                width: 170px;
+            }
+        }
+        .paytmen
+        {
+            margin-top: -297.5px;
+        }
+
+    }
+    .sect-ht
+    {
+        p.p-h1
+        {
+            line-height: 35px;
+            font-size: 31px;
+            margin-bottom: 10px;
+        }
+        ul
+        {
+            li
+            {
+                line-height: 24px;
+
+                &:before
+                {
+                    top: 9px;
+                }
+            }
+        }
+    }
+    .col-protect-pad
+    {
+        margin-top: -280px;
+
+        &:before
+        {
+
+            width: 70%;
+            top: 18%;
+            left: -80%;
+        }
+    }
+    .text-column:after
+    {
+        left: 115%;
+        top: 19%;
+        background-size: 78%;
+    }
+}
