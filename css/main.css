@@ -110,6 +110,7 @@ header.clj_header .logo {
 	width: 100%;
 	max-width: 150px;
 	min-width: 100px;
+    height: 50px !important;
 }
 header.clj_header .col-logo .logo{
 	display: inline-block;
@@ -1049,12 +1050,14 @@ div.warning span {
 	display: inline-block;
 	width: 100%;
 	max-width: 150px;
+    height: auto !important;
 }
 
 .block-1 .logo img {
 	vertical-align: inherit;
 	max-width: 100%;
 	min-width: 100px;
+    max-height: 33px !important;
 }
 
 .block-1 .search {
@@ -1417,7 +1420,7 @@ h5.title-2 img {
 }
 
 .block-4 .text.white h3 {
-	margin-top: 133px;
+	margin-top: 0px;
 	letter-spacing: 1.4px;
 }
 
@@ -1425,7 +1428,7 @@ h5.title-2 img {
 	letter-spacing: 1px;
 	letter-spacing: 0.8px;
 	padding: 0 20px 0 0;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 
 .block-5 {
@@ -1435,7 +1438,14 @@ h5.title-2 img {
 	box-shadow: 0px 4px 9.88px 3.12px rgba(0, 0, 0, 0.12);
 	: 1.55px;
 }
-
+.wrapper.block-4 ul li
+{
+    padding-left: 92px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 26px;
+}
 .block-5 .text .title {
 	letter-spacing: 3.05px;
 	margin-top: 122px;
@@ -1948,7 +1958,7 @@ h5.title-2 img {
 	width: 758px;
 	height: 539px;
 	display: table;
-	margin: 0 auto;
+	margin: 150px auto 0;
 }
 
 .modal-header {
@@ -7677,11 +7687,46 @@ select {
 .bill_container .bill_inform {
 	margin-bottom: 20px;
 }
+.contact-form .modal-header .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.contact-form .form-wrapper.onj_form_content {
+    padding: 40px 40px 0 !important;
+}
+.contact-form .form-group {
+    width: calc(100% / 2.05 - 7.5px);
+    display: inline-block;
+}
+.contact-form .form-group input {
+    width: 100% !important;
+}
+.contact-form .form-group:nth-of-type(2n) {
+    margin-left: 15px;
+}
+.contact-form .field-contactform-message {
+    width: 100% !important;
+}
+textarea#contactform-message
+{
+    width: 100%;
+}
+.contact-form .center-button
+{
+    padding: 20px 40px 40px;
+    text-align: center;
+}
 
-
-
-
-
+.contact-form .center-button .button
+{
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 
 

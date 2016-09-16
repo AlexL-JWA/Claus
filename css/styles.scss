@@ -101,3 +101,49 @@
         background-size: 78%;
     }
 }
+
+
+
+
+
+
+
+
+.contact-form
+{
+    .modal-header
+    {
+        .close
+        {
+
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    .form-wrapper.onj_form_content
+    {
+        padding: 40px;
+    }
+
+    .form-group
+    {
+        width: calc(100% / 2.05 - 7.5px);
+        display: inline-block;
+
+        input
+        {
+            width: 100% !important;
+        }
+
+        &:nth-of-type(2n)
+        {
+            margin-left: 15px;
+        }
+    }
+    .field-contactform-message
+    {
+        width: 100% !important;
+    }
+
+}
