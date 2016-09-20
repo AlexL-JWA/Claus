@@ -31,9 +31,10 @@ input {
 .field-contactform-message {
   width: 100% !important; }
 
-
+/* line 40, D:/claus/css/styles.scss */
 .faq-page {
   padding-top: 40px; }
+  /* line 44, D:/claus/css/styles.scss */
   .faq-page
 .menu-tabs {
     width: 194px;
@@ -41,7 +42,7 @@ input {
     padding: 10px 20px;
     display: inline-block;
     vertical-align: top; }
-
+    /* line 53, D:/claus/css/styles.scss */
     .faq-page
 .menu-tabs
 li
@@ -50,15 +51,18 @@ a {
       color: #83c124;
       font-family: Open Sans;
       line-height: 44px; }
+    /* line 61, D:/claus/css/styles.scss */
     .faq-page
 .menu-tabs
 li.active {
       font-weight: 700; }
+  /* line 67, D:/claus/css/styles.scss */
   .faq-page
 .tab-content {
     width: calc(100% - 205px);
     display: inline-block;
     padding-left: 25px; }
+    /* line 73, D:/claus/css/styles.scss */
     .faq-page
 .tab-content
 p {
@@ -68,6 +72,7 @@ p {
       color: #909090;
       font-weight: 400;
       margin-bottom: 30px; }
+    /* line 82, D:/claus/css/styles.scss */
     .faq-page
 .tab-content
 h2.title {
@@ -128,40 +133,47 @@ p {
   .payments
 .paytmen {
     margin-top: -297.5px; }
+  /* line 160, D:/claus/css/styles.scss */
   .sect-ht
 p.p-h1 {
     line-height: 35px;
     font-size: 31px;
     margin-bottom: 10px; }
+  /* line 168, D:/claus/css/styles.scss */
   .sect-ht
 ul
 li {
     line-height: 24px; }
+    /* line 172, D:/claus/css/styles.scss */
     .sect-ht
 ul
 li:before {
       top: 9px; }
+  /* line 179, D:/claus/css/styles.scss */
   .col-protect-pad {
     margin-top: -280px; }
+    /* line 183, D:/claus/css/styles.scss */
     .col-protect-pad:before {
       width: 70%;
       top: 18%;
       left: -80%; }
-
+  /* line 191, D:/claus/css/styles.scss */
   .text-column:after {
     left: 115%;
     top: 19%;
     background-size: 78%; } }
 
 @media only screen and (max-width: 768px) {
-
+  /* line 206, D:/claus/css/styles.scss */
   .faq-page
 .menu-tabs {
     width: 100%;
     text-align: center;
     margin-bottom: 40px; }
-
+  /* line 212, D:/claus/css/styles.scss */
   .faq-page
 .tab-content {
     width: 100%;
     padding-left: 0; } }
+
+/*# sourceMappingURL=styles.css.map */
