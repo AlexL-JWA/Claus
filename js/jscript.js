@@ -1,5 +1,7 @@
 /*slide down (detailed view page) detailed view of company*/
 $(document).ready(function () {
+
+    /*
     var totalHeight = 0;
     var minHeight = 0;
     var minLines = $(".wrapper-history").data('lines') || 3;
@@ -31,6 +33,7 @@ $(document).ready(function () {
             });
         };
     });
+    */
 
     /*fading-bg*/
     $(".fading-bg").click(function(){
@@ -92,4 +95,6 @@ $(window).resize(function(){
         }
     }
 });
+
+
 

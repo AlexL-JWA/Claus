@@ -1,6 +1,10 @@
  $(document).ready(function(){
-  $('.carousel').carousel();
 
+  $('.carousel').carousel({
+       time_constant:100,
+       dist:-200,
+
+  });
   $(".prev_link").click(function(){
     $('.carousel').carousel('prev');
   });
@@ -26,10 +30,12 @@
 
  $(function() {
   if($("form[enctype='multipart/form-data']").length) {
+      if($.fn.uploadThumbs) {
     $('form input:file').uploadThumbs({
         position  : '#preview',    // any: arbitrarily jquery selector
         alternate : '.alt'         // selecter for alternate view input file names
       });
+      }
   };
 
 });

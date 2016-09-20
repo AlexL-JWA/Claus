@@ -1,9 +1,7 @@
 a {
     color: #fff;
 }
-.form-group {
-    margin-bottom: 0px !important;
-}
+
 header.clj_header.header-ht .personal .sign_up {
     margin-left: 200px;
 }
@@ -1227,7 +1225,7 @@ section.banner-area.bottom-banner {
 }
 
 #describe .container {
-    margin-top: -255.5px;
+    margin-top: -214.5px;
 }
 
 .item.post-a-jobs:before {

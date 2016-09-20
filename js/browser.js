@@ -121,7 +121,7 @@ if (!jQuery.browser.msie ) {
         script.src = url;
         document.getElementsByTagName('head')[0].appendChild(script);
     }
-    include_script("js/fixed.js")
+    include_script("/js/fixed.js")
 }
 
 if(jQuery.browser.msie) {
