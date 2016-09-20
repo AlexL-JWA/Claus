@@ -76,7 +76,7 @@
 					<div class="description">
 						<div class="my-description">
 							<div>
-								<a href="#" class="logo-view"></a>
+								<a href="#" class="logo-view" data-toggle="modal" data-target=".bs-example-modal-lg"></a>
 								<p class="view-logo_caption">Mark Ronson</p>
 								<p class="participant-specialty">Cognos design</p>
 								<p class="participant-country">Ukraine</p>
@@ -630,6 +630,30 @@
 			</div>
 		</div>
 	</div>
+
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Your profile portrait</h4>
+                </div>
+                <form action="#" method="post" enctype="multipart/form-data" id="dragarea">
+                    <p class="upload">
+                        <label>
+                            <input type="file" name="images" accept="image/*;capture=camera" title="#" id="inputFile" />
+                            <span id="preview" class="button"></span>
+                        </label>
+                    </p>
+                </form>
+                <a href="#" class="button">Attach Picture</a>
+                <div class="right-button">
+                    <a href="#" class="button">Save</a>
+                    <a href="#" class="button gray">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!--END MODEL-->
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>

@@ -2407,7 +2407,10 @@ form .upload label {
 	margin: 0px auto;
 	display: inline-block;
 }
-
+.bs-example-modal-lg .upload label
+{
+    display: table;
+}
 form .upload label input[type="file"] {
 	position: absolute;
 	right: 0;
