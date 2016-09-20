@@ -110,7 +110,6 @@ header.clj_header .logo {
 	width: 100%;
 	max-width: 150px;
 	min-width: 100px;
-    height: 50px !important;
 }
 header.clj_header .col-logo .logo{
 	display: inline-block;
@@ -1050,14 +1049,12 @@ div.warning span {
 	display: inline-block;
 	width: 100%;
 	max-width: 150px;
-    height: auto !important;
 }
 
 .block-1 .logo img {
 	vertical-align: inherit;
 	max-width: 100%;
 	min-width: 100px;
-    max-height: 33px !important;
 }
 
 .block-1 .search {
@@ -1375,7 +1372,11 @@ h5.title-2 img {
 	letter-spacing: -0.8px;
 	line-height: 47px;
 }
-
+.block-4 .col-lg-6.bg
+{
+    position: relative;
+}
+.block-4 .col-lg-6.bg
 .block-3 .text p,
 .block-4 .text p,
 .block-5 .text p {
@@ -1400,7 +1401,7 @@ h5.title-2 img {
 
 .col-lg-6.bg {
 	background: #81bf23;
-	position: relative;
+	position: absolute;
 	min-height: 524px;
 }
 
@@ -1423,12 +1424,22 @@ h5.title-2 img {
 	margin-top: 0px;
 	letter-spacing: 1.4px;
 }
-
+.block-4 ul
+{
+    margin: 47px 0 0px 92px;
+}
+.block-4 ul li
+{
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    line-height: 26px;
+}
 .block-4 .text.white p {
 	letter-spacing: 1px;
 	letter-spacing: 0.8px;
 	padding: 0 20px 0 0;
-	margin-bottom: 60px;
+	margin-bottom: 45px;
 }
 
 .block-5 {
@@ -1436,16 +1447,8 @@ h5.title-2 img {
 	min-height: 526px;
 	background-position: 86% 33px;
 	box-shadow: 0px 4px 9.88px 3.12px rgba(0, 0, 0, 0.12);
-	: 1.55px;
 }
-.wrapper.block-4 ul li
-{
-    padding-left: 92px;
-    color: #fff;
-    font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 26px;
-}
+
 .block-5 .text .title {
 	letter-spacing: 3.05px;
 	margin-top: 122px;
@@ -1958,7 +1961,7 @@ h5.title-2 img {
 	width: 758px;
 	height: 539px;
 	display: table;
-	margin: 150px auto 0;
+	margin: 0 auto;
 }
 
 .modal-header {
@@ -7687,46 +7690,67 @@ select {
 .bill_container .bill_inform {
 	margin-bottom: 20px;
 }
-.contact-form .modal-header .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.contact-form .form-wrapper.onj_form_content {
-    padding: 40px 40px 0 !important;
-}
-.contact-form .form-group {
-    width: calc(100% / 2.05 - 7.5px);
-    display: inline-block;
-}
-.contact-form .form-group input {
-    width: 100% !important;
-}
-.contact-form .form-group:nth-of-type(2n) {
-    margin-left: 15px;
-}
-.contact-form .field-contactform-message {
-    width: 100% !important;
-}
-textarea#contactform-message
-{
-    width: 100%;
-}
-.contact-form .center-button
-{
-    padding: 20px 40px 40px;
-    text-align: center;
-}
 
-.contact-form .center-button .button
+.slides-container
 {
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 !important;
-    padding-top: 0;
-    padding-bottom: 0;
+    top: 120px;
 }
+.container.cont-description
+{
+
+    transform: translate(0, -60%);
+}
+#describe .container {
+    margin-top: -290.5px;
+}
+.faq-page {
+  padding-top: 40px; }
+  .faq-page
+.menu-tabs {
+    width: 194px;
+    border: 1px solid #d9d9d9;
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: top; }
+
+    .faq-page
+.menu-tabs
+li
+a {
+      font-size: 18px;
+      color: #83c124;
+      font-family: Open Sans;
+      line-height: 44px; }
+    .faq-page
+.menu-tabs
+li.active {
+      font-weight: 700; }
+  .faq-page
+.tab-content {
+    width: calc(100% - 205px);
+    display: inline-block;
+    padding-left: 25px; }
+    .faq-page
+.tab-content
+p {
+      font-family: Open Sans;
+      font-size: 16px;
+      line-height: 24px;
+      color: #909090;
+      font-weight: 400;
+      margin-bottom: 30px; }
+    .faq-page
+.tab-content
+h2.title {
+      font-size: 30px;
+      font-family: Open Sans;
+      color: #6e6e6e;
+      font-weight: 700;
+      line-height: 0.7;
+      margin-top: 0;
+      margin-bottom: 30px; }
+
+
 
 
 

@@ -1,8 +1,85 @@
 /*==========  Desktop First Method  ==========*/
-
+.form-group
+{
+    margin-bottom: 0 !important;
+}
 
 /* Large Devices, Wide Screens */
+@media screen and (max-width:1550px) {
+    .text-column::after {
+        width: 100%;
+        left: 104%;
+    }
+}
+@media (max-width: 1280px) {
 
+    #describe {
+        background-position: 0 bottom;
+    }
+    #describe .block-right h4.title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    #describe .block-right ul li,
+    #describe .block-right p.text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #describe .block-left h5.title {
+        font-size: 16px;
+    }
+    #describe .block-left h4.title {
+        font-size: 16px;
+    }
+    #describe .block-left p.text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .slides-navigation {
+        top: 52%;
+    }
+    .slides-navigation a i::before {
+        font-size: 60px;
+    }
+    .slides-navigation a.next {
+        right: 0;
+    }
+    .slides-navigation a.prev {
+        left: 0;
+    }
+    .sect-ht p.p-h1 {
+        font-size: 24px;
+        line-height: 27px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 8px;
+        margin-top: 100px;
+    }
+    .col-protect-pad {
+        margin-top: -245px;
+    }
+    .col-protect-pad {
+        position: absolute;
+        margin-top: -274px;
+    }
+    .methods .icon-container {
+        padding: 30px;
+    }
+    .payments .methods .method-item {
+        width: 140px;
+    }
+    .payments .paytmen {
+        margin-top: -290.5px;
+    }
+    .col-protect-pad::before {
+        width: 75%;
+        top: 16%;
+    }
+    .payments .paytmen {
+        margin-top: -305.5px;
+    }
+}
 @media only screen and (max-width: 1200px) {
 	.my-profil-2 .button-top {
 		right: 295px;
@@ -296,8 +373,136 @@
 	{
 		padding-right: 0;
 	}
+    header.clj_header.header-ht {
+        height: auto;
+        overflow: auto;
+        line-height: 60px;
+    }
+    .header-ht .text-line {
+        float: right;
+    }
+    header.clj_header.header-ht .personal .sign_up {
+        margin-left: 10px;
+    }
+    header.clj_header.header-ht .personal .sign_up .icon-check31-01 {
+        top: 16px;
+    }
+    .header-ht .head-button {
+        margin-top: 13px;
+    }
+    section.navigation .nav {
+        width: 80%;
+    }
+    section.protection .col-protect-pad {
+        padding-left: 15px;
+    }
+    .sect-ht .text-column {
+        padding-right: 25px;
+        margin-bottom: 50px;
+    }
+    section.sect-ht p.p-h1 {
+        margin-top: 60px;
+    }
+    .sect-ht .col-lg-6.bg {
+        height: auto;
+        min-height: 675px;
+    }
+    section.sect-ht p {
+        line-height: 1.2;
+    }
+    .text-column::after {
+        width: 83%;
+        top: 30%;
+        height: 330px;
+    }
+    section.monitoring.sect-ht .text-column::after {
+        -webkit-background-size: contain;
+        background-size: contain;
+        top: 30%;
+    }
+    .col-protect-pad::before {
+        top: 12%;
+    }
+    .sect-centr-ht {
+        padding: 50px 0;
+    }
+    .sect-centr-ht p.ht-title {
+        font-size: 40px;
+    }
+    .sect-centr-ht p {
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    section.sect-ht p.p-h1 {
+        font-size: 40px;
+    }
+    section.hiring,
+    section.protection {
+        font-size: 21px;
+    }
+    section.question .quest span {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+    section.question .quest {
+        margin-bottom: 15px;
+    }
+    section.question .col-quest-img img {
+        margin-top: 6px;
+    }
+    .scrollup {
+        right: 75px;
+    }
+    /*slider vers*/
+    .slider-categories {
+        top: 60px;
+    }
+    .slider-categories ul li {
+        font-size: 16px;
+    }
+    .slider-full-width {
+        padding-top: 110px;
+    }
+    .slider-full-width .item {
+        height: calc(100vh - 110px);
+    }
+    #describe .block-right {
+        background-size: 55%;
+    }
+    .text-column::after {
+        top: 50%;
+        margin-top: -205px;
+    }
+    .hiring .bg::before {
+        top: 50%;
+        margin-top: -55px;
+    }
+    #describe .block-left {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .sect-ht ul li {
+        position: relative;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    .payments .paytmen {
+        margin-top: -220.5px;
+    }
+    #describe .block-right {
+        width: 500px;
+        padding-right: 15px;
+    }
+    .slider-full-width .main-tips-title {
+        right: 40%;
+    }
+    .col-protect-pad::before {
+        left: -80%;
+    }
+    .sect-ht .col-lg-6.bg {
+        padding-left: 45px;
+    }
 }
-
 
 /* Medium Devices, Desktops */
 
@@ -990,6 +1195,203 @@
 	nav.clj_nav ul.no-messages li:last-of-type a {
     	padding-top: 15px;
 	}
+    .navigation {
+        font-size: 17px;
+    }
+    section.navigation .nav {
+        width: 77%;
+    }
+    section.hiring {
+        background: #83c124;
+    }
+    .text-column::after,
+    .text-column::before,
+    .sect-ht .bg::before {
+        display: none;
+    }
+    .sect-ht .col-lg-6.bg,
+    section.hiring,
+    section.protection {
+        min-height: 450px;
+    }
+    section.question {
+        position: relative;
+    }
+    section.question .col-quest-img {
+        position: absolute;
+        top: 220px;
+        right: 20px;
+        width: 145px;
+        padding: 0;
+    }
+    section.question .quest span {
+        font-size: 25px;
+    }
+    .sect-centr-ht p {
+        font-size: 19px;
+    }
+    .sect-centr-ht p.ht-title,
+    section.sect-ht p.p-h1 {
+        font-size: 37px;
+    }
+    section.question .quest span,
+    section.question .quest {
+        margin-bottom: 10px;
+    }
+    .scrollup {
+        right: 15px;
+    }
+    /*slider vers*/
+    header.clj_header.header-ht-slider .personal .sign_up span+b,
+    header.clj_header.header-ht-slider .personal .login span+b {
+        display: none;
+    }
+    header.clj_header.header-ht-slider .personal .sign_up,
+    header.clj_header.header-ht-slider .personal .login {
+        float: right;
+        margin: 0;
+    }
+      .slider-categories.mobile
+    {
+        display: block;
+    }
+     .slider-categories
+    {
+        display: none;
+    }
+    .slider-categories ul {
+        text-align: center;
+    }
+    .slider-categories ul li {
+        font-size: 13px;
+        margin: 0px 15px;
+
+    }
+    #slides {
+        display: none;
+    }
+    .mobile-content {
+        display: block;
+        padding-top: 130px;
+        text-align: center;
+    }
+    .mobile-content h2.title {
+        font-size: 28px;
+        color: #000;
+        font-weight: 700;
+        line-height: 65px;
+        text-transform: uppercase;
+    }
+    .mobile-content p.text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    .mobile-content .Why-Are-We-Here {
+        background: url(../images/bg_13.jpg);
+        background-size: 1600px;
+        background-position: -190px 0;
+    }
+    .mobile-content .Why-Are-We-Here img {
+        margin-bottom: 20px;
+    }
+    .mobile-content .post-a-job {
+        margin-bottom: 10px;
+    }
+    .mobile-content .post-a-job h5.title {
+        font-size: 18px;
+        color: #83c124;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .mobile-content .post-a-job h4.title {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 400;
+    }
+    .mobile-content .choose {
+        background: #fff;
+    }
+    .mobile-content .main-tips {
+        background: #83c124 url(../images/lumpochka.png) no-repeat;
+        background-size: auto 75%;
+        background-position: center 115px;
+    }
+    .mobile-content .main-tips h2.title {
+        font-size: 48px;
+        color: rgba(255, 255, 255, 0.27);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .mobile-content .main-tips h3.title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .mobile-content .main-tips ul li {
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+    .mobile-content .main-tips ul li:before {
+        content: '-';
+        display: inline-block;
+        position: relative;
+        top: -1px;
+    }
+    .mobile-content .main-tips p.text {
+        font-size: 14px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    .mobile-content .what-work {
+        background: #83c124;
+        padding-bottom: 20px;
+    }
+    .mobile-content .choose ul li {
+        font-size: 14px;
+        color: #000;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: left;
+        position: relative;
+        padding-left: 15px;
+    }
+    .mobile-content .choose ul li:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        background: #5cc200;
+        left: 0;
+        top: 12px;
+    }
+    .mobile-content .choose img {
+        width: 60%;
+        margin-bottom: 35px;
+    }
+    .mobile-content .white {
+        color: #fff !important;
+    }
+    .mobile-content .payments h2.title {
+        line-height: 1.2;
+    }
+    .mobile-content .payments .methods {
+        width: 100%;
+    }
+    .mobile-content .payments .methods .method-item {
+        width: 120px;
+    }
+    .mobile-content .payments .methods .method-item img {
+        width: 100%;
+    }
+    .mobile-content .payments .methods .method-item:nth-of-type(1) {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width:845px) {
@@ -1242,7 +1644,80 @@
 	}
 
 }
-
+@media only screen and (max-height: 768px) {
+    #slides .slides-container
+    {
+        top: 120px;
+    }
+    .container.cont-description
+    {
+        top: 50%;
+        transform: translate(0px, -50%);
+    }
+    #describe .block-right {
+        background-size: 55%;
+    }
+    #describe .block-right ul li {
+        line-height: 22px;
+    }
+    #describe .block-right p.text {
+        line-height: 22px;
+    }
+    #describe .block-left h5.title {
+        margin-bottom: 0;
+    }
+    #describe .block-left p.text {
+        line-height: 22px;
+    }
+    #describe .container {
+        margin-top: -220.5px;
+    }
+    .sect-centr-ht p.ht-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .sect-centr-ht p {
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+    .payments .methods .method-item {
+        width: 170px;
+    }
+    .payments .paytmen {
+        margin-top: -297.5px;
+    }
+    .sect-ht p.p-h1 {
+        line-height: 35px;
+        font-size: 31px;
+        margin-bottom: 10px;
+    }
+    .sect-ht ul li {
+        line-height: 24px;
+    }
+    .sect-ht ul li:before {
+        top: 9px;
+    }
+    .col-protect-pad {
+        margin-top: -280px;
+    }
+    .col-protect-pad:before {
+        width: 70%;
+        top: 18%;
+        left: -80%;
+    }
+    .text-column:after {
+        left: 115%;
+        top: 19%;
+        background-size: 78%;
+    }
+    .one-slide {
+    background-position: center 20%;
+    }
+    #postJob .col-lg-6.bg
+    {
+        background: none !important;
+    }
+}
 @media only screen and (max-width: 767px) {
 	header.clj_header .personal {
 		text-align: right;
@@ -1833,6 +2308,94 @@
 		padding: 15px 0 20px;
 
 	}
+    header.clj_header.header-ht .personal {
+        text-align: left;
+    }
+    section.navigation {
+        display: none;
+    }
+    section.question .col-quest-img {
+        display: none;
+    }
+    section.question .quest {
+        margin-bottom: 0;
+    }
+    section.banner-area {
+        padding: 60px 0 50px 0;
+    }
+    section.banner-area p.p-h1 {
+        font-size: 50px;
+        margin-bottom: 24px;
+    }
+    section.banner-area p.p-h4 {
+        font-size: 23px;
+        margin-bottom: 35px;
+    }
+    .banner-area .ht-button {
+        width: 160px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .sect-centr-ht p.ht-title,
+    section.sect-ht p.p-h1 {
+        font-size: 35px;
+    }
+    section.hiring,
+    section.protection {
+        font-size: 20px;
+    }
+    section.question .quest span {
+        font-size: 23px;
+    }
+    .sect-centr-ht p {
+        font-size: 17px;
+    }
+    section.banner-area.bottom-banner {
+        padding: 90px 0;
+    }
+    .sect-ht .col-lg-6.bg,
+    section.hiring,
+    section.protection {
+        min-height: 400px;
+    }
+    /*slider vers*/
+    #slides h1 {
+        font-size: 45px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .slider-categories {
+        height: 35px;
+    }
+    .slider-categories ul li {
+        font-size: 16px;
+        line-height: 35px;
+    }
+    #slides h4 {
+        font-size: 22px;
+        padding: 0 15px;
+    }
+    #slides .ht-button {
+        width: 210px;
+        font-size: 21px;
+    }
+    header.clj_header.header-ht-slider .personal .login .icon-login {
+        top: 5px;
+    }
+    .header-ht.header-ht-slider .search {
+        margin-left: 15px;
+    }
+    .header-ht.header-ht-slider .search input[type="search"] {
+        width: 230px;
+    }
+    .faq-page .menu-tabs {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px; }
+
+    .faq-page .tab-content {
+    width: 100%;
+    padding-left: 0; }
 }
 
 @media only screen and (max-width: 710px) {
@@ -2085,6 +2648,35 @@
 	.modal-contact_form .modal-content {
 		height: auto;
 	}
+    .header-ht .search {
+        width: 53%;
+        float: right;
+    }
+    .header-ht .search input[type="search"] {
+        width: 100%;
+    }
+    .header-ht .text-line {
+        display: none;
+    }
+    section.banner-area p.p-h1 {
+        font-size: 43px;
+        line-height: 1.2;
+    }
+    section.banner-area p.p-h4 {
+        line-height: 1.2;
+    }
+    /*slider vers*/
+    #slides h1 {
+        font-size: 35px;
+    }
+    #slides h4 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    #slides .ht-button {
+        width: 170px;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:589px) {
@@ -2324,6 +2916,9 @@
 	.transaction .Timesheet .table .tr:first-of-type .th:nth-of-type(4) {
 		width: 30.3%;
 	}
+    .header-ht.header-ht-slider .search {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -2532,6 +3127,11 @@
 	.modal-contact_form .f-capt {
 		width: 29%;
 	}
+    .slider-categories ul li
+    {
+        font-size: 13px;
+        margin: 0px 5px;
+    }
 }
 
 
@@ -2977,6 +3577,169 @@
 	.transaction #Invoices .table-object:first-of-type {
 		margin-top: 25px;
 	}
+    .header-ht .search,
+    .header-ht .head-button {
+        display: none;
+    }
+    .header-ht .col-logo {
+        float: left;
+    }
+    header.clj_header.header-ht .personal {
+        float: right;
+    }
+    header.clj_header.header-ht .personal .sign_up {
+        margin-right: 0;
+    }
+    section.banner-area {
+        padding: 30px 0;
+    }
+    section.banner-area p.p-h4 {
+        display: none;
+    }
+    section.protection {
+        padding-bottom: 30px;
+    }
+    section.sect-ht p.p-h1 {
+        margin-top: 30px;
+    }
+    section.sect-ht p.p-h1 {
+        margin-bottom: 15px;
+    }
+    .sect-centr-ht p.ht-title,
+    section.sect-ht p.p-h1 {
+        font-size: 26px;
+    }
+    section.hiring,
+    section.protection {
+        font-size: 16px;
+    }
+    .sect-ht .col-lg-6.bg,
+    section.hiring,
+    section.protection {
+        min-height: 330px;
+    }
+    section.sect-ht p {
+        margin-bottom: 10px;
+    }
+    .sect-ht .text-column {
+        margin-bottom: 30px;
+    }
+    section.sect-ht ul li::before {
+        top: 10px;
+    }
+    .sect-centr-ht {
+        padding: 30px 0;
+    }
+    .sect-centr-ht p.ht-title {
+        margin-bottom: 20px;
+    }
+    section.question .quest span {
+        font-size: 18px;
+    }
+    .sect-centr-ht p {
+        font-size: 14px;
+    }
+    section.question .quest span i {
+        width: 15px;
+        height: 9px;
+        margin-right: 15px;
+    }
+    section.question .quest p {
+        padding-left: 19px;
+        margin-left: 6px;
+    }
+    section.banner-area.bottom-banner {
+        padding: 30px 0;
+    }
+    .payments .methods .method-item {
+        width: 127px;
+    }
+    .payments .methods .method-item:nth-of-type(1) {
+        margin-right: 15px;
+    }
+    .methods .icon-container {
+        padding: 33px 0px;
+    }
+    .methods .method-item:nth-of-type(1) .icon-container {
+        padding: 30px 0px;
+    }
+    .methods .icon-container img {
+        width: 85px;
+        height: auto;
+    }
+    .methods .number {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .methods .method-capt {
+        padding: 8px;
+        font-size: 18px;
+        line-height: 1;
+    }
+    .payments .methods {
+        width: 100%;
+    }
+    .scrollup {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+    }
+    /*scroll vers*/
+    header.clj_header.header-ht .personal {
+        width: 50%;
+    }
+    header.header-ht-slider .col-logo {
+        width: 50%;
+    }
+    .slider-categories ul li {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    #slides h1 {
+        font-size: 25px;
+    }
+    #slides h4 {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    #slides .ht-button {
+        width: 170px;
+        font-size: 16px;
+    }
+    .mobile-content .choose img {
+        width: 80%;
+    }
+    .mobile-content .main-tips {
+        background-size: auto 50%;
+        background-position: center;
+    }
+    .mobile-content .payments .methods a {
+        margin-left: 15px;
+    }
+    .mobile-content .payments .methods a:first-of-type {
+        margin-left: 0;
+    }
+    .mobile-content .payments .methods .method-item {
+        width: 80px;
+    }
+    .mobile-content .payments .methods .method-item .icon-container {
+        padding: 23px 0px;
+    }
+    .mobile-content .payments .methods .method-item img {
+        width: 43px;
+    }
+    .mobile-content .payments .methods .method-item .method-capt {
+        font-size: 10px;
+    }
+    .slider-categories ul li {
+        line-height: 20px;
+        margin: 0 10px;
+    }
+    .slider-categories {
+        height: 60px;
+    }
 }
 
 @media screen and (max-width:454px) {
@@ -3480,6 +4243,10 @@
 		display: inline-block;
 		float: none;
 	}
+    header.clj_header.header-ht-slider .personal .sign_up .icon-check31-01,
+    header.clj_header.header-ht-slider .personal .login .icon-login {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width:395px) {
@@ -4172,62 +4939,3 @@
 		margin-left: 5px;
 	}
 }
-@media only screen and (max-height: 768px) {
-    #describe .block-right {
-        background-size: 55%;
-    }
-    #describe .block-right ul li {
-        line-height: 22px;
-    }
-    #describe .block-right p.text {
-        line-height: 22px;
-    }
-    #describe .block-left h5.title {
-        margin-bottom: 0;
-    }
-    #describe .block-left p.text {
-        line-height: 22px;
-    }
-    #describe .container {
-        margin-top: -225.5px;
-    }
-    .sect-centr-ht p.ht-title {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-    .sect-centr-ht p {
-        line-height: 1.4;
-        margin-bottom: 5px;
-    }
-    .payments .methods .method-item {
-        width: 170px;
-    }
-    .payments .paytmen {
-        margin-top: -297.5px;
-    }
-    .sect-ht p.p-h1 {
-        line-height: 35px;
-        font-size: 31px;
-        margin-bottom: 10px;
-    }
-    .sect-ht ul li {
-        line-height: 24px;
-    }
-    .sect-ht ul li:before {
-        top: 9px;
-    }
-    .col-protect-pad {
-        margin-top: -280px;
-    }
-    .col-protect-pad:before {
-        width: 70%;
-        top: 18%;
-        left: -80%;
-    }
-    .text-column:after {
-        left: 115%;
-        top: 19%;
-        background-size: 78%;
-    }
-}
-
