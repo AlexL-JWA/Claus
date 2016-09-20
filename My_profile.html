@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 
+
 </head>
 
 <body>
@@ -90,7 +91,7 @@
 								<li class="edits"><i class="fa fa-pencil edit" aria-hidden="true"></i></li>
 							</ul>
 						</div>
-						<p class="currency">$22,00/hr <i class="fa fa-pencil edit" aria-hidden="true"></i></p>
+						<p class="currency" data-toggle="modal" data-target=".change-hourly-rate">$22,00/hr <i class="fa fa-pencil edit" aria-hidden="true"></i></p>
 						<div class="overview">
 							<div>
 								<h3>About Myself <i class="fa fa-pencil edit" aria-hidden="true" data-toggle="modal" data-target=".About-Myself"></i></h3>
@@ -649,8 +650,30 @@
                 <a href="#" class="button">Attach Picture</a>
                 <div class="right-button">
                     <a href="#" class="button">Save</a>
-                    <a href="#" class="button gray">Cancel</a>
+                    <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade change-hourly-rate" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Change hourly rate</h4>
+                </div>
+                <form action="#">
+                    <p>You Rate <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Easy Work Fee <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Total amount shown on you profile  <span><b>$</b> <input type="text" value="20.00"> /hr</span></p>
+                    <div class="right-button">
+                        <a href="#" class="button green">Save</a>
+                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
@@ -658,6 +681,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/jquery.uploadThumbs.js"></script>
+	<script src="js/common.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.my-portfolio .button').click(function () {

@@ -219,7 +219,91 @@
 
 
 
+.change-hourly-rate
+{
+    p
+    {
+        color: #000;
+        font-size: 16px;
+        font-family: Open Sans;
+        line-height: 37px;
+        font-weight: 700;
+        width: 510px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    span
+    {
+        float: right;
+         font-size: 18px;
+        font-weight: 400;
 
+        b
+        {
+            font-weight: 700;
+        }
+    }
+    input
+    {
+        width: 106px;
+        height: 37px;
+        text-align: right;
+        font-weight: 400;
+        padding-right: 10px;
+        border:1px solid #d9d9d9;
+    }
+    form
+    {
+        padding-left: 45px;
+        padding-top: 45px;
+    }
+    .button
+    {
+        background: none;
+        color: #000;
+        border:none;
+        height: 43px;
+        line-height: 43px;
+
+        &:hover,
+        &:focus
+        {
+            background: none;
+        }
+        &.green
+        {
+            background: #83c124;
+            border:1px solid #83c124;
+            color: #fff;
+            width: 208px;
+            height: 43px;
+            padding: 0;
+            text-align: center;
+            line-height: 43px;
+
+            &:hover
+            {
+                background: #59de00;
+                border-color: #bcf662;
+            }
+            &:focus
+            {
+                background: #489c5a;
+                border-color: #659914;
+            }
+        }
+
+    }
+    .right-button
+    {
+        float: inherit;
+    }
+    .modal-content
+    {
+        height: 460px;
+    }
+}
 
 
 

@@ -4592,6 +4592,31 @@
 		margin-right: 5px;
 		font-size: 13px;
 	}
+    .change-hourly-rate p{
+        width: 94%;
+    }
+    .change-hourly-rate span
+    {
+        float: initial;
+        display: block;
+    }
+    .change-hourly-rate p
+    {
+        text-align: center;
+    }
+    .change-hourly-rate form
+    {
+        padding-right: 45px;
+        padding-bottom: 45px;
+    }
+    .change-hourly-rate .modal-content
+    {
+        height: auto;
+    }
+    .change-hourly-rate .right-button
+    {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -4628,6 +4653,23 @@
 	.end-page .exp-description .note {
 		font-size: 13px;
 	}
+    .change-hourly-rate .button.gray,
+    .change-hourly-rate .right-button .button
+    {
+        margin: 0 auto !important;
+        line-height: 43px !important;
+    }
+    .change-hourly-rate form {
+        padding: 45px 0 ;
+    }
+    .change-hourly-rate p
+    {
+        line-height: 20px;
+    }
+    .change-hourly-rate span
+    {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
