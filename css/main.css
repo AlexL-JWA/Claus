@@ -2394,8 +2394,8 @@ ul.star {
 
 form img.thumb {
 	margin: 0 5px 5px 0;
-	width: 644px;
-	height: 247px;
+	width: auto;
+	height: 100%;
 	vertical-align: bottom;
 }
 
@@ -2407,7 +2407,10 @@ form .upload label {
 	margin: 0px auto;
 	display: inline-block;
 }
-
+.bs-example-modal-lg .upload label
+{
+    display: table;
+}
 form .upload label input[type="file"] {
 	position: absolute;
 	right: 0;
@@ -2442,6 +2445,7 @@ form .upload .alt {
 	border-radius: 5px;
 	-webkit-background-size: 100%;
 	background-size: 100%;
+    padding: 0 !important;
 }
 
 .no-cover #preview {
@@ -6054,6 +6058,7 @@ section.section-offers .skills ul {
 .my-profile .overview div h3,
 .my-profile .currency {
 	position: relative;
+    cursor: pointer;
 }
 
 .my-profile .overview div:hover .edit,
@@ -7751,6 +7756,88 @@ h2.title {
       margin-bottom: 30px; }
 
 
+.change-hourly-rate
+p {
+  color: #000;
+  font-size: 16px;
+  font-family: Open Sans;
+  line-height: 37px;
+  font-weight: 700;
+  width: 510px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6; }
+
+
+.change-hourly-rate
+span {
+  float: right;
+  font-size: 18px;
+  font-weight: 400; }
+
+  .change-hourly-rate
+span
+b {
+    font-weight: 700; }
+
+.change-hourly-rate
+input {
+  width: 106px;
+  height: 37px;
+  text-align: right;
+  font-weight: 400;
+  padding-right: 10px;
+  border: 1px solid #d9d9d9; }
+
+
+.change-hourly-rate
+form {
+  padding-left: 45px;
+  padding-top: 45px; }
+
+
+.change-hourly-rate
+.button {
+  background: none;
+  color: #000;
+  border: none;
+  height: 43px;
+  line-height: 43px; }
+
+  .change-hourly-rate
+.button:hover,
+  .change-hourly-rate
+.button:focus {
+    background: none; }
+
+  .change-hourly-rate
+.button.green {
+    background: #83c124;
+    border: 1px solid #83c124;
+    color: #fff;
+    width: 208px;
+    height: 43px;
+    padding: 0;
+    text-align: center;
+    line-height: 43px; }
+
+    .change-hourly-rate
+.button.green:hover {
+      background: #59de00;
+      border-color: #bcf662; }
+
+    .change-hourly-rate
+.button.green:focus {
+      background: #489c5a;
+      border-color: #659914; }
+
+.change-hourly-rate
+.right-button {
+  float: inherit; }
+
+.change-hourly-rate
+.modal-content {
+  height: 460px; }
 
 
 
