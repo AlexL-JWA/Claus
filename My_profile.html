@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/Glyphter.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -67,7 +69,6 @@
 		</div>
 	</nav>
 	<!--END HEADER-->
-
 	<!--START CONTENT-->
 	<section class="ndra-container">
 		<div class="container detailed-view_container view-participant my-profile">
@@ -79,7 +80,7 @@
 							<div>
 								<a href="#" class="logo-view" data-toggle="modal" data-target=".bs-example-modal-lg"></a>
 								<p class="view-logo_caption">Mark Ronson</p>
-								<p class="participant-specialty">Cognos design</p>
+								<p class="participant-specialty" >Cognos design <i class="fa fa-pencil edit" data-toggle="modal" data-target=".participant-specialty-modal" aria-hidden="true"></i></p>
 								<p class="participant-country">Ukraine</p>
 							</div>
 							<div class="clearfix"></div>
@@ -91,7 +92,7 @@
 								<li class="edits"><i class="fa fa-pencil edit" aria-hidden="true"></i></li>
 							</ul>
 						</div>
-						<p class="currency" data-toggle="modal" data-target=".change-hourly-rate">$22,00/hr <i class="fa fa-pencil edit" aria-hidden="true"></i></p>
+						<p class="currency" aria-hidden="true" data-toggle="modal" data-target=".change-hourly-rate" >$22,00/hr <i class="fa fa-pencil edit" ></i></p>
 						<div class="overview">
 							<div>
 								<h3>About Myself <i class="fa fa-pencil edit" aria-hidden="true" data-toggle="modal" data-target=".About-Myself"></i></h3>
@@ -103,6 +104,10 @@
 								<br> Claritas est etiam.</p>
 							</div>
 						</div>
+					</div>
+					<div class="buttons">
+					    <a href="#" data-toggle="modal" data-target=".basis-data">Basis data</a>
+					    <a href="#" data-toggle="modal" data-target=".new-password">New password</a>
 					</div>
 					<div class="my-portfolio">
 						<div class="portfolio-header">
@@ -340,10 +345,12 @@
 					<h4 class="modal-title">Add education</h4>
 				</div>
 				<form action="#" class="modal-form">
+				    <label for="">Education</label>
+					<input type="text">
 					<label for="">School/university</label>
 					<input type="text">
 					<label for="">Dates attended</label>
-					<div id="start_data" class="input_date">
+					<div id="start_data" class="input_date input-daterange">
 						<p>from</p>
 						<input readonly="" type="text" value="mm/yy">
 					</div>
@@ -353,8 +360,7 @@
 					</div>
 					<label for="">Degree</label>
 					<input type="text">
-					<label for="">Area of study (optional)</label>
-					<input type="text">
+
 					<label for="#">Description (optional)</label>
 					<textarea name="#" id=""></textarea>
 					<input type="submit" value="Save">
@@ -440,22 +446,40 @@
 
 
 	<div class="modal fade add-certification" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-md">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					<h4 class="modal-title">Add certification</h4>
 				</div>
 				<form action="#" class="modal-form">
-					<div class="select">
-						<select name="" id="">
-							<option value="">Select your certification</option>
-							<option value="">Select your certification</option>
-							<option value="">Select your certification</option>
-							<option value="">Select your certification</option>
-						</select>
-					</div>
-					<input type="submit" value="Select your certification" data-toggle="modal" data-target=".add-certification-2" data-dismiss="modal" aria-hidden="true">
+
+                    <div class="mini">
+                        <label for="">Name of certification<input type="text"></label>
+                    </div>
+                    <div class="mini">
+                        <label for="">Certification description<textarea></textarea></label>
+                    </div>
+                    <div class="mini">
+                        <div class="input-group input-daterange">
+                            <label for="#">Certification obtained</label>
+                            <label for="#">
+                                <input type="text" class="form-control" placeholder="Start Date">
+                            </label>
+                            <label for="">
+                                <input type="text" class="form-control" placeholder="End Date">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mini">
+                        <label for="">Issuer of the certification (optional)<textarea></textarea></label>
+                    </div>
+                    <div class="mini">
+                        <label for="">Certification number (optional) <input type="text"></label>
+                    </div>
+
+
+					<input type="submit" value="Add certification" >
 				</form>
 			</div>
 		</div>
@@ -477,10 +501,10 @@
 					</div>
 					<div class="mini">
 						<label for="">Was this project done on EasyWork?</label>
-						<input type="text">
+						<input type="text" placeholder="Select related project">
 					</div>
-					<div class="mini">
-						<label for="">Project overview</label>
+					<div class="mini ">
+						<label for="" >Project description</label>
 						<textarea name="" id=""></textarea>
 					</div>
 
@@ -500,22 +524,45 @@
 					<div class="mini">
 						<p>Project image</p>
 						<a href="#"><input type="file"><span>upload</span> project image</a>
+						<div class="img-content one-img">
+						    <img src="images/portfolio-item.png" alt="">
+						</div>
 						<p>Project files</p>
 						<a href="#"><input type="file"><span>upload</span> project files</a>
+						<div class="img-content">
+						    <img src="images/portfolio-item.png" alt="">
+						    <img src="images/porfolio.png" alt="">
+						</div>
 					</div>
 
 					<div class="mini">
-						<label for="">Completion date (optional)</label>
-						<div class="input_date first-date input-daterange">
-							<input readonly="" type="text" value="mm/yy">
-						</div>
-						<label for="">Used skills (optional)</label>
-						<div class="input_date input-daterange">
-							<input readonly="" type="text" placeholder="mm/yy (or graduation date)">
-						</div>
+                        <div class="input-group input-daterange">
+                            <label for="#">
+                                Start Date
+                                <input type="text" class="form-control" placeholder="Start Date">
+                            </label>
+                            <label for="">
+                                End Date
+                                <input type="text" class="form-control" placeholder="End Date">
+                            </label>
+                        </div>
+                        <label for="#" class="skills">Used skills (optional)</label>
+                        <div class="input cat">
+
+                            <select name="" id="tokenize" multiple="multiple" class="tokenize-sample">
+                              <option value="1">HTML</option>
+                              <option value="2">CSS</option>
+                              <option value="3">PHP</option>
+                              <option value="4">JQUERY</option>
+                              <option value="5">JAVA</option>
+                            </select>
+                        </div>
 					</div>
-					<input type="submit" value="Add project">
-					<input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
+
+					    <input type="submit" value="Add project">
+					    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
+
+
 				</form>
 			</div>
 		</div>
@@ -564,70 +611,192 @@
 	<div class="modal fade modal-portfolio modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Travel Agency</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<p class="date">Done from Jun 2015 to Sep 2016</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-					<ul>
-						<li>Used skils:</li>
-						<li><a href="#">Cognos</a></li>
-						<li><a href="#">Photoshop</a></li>
-						<li><a href="#">Adobe PDF</a></li>
-					</ul>
-					<a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-					<img src="images/porfolio.png" alt="">
-				</form>
+                <div class="portfolio-slider">
+                    <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <span>01</span> Jun 2015 to <span>09</span> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="images/porfolio.png" alt="">
+                        </form>
+                    </div>
+                    <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <span>25</span> Jun 2015 to <span>27</span> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="img/hiring-img.png" alt="">
+                        </form>
+                    </div>
+                    <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <sapn>11</sapn> Jun 2015 to <sapn>23</sapn> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="images/portfolio-item.png" alt="">
+                        </form>
+                    </div>
+
+                </div>
 			</div>
 		</div>
 	</div>
-
-
-
-	<div class="modal fade modal-portfolio-2 modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Travel Agency</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<p class="date">Done from Jun 2015 to Sep 2016</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-					<ul>
-						<li>Used skils:</li>
-						<li><a href="#">Cognos</a></li>
-						<li><a href="#">Photoshop</a></li>
-						<li><a href="#">Adobe PDF</a></li>
-					</ul>
-					<a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-					<img src="images/portfolio-item.png" alt="">
-				</form>
-			</div>
-		</div>
-	</div>
-
 	<div class="modal fade modal-portfolio-3 modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Travel Agency</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<p class="date">Done from Jun 2015 to Sep 2016</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-					<ul>
-						<li>Used skils:</li>
-						<li><a href="#">Cognos</a></li>
-						<li><a href="#">Photoshop</a></li>
-						<li><a href="#">Adobe PDF</a></li>
-					</ul>
-					<a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-					<img src="img/hiring-img.png" alt="">
-				</form>
+                <div class="portfolio-slider">
+                   <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <span>25</span> Jun 2015 to <span>27</span> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="img/hiring-img.png" alt="">
+                        </form>
+                    </div>
+                    <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <span>01</span> Jun 2015 to <sapn>09</sapn> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="images/porfolio.png" alt="">
+                        </form>
+                    </div>
+
+                    <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <sapn>11</sapn> Jun 2015 to <sapn>23</sapn> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="images/portfolio-item.png" alt="">
+                        </form>
+                    </div>
+
+                </div>
+			</div>
+		</div>
+	</div>
+
+   	<div class="modal fade modal-portfolio-2 modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+                <div class="portfolio-slider">
+                   <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <sapn>11</sapn> Jun 2015 to <sapn>23</sapn> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="images/portfolio-item.png" alt="">
+                        </form>
+                    </div>
+                    <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <span>01</span> Jun 2015 to <span>09</span> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="images/porfolio.png" alt="">
+                        </form>
+                    </div>
+                    <div class="item">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Travel Agency</h4>
+                        </div>
+                        <form action="#" class="modal-form">
+                            <p class="date">Done from <span>25</span> Jun 2015 to <span>27</span> Sep 2016</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                            <ul>
+                                <li>Used skils:</li>
+                                <li><a href="#">Cognos</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Adobe PDF</a></li>
+                            </ul>
+                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
+                            <img src="img/hiring-img.png" alt="">
+                        </form>
+                    </div>
+
+
+                </div>
 			</div>
 		</div>
 	</div>
@@ -647,7 +816,7 @@
                         </label>
                     </p>
                 </form>
-                <a href="#" class="button">Attach Picture</a>
+                <a href="#" class="button attach-picture">Attach Picture</a>
                 <div class="right-button">
                     <a href="#" class="button">Save</a>
                     <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
@@ -677,19 +846,257 @@
             </div>
         </div>
     </div>
+     <div class="modal fade participant-specialty-modal"  role="dialog" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Headline</h4>
+                </div>
+                <form action="#">
+                    <input type="text" placeholder="Add headline">
+                    <div class="right-button">
+                        <a href="#" class="button green">Save</a>
+                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade basis-data"  role="dialog" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Basis data</h4>
+                </div>
+                <form action="#">
+                    <div class="input-mini">
+                        <label for="">
+                            First name
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="input-mini">
+                        Last name
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="input-mini">
+                        Adress line 1
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="input-mini">
+                        Adress line 2
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="input-mini">
+                        Country
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="input-mini">
+                        City
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="input-mini namber">
+                        Telephone number (optional)
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="input-mini postal-code">
+                        Postal code
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+
+                    <div class="inputWrapper checkParent">
+                        <input id="add-company" type="checkbox">
+                        <label for="add-company">Add company details</label>
+
+                    </div>
+
+                    <div class="hide addCompany">
+                        <div>
+                            <div class="input-mini">
+                                Company name
+                                <label for="">
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="input-mini">
+                                VAT/Tax number
+                                <label for="">
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="inputWrapper checkParent">
+                            <input id="address-above" type="checkbox">
+                            <label for="address-above"> Company address is the same as the address above</label>
+                        </div>
+                    <div class="address-above">
+                        <div>
+                            <div class="input-mini">
+                                Adress line 1
+                                <label for="">
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="input-mini">
+                                Adress line 2
+                                <label for="">
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="input-mini">
+                                Country
+                                <label for="">
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="input-mini">
+                                City
+                                <label for="">
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="input-mini postal-code">
+                                Postal code
+                                <label for="">
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+                    <div class="">
+                        <a href="#" class="button green">Save</a>
+                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade new-password"  role="dialog" data-aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Password</h4>
+                </div>
+                <form action="#">
+                    <label for="">
+                        Old Password
+                        <input type="text">
+                    </label>
+
+                    <label for="">
+                        New Password
+                        <input type="text">
+                    </label>
+
+                    <label for="">
+                        Confirm Password
+                        <input type="text">
+                    </label>
+                    <div>
+                        <a href="#" class="button green">Save</a>
+                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 	<!--END MODEL-->
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+
 	<script src="js/jquery.uploadThumbs.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/jquery.tokenize.js"></script>
+
+
 	<script>
 		$(document).ready(function () {
 			$('.my-portfolio .button').click(function () {
 				$('.my-portfolio .hide-item').slideToggle();
 			});
+            if ($(".portfolio-slider").length > 0) {
+                $('.portfolio-slider').slick({
+                    adaptiveHeight:true,
+                    fade: true,
+                    speed: 300,
+                    cssEase: 'linear'
+                });
+            }
+                $('.portolio-item').click(function(){
+                   $('.slick-list').css('height','inherit');
+                });
+
+                $('.input-daterange input').datepicker({
+                    autoclose: true
+                });
 		});
+
+            $("#add-company").click(function(){
+                $('.addCompany').toggleClass('hide');
+
+            });
+            $("#address-above").click(function(){
+                $('.address-above').toggleClass('hide');
+
+            });
+            $('.attach-picture').click(function(){
+                $('#preview').click()
+            })
+
+
 	</script>
+
+	<script>
+    if ($("#tokenize").length > 0) {
+    var source = [
+                  {label: 'HTML', value: 'HTML'},
+                  {label: 'CSS', value: 'CSS'},
+                  {label: 'JQUERY', value: 'JQUERY'},
+                  {label: 'JAVA', value: 'JAVA'}
+                  ];
+        $('#tokenize').tokenize({
+        onDropdownAddItem: function() {
+          $(".Dropdown li").each(function (e) {
+          });
+        }
+        });
+    }
+        $('.datepicker .day').click(function(){
+                $('.datepicker').hide()
+            })
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,18 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "css/styles.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "expanded"
+            },
+            "linting.collapsed": false,
+            "brackets-minimap.width": 84,
+
+        }
+    }
+}
