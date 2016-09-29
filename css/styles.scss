@@ -295,15 +295,543 @@
         }
 
     }
-    .right-button
-    {
-        float: inherit;
-    }
+
     .modal-content
     {
         height: 460px;
     }
 }
+
+.participant-specialty-modal
+{
+    .modal-content
+    {
+        height: auto !important;
+    }
+    .button
+    {
+        background: none;
+        color: #000;
+        border:none;
+        height: 43px;
+        line-height: 43px;
+
+        &:hover,
+        &:focus
+        {
+            background: none;
+        }
+        &.green
+        {
+            background: #83c124;
+            border:1px solid #83c124;
+            color: #fff;
+            width: 208px;
+            height: 43px;
+            padding: 0;
+            text-align: center;
+            line-height: 43px;
+
+            &:hover
+            {
+                background: #59de00;
+                border-color: #bcf662;
+            }
+            &:focus
+            {
+                background: #489c5a;
+                border-color: #659914;
+            }
+        }
+    }
+    .right-button
+    {
+        float: inherit;
+    }
+    form
+    {
+        padding: 45px;
+
+        input
+        {
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            border:1px solid #ccc;
+        }
+    }
+}
+.modal-portfolios
+{
+    .modal-content
+    {
+        height: auto;
+        display: block;
+    }
+    .item
+    {
+        min-width: 756px;
+        height: 0;
+        opacity: 0;
+    }
+    .item.slick-active
+    {
+        opacity: 1;
+        height: auto;
+        display: block !important;
+    }
+    .slick-prev:before
+    {
+        content: '\f053';
+        font-family:'FontAwesome';
+        font-size: 60px;
+    }
+    .slick-next:before
+    {
+        content: '\f054';
+        font-family:'FontAwesome';
+        font-size: 60px;
+    }
+    .slick-prev
+    {
+        left: -60px;
+    }
+    .slick-next
+    {
+        right: -60px;
+    }
+    .slick-prev,
+    .slick-next
+    {
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        margin-top: -30px;
+    }
+
+}
+.edit-portfolio
+{
+    .mini
+    {
+        &:last-of-type
+        {
+              label
+            {
+                width: calc(100% / 2.3);
+                display: inline-block;
+                margin-left: 4.5%;
+
+                input
+                {
+                    width: 97% !important;
+                }
+            }
+        }
+        &:nth-of-type(6)
+        {
+            float: right;
+            margin-right: 23px;
+        }
+        label.skills
+        {
+            width: 100% !important;
+        }
+
+    }
+    .img-content
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        img
+        {
+            width: 220px;
+            max-width: 220px;
+            margin-bottom: 10px;
+
+        }
+        &.one-img
+        {
+            max-height: 220px;
+            max-width: 220px;
+            overflow: hidden;
+
+            img
+            {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .input-daterange:before
+    {
+        content: '/';
+        position: absolute;
+        right: 3px;
+        bottom: 37px;
+        left: 0;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        pointer-events: none;
+    }
+    .input.cat
+    {
+        margin-left: 16px;
+        position: relative;
+        margin-right: 20px;
+
+        .TokenSearch
+        {
+            input
+            {
+                 width: 100%;
+                border: 1px solid #D9D9D9;
+            }
+        }
+        .Dropdown
+        {
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin-top: 20px;
+            background: #fff;
+            top: 17px;
+            li
+            {
+                padding: 5px 20px;
+                cursor: pointer;
+                border: 1px solid #D9D9D9;
+                border-bottom: none;
+
+                &:hover
+                {
+                   background: #D9D9D9;
+                }
+                &:last-of-type
+                {
+                    border-bottom: 1px solid #D9D9D9;
+                }
+            }
+        }
+        .TokensContainer
+        {
+            padding-top: 60px;
+            li
+            {
+                &.TokenSearch
+                {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                }
+                &.Token
+                {
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background: #ccc;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+
+                    a
+                    {
+                        display: inline-block;
+                        float: right;
+                        padding-left: 10px;
+                    }
+                    span
+                    {
+                        display: inline-block;
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+.basis-data
+{
+    .input-mini
+    {
+        width: calc(100% / 2.014 - 15px);
+        display: inline-block;
+
+        &:nth-of-type(2n)
+        {
+            margin-left: 30px;
+        }
+
+        &.postal-code
+        {
+            width: 193px;
+        }
+        &.namber
+        {
+            width: 448px;
+        }
+    }
+    .checkParent
+    {
+        margin-bottom: 35px;
+
+        label:before
+        {
+            margin-right: 10px !important;
+        }
+    }
+    form
+    {
+        padding: 40px ;
+    }
+    label,
+    input
+    {
+        width: 100%;
+        display: block;
+    }
+    label
+    {
+        font-family: "Open Sans";
+        color:  #424242;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px
+    }
+    input
+    {
+        border:1px solid #dbdbdb;
+        height: 37px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .button
+    {
+        background: none;
+        color: #000;
+        border:none;
+        height: 43px;
+        line-height: 43px;
+
+        &:first-of-type
+        {
+            margin-left: 0;
+        }
+
+        &:hover,
+        &:focus
+        {
+            background: none;
+        }
+        &.green
+        {
+            background: #83c124;
+            border:1px solid #83c124;
+            color: #fff;
+            width: 208px;
+            height: 43px;
+            padding: 0;
+            text-align: center;
+            line-height: 43px;
+
+            &:hover
+            {
+                background: #59de00;
+                border-color: #bcf662;
+            }
+            &:focus
+            {
+                background: #489c5a;
+                border-color: #659914;
+            }
+        }
+    }
+}
+.new-password
+{
+    .modal-content
+    {
+        width: 100%;
+        height: auto;
+    }
+    label,
+    input
+    {
+        width: 100%;
+        display: block;
+    }
+    label
+    {
+        font-family: "Open Sans";
+        color:  #424242;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px
+    }
+    input
+    {
+        border:1px solid #dbdbdb;
+        height: 37px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .button
+    {
+        background: none;
+        color: #000;
+        border:none;
+        height: 43px;
+        line-height: 43px;
+
+        &:first-of-type
+        {
+            margin-left: 0;
+        }
+
+        &:hover,
+        &:focus
+        {
+            background: none;
+        }
+        &.green
+        {
+            background: #83c124;
+            border:1px solid #83c124;
+            color: #fff;
+            width: 208px;
+            height: 43px;
+            padding: 0;
+            text-align: center;
+            line-height: 43px;
+
+            &:hover
+            {
+                background: #59de00;
+                border-color: #bcf662;
+            }
+            &:focus
+            {
+                background: #489c5a;
+                border-color: #659914;
+            }
+        }
+    }
+    form
+    {
+        padding: 40px ;
+    }
+}
+.add-certification
+{
+    label,
+    input,
+    textarea
+    {
+        width: 100% !important;
+        display: block;
+    }
+    .modal-content
+    {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    label
+    {
+        font-family: "Open Sans";
+        color:  #424242;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-left: 0 !important;
+    }
+    input,
+    textarea
+    {
+        border:1px solid #dbdbdb;
+        height: 37px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    textarea
+    {
+        height: 100px;
+        resize: none;
+    }
+    input[type="submit"]
+    {
+        width: 200px !important;
+    }
+    .input-group.input-daterange
+    {
+        width: 100%;
+
+        label
+        {
+            margin-bottom: 0;
+
+            input
+            {
+                margin-bottom: 0;
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(3)
+            {
+                width: 200px !important;
+                display: inline-block;
+                margin-right: 30px;
+            }
+        }
+    }
+    .button
+    {
+        background: none;
+        color: #000;
+        border:none;
+        height: 43px;
+        line-height: 43px;
+
+        &:first-of-type
+        {
+            margin-left: 0;
+        }
+
+        &:hover,
+        &:focus
+        {
+            background: none;
+        }
+        &.green
+        {
+            background: #83c124;
+            border:1px solid #83c124;
+            color: #fff;
+            width: 208px;
+            height: 43px;
+            padding: 0;
+            text-align: center;
+            line-height: 43px;
+
+            &:hover
+            {
+                background: #59de00;
+                border-color: #bcf662;
+            }
+            &:focus
+            {
+                background: #489c5a;
+                border-color: #659914;
+            }
+        }
+    }
+}
+
 
 
 

@@ -1,4 +1,4 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -139,7 +139,7 @@ i<!DOCTYPE html>
 				</label>
 			</p>
 		</form>
-   			<a href="#" class="button">Attach Picture</a>
+   			<a href="#" class="button attach-picture">Attach Picture</a>
    		<div class="right-button">
    			<a href="#" class="button">Save</a>
    			<a href="#" class="button gray">Cancel</a>
@@ -200,5 +200,10 @@ i<!DOCTYPE html>
 	<script src="js/fixed.js"></script>
 	<script src="js/browser.js"></script>
 	<script src="js/common.js"></script>
+	<script>
+    $('.attach-picture').click(function(){
+                $('#preview').click()
+            })
+    </script>
 </body>
 </html>

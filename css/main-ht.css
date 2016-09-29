@@ -1,7 +1,9 @@
 a {
     color: #fff;
 }
-
+.form-group {
+    margin-bottom: 0px !important;
+}
 header.clj_header.header-ht .personal .sign_up {
     margin-left: 200px;
 }
