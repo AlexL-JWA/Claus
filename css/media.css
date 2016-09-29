@@ -156,7 +156,7 @@
 		width: 230px;
 	}
 	.block-4 .text.white p {
-		margin-bottom: 85px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -514,6 +514,26 @@
     {
         float: right;
     }
+    .block-4 ul
+    {
+        margin: 20px 0 0px 57px;
+    }
+
+    .block-4 .text .title,
+    .block-3 .text .title,
+    .block-5 .text .title
+    {
+        font-size: 35px;
+    }
+    .block-3 .text .title
+    {
+        margin-left: 0;
+    }
+    .block-2 .title
+    {
+        font-size: 20px;
+        width: 438px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -605,9 +625,17 @@
 	.prev_link {
 		left: 20px;
 	}
-	.block-4 .text.white p {
-		font-size: 14px;
+	.block-4 .text.white p ,
+    .block-4 ul li{
+		font-size: 16px;
 	}
+    .block-4 .text .title,
+    .block-3 .text .title,
+    .block-5 .text .title
+    {
+    font-size: 24px;
+    line-height: 30px;
+    }
 	.block-5 .text .title {
 		letter-spacing: 0px;
 		font-size: 29px;
@@ -646,6 +674,13 @@
     {
         display: inline-block;
         margin-bottom: 0;
+    }
+    .view-participant .button-contact + .button-grey
+    {
+        margin-left: 0;
+    }
+    .my-profile .overview div .edit, {
+        top: 5px;
     }
 }
 
@@ -874,9 +909,20 @@
 		display: block;
 		line-height: 60px;
 		margin-bottom: 10px;
+/*
 		border-top: 2px solid #dedede;
 		border-width: 2px;
+*/
+
 	}
+    .onj_table.onj-ark-2 .table_edit tbody tr td.third_col
+    {
+        text-align: right !important;
+    }
+
+
+
+
 	.onj_table .table_edit tbody tr:last-of-type {
 		margin-bottom: 0;
 	}
@@ -1138,9 +1184,14 @@
 	.block-4 img {
 		margin-right: -50%;
 	}
-	.block-4 .text.white h3 {
-		margin-top: 60px;
-	}
+	.block-4 ul
+    {
+        margin: 20px 0 0px 20px;
+    }
+    .block-4 .text.white h3,
+    .block-4 .text.white p {
+        margin-left: 20px;
+    }
 	.transaction .data {
 		width: 240px;
 	}
@@ -1559,11 +1610,20 @@
 	}
 	.block-4 .text.white h3 {
 		text-align: center;
+        margin-left: 0;
 	}
-	.block-4 .text.white p {
+	.block-4 .text.white p,
+    .block-4 ul li{
 		font-size: 14px;
 		text-align: center;
+        line-height: 18px;
+        padding-right: 0;
+        margin-left: 0;
 	}
+    .block-4 ul
+    {
+        margin: 20px 0 47px 0px;
+    }
 	.col-lg-6.bg,
 	.block-4 {
 		height: auto;
@@ -1768,6 +1828,7 @@
 	header.clj_header .personal {
 		text-align: right;
 	}
+
 	header.clj_header .personal .sign_up {
 		float: none;
 		margin-left: 0;
@@ -2259,9 +2320,16 @@
 		right: 15px;
 		top: 32px;
 	}
+    .block-4 ul
+    {
+        margin: 0 0 47px;
+        text-align: center;
+    }
 	.block-4 .text.white h3,
-	.block-4 .text.white p {
+	.block-4 .text.white p
+    {
 		margin-left: 0px;
+        padding-right: 0 !important;
 	}
 	.col-lg-6.bg::before {
 		display: none;
@@ -2506,6 +2574,11 @@
 	.block-1 .search input[type="search"] {
 		width: 160px;
 	}
+    .block-1 .logo
+    {
+        height: 35px;
+        line-height: 20px;
+    }
 	.header-mnu .col-xs-7,
 	.header-mnu .col-xs-5 {
 		width: 100%;
@@ -2553,7 +2626,7 @@
 	}
 	.black-header h4,
 	.block-1 .login ul {
-		line-height: 39px;
+		line-height: 45px;
 	}
 	.black-header .search {
 		margin-top: 0px;
@@ -2660,6 +2733,10 @@
 	.block-2 .col-xs-6 {
 		width: 100%;
 	}
+    .caption h5
+    {
+        margin-top: 15px;
+    }
 	.block-2 .title {
 		font-size: 17px;
 	}
@@ -3013,9 +3090,7 @@
 	.form-edit h2 {
 		font-size: 24px;
 	}
-	.form-edit h2::before {
-		margin-left: 18px;
-	}
+
 	.form-edit h2::after {
 		margin-left: -16px;
 		top: 42px;
@@ -3122,7 +3197,9 @@
 	}
 	.search input[type="submit"] {
 		margin-left: 0;
+        margin-top: 20px;
 	}
+
 }
 
 @media only screen and (max-width: 530px) {
@@ -3329,25 +3406,17 @@
 	.form-edit h2 {
 		top: 490px;
 	}
-	.form-edit h2::before {
-		margin-left: 18px;
-		width: 175px;
-		height: 2px;
-		top: 13px;
-		margin-left: 40px;
-	}
+	.form-edit h2::before,
 	.form-edit h2::after {
-		margin-left: -215px;
-		width: 175px;
-		height: 2px;
-		top: 13px;
+		display: none;
 	}
 	.form-edit i {
 		margin: 20px auto 0;
 	}
-	.form-edit h2 {
-		top: 430px;
-	}
+	.form-edit h2
+    {
+        top: 380px;
+    }
 	.form-edit a.button {
 		margin: 30px auto 70px;
 	}
@@ -3359,6 +3428,7 @@
 	}
 	.caption p {
 		font-size: 12px;
+        line-height: 20px;
 	}
 	.caption h5 span {
 		font-size: 18px;
@@ -3430,6 +3500,9 @@
 	.row-overview {
 		margin-top: 20px;
 	}
+    .view-participant .button-contact + .button-grey {
+    float: right;
+    }
 	.manager-agency {
 		margin-top: 20px;
 	}
@@ -3481,6 +3554,10 @@
 		margin: 0;
 		text-align: center;
 	}
+    header.clj_header .logo
+    {
+        margin-top: 4px;
+    }
 	.modal-content .button.gray,
 	.modal-content .right-button .button {
 		margin: 0 !important;
@@ -3877,6 +3954,9 @@
         width: 280px;
          padding: 0 !important;
     }
+    .new-password .button.green {
+        width: 100%;}
+
 }
 
 @media screen and (max-width:454px) {
@@ -4141,7 +4221,7 @@
 		height: 89px;
 	}
 	.form-edit h2 {
-		top: 405px;
+		top: 355px;
 	}
 	.form-edit h2::before {
 		width: 125px;
@@ -4391,6 +4471,14 @@
 		left: 10px;
 		margin-right: 10px;
 	}
+
+    .my-profile .currency .edit {
+        top: 5px;
+    }
+    .my-profile .participant-skills .edits
+    {
+        top: -8px;
+    }
 	/*detailed view company*/
 	.detailed-view_container .button-contact,
 	.button-grey,
@@ -4569,6 +4657,28 @@
 	nav.clj_nav ul li {
     	padding: 0px 8px;
 	}
+    .onj_table .table_edit.table_contracts tbody tr td
+    {
+      padding: 0px;
+    }
+    .onj_table .table_edit.table_contracts tbody tr .first_col,
+    .onj_table .table_edit.table_contracts tbody tr .second_col,
+    .onj_table .table_edit.table_contracts tbody tr .last_col
+    {
+        padding: 15px;
+    }
+    .onj_table .table_edit tbody tr
+    {
+        margin-bottom: 0;
+    }
+    .onj_table .table_edit tbody tr:first-of-type
+    {
+        border-width: 0;
+    }
+    .onj_table .table_edit tbody tr:first-of-type td:last-of-type
+    {
+        border-bottom: 1px solid #dedede;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -4954,7 +5064,8 @@
 
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 368px) {
+
 	.my-profil .right-block input {
 		width: 70%;
 	}
@@ -5008,6 +5119,7 @@
 	}
 	.caption p {
 		font-size: 11px;
+        line-height: 16px;
 	}
 	.slider-2 .slides {
 		height: 345px !important;
@@ -5022,6 +5134,9 @@
 	.header-logout .log-view {
 		font-size: 13px;
 	}
+      .form-edit h2 {
+    top: 370px;
+}
 }
 
 @media screen and (max-width:359px) {

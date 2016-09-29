@@ -1471,6 +1471,14 @@ h5.title-2 img {
 	background-position: -6px 0px;
 }
 
+.slides li.first-circle:nth-of-type(1)
+{
+    opacity: 1 !important ; transform: translateX(0px) translateY(0px) !important ;
+}
+.slides li.first-circle:nth-of-type(1) .center-align
+{
+    opacity: 1 !important ; transform: translateX(0px) translateY(0px) !important;
+}
 .caption p {
 	font-size: 20px;
 	font-weight: 600;
@@ -1484,7 +1492,7 @@ h5.title-2 img {
 	color: #727272;
 	font-size: 26px;
 	font-weight: 600;
-	margin-top: 47px;
+	margin-top: 30px;
 	margin-left: -5px;
 	line-height: 31px;
 }
@@ -2144,7 +2152,7 @@ h5.title-2 img {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 415px;
 	-webkit-perspective: 500px;
 	perspective: 500px;
 	-webkit-transform-style: preserve-3d;
@@ -2281,7 +2289,7 @@ ul.star {
 	text-align: center;
 	left: 0;
 	right: 0;
-	bottom: 53px;
+	bottom: 20px;
 	margin: 0;
 	z-index: 100;
 }
@@ -2842,14 +2850,14 @@ i.glyphicon-minus-sign.glyphicon,.star-rating .caption{display: none !important;
 	color: #83c124;
     cursor: pointer;
 }
-.participant-specialty:hover i
+.participant-specialty i
 {
     display: inline-block;
 }
-.participant-specialty i
-{
-    display: none;
-}
+ .participant-specialty .edit
+    {
+        margin-left: 5px;
+    }
 .participant-country {
 	font-size: 14px;
 	font-weight: 600;
@@ -3841,6 +3849,7 @@ a.form-14-recovery {
 .messages-container {
 	background: #fff;
 	height: 500px;
+    overflow: auto;
 }
 
 .touch .messages-container {
@@ -6070,7 +6079,7 @@ section.section-offers .skills ul {
 	color: #5cc300;
 }
 
-.my-profile .description .edit:before {
+.my-profile .description .edit{
 	font-size: 18px;
 }
 
@@ -6083,11 +6092,11 @@ section.section-offers .skills ul {
 	position: relative;
 }
 
-.my-profile .participant-skills:hover {
+.my-profile .participant-skills {
 	cursor: pointer;
 }
 
-.my-profile .participant-skills:hover .edits {
+.my-profile .participant-skills .edits {
 	cursor: pointer;
 	display: inline-block;
 	position: absolute;
@@ -6099,7 +6108,7 @@ section.section-offers .skills ul {
 }
 
 .my-profile .currency {
-	padding-right: 20px;
+	padding-right: 25px;
 }
 
 .my-profile .overview div h3,
@@ -6108,8 +6117,8 @@ section.section-offers .skills ul {
     cursor: pointer;
 }
 
-.my-profile .overview div:hover .edit,
-.my-profile .currency:hover .edit {
+.my-profile .overview div .edit,
+.my-profile .currency .edit {
 	position: absolute;
 	display: inline-block;
 	top: 2px;
@@ -6117,18 +6126,19 @@ section.section-offers .skills ul {
 	cursor: pointer;
 }
 
-.my-profile .currency:hover .edit {
-	top: 6px;
-}
-
 .my-profile .currency .edit {
-	display: none;
-	right: 0;
+	top: 14px;
+    right: 0;
+
 }
 
+
+
+/*
 .my-profile .overview div .edit {
 	display: none;
 }
+*/
 
 .my-profile .view-logo_cont {
 	padding-top: 0;

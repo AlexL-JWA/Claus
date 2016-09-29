@@ -14,11 +14,15 @@
 });
  // $("#rating-view").rating({min:1, max:10, step:2, size:'lg'});
 
- $(document).ready(function(){
-  if($(".slider-2").length != 0) {
-   $('.slider-2').slider({full_width: true});
- }
-});
+$(document).ready(function(){
+        if($(".slider-2").length != 0) {
+            $('.slider-2').slider({Interval: 5000, Transition: 400});
+
+            setTimeout(function(){
+                $('.slider-2 li').removeClass('first-circle')
+            },6700);
+        }
+    });
 // $(document).on("scroll",function(){
 //   if($(document).scrollTop()>650){
 //    $(".header-mnu").removeClass("large").addClass("black-header");
