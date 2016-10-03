@@ -4983,6 +4983,10 @@
 }
 
 @media only screen and (max-width: 380px) {
+    .block-1 .search input[type="search"]
+    {
+        padding-right: 30px;
+    }
 	.search .col-xs-4 {
 		width: 100%;
 	}
