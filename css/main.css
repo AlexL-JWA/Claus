@@ -1081,6 +1081,7 @@ div.warning span {
 	height: 36px;
 	vertical-align: 6px;
 	padding-left: 12px;
+    padding-right: 47px;
 }
 
 .block-1 .search input[type="submit"] {
