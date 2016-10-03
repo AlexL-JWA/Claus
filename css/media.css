@@ -2761,7 +2761,8 @@
 	.caption p {
 		font-size: 16px;
 	}
-	.slider-2 .indicators .indicator-item {
+	.reviews-slider .slick-dots li
+    {
 		height: 15px;
 		width: 15px;
 	}
@@ -3084,6 +3085,14 @@
     {
         width: 380px;
     }
+    .reviews-slider
+    {
+        width: 85%;
+    }
+    .reviews-slider p
+    {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -3199,7 +3208,10 @@
 		margin-left: 0;
         margin-top: 20px;
 	}
-
+    .header-mnu .search input[type="submit"]
+    {
+        margin-top: 0 !important;
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -3433,12 +3445,8 @@
 	.caption h5 span {
 		font-size: 18px;
 	}
-	.slider-2 {
-		height: 380px !important;
-	}
-	.slider-2 .slides {
-		height: 380px !important;
-	}
+
+
 	.caption h5 {
 		font-size: 20px;
 		margin-top: 10px;
@@ -3956,7 +3964,14 @@
     }
     .new-password .button.green {
         width: 100%;}
-
+    .reviews-slider .slick-dots li
+    {
+        margin: 0 10px;
+    }
+    .reviews-slider p {
+    font-size: 13px;
+    line-height: 20px;
+}
 }
 
 @media screen and (max-width:454px) {
@@ -4616,6 +4631,10 @@
 		width: 80%;
 		font-size: 18px;
 	}
+    .reviews-slider h5
+    {
+        font-size: 20px;
+    }
 }
 
 @media all and (-ms-high-contrast: none),
@@ -4678,6 +4697,10 @@
     .onj_table .table_edit tbody tr:first-of-type td:last-of-type
     {
         border-bottom: 1px solid #dedede;
+    }
+    .next_link, .prev_link
+    {
+        top: 160px;
     }
 }
 
