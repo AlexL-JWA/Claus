@@ -3287,6 +3287,14 @@
     {
         font: 300 20px "Source Sans Pro";
     }
+    .about-us .banner-text h2.title
+    {
+        font: 700 40px/1 Open Sans !important;
+    }
+    .about-us .banner-text p.text
+    {
+        font: 300 20px Open Sans;
+    }
 }
 
 @media only screen and (max-width: 530px) {
