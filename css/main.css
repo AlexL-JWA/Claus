@@ -7723,3 +7723,95 @@ textarea#contactform-message {
     background: #489c5a;
     border-color: #659914;
 }
+.about-us .banner {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+.about-us .banner-img {
+    height: 690px;
+    background-position: center;
+}
+.about-us .banner-content {
+    position: relative;
+    height: 690px;
+}
+.about-us .banner-text {
+    text-align: center;
+    width: 840px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-us .banner-text h2.title {
+    color: #fff;
+    font: 700 80px/1 Open Sans;
+    margin-top: 0;
+}
+.about-us .banner-text p.text {
+    font: 300 25px Open Sans;
+    color: #fff;
+}
+.about-us .teams {
+    text-align: center;
+}
+.about-us .teams h3.title:first-of-type {
+    color: #83c124;
+    font: 900 36px "Source Sans Pro";
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.about-us .teams h3.title:last-of-type {
+    color: #6e6e6e;
+    font: 700 36px Open Sans;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+.about-us .teams p.text {
+    color: #000;
+    font: 300 30px "Source Sans Pro";
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.about-us .humans {
+    text-align: left;
+}
+.about-us .human {
+    display: inline-block;
+    width: calc(100% / 3.05 - 25px);
+    border: 1px solid #e1e1e1;
+    background: url(../images/paperclip.png);
+    background-position: center 10px;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+.about-us .human:nth-of-type(3n) {
+    margin-right: 0;
+}
+.about-us .human .img {
+    width: 248px;
+    height: 248px;
+    border: 1px solid #cacaca;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+.about-us .human h4.name {
+    text-align: center;
+    background: #83c124;
+    color: #ffffff;
+    font: 700 18px Open Sans;
+    text-transform: uppercase;
+    padding: 14px 20px;
+}
+.about-us .human p.description {
+    color: #000000;
+    font: 300 16px Open Sans;
+    padding: 10px 25px 15px;
+}
