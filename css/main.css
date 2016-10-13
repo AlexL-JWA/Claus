@@ -7729,12 +7729,12 @@ textarea#contactform-message {
     background-color: rgba(0, 0, 0, 0.23);
 }
 .about-us .banner-img {
-    height: 690px;
-    background-position: center;
+    height: 475px;
+    background-position: top center;
 }
 .about-us .banner-content {
     position: relative;
-    height: 690px;
+    height: 475px;
 }
 .about-us .banner-text {
     text-align: center;
