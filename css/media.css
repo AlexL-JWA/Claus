@@ -534,6 +534,10 @@
         font-size: 20px;
         width: 438px;
     }
+     .about-us .human .img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -2782,6 +2786,9 @@
 		width: calc(100% - 51.5%);
 		display: inline-block;
 	}
+    .about-us .human {
+        width: calc(100% / 2.05 - 17px);
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -3266,6 +3273,19 @@
     .header-mnu .search input[type="submit"]
     {
         margin-top: 0 !important;
+    }
+    .about-us .human
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    .about-us .teams h3.title:first-of-type
+    {
+        font: 900 28px "Source Sans Pro";
+    }
+    .about-us .teams p.text
+    {
+        font: 300 20px "Source Sans Pro";
     }
 }
 
@@ -4877,10 +4897,24 @@
 	.end-page .exp-description .note {
 		max-width: 100%;
 	}
-	/**/
 	.onj_table .table_edit.table_jobs tbody tr .third_col {
 		text-align: right;
 	}
+    .about-us .banner-text {
+        width: 100%;
+    }
+    .about-us .human {
+        width: calc(100% / 2.05 - 14px);
+    }
+    .about-us .human:nth-of-type(3n) {
+        margin-right: 40px;
+    }
+    .about-us .human:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    .about-us .teams p.text {
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -4959,6 +4993,12 @@
 	.my-profile .overview div:last-child h3 {
 		margin-top: 30px;
 	}
+    .about-us .banner-text h2.title {
+        font: 700 60px/1 Open Sans;
+    }
+    .about-us .human {
+        width: calc(100% / 2.05 - 15px);
+    }
 }
 
 @media only screen and (max-width: 650px) {
