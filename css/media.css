@@ -2787,7 +2787,7 @@
 		display: inline-block;
 	}
     .about-us .human {
-        width: calc(100% / 2.05 - 17px);
+        width: calc(100% / 2.05 - 17px) !important;
     }
 }
 
@@ -3276,7 +3276,7 @@
     }
     .about-us .human
     {
-        width: 100%;
+        width: 100% !important;
         margin-right: 0;
     }
     .about-us .teams h3.title:first-of-type
