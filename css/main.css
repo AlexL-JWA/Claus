@@ -324,6 +324,10 @@ section ul.internally_nav li.internally_nav_li .internally_nav_sub {
     left: 0;
     top: 33px;
 }
+section ul.internally_nav li.internally_nav_li .internally_nav_sub li
+{
+    position: relative;
+}
 section ul.internally_nav li.internally_nav_li .internally_nav_sub li span {
     display: none;
     cursor: pointer;
