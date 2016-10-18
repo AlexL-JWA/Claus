@@ -7961,3 +7961,39 @@ textarea#contactform-message {
     margin-bottom: 30px;
     padding: 20px;
 }
+.top-skills {
+    background: #fff;
+    padding: 50px 0 100px;
+}
+.top-skills h3.title {
+    text-align: center;
+    font-size: 40px;
+    color: #454545;
+    font-weight: 700;
+    margin-top: 62px;
+    letter-spacing: 0.7px;
+    margin-bottom: 41px;
+    letter-spacing: 0.5px;
+}
+.top-skills .menu-skills {
+    width: calc(100% / 3.05);
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.top-skills .menu-skills ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    vertical-align: top;
+}
+.top-skills .menu-skills ul a {
+    font: 600 18px/34px Open Sans;
+    color: #83c124;
+}
+.top-skills .menu-skills ul a:hover {
+    color: #59de00;
+}
+.top-skills .menu-skills ul a:focus {
+    color: #489c5a;
+}
