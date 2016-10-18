@@ -1868,19 +1868,7 @@
     {
         margin-right: 10px;
     }
-    .top-skills .menu-skills
-    {
-        width: calc(100% / 2.05);
-    }
-    .top-skills .menu-skills:last-of-type
-    {
-        width: 100%;
 
-    }
-    .top-skills .menu-skills ul
-    {
-        margin: 0 0 30px;
-    }
 }
 @media only screen and (max-width: 767px) {
 	header.clj_header .personal {
@@ -2601,6 +2589,19 @@
     }
     .news-page .sitebar .tegs {
         display: none;
+    }
+    .top-skills .menu-skills
+    {
+        width: calc(100% / 2.05);
+    }
+    .top-skills .menu-skills:last-of-type
+    {
+        width: 100%;
+
+    }
+    .top-skills .menu-skills ul
+    {
+        margin: 0 0 30px;
     }
 }
 
