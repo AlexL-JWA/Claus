@@ -1516,6 +1516,10 @@
     .news-page.news-singl .tegs li a {
         padding: 0px 20px;
     }
+     .redactor-content img {
+        width: 100% !important;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:845px) {
@@ -3403,6 +3407,14 @@
     .news-page.news-singl ul.soc li a i:before {
         font-size: 14px;
     }
+    .news-page.news-singl ul.soc li {
+        height: 29px;
+    }
+    .redactor-content table th,
+    .redactor-content table td {
+        padding: 10px;
+        font-size: 12px;
+    }
 }
 
 
@@ -4842,6 +4854,7 @@
     {
         top: 160px;
     }
+
 
 }
 
