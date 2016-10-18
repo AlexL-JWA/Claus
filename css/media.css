@@ -1520,6 +1520,10 @@
         width: 100% !important;
         margin: 0;
     }
+    .top-skills .menu-skills ul a
+    {
+        font: 600 16px/34px Open Sans;
+    }
 }
 
 @media screen and (max-width:845px) {
@@ -1863,6 +1867,19 @@
     .edit-portfolio .input.cat
     {
         margin-right: 10px;
+    }
+    .top-skills .menu-skills
+    {
+        width: calc(100% / 2.05);
+    }
+    .top-skills .menu-skills:last-of-type
+    {
+        width: 100%;
+
+    }
+    .top-skills .menu-skills ul
+    {
+        margin: 0 0 30px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -2879,6 +2896,14 @@
         width: 170px;
         font-size: 18px;
     }
+    .top-skills .menu-skills
+    {
+        width: auto;
+    }
+    .top-skills .menu-skills ul
+    {
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width:589px) {
@@ -3414,6 +3439,21 @@
     .redactor-content table td {
         padding: 10px;
         font-size: 12px;
+    }
+    .top-skills .menu-skills,
+    .top-skills .menu-skills ul
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    .top-skills .menu-skills li
+    {
+        text-align: center;
+    }
+    .top-skills
+    {
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 }
 
