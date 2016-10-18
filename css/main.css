@@ -7862,3 +7862,102 @@ textarea#contactform-message {
     line-height: 47px;
     text-align: center;
 }
+.redactor-content {
+    padding: 0 25px;
+}
+.redactor-content h1 {
+    color: #83c124;
+    font: 700 40px/36px Open Sans;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    clear: both;
+}
+.redactor-content p {
+    color: #000;
+    font: 400 14px/36px Open Sans;
+    margin-bottom: 5px;
+}
+.redactor-content strong {
+    color: #000;
+    font: 700 14px/36px Open Sans;
+}
+.redactor-content em {
+    color: #000;
+    font: italic 14px/36px Open Sans;
+}
+.redactor-content h2 {
+    color: #83c124;
+    font: 700 32px/36px Open Sans;
+    margin-top: 25px;
+    clear: both;
+}
+.redactor-content table {
+    width: 100%;
+    margin-top: 15px;
+}
+.redactor-content table th,
+.redactor-content table td {
+    padding: 25px;
+    border: 1px solid #ebebeb;
+}
+.redactor-content h3 {
+    color: #83c124;
+    font: 700 24px/36px Open Sans;
+    margin-top: 30px;
+    clear: both;
+}
+.redactor-content h4 {
+    color: #83c124;
+    font: 700 18px/36px Open Sans;
+    clear: both;
+}
+.redactor-content a {
+    color: #0e35db;
+    font: 400 14px/36px Open Sans;
+    text-decoration: underline;
+}
+.redactor-content img {
+    max-width: 100%;
+    width: auto !important;
+    padding-top: 10px;
+}
+.redactor-content ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+.redactor-content ul li {
+    color: #000000;
+    font: 400 14px/36px Open Sans;
+    padding-left: 25px;
+    position: relative;
+}
+.redactor-content ul li:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #83c124;
+    position: absolute;
+    left: 0;
+    top: 13px;
+}
+.redactor-content h5 {
+    color: #83c124;
+    font: 700 15px/36px Open Sans;
+    clear: both;
+    margin-top: 50px;
+}
+.redactor-content blockquote {
+    color: #7f7f7f;
+    font: italic 14px/36px Open Sans;
+    margin: 50px 0 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.redactor-content pre {
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding: 20px;
+}
