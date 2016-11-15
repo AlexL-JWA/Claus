@@ -7997,3 +7997,95 @@ textarea#contactform-message {
 .top-skills .menu-skills ul a:focus {
     color: #489c5a;
 }
+.tabs-contracts
+{
+	width: 760px;
+}
+.tabs-contracts.offers
+{
+	width: 100%;
+}
+.tabs-contracts .form_button
+{
+	margin-top: 50px;
+}
+.tabs-contracts ul
+{
+	border: 1px solid #dfdfdf;
+	border-bottom: none;
+	background: #fff;
+}
+.tabs-contracts ul li
+{
+	width: calc(100% / 2.0017) !important;
+	border: none;
+}
+.tabs-contracts .table
+{
+	margin-bottom: 0 !important;
+}
+.tabs-contracts .table_contracts
+{
+	margin-bottom: 0;
+	background: #fff;
+}
+.tabs-contracts .table_contracts .contracts-item
+{
+	border: 1px solid #dfdfdf;
+	border-bottom: none;
+}
+.tabs-contracts .table_contracts .contracts-item:last-of-type
+{
+	border-bottom: 1px solid #dfdfdf;
+}
+.tabs-contracts .table_contracts .photo
+{
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	background-size: cover;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20px 40px;
+}
+.tabs-contracts .table_contracts .photo a
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.tabs-contracts .table_contracts .description
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 160px);
+}
+.tabs-contracts .table_contracts .description .title
+{
+	font-size: 20px;
+	font-family: Open Sans;
+	color: #000;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	width: calc(100% - 48%);
+}
+.tabs-contracts .table_contracts .description .title span
+{
+	display: block;
+	font-size: 16px;
+	color: #5cc300;
+	font-weight: 600;
+}
+.tabs-contracts .table_contracts .description .price
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	width: calc(100% - 53%);
+	color: #6e6e6e;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: Open Sans;
+}
