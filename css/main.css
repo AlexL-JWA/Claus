@@ -93,7 +93,7 @@ header.clj_header {
     line-height: 70px;
 }
 header.clj_header .logo {
-    margin-left: 10px;
+/*    margin-left: 10px;*/
     display: block;
     width: 100%;
     max-width: 150px;
@@ -8088,4 +8088,138 @@ textarea#contactform-message {
 	font-size: 18px;
 	font-weight: 700;
 	font-family: Open Sans;
+}
+.find-job .find-job-title
+{
+	font-size: 30px !important;
+	color: #6e6e6e !important;
+	margin-top: 20px !important;
+	font-weight: 700;
+	font-family: Open Sans;
+}
+.find-job .internally_nav
+{
+	margin-bottom: 35px;
+}
+.find-job .internally_nav li
+{
+	float: inherit !important;
+}
+.find-job .pagination
+{
+	margin: 32px 0px 63px 0;
+	float: right;
+}
+.find-job .search
+{
+	margin-top: 30px;
+	padding-bottom: 40px;
+}
+.find-job .search p
+{
+	display: inline-block;
+	font-size: 18px;
+	color: #727272;
+	font-weight: 600;
+}
+.find-job .search form
+{
+	display: inline-block;
+}
+.find-job .search form input
+{
+	vertical-align: middle;
+}
+.find-job .search form input[type="search"]
+{
+	width: 400px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px solid rgba(137, 137, 137, 0.9);
+	padding: 0 15px;
+	font-size: 19px;
+	font-family: 'Source Sans Pro';
+	color: #434343;
+	font-weight: 400;
+	margin-left: 30px;
+}
+.find-job .search form input[type="submit"]
+{
+	margin-left: 20px;
+}
+.find-job .item
+{
+	padding: 25px 30px 30px !important;
+}
+.find-job .title h2
+{
+	display: inline-block;
+	font-size: 24px !important;
+	font-family: Open Sans;
+	font-weight: 600;
+	margin-top: 0 !important;
+}
+.find-job .title p
+{
+	line-height: 26px;
+	float: right;
+	font-size: 16px;
+	color: #727272;
+	font-weight: 600;
+	font-family: Open Sans;
+}
+.find-job .price
+{
+	color: #6e6e6e;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: Open Sans;
+	color: #6e6e6e;
+	margin-top: 10px !important;
+}
+.find-job .price span
+{
+	color: #83c124;
+	font-size: 24px;
+	font-weight: 700;
+	color: #83c124;
+}
+.find-job .about
+{
+	padding: 0 !important;
+	margin-top: 5px !important;
+	width: 780px;
+}
+.find-job .skills ul
+{
+	padding-left: 0 !important;
+}
+.find-job .skills ul li
+{
+	font-size: 18px !important;
+	font-weight: 600;
+	color: #000 !important;
+}
+.find-job .skills ul li.skills_li
+{
+	color: #727272 !important;
+}
+.find-job .more
+{
+	color: #83c124;
+	cursor: pointer;
+}
+.find-job .elTextHidden
+{
+	margin-left: 5px;
+}
+.freelancer-menu li
+{
+	width: calc(100% / 6.13);
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+.freelancer-menu li:first-of-type
+{
+	text-align: left;
 }
