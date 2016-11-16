@@ -541,6 +541,14 @@
         width: 200px;
         height: 200px;
     }
+	.freelancer-menu li
+	{
+		width: calc(100% / 6.17);
+	}
+	.freelancer-menu li a
+	{
+		font-size: 16px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -686,9 +694,10 @@
     {
         margin-left: 0;
     }
-    .my-profile .overview div .edit, {
+    .my-profile .overview div .edit
+	{
         top: 5px;
-    }
+	}
 }
 
 @media screen and (max-width:991px) {
@@ -1534,6 +1543,18 @@
 	.tabs-contracts ul li {
     	width: calc(100% / 2.0018) !important;
     	border: none;
+	}
+	.find-job .about
+	{
+		width: 585px;
+	}
+	.freelancer-menu li
+	{
+		width: calc(100% / 6.21);
+	}
+	.freelancer-menu li a
+	{
+		font-size: 13px !important;
 	}
 }
 
@@ -2631,6 +2652,37 @@
     	width: calc(100% / 2.0023) !important;
     	border: none;
 	}
+	.freelancer-menu li:first-of-type
+	{
+		text-align: center;
+	}
+	.find-job .search form input[type="search"]
+	{
+		width: 240px;
+	}
+	.find-job .search form input[type="submit"]
+	{
+		margin-bottom: 0;
+	}
+	.find-job .item .information .title
+	{
+		text-align: left;
+		display: block;
+	}
+	.find-job .item .information .price
+	{
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+	.find-job .item .information .about
+	{
+		width: 100%;
+	}
+	.find-job .item .information .skills
+	{
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -3243,7 +3295,65 @@
 	.tabs-contracts ul li {
     width: calc(100% / 2.0044) !important;
     border: none;
-}
+	}
+	.find-job .search
+	{
+		padding-bottom: 10px;
+	}
+	.find-job .search form
+	{
+		display: block;
+	}
+	.find-job .search form input[type="search"]
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	.find-job .search form input[type="search"]::-webkit-input-placeholder
+	{
+		font-size: 19px !important;
+	}
+	.find-job .search form input[type="search"]::-moz-placeholder
+	{
+		font-size: 19px !important;
+	}
+	.find-job .search form input[type="search"]:-moz-placeholder
+	{
+		font-size: 19px !important;
+	}
+	.find-job .search form input[type="search"]:-ms-input-placeholder
+	{
+		font-size: 19px !important;
+	}
+	.find-job .search form input[type="submit"]
+	{
+		margin-left: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+	.find-job .title h2
+	{
+		font-size: 20px;
+	}
+	.find-job .title p
+	{
+		font-size: 12px;
+		line-height: 34px;
+	}
+	.find-job .item
+	{
+		padding: 25px 15px 30px !important;
+	}
+	.find-job .item .skills ul li
+	{
+		margin-right: 5px;
+		font-size: 13px !important;
+	}
+	.find-job .item .skills ul li.skills_li
+	{
+		margin-right: 5px;
+	}
 }
 
 @media only screen and (max-width: 560px) {
