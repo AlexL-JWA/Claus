@@ -1541,7 +1541,7 @@
 		width: 720px;
 	}
 	.tabs-contracts ul li {
-    	width: calc(100% / 2.0018) !important;
+    	width: calc(100% / 2.0019) !important;
     	border: none;
 	}
 	.find-job .about
@@ -2649,7 +2649,7 @@
 		font-size: 16px;
 	}
 	.tabs-contracts ul li {
-    	width: calc(100% / 2.0023) !important;
+    	width: calc(100% / 2.0024) !important;
     	border: none;
 	}
 	.freelancer-menu li:first-of-type

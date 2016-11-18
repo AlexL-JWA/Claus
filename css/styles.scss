@@ -1,0 +1,76 @@
+.job-view-page
+{
+	padding-top: 50px;
+	.job-view-description
+	{
+		width: calc(100% - 265px);
+		display: inline-block;
+		border: 1px solid #d9d9d9;
+		border-radius: 3px;
+		padding: 40px 55px;
+		margin-bottom: 50px;
+
+		p
+		{
+			font-size: 18px;
+
+			font-weight: 600;
+			color: #000;
+
+			&.price
+			{
+				color: #6e6e6e;
+
+				span
+				{
+					color: #83c124;
+					margin-left: 10px;
+
+				}
+			}
+			span
+			{
+				color: #6e6e6e;
+				margin-right: 10px;
+				min-width: 100px;
+				display: inline-block;
+			}
+		}
+	}
+	.button
+	{
+		width: 208px;
+		height: 43px;
+		line-height: 43px;
+		border-radius: 3px;
+		text-align: center;
+		float: right;
+		vertical-align: top;
+		font-family: 'Source Sans Pro';
+		font-size: 18px;
+		color: #fff;
+		font-weight: 400;
+		background: #83c124;
+		margin-left: 55px;
+	}
+	.about
+	{
+		span
+		{
+			min-width: inherit !important;
+		}
+	}
+	.skills
+	{
+		ul
+		{
+			li
+			{
+				display: inline-block;
+				margin-right: 20px;
+			}
+		}
+	}
+
+
+}
