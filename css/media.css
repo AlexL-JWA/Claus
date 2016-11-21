@@ -555,6 +555,12 @@
 	{
 		width: calc(100% / 3.05 );
 	}
+	.contracts_freelancer .tabs-contracts .table_contracts .tr .td,
+	.contracts_freelancer .tabs-contracts .table_contracts .tr .th
+	{
+    	display: inline-block;
+    	width: calc(100% / 3 - 124px);
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -1581,6 +1587,12 @@
 	.contracts_freelancer .tabs-contracts .table_contracts .description .hours-worked
 	{
     	width: calc(100% / 3.06);
+	}
+	.contracts_freelancer .tabs-contracts .table_contracts .tr .td,
+	.contracts_freelancer .tabs-contracts .table_contracts .tr .th
+	{
+    	display: inline-block;
+    	width: calc(100% / 3 - 94px);
 	}
 }
 
@@ -2760,6 +2772,14 @@
 	{
 		display: table;
 		margin: 20px auto;
+	}
+	.find-job.application-page .title ul
+	{
+    	float: inherit;
+	}
+	.find-job.application-page .title ul li:first-of-type
+	{
+		margin-left: 0 !important;
 	}
 }
 
@@ -4412,6 +4432,31 @@
     .news-page.news-singl .comments {
         padding: 30px 15px;
     }
+	.find-job.proposal-page .item .information #outputMulti div
+	{
+		width: 100%;
+
+	}
+	.find-job.proposal-page .item .information #outputMulti div img.thumb,
+	.find-job.proposal-page .item .information #outputMulti div .textFile
+	{
+		margin: 0px auto 10px;
+		display: table;
+	}
+	.find-job.proposal-page .item .information #outputMulti div .nameFile
+	{
+		display: block;
+		margin-right: 0;
+	}
+	.find-job.application-page .title ul li
+	{
+		margin-left: 25px;
+		font-size: 14px
+	}
+	.find-job.application-page #outputMulti.active
+	{
+    	padding: 20px 10px 0;
+	}
 }
 
 @media screen and (max-width:454px) {

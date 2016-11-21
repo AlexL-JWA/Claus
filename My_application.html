@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Application</title>
+	<title>My Application</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -22,7 +22,8 @@
 
 <body>
 	<!-- header -->
-<header class="clj_header">  <!-- header -->
+	<header class="clj_header">
+		<!-- header -->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
@@ -37,10 +38,12 @@
 				</div>
 			</div>
 		</div>
-	</header>  <!-- end header -->
+	</header>
+	<!-- end header -->
 
 
-	<nav class="clj_nav">	<!-- navigation -->
+	<nav class="clj_nav">
+		<!-- navigation -->
 		<div class="container">
 			<span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
 			<ul class="freelancer-menu">
@@ -88,19 +91,21 @@
 							<a href="#" class="view-job">View job position</a>
 
 							<form action="" class="change-hourly-rate">
-                                <p>You Rate <span><b>$</b>  <input value="20.00" type="text"> / hr</span></p>
-                                <p>You will earn estimated<span><b>$</b> <input value="20.00" type="text"> / hr</span></p>
+								<p>You Rate <span><b>$</b>  <input value="20.00" type="text"> / hr</span></p>
+								<p>You will earn estimated<span><b>$</b> <input value="20.00" type="text"> / hr</span></p>
 
 								<p class="text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 								</p>
+
                                 <div class="add-file">
-                                    <input multiple type="file" name="uploaded_file" id="add_file">
+                                    <input multiple type="file" name="fileMulti[]" id="add_file">
                                     <label for="add_file" id="upload"><i class="fa fa-paperclip" aria-hidden="true"></i> Attach File</label>
-									<ul id="selectedFiles"></ul>
                                 </div>
-                                <input type="submit" value="Submit a proposal">
-                                <a href="#" class="cancel">Cancel</a>
+                               	<div class="add-files-project" id="outputMulti">
+
+                               	</div>
+
 							</form>
 						</div>
 					</div>
@@ -202,18 +207,64 @@
 		});
 
 
-	//Start	Add File
-	$('input:file[multiple]').change(
-      function(e){
-        var numFiles = e.currentTarget.files.length;
-        for (i=0;i<numFiles;i++){
-        fileSize = parseInt(e.currentTarget.files[i].size, 10)/1024;
-        filesize = Math.round(fileSize);
-        $('<li>').text(e.currentTarget.files[i].name).appendTo($('#selectedFiles'));
-        $('<span>').addClass('filesize').text('(' + filesize + 'kb)').appendTo($('#selectedFiles li:last'));
-      }
-    });
-	//Start	End File
+		//Start	Add File
+		//	$('input:file[multiple]').change(
+		//      function(e){
+		//        var numFiles = e.currentTarget.files.length;
+		//        for (i=0;i<numFiles;i++){
+		//        fileSize = parseInt(e.currentTarget.files[i].size, 10)/1024;
+		//        filesize = Math.round(fileSize);
+		//        $('<li>').text(e.currentTarget.files[i].name).appendTo($('#selectedFiles'));
+		//        $('<span>').addClass('filesize').text('(' + filesize + 'kb)').appendTo($('#selectedFiles li:last'));
+		//      }
+		//    });
+
+
+
+			function handleFileSelect(evt) {
+			var file = evt.target.files; // FileList object
+				console.log(file)
+			// Loop through the FileList and render image files as thumbnails.
+			for (var i = 0, f; f = file[i]; i++) {
+				$('#outputMulti').addClass('active');
+				// Only process image files.
+				if (!f.type.match('image.*')) {
+
+
+
+				}
+				var reader = new FileReader();
+				// Closure to capture the file information.
+				reader.onload = (function (theFile) {
+					return function (e) {
+					console.log(theFile.type);
+
+						if(theFile.type == 'image/jpeg' || theFile.type =='image/gif' || theFile.type =='image/png'  || theFile.type =='image/svg+xml'){
+						// Render thumbnail.
+						var div = document.createElement('div');
+						div.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />',' <p class="nameFile">',escape(theFile.name),'</p>'].join('');
+						document.getElementById('outputMulti').insertBefore(div, null);
+
+
+						}else{
+
+						var div = document.createElement('div');
+						div.innerHTML = ['<i class="fa fa-file-o textFile" aria-hidden="true"></i>',' <p class="nameFile">',escape(theFile.name),'</p>'].join('');
+						document.getElementById('outputMulti').insertBefore(div, null);
+
+
+						}
+
+
+
+					};
+				})(f);
+				// Read in the image file as a data URL.
+				reader.readAsDataURL(f);
+			}
+		}
+		document.getElementById('add_file').addEventListener('change', handleFileSelect, false);
+		//Start	End File
 	</script>
 </body>
 

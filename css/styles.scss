@@ -315,9 +315,56 @@ a.view-job,
 					font-weight: 400;
 					width: 100%;
 					border-bottom: none;
+					margin-bottom: 0;
 				}
 			}
 		}
+		.add-file
+		{
+			margin-top: 20px;
+		}
+		.add-files-project
+		{
+			background: #f9f9f9;
+		}
+		#outputMulti
+		{
+			&.active
+			{
+				margin-top: 20px;
+				padding: 20px 20px 0;
+			}
+			div
+			{
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			img
+			{
+				height: 60px;
+				float: inherit;
+				margin: 0 10px 0px 0;
+				vertical-align: middle;
+			}
+			.nameFile
+			{
+				width: auto !important;
+				display: inline-block;
+				vertical-align: middle;
+				border: none !important;
+				margin-bottom: 0 !important;
+				font-size: 12px !important;
+				margin-right: 20px;
+				padding: 0 !important;
+			}
+			.textFile
+			{
+				font-size: 60px;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+		}
+
 	}
 }
 
@@ -345,10 +392,61 @@ a.view-job,
 					font-family: Open Sans;
 				}
 			}
+			.tables-applications
+			{
+				border-left: 1px solid #e1e1e1;
+				border-right: 1px solid #e1e1e1;
+				margin-bottom: 50px;
+			}
+			.tr
+			{
+				padding: 25px;
+				border-bottom: 1px solid #e1e1e1;
+				&:first-of-type
+				{
+					background: #f3f3f3;
+				}
+				.th
+				{
+					p
+					{
+						margin-bottom: 0;
+						b
+						{
+							font-size: 16px;
+							font-family: Open Sans;
+							color: #5b5b5b;
+							font-weight: 700;
+						}
+					}
+				}
+				.td
+				{
+					font-family: Open Sans;
+					font-size: 16px;
+					color: #5b5b5b;
+					font-weight: 400;
+
+					p
+					{
+						margin-bottom: 0 ;
+					}
+				}
+				.td,
+				.th
+				{
+
+					display: inline-block;
+					width: calc(100% / 3 - 158px);
+
+					&:first-of-type
+					{
+						width: 40%;
+					}
+
+				}
+			}
 		}
-	}
-	.hours-worked
-	{
 
 	}
 }
