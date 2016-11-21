@@ -316,13 +316,60 @@ p.text {
     font-size: 18px;
     font-weight: 400;
     width: 100%;
-    border-bottom: none; }
+    border-bottom: none;
+    margin-bottom: 0; }
+  /* line 322, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+.add-file {
+    margin-top: 20px; }
+  /* line 326, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+.add-files-project {
+    background: #f9f9f9; }
+  /* line 332, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+#outputMulti.active {
+    margin-top: 20px;
+    padding: 20px 20px 0; }
+  /* line 337, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+#outputMulti
+div {
+    display: inline-block;
+    margin-bottom: 20px; }
+  /* line 342, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+#outputMulti
+img {
+    height: 60px;
+    float: inherit;
+    margin: 0 10px 0px 0;
+    vertical-align: middle; }
+  /* line 349, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+#outputMulti
+.nameFile {
+    width: auto !important;
+    display: inline-block;
+    vertical-align: middle;
+    border: none !important;
+    margin-bottom: 0 !important;
+    font-size: 12px !important;
+    margin-right: 20px;
+    padding: 0 !important; }
+  /* line 360, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+#outputMulti
+.textFile {
+    font-size: 60px;
+    vertical-align: middle;
+    margin-right: 10px; }
 
-/* line 326, D:/Claus-master/Claus-master/css/styles.scss */
+/* line 373, D:/Claus-master/Claus-master/css/styles.scss */
 .contracts_freelancer
 .tabs-contracts {
   width: 100%; }
-  /* line 335, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 382, D:/Claus-master/Claus-master/css/styles.scss */
   .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -338,7 +385,7 @@ p.text {
 .hours-worked {
     width: calc(100% / 3.03 );
     display: inline-block; }
-  /* line 340, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 387, D:/Claus-master/Claus-master/css/styles.scss */
   .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -348,5 +395,88 @@ p.text {
     font-size: 18px;
     font-weight: 700;
     font-family: Open Sans; }
+  /* line 395, D:/Claus-master/Claus-master/css/styles.scss */
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tables-applications {
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    margin-bottom: 50px; }
+  /* line 401, D:/Claus-master/Claus-master/css/styles.scss */
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr {
+    padding: 25px;
+    border-bottom: 1px solid #e1e1e1; }
+    /* line 405, D:/Claus-master/Claus-master/css/styles.scss */
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr:first-of-type {
+      background: #f3f3f3; }
+    /* line 411, D:/Claus-master/Claus-master/css/styles.scss */
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.th
+p {
+      margin-bottom: 0; }
+      /* line 414, D:/Claus-master/Claus-master/css/styles.scss */
+      .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.th
+p
+b {
+        font-size: 16px;
+        font-family: Open Sans;
+        color: #5b5b5b;
+        font-weight: 700; }
+    /* line 423, D:/Claus-master/Claus-master/css/styles.scss */
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.td {
+      font-family: Open Sans;
+      font-size: 16px;
+      color: #5b5b5b;
+      font-weight: 400; }
+      /* line 430, D:/Claus-master/Claus-master/css/styles.scss */
+      .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.td
+p {
+        margin-bottom: 0; }
+    /* line 436, D:/Claus-master/Claus-master/css/styles.scss */
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr .td,
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.th {
+      display: inline-block;
+      width: calc(100% / 3 - 158px); }
+      /* line 442, D:/Claus-master/Claus-master/css/styles.scss */
+      .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr .td:first-of-type
+,
+      .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.th:first-of-type {
+        width: 40%; }
 
 /*# sourceMappingURL=styles.css.map */
