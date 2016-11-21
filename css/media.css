@@ -1556,6 +1556,16 @@
 	{
 		font-size: 13px !important;
 	}
+    .job-view-page .job-view-description
+    {
+        padding: 40px 15px;
+        width: calc(100% - 185px);
+    }
+    .job-view-page .button
+    {
+        width: 170px;
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width:845px) {
@@ -2683,6 +2693,21 @@
 	{
 		text-align: left;
 	}
+    .job-view-page .job-view-description
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .job-view-page .button
+    {
+        margin: 0 auto 40px;
+        float: initial;
+        display: table;
+    }
+    .job-view-page .title p
+    {
+        float: inherit;
+    }
 }
 
 @media only screen and (max-width: 710px) {

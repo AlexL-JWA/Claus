@@ -133,5 +133,38 @@ span.more:focus {
 /* line 136, D:/Claus-master/Claus-master/css/styles.scss */
 .find-job {
   min-height: calc(100vh - 220px); }
+  /* line 142, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.proposal-page
+.item {
+    width: 812px;
+    padding: 45px !important; }
+  /* line 149, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.proposal-page
+.title
+h3.title {
+    margin: 0 0 20px !important;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600; }
+    /* line 156, D:/Claus-master/Claus-master/css/styles.scss */
+    .find-job.proposal-page
+.title
+h3.title
+span {
+      font-size: 18px;
+      font-family: Open Sans;
+      color: #6e6e6e;
+      margin-right: 15px; }
+  /* line 166, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.proposal-page
+.view-job {
+    font-size: 18px;
+    font-family: Open Sans;
+    color: #83c124; }
+  /* line 173, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.proposal-page
+.about {
+    width: 100% !important;
+    margin-bottom: 10px !important; }
 
 /*# sourceMappingURL=styles.css.map */
