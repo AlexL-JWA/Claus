@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contracts_buyer</title>
+	<title>Search_freelancer</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/Glyphter.css">
-	<link rel="stylesheet" href="css/icon_day.css">
-
-
-
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
@@ -22,10 +19,10 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
+
 <body>
-
-
-	<header class="clj_header">  <!-- header -->
+	<!-- header -->
+<header class="clj_header">  <!-- header -->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
@@ -64,45 +61,50 @@
 				</li>
 			</ul>
 		</div>
-	</nav>	<!-- end navigation -->
+	</nav>
+
+	<!-- navigation -->
 
 
-	<section class="job-view-page find-job">
+	<section class="clj_freelancers find-job proposal-page">
 		<div class="container">
-			<div class="row">
+			<div class="row ">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="job-view-description">
-						<div class="title">
-							<h2>
-								Web-Design
-							</h2>
-							<p>Posted: 12.11.16</p>
+					<h3 class=" find-job-title">Submit a proposal</h3>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="item">
+						<div class="information">
+							<div class="title">
+								<h3 class="title"><span>Job position:</span> Web-Designer</h3>
+							</div>
+							<div class="about">
+								<p class="text-hidden">Need to edit a JPEG file with new information to replace some of the existing information. It will be the Venue, Time and Date that will change and will need to delete the other Day and time on the attached. Will need to have another proof </p>
+							</div>
+							<a href="#">View job position</a>
+							<form action="" class="change-hourly-rate">
+                                <p>You Rate <span><b>$</b>  <input value="20.00" type="text"> /hr</span></p>
+                                <p>You will earn estimated<span><b>$</b> <input value="20.00" type="text"> /hr</span></p>
+                                <textarea name="#" id="#" placeholder="Cover letter"></textarea>
+                                <label for="#">2000 characters left</label>
+
+                                <div class="add-file">
+                                    <input type="file" id="add_file">
+                                    <label for="add_file"><i class="fa fa-paperclip" aria-hidden="true"></i> Attach File</label>
+
+                                </div>
+                                <input type="submit" value="Submit a proposal">
+                                <a href="#" class="cancel">Cancel</a>
+							</form>
 						</div>
-						<p class="price">Fixed price: <span>$ 100,00</span></p>
-						<p><span class="description">Category:</span> Web-Design</p>
-						<p><span class="description">Start date:</span> 02.12.16</p>
-						<p><span class="description">Duration:</span> 1 to 3 month</p>
-						<div class="skills">
-							<ul>
-								<li class="skills_li">Skills:</li>
-								<li>Cognos</li>
-								<li>Photoshop</li>
-								<li>Adobe PDF</li>
-							</ul>
-						</div>
-						<p>Details:</p>
-						<div class="about">
-							<p class="text-hidden">Need to edit a JPEG file with new information to replace some of the existing information. It will be the Venue, Time and Date that will change and will need to delete the other Day and time on the attached. Will need to have another proof Need to edit a JPEG file with new information to replace some of the existing information. It will be the Venue, Time and Date that will change and will need to delete the other Day and time on the attached. Will need to have another proof</p>
-						</div>
-						<a href="#" class="attachment"><i class="fa fa-paperclip" aria-hidden="true"></i>Open Attachment</a>
 					</div>
-					<a href="#" class="button">Submit a proposal</a>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<footer>	<!--START FOOTER-->
+	<!-- footer -->
+	<!--START FOOTER-->
+	<footer>
 		<section>
 			<div class="wrapper footer">
 				<div class="container">
@@ -111,7 +113,7 @@
 							<ul class="footer-menu">
 								<li><a href="#">Terms and conditions</a></li>
 								<li><a href="#">News</a></li>
-								<li><a href="#">About Us</a></li>
+								<li class="active"><a href="#">About Us</a></li>
 								<li><a href="#">FAQ</a></li>
 							</ul>
 						</div>
@@ -119,13 +121,13 @@
 				</div>
 			</div>
 		</section>
-	</footer>	<!--END FOOTER-->
+	</footer>
+	<!--END FOOTER-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>
-	$(document).ready(function() {
+		$(document).ready(function() {
 			//плагин
 			jQuery.fn.liTextLength = function(options) {
 				// настройки по умолчанию
@@ -192,7 +194,7 @@
 				moreText: 'more',
 			});
 		});
-
 	</script>
 </body>
+
 </html>

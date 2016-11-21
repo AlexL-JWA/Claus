@@ -1,7 +1,14 @@
-/* line 1, D:/claus/css/styles.scss */
+/* line 1, D:/Work/css/styles.scss */
 .job-view-page {
   padding-top: 50px; }
-  /* line 4, D:/claus/css/styles.scss */
+  /* line 6, D:/Work/css/styles.scss */
+  .job-view-page
+.title
+p {
+    font-size: 16px !important;
+    color: #727272 !important;
+    margin-bottom: 0 !important; }
+  /* line 13, D:/Work/css/styles.scss */
   .job-view-page
 .job-view-description {
     width: calc(100% - 265px);
@@ -10,35 +17,37 @@
     border-radius: 3px;
     padding: 40px 55px;
     margin-bottom: 50px; }
-    /* line 13, D:/claus/css/styles.scss */
+    /* line 22, D:/Work/css/styles.scss */
     .job-view-page
 .job-view-description
 p {
       font-size: 18px;
+      margin-bottom: 30px;
       font-weight: 600;
+      font-family: Open Sans;
       color: #000; }
-      /* line 20, D:/claus/css/styles.scss */
+      /* line 30, D:/Work/css/styles.scss */
       .job-view-page
 .job-view-description
 p.price {
         color: #6e6e6e; }
-        /* line 24, D:/claus/css/styles.scss */
+        /* line 34, D:/Work/css/styles.scss */
         .job-view-page
 .job-view-description
 p.price
 span {
           color: #83c124;
           margin-left: 10px; }
-      /* line 31, D:/claus/css/styles.scss */
+      /* line 41, D:/Work/css/styles.scss */
       .job-view-page
 .job-view-description
 p
-span {
+.description {
         color: #6e6e6e;
         margin-right: 10px;
         min-width: 100px;
         display: inline-block; }
-  /* line 40, D:/claus/css/styles.scss */
+  /* line 50, D:/Work/css/styles.scss */
   .job-view-page
 .button {
     width: 208px;
@@ -54,17 +63,75 @@ span {
     font-weight: 400;
     background: #83c124;
     margin-left: 55px; }
-  /* line 58, D:/claus/css/styles.scss */
+  /* line 66, D:/Work/css/styles.scss */
   .job-view-page
+.about {
+    width: 100% !important; }
+    /* line 69, D:/Work/css/styles.scss */
+    .job-view-page
 .about
-span {
-    min-width: inherit !important; }
-  /* line 67, D:/claus/css/styles.scss */
+.text-hidden {
+      font-size: 14px !important;
+      color: #000; }
+    /* line 74, D:/Work/css/styles.scss */
+    .job-view-page
+.about
+.more {
+      color: #83c124; }
+  /* line 82, D:/Work/css/styles.scss */
   .job-view-page
+.skills
+ul {
+    margin-bottom: 30px; }
+    /* line 85, D:/Work/css/styles.scss */
+    .job-view-page
 .skills
 ul
 li {
-    display: inline-block;
-    margin-right: 20px; }
+      display: inline-block;
+      margin-right: 20px; }
+  /* line 91, D:/Work/css/styles.scss */
+  .job-view-page
+.skills + p {
+    font-size: 18px;
+    color: #6e6e6e;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  /* line 100, D:/Work/css/styles.scss */
+  .job-view-page
+.attachment {
+    color: #83c124;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    display: table; }
+    /* line 108, D:/Work/css/styles.scss */
+    .job-view-page
+.attachment:hover {
+      color: #59de00; }
+    /* line 112, D:/Work/css/styles.scss */
+    .job-view-page
+.attachment:focus {
+      color: #489c5a; }
+    /* line 116, D:/Work/css/styles.scss */
+    .job-view-page
+.attachment
+i:before {
+      font-size: 24px;
+      vertical-align: bottom;
+      margin-right: 15px; }
+
+/* line 127, D:/Work/css/styles.scss */
+span.more:hover {
+  color: #59de00 !important; }
+
+/* line 131, D:/Work/css/styles.scss */
+span.more:focus {
+  color: #489c5a !important; }
+
+/* line 136, D:/Work/css/styles.scss */
+.find-job {
+  min-height: calc(100vh - 220px); }
 
 /*# sourceMappingURL=styles.css.map */
