@@ -82,9 +82,9 @@
 								<p class="text-hidden">Need to edit a JPEG file with new information to replace some of the existing information. It will be the Venue, Time and Date that will change and will need to delete the other Day and time on the attached. Will need to have another proof Need to edit a JPEG file with new information to replace some of the existing information. It will be the Venue, Time and Date that will change and will need to delete the other Day and time on the attached. Will need to have another proof</p>
 							</div>
 							<a href="#" class="view-job">View job position</a>
-							<form action="" class="change-hourly-rate">
-                                <p>You Rate <span><b>$</b>  <input value="20.00" type="text"> / hr</span></p>
-                                <p>You will earn estimated<span><b>$</b> <input value="20.00" type="text"> / hr</span></p>
+							<form action="" class="change-hourly-rate" enctype="multipart/form-data">
+                                <p>You Rate <span><b>$</b>  <input value="120.00" type="text"></span></p>
+                                <p>You will earn estimated<span><b>$</b> <input value="120.00" type="text"></span></p>
                                 <div class="textarea">
                                 	<textarea name="#" id="#" placeholder="Cover letter"></textarea>
                                 	<label for="#">2000 characters left</label>
@@ -198,7 +198,9 @@
 		});
 
 
-	//Start	Add File
+
+
+//Start	Add File
 	$('input:file[multiple]').change(
       function(e){
         var numFiles = e.currentTarget.files.length;
@@ -209,7 +211,7 @@
         $('<span>').addClass('filesize').text('(' + filesize + 'kb)').appendTo($('#selectedFiles li:last'));
       }
     });
-	//Start	End File
+//Start	End File
 	</script>
 </body>
 

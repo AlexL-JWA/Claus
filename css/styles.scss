@@ -122,7 +122,9 @@
     }
 
 }
-span.more
+span.more,
+a.view-job,
+.add-file label
 {
 	&:hover
 	{
@@ -143,6 +145,8 @@ span.more
 		{
 			width: 812px;
 			padding: 45px !important;
+			margin-top: 20px;
+			margin-bottom: 50px;
 		}
 		.title
 		{
@@ -187,19 +191,89 @@ span.more
 				}
 			}
 		}
-		textarea
+		.textarea
 		{
-			width: 100%;
-			border: 1px solid #d9d9d9;
-			height: 150px;
-			resize: none;
-			padding: 15px 25px;
-			font-weight: 700;
-			& + label
+			width: 92.5%;
+			margin-top: 40px;
+			textarea
 			{
-				float: right;
-
+				width: 100%;
+				border: 1px solid #d9d9d9;
+				height: 150px;
+				resize: none;
+				padding: 15px 25px;
+				font-weight: 700;
 			}
+			label
+			{
+				font-size: 14px;
+				font-weight: 400;
+				color: #000;
+				float: right;
+				margin-top: 15px;
+			}
+		}
+		.add-file
+		{
+			clear: both;
+			margin-top: 90px;
+			#add_file
+			{
+				display: none;
+			}
+			label
+			{
+				font-size: 18px;
+				color: #83c124;
+				font-weight: 700;
+				font-family: Open Sans;
+				vertical-align: middle;
+				cursor: pointer;
+				i
+				{
+					vertical-align: middle;
+					&:before
+					{
+						font-size: 24px;
+						margin-right: 20px;
+					}
+				}
+			}
+			#selectedFiles
+			{
+				font-size: 12px;
+				line-height: 24px;
+
+				.filesize
+				{
+					font-size: 12px;
+				}
+			}
+		}
+		input[type="submit"]
+		{
+			width: 208px;
+			height: 43px;
+			border: 1px solid #83c124;
+			background: #83c124;
+			color: #fff;
+			font-family: 'Source Sans Pro';
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			padding: 0 !important;
+			border-radius: 5px;
+			margin-top: 35px;
+		}
+		.cancel
+		{
+			font-size: 18px;
+			color: #000;
+			font-weight: 400;
+			font-family: 'Source Sans Pro';
+			height: 43px;
+			line-height: 43px;
+			margin-left: 40px;
 		}
 
 	}

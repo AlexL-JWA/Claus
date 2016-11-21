@@ -1566,6 +1566,10 @@
         width: 170px;
         margin-left: 15px;
     }
+	.find-job.proposal-page .item
+	{
+		width: 100% !important;
+	}
 }
 
 @media screen and (max-width:845px) {
@@ -2708,6 +2712,24 @@
     {
         float: inherit;
     }
+	.find-job.proposal-page .item .information
+	{
+		text-align: inherit;
+	}
+	.find-job.proposal-page .item .change-hourly-rate p,
+	.find-job.proposal-page .textarea
+	{
+		width: 100%;
+	}
+	.find-job.proposal-page .item
+	{
+		padding: 30px 15px !important;
+	}
+	.find-job.proposal-page input[type="submit"]
+	{
+		width: 160px;
+		font-size: 16px;
+	}
 }
 
 @media only screen and (max-width: 710px) {
