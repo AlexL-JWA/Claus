@@ -168,13 +168,40 @@ span.more
 			font-size: 18px;
 			font-family: Open Sans;
 			color: #83c124;
-
 		}
 		.about
 		{
 			width: 100% !important;
 			margin-bottom: 10px !important;
 		}
+		.change-hourly-rate
+		{
+			margin-top: 15px;
+
+			p
+			{
+				&:first-of-type
+				{
+					border-top: 1px solid #e6e6e6;
+					padding-top: 20px;
+				}
+			}
+		}
+		textarea
+		{
+			width: 100%;
+			border: 1px solid #d9d9d9;
+			height: 150px;
+			resize: none;
+			padding: 15px 25px;
+			font-weight: 700;
+			& + label
+			{
+				float: right;
+
+			}
+		}
+
 	}
 }
 
