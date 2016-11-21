@@ -549,6 +549,12 @@
 	{
 		font-size: 16px;
 	}
+	.contracts_freelancer .tabs-contracts .table_contracts .description .price,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .title,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .hours-worked
+	{
+		width: calc(100% / 3.05 );
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -1569,6 +1575,12 @@
 	.find-job.proposal-page .item
 	{
 		width: 100% !important;
+	}
+	.contracts_freelancer .tabs-contracts .table_contracts .description .price,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .title,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .hours-worked
+	{
+    	width: calc(100% / 3.06);
 	}
 }
 
@@ -2729,6 +2741,25 @@
 	{
 		width: 160px;
 		font-size: 16px;
+	}
+	.contracts_freelancer .tabs-contracts .table_contracts .description
+	{
+		display: block;
+		width: 100%;
+
+	}
+	.contracts_freelancer .tabs-contracts .table_contracts .description .price,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .title,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .hours-worked
+	{
+		text-align: center;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.contracts_freelancer .tabs-contracts .table_contracts .photo
+	{
+		display: table;
+		margin: 20px auto;
 	}
 }
 

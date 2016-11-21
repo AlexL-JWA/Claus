@@ -280,5 +280,73 @@ input[type="submit"] {
     height: 43px;
     line-height: 43px;
     margin-left: 40px; }
+  /* line 283, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+.title
+h3.title {
+    display: inline-block; }
+  /* line 287, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+.title
+ul {
+    float: right; }
+    /* line 291, D:/Claus-master/Claus-master/css/styles.scss */
+    .find-job.application-page
+.title
+ul
+li {
+      display: inline-block;
+      margin-left: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #000; }
+      /* line 299, D:/Claus-master/Claus-master/css/styles.scss */
+      .find-job.application-page
+.title
+ul
+li
+span {
+        font-weight: 600;
+        color: #6e6e6e; }
+  /* line 311, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.application-page
+.change-hourly-rate
+p.text {
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    border-bottom: none; }
+
+/* line 326, D:/Claus-master/Claus-master/css/styles.scss */
+.contracts_freelancer
+.tabs-contracts {
+  width: 100%; }
+  /* line 335, D:/Claus-master/Claus-master/css/styles.scss */
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.description .price,
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.description .title,
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.description
+.hours-worked {
+    width: calc(100% / 3.03 );
+    display: inline-block; }
+  /* line 340, D:/Claus-master/Claus-master/css/styles.scss */
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.description
+.hours-worked {
+    color: #6e6e6e;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Open Sans; }
 
 /*# sourceMappingURL=styles.css.map */

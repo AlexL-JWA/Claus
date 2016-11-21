@@ -275,6 +275,80 @@ a.view-job,
 			line-height: 43px;
 			margin-left: 40px;
 		}
+	}
+	&.application-page
+	{
+		.title
+		{
+			h3.title
+			{
+				display: inline-block;
+			}
+			ul
+			{
+				float: right;
+
+				li
+				{
+					display: inline-block;
+					margin-left: 30px;
+					font-size: 16px;
+					font-weight: 400;
+					color: #000;
+
+					span
+					{
+						font-weight: 600;
+						color: #6e6e6e;
+					}
+				}
+			}
+		}
+		.change-hourly-rate
+		{
+			p
+			{
+				&.text
+				{
+					line-height: 26px;
+					font-size: 18px;
+					font-weight: 400;
+					width: 100%;
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+.contracts_freelancer
+{
+	.tabs-contracts
+	{
+    	width: 100%;
+		.table_contracts
+		{
+			.description
+			{
+				.price,
+				.title,
+				.hours-worked
+				{
+					width: calc(100% / 3.03 );
+					display: inline-block;
+				}
+				.hours-worked
+				{
+				    color: #6e6e6e;
+					font-size: 18px;
+					font-weight: 700;
+					font-family: Open Sans;
+				}
+			}
+		}
+	}
+	.hours-worked
+	{
 
 	}
 }
