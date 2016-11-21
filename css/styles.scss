@@ -1,6 +1,15 @@
 .job-view-page
 {
 	padding-top: 50px;
+    .title
+    {
+        p
+        {
+            font-size: 16px !important;
+            color: #727272 !important;
+            margin-bottom: 0 !important;
+        }
+    }
 	.job-view-description
 	{
 		width: calc(100% - 265px);
@@ -13,8 +22,9 @@
 		p
 		{
 			font-size: 18px;
-
+            margin-bottom: 30px;
 			font-weight: 600;
+            font-family: Open Sans;
 			color: #000;
 
 			&.price
@@ -28,7 +38,7 @@
 
 				}
 			}
-			span
+			.description
 			{
 				color: #6e6e6e;
 				margin-right: 10px;
@@ -55,22 +65,79 @@
 	}
 	.about
 	{
-		span
-		{
-			min-width: inherit !important;
-		}
+        width: 100% !important;
+        .text-hidden
+        {
+            font-size: 14px !important;
+            color: #000;
+        }
+        .more
+        {
+            color: #83c124;
+
+        }
 	}
 	.skills
 	{
 		ul
 		{
+            margin-bottom: 30px;
 			li
 			{
 				display: inline-block;
 				margin-right: 20px;
 			}
 		}
-	}
+        & + p
+        {
+            font-size: 18px;
+            color: #6e6e6e;
+            font-weight: 600;
+            margin-bottom: 15px;
 
+        }
+	}
+    .attachment
+    {
+        color: #83c124;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 20px;
+        display: table;
+        &:hover
+        {
+            color: #59de00;
+        }
+        &:focus
+        {
+            color: #489c5a;
+        }
+        i:before
+        {
+            font-size: 24px;
+            vertical-align: bottom;
+            margin-right: 15px;
+        }
+    }
+
+}
+span.more
+{
+        &:hover
+        {
+            color: #59de00 !important;
+        }
+        &:focus
+        {
+            color: #489c5a !important;
+        }
+}
+.find-job
+{
+    min-height: calc(100vh - 220px);
+}
+.proposal-page
+{
 
 }
