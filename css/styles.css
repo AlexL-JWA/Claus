@@ -161,10 +161,33 @@ span {
     font-size: 18px;
     font-family: Open Sans;
     color: #83c124; }
-  /* line 173, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 172, D:/Claus-master/Claus-master/css/styles.scss */
   .find-job.proposal-page
 .about {
     width: 100% !important;
     margin-bottom: 10px !important; }
+  /* line 177, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.proposal-page
+.change-hourly-rate {
+    margin-top: 15px; }
+    /* line 183, D:/Claus-master/Claus-master/css/styles.scss */
+    .find-job.proposal-page
+.change-hourly-rate
+p:first-of-type {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 20px; }
+  /* line 190, D:/Claus-master/Claus-master/css/styles.scss */
+  .find-job.proposal-page
+textarea {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    height: 150px;
+    resize: none;
+    padding: 15px 25px;
+    font-weight: 700; }
+    /* line 198, D:/Claus-master/Claus-master/css/styles.scss */
+    .find-job.proposal-page
+textarea + label {
+      float: right; }
 
 /*# sourceMappingURL=styles.css.map */
