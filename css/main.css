@@ -32,7 +32,9 @@ section.clj_cognos form input[type='submit']:hover,
 .pagination .active:hover,
 .modal-form input[type="submit"]:hover,
 .modal-form input[type="submit"].save-add-more:hover,
-.main-page-categories .button:hover {
+.main-page-categories .button:hover,
+.find-job.proposal-page input[type="submit"]:hover
+{
     background: #59de00;
     border-color: #bcf662;
 }
@@ -52,7 +54,8 @@ section.clj_cognos form input[type='submit']:focus,
 .pagination .active:focus,
 .modal-form input[type="submit"]:focus,
 .modal-form input[type="submit"].save-add-more:focus,
-.main-page-categories .button:focus {
+.main-page-categories .button:focus,
+.find-job.proposal-page input[type="submit"]:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -8131,6 +8134,7 @@ textarea#contactform-message {
     text-align: right;
     font-weight: 400;
     padding-right: 10px;
+	padding-left: 10px;
     border: 1px solid #d9d9d9;
 }
 
