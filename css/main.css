@@ -1,6 +1,6 @@
-html {
+html
+{
     position: relative;
-    overflow-x: hidden;
 }
 
 input:focus,
@@ -33,7 +33,8 @@ section.clj_cognos form input[type='submit']:hover,
 .modal-form input[type="submit"]:hover,
 .modal-form input[type="submit"].save-add-more:hover,
 .main-page-categories .button:hover,
-.find-job.proposal-page input[type="submit"]:hover
+.find-job.proposal-page input[type="submit"]:hover,
+.modal.subscribe .subscribe-content input[type="submit"]:hover
 {
     background: #59de00;
     border-color: #bcf662;
@@ -55,7 +56,8 @@ section.clj_cognos form input[type='submit']:focus,
 .modal-form input[type="submit"]:focus,
 .modal-form input[type="submit"].save-add-more:focus,
 .main-page-categories .button:focus,
-.find-job.proposal-page input[type="submit"]:focus{
+.find-job.proposal-page input[type="submit"]:focus,
+.modal.subscribe .subscribe-content input[type="submit"]:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -85,6 +87,7 @@ body {
     background: #f9f9f9;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+	padding: 0 !important;
 }
 
 a,
@@ -9261,7 +9264,7 @@ textarea#contactform-message {
     margin: 0px auto 30px;
     text-decoration: none;
     transition: .1s;
-    color: #066;
+/*    color: #066;*/
 }
 
 .main-page-categories h2.title {
