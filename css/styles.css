@@ -369,7 +369,7 @@ img {
 .contracts_freelancer
 .tabs-contracts {
   width: 100%; }
-  /* line 382, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 383, D:/Claus-master/Claus-master/css/styles.scss */
   .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -385,7 +385,7 @@ img {
 .hours-worked {
     width: calc(100% / 3.03 );
     display: inline-block; }
-  /* line 387, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 388, D:/Claus-master/Claus-master/css/styles.scss */
   .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -395,7 +395,7 @@ img {
     font-size: 18px;
     font-weight: 700;
     font-family: Open Sans; }
-  /* line 395, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 396, D:/Claus-master/Claus-master/css/styles.scss */
   .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -403,20 +403,20 @@ img {
     border-left: 1px solid #e1e1e1;
     border-right: 1px solid #e1e1e1;
     margin-bottom: 50px; }
-  /* line 401, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 402, D:/Claus-master/Claus-master/css/styles.scss */
   .contracts_freelancer
 .tabs-contracts
 .table_contracts
 .tr {
     padding: 25px;
     border-bottom: 1px solid #e1e1e1; }
-    /* line 405, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 406, D:/Claus-master/Claus-master/css/styles.scss */
     .contracts_freelancer
 .tabs-contracts
 .table_contracts
 .tr:first-of-type {
       background: #f3f3f3; }
-    /* line 411, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 412, D:/Claus-master/Claus-master/css/styles.scss */
     .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -424,7 +424,7 @@ img {
 .th
 p {
       margin-bottom: 0; }
-      /* line 414, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 415, D:/Claus-master/Claus-master/css/styles.scss */
       .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -436,7 +436,7 @@ b {
         font-family: Open Sans;
         color: #5b5b5b;
         font-weight: 700; }
-    /* line 423, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 424, D:/Claus-master/Claus-master/css/styles.scss */
     .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -446,7 +446,7 @@ b {
       font-size: 16px;
       color: #5b5b5b;
       font-weight: 400; }
-      /* line 430, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 431, D:/Claus-master/Claus-master/css/styles.scss */
       .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -454,7 +454,7 @@ b {
 .td
 p {
         margin-bottom: 0; }
-    /* line 436, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 437, D:/Claus-master/Claus-master/css/styles.scss */
     .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -465,8 +465,8 @@ p {
 .tr
 .th {
       display: inline-block;
-      width: calc(100% / 3 - 158px); }
-      /* line 442, D:/Claus-master/Claus-master/css/styles.scss */
+      width: calc(100% / 3 - 150px); }
+      /* line 443, D:/Claus-master/Claus-master/css/styles.scss */
       .contracts_freelancer
 .tabs-contracts
 .table_contracts
@@ -478,5 +478,178 @@ p {
 .tr
 .th:first-of-type {
         width: 40%; }
+
+/* line 460, D:/Claus-master/Claus-master/css/styles.scss */
+.contracts_freelancer
+.tabs-contracts
+.table_contracts.mobile-table {
+  display: none; }
+
+/* line 471, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.close {
+  position: absolute;
+  font-size: 36px;
+  right: 10px;
+  top: 0px; }
+
+/* line 478, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.modal-dialog {
+  width: 600px; }
+  /* line 482, D:/Claus-master/Claus-master/css/styles.scss */
+  .modal.subscribe
+.modal-dialog
+.modal-content {
+    width: 100%;
+    height: auto;
+    padding: 60px 50px; }
+
+/* line 491, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.subscribe-content
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: Open Sans;
+  margin-top: 0; }
+
+/* line 499, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.subscribe-content
+.ico {
+  width: 123px;
+  display: inline-block; }
+
+/* line 504, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.subscribe-content
+.text {
+  display: inline-block;
+  width: calc(100% - 128px);
+  padding-left: 30px;
+  vertical-align: top;
+  margin-bottom: 20px; }
+
+/* line 512, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.subscribe-content
+p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #a9a9a9;
+  font-weight: 400;
+  font-family: Open Sans; }
+  /* line 519, D:/Claus-master/Claus-master/css/styles.scss */
+  .modal.subscribe
+.subscribe-content
+p
+img {
+    width: 128px; }
+
+/* line 524, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.subscribe-content
+.input {
+  position: relative;
+  width: calc(100% - 170px);
+  display: inline-block; }
+  /* line 529, D:/Claus-master/Claus-master/css/styles.scss */
+  .modal.subscribe
+.subscribe-content
+.input
+input {
+    border: 1px solid #898989;
+    width: 100%;
+    padding: 0 40px 0 10px;
+    height: 35px; }
+  /* line 536, D:/Claus-master/Claus-master/css/styles.scss */
+  .modal.subscribe
+.subscribe-content
+.input
+i {
+    position: absolute;
+    right: 10px;
+    top: 8px; }
+
+/* line 544, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.subscribe-content
+input[type="submit"] {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.06);
+  background-color: #62cb31;
+  border-radius: 5px;
+  width: 145px;
+  height: 35px;
+  color: #fff;
+  margin-left: 20px;
+  border: 1px solid #62cb31; }
+
+/* line 556, D:/Claus-master/Claus-master/css/styles.scss */
+.modal.subscribe
+.subscribe-thank {
+  display: none; }
+  /* line 559, D:/Claus-master/Claus-master/css/styles.scss */
+  .modal.subscribe
+.subscribe-thank
+p {
+    font-size: 30px;
+    font-family: Open Sans;
+    line-height: 36px;
+    color: #515151;
+    text-align: center;
+    font-weight: 400; }
+    /* line 567, D:/Claus-master/Claus-master/css/styles.scss */
+    .modal.subscribe
+.subscribe-thank
+p
+img {
+      width: 154px; }
+  /* line 572, D:/Claus-master/Claus-master/css/styles.scss */
+  .modal.subscribe
+.subscribe-thank
+.ico {
+    width: 103px;
+    display: table;
+    margin: 20px auto 0; }
+
+@media only screen and (max-width: 768px) {
+  /* line 592, D:/Claus-master/Claus-master/css/styles.scss */
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts.hide-xs {
+    display: none; }
+  /* line 596, D:/Claus-master/Claus-master/css/styles.scss */
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts.mobile-table {
+    display: block; }
+  /* line 600, D:/Claus-master/Claus-master/css/styles.scss */
+  .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr {
+    background: none !important;
+    padding: 0px; }
+    /* line 605, D:/Claus-master/Claus-master/css/styles.scss */
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr .td,
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.th {
+      width: 100% !important;
+      text-align: center;
+      padding: 25px; }
+    /* line 611, D:/Claus-master/Claus-master/css/styles.scss */
+    .contracts_freelancer
+.tabs-contracts
+.table_contracts
+.tr
+.th {
+      background: #f3f3f3; } }
 
 /*# sourceMappingURL=styles.css.map */

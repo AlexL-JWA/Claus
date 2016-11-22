@@ -2781,6 +2781,19 @@
 	{
 		margin-left: 0 !important;
 	}
+	.contracts_freelancer .tabs-contracts .hide-xs
+	{
+		display: none;
+	}
+	.modal.subscribe .modal-dialog {
+    	width: 600px;
+    	margin-left: auto !important;
+    	margin-right: auto !important;
+	}
+	.subscribe
+	{
+		padding-left: 0 !important;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -3083,6 +3096,36 @@
     {
         margin-left: 20px;
     }
+	.modal.subscribe .subscribe-content .ico
+	{
+		display: table;
+		margin: 0 auto 20px;
+	}
+	.modal.subscribe .modal-dialog
+	{
+		width: 100%;
+	}
+	.modal.subscribe .subscribe-content .text
+	{
+
+    	width: 100%;
+    	padding-left: 0px;
+    	text-align: center;
+	}
+	.modal.subscribe .subscribe-content .input
+	{
+    	width: 100%;
+    	margin-bottom: 20px;
+	}
+	.modal.subscribe .subscribe-content input[type="submit"]
+	{
+		display: table;
+		margin: 0 auto;
+	}
+	.modal.subscribe .modal-dialog .modal-content {
+
+    	padding: 60px 15px;
+	}
 }
 
 @media screen and (max-width:589px) {

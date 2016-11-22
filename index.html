@@ -423,7 +423,7 @@
  <!--START MODAL-->
 
 
-<div class="modal fade cookie-policy " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div class="modal fade cookie-policy " tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-sm " >
     <div class="modal-content">
       <h5 class="modal-title">Cookie Policy</h5>
@@ -433,6 +433,33 @@
     </div>
   </div>
 </div>
+
+
+
+
+<div class="modal fade subscribe" tabindex="-1" role="dialog"  aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">×</button>
+			<div class="subscribe-content">
+				<img class="ico" src="img/Mail_easy.png" alt="">
+				<div class="text">
+					<h3>We will go live soon!</h3>
+					<p>Please, subscribe for the <img src="img/logo.png" alt=""> go-live date information:</p>
+				</div>
+				<div class="input">
+					<input type="email" placeholder="E-mail">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				</div>
+				<input type="submit" value="Subscribe">
+			</div>
+			<div class="subscribe-thank">
+				<p>We will get in touch soon. Thank you from the <img src="img/logo.png" alt=""> team.</p>
+				<img src="img/check.png" alt="" class="ico">
+			</div>
+		</div>
+	</div>
+</div>
 <!--END MODAL-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -440,9 +467,36 @@
 	<script src="js/common.js"></script>
 	<script src="js/slick.min.js"></script>
  <script>
-	$('.cookie-policy').modal({
+	$('.subscribe').modal({
 		show:true
-	})
+
+	});
+	$('.subscribe .close').click(function(){
+		$('.cookie-policy').modal({
+			show:true
+		});
+
+	});
+	 $('body').on('click', clickOverlay);
+	 function clickOverlay(e) {
+		 if (e.target.className == 'modal fade subscribe') {
+			$('.cookie-policy').modal({
+				show:true
+
+			});
+			setTimeout(function(){
+				$('body').addClass('modal-open');
+			},330)
+			 $('body').off('click', clickOverlay);
+		 }
+	 }
+
+
+	$('.subscribe-content [type="submit"]').click(function(){
+		$('.subscribe-content').hide();
+		$('.subscribe-thank').show()
+	});
+
     $(document).ready(function(){
       $('.reviews-slider').slick({
         dots: true,

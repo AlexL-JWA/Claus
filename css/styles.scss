@@ -372,6 +372,7 @@ a.view-job,
 {
 	.tabs-contracts
 	{
+
     	width: 100%;
 		.table_contracts
 		{
@@ -437,7 +438,7 @@ a.view-job,
 				{
 
 					display: inline-block;
-					width: calc(100% / 3 - 158px);
+					width: calc(100% / 3 - 150px);
 
 					&:first-of-type
 					{
@@ -450,4 +451,169 @@ a.view-job,
 
 	}
 }
+.contracts_freelancer
+{
+	.tabs-contracts
+	{
+		.table_contracts
+		{
+			&.mobile-table
+			{
+				display: none;
+			}
+		}
+	}
+}
+.modal
+{
+	&.subscribe
+	{
+		.close
+		{
+			position: absolute;
+			font-size: 36px;
+			right: 10px;
+			top: 0px;
+		}
+		.modal-dialog
+		{
+			width: 600px;
 
+			.modal-content
+			{
+				width: 100%;
+				height: auto;
+				padding: 60px 50px;
+			}
+		}
+		.subscribe-content
+		{
+			h3
+			{
+				font-size: 36px;
+				font-weight: 400;
+				font-family: Open Sans;
+				margin-top: 0;
+
+			}
+			.ico
+			{
+				width: 123px;
+				display: inline-block;
+			}
+			.text
+			{
+				display: inline-block;
+				width: calc(100% - 128px);
+				padding-left: 30px;
+				vertical-align: top;
+				margin-bottom: 20px;
+			}
+			p
+			{
+				font-size: 24px;
+				line-height: 30px;
+				color: #a9a9a9;
+				font-weight: 400;
+				font-family: Open Sans;
+				img
+				{
+					width: 128px;
+				}
+			}
+			.input
+			{
+				position: relative;
+				width: calc(100% - 170px);
+				display: inline-block;
+				input
+				{
+					border:1px solid #898989;
+					width: 100%;
+					padding: 0 40px 0 10px;
+					height: 35px;
+				}
+				i
+				{
+					position: absolute;
+					right: 10px;
+					top: 8px;
+
+				}
+			}
+			input[type="submit"]
+			{
+				box-shadow: 0px 5px 8px 0.00px rgba(0, 0, 0, 0.06);
+				background-color: #62cb31;
+				border-radius: 5px;
+				width: 145px;
+				height: 35px;
+				color: #fff;
+				margin-left: 20px;
+				border:1px solid #62cb31;
+			}
+		}
+		.subscribe-thank
+		{
+			display: none;
+			p
+			{
+				font-size: 30px;
+				font-family: Open Sans;
+				line-height: 36px;
+				color: #515151;
+				text-align: center;
+				font-weight: 400;
+				img
+				{
+					width: 154px;
+				}
+			}
+			.ico
+			{
+				width: 103px;
+				display: table;
+				margin: 20px auto 0;
+			}
+
+		}
+
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.contracts_freelancer
+	{
+		.tabs-contracts
+		{
+			.table_contracts
+			{
+				&.hide-xs
+				{
+					display: none;
+				}
+				&.mobile-table
+				{
+					display: block;
+				}
+				.tr
+				{
+					background: none !important;
+					padding: 0px;
+					.td,
+					.th
+					{
+						width: 100% !important;
+						text-align: center;
+						padding: 25px;
+					}
+					.th
+					{
+						background: #f3f3f3;
+					}
+				}
+			}
+		}
+	}
+}
