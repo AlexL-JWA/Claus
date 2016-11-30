@@ -9660,3 +9660,22 @@ textarea#contactform-message {
 .freelancer-menu li:first-of-type {
     text-align: left;
 }
+
+.my_button_withdraw {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #83c124;
+    border: solid 1px rgba(165, 202, 148, .88);
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    margin: 0 30% 20px 21px;
+    float: right;
+    transition: .1s linear .2s;
+    position: relative;
+    top: -13px;
+}
