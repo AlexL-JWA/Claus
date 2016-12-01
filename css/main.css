@@ -33,7 +33,10 @@ section.clj_cognos form input[type='submit']:hover,
 .modal-form input[type="submit"].save-add-more:hover,
 .main-page-categories .button:hover,
 .find-job.proposal-page input[type="submit"]:hover,
-.modal.subscribe .subscribe-content input[type="submit"]:hover {
+.modal.subscribe .subscribe-content input[type="submit"]:hover,
+.end-contract-page .publik-feedback .form_button .bth_green_snip:hover,
+.add-manual-time .modal-content .button:hover,
+.work-diary .button:hover{
     background: #59de00;
     border-color: #bcf662;
 }
@@ -55,7 +58,10 @@ section.clj_cognos form input[type='submit']:focus,
 .modal-form input[type="submit"].save-add-more:focus,
 .main-page-categories .button:focus,
 .find-job.proposal-page input[type="submit"]:focus,
-.modal.subscribe .subscribe-content input[type="submit"]:focus {
+.modal.subscribe .subscribe-content input[type="submit"]:focus,
+.end-contract-page .publik-feedback .form_button .bth_green_snip:focus,
+.add-manual-time .modal-content .button:focus,
+.work-diary .button:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -5120,7 +5126,7 @@ section.section-offers .skills ul {
     content: "";
     position: absolute;
     right: 12px;
-    top: 14px;
+    top: 16px;
     border: 7px solid transparent;
     border-top: 9px solid #83c124;
     pointer-events: none;
