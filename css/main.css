@@ -7,7 +7,25 @@ select:focus,
 textarea:focus {
     outline: 0 none;
 }
+header.clj_header .personal .sign_up a:hover,
+.detailed-view-of-contracts-page .content a:hover,
+.detailed-view-of-contracts-page .sitebar .table.contract-details a:hover{
+    color: #59de00;
+}
 
+header.clj_header .personal .sign_up a:hover .icon-correct {
+    background: #59de00;
+}
+
+header.clj_header .personal .sign_up a:focus,
+.detailed-view-of-contracts-page .content a:focus,
+.detailed-view-of-contracts-page .sitebar .table.contract-details a:focus{
+    color: #489c5a;
+}
+
+header.clj_header .personal .sign_up a:focus .icon-correct {
+    background: #489c5a;
+}
 .bth_green_snip,
 section.clj_cognos .link a,
 section.clj_cognos form input[type='submit'],
@@ -36,7 +54,8 @@ section.clj_cognos form input[type='submit']:hover,
 .modal.subscribe .subscribe-content input[type="submit"]:hover,
 .end-contract-page .publik-feedback .form_button .bth_green_snip:hover,
 .add-manual-time .modal-content .button:hover,
-.work-diary .button:hover{
+.work-diary .button:hover,
+.detailed-view-of-contracts-page .sitebar .table .button:hover{
     background: #59de00;
     border-color: #bcf662;
 }
@@ -61,7 +80,8 @@ section.clj_cognos form input[type='submit']:focus,
 .modal.subscribe .subscribe-content input[type="submit"]:focus,
 .end-contract-page .publik-feedback .form_button .bth_green_snip:focus,
 .add-manual-time .modal-content .button:focus,
-.work-diary .button:focus{
+.work-diary .button:focus,
+.detailed-view-of-contracts-page .sitebar .table .button:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -156,22 +176,6 @@ header.clj_header .personal .login a {
 header.clj_header .personal .sign_up {
     margin-left: -15px;
     margin-right: 37px;
-}
-
-header.clj_header .personal .sign_up a:hover {
-    color: #59de00;
-}
-
-header.clj_header .personal .sign_up a:hover .icon-correct {
-    background: #59de00;
-}
-
-header.clj_header .personal .sign_up a:focus {
-    color: #489c5a;
-}
-
-header.clj_header .personal .sign_up a:focus .icon-correct {
-    background: #489c5a;
 }
 
 header.clj_header .personal .sign_up .icon-check31-01 {
@@ -4905,7 +4909,7 @@ section.section-offers .skills ul {
     font-size: 28px;
     font-weight: 600;
     color: #727272;
-    margin: 30px 0;
+    margin: 24px 0 30px;
 }
 
 .end-page .exp-description {
@@ -9684,4 +9688,8 @@ textarea#contactform-message {
     transition: .1s linear .2s;
     position: relative;
     top: -13px;
+}
+.application-page,
+.find-job{
+    margin-top: 4px !important;
 }
