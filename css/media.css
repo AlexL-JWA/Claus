@@ -544,6 +544,15 @@
     margin-left: 35px !important;
 
 	}
+		.detailed-view-of-contracts-page .content .table .tr .td p,
+	.detailed-view-of-contracts-page .content .table .tr .th p
+	{
+		padding: 22.2px 10px;
+	}
+	.detailed-view-of-contracts-page .content ul li
+	{
+		padding-left: 10px !important;
+	}
 }
 
 
@@ -689,6 +698,7 @@
     .my-profile .overview div .edit {
         top: 5px;
     }
+
 }
 
 @media screen and (max-width:991px) {
@@ -1549,6 +1559,41 @@
 	{
 		margin-left: 0px !important;
 		margin-top: 10px !important;
+	}
+	.detailed-view-of-contracts-page .content ul li
+	{
+		width: calc(100% / 3.10);
+		font-size: 14px;
+    	line-height: 28px;
+	}
+	.detailed-view-of-contracts-page .content ul li span, .detailed-view-of-contracts-page .content ul li b
+	{
+		font-size: 18px;
+	}
+	.detailed-view-of-contracts-page .sitebar
+	{
+    	width: 311px;
+	}
+	.detailed-view-of-contracts-page .content
+	{
+		width: calc(100% - 331px);
+	}
+	.detailed-view-of-contracts-page .content .table .tr .th
+	{
+		width: 42%;
+	}
+	.detailed-view-of-contracts-page .content .table .tr .td
+	{
+		width: calc(100% - 44%);
+	}
+	.detailed-view-of-contracts-page .content .table .tr .td p,
+	.detailed-view-of-contracts-page .content .table .tr .th p
+	{
+		font-size: 13px;
+	}
+	.detailed-view-of-contracts-page .content .table .tr .td span
+	{
+		font-size: 14px;
 	}
 }
 
@@ -2728,6 +2773,66 @@
 	.work-diary .select
 	{
 		width: 100% !important;
+	}
+	.detailed-view-of-contracts-page .sitebar
+	{
+		width: 100%;
+	}
+	.detailed-view-of-contracts-page .content
+	{
+		width: 100%;
+	}
+	.detailed-view-of-contracts-page .content
+	{
+		margin-bottom: 0px;
+	}
+	.detailed-view-of-contracts-page .content a
+	{
+    	margin: 10px 25px;
+	}
+	.detailed-view-of-contracts-page .sitebar .description
+	{
+    	padding-right: 20px;
+	}
+	.detailed-view-of-contracts-page h2.title
+	{
+    	margin: 25px 0 10px;
+	}
+	.detailed-view-of-contracts-page h1.title
+	{
+    	font-size: 31px;
+    	margin-bottom: 20px;
+    	margin-top: 0px;
+	}
+	.detailed-view-of-contracts-page .content ul li
+	{
+		width: calc(100% / 3.12);
+		padding-left: 5px !important;
+	}
+	.detailed-view-of-contracts-page .content .table .tr .td p,
+	.detailed-view-of-contracts-page .content .table .tr .th p
+	{
+    	padding: 22.2px 5px;
+		vertical-align: middle;
+	}
+	.detailed-view-of-contracts-page .sitebar .img
+	{
+		margin: 10px 5px;
+	}
+	.detailed-view-of-contracts-page .sitebar .table .status + p,
+	.detailed-view-of-contracts-page .sitebar .table.contract-details a,
+	.detailed-view-of-contracts-page .sitebar .table .status,
+	.detailed-view-of-contracts-page .sitebar .table h4.title
+	{
+		margin-left: 5px;
+	}
+	.detailed-view-of-contracts-page .content .table .tr .td
+	{
+    	width: calc(100% - 48%);
+	}
+	.detailed-view-of-contracts-page .content .table .tr .th
+	{
+    	width: 46%;
 	}
 }
 
@@ -5177,6 +5282,7 @@
         width: 100%;
         float: inherit !important;
     }
+
 }
 
 @media only screen and (max-width: 480px) {

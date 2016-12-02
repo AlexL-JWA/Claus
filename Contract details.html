@@ -68,7 +68,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h2 class="title">Detailed view of contracts</h2>
+				<h2 class="title">Contract details</h2>
 				<h1 class="title">Mark Ronson - Mark Ronson</h1>
 				<div class="content">
 					<ul>
@@ -76,7 +76,7 @@
 						<li>Last Week <span>0:00 hrs</span> $ 0.00</li>
 						<li>Since Start <b>15:15 hrs</b> $ 151.00</li>
 					</ul>
-					<a href="#">Wiew work diary &#62;</a>
+					<a href="#">View work diary &#62;</a>
 					<div class="table">
 						<div class="tr">
 							<div class="th">
@@ -84,25 +84,85 @@
 							</div>
 							<div class="td">
 								<p>$ 0.00</p>
-								<span>Decrase rate</span>
+								<span aria-hidden="true" data-toggle="modal" data-target=".change-hourly-rate">Decrase rate</span>
 							</div>
 						</div>
 						<div class="tr">
 							<div class="th">
 								<p>Limit</p>
 							</div>
-							<div class="td">00:00 hrs / week</div>
+							<div class="td"><p>00:00 hrs / week</p></div>
 						</div>
 						<div class="tr">
 							<div class="th">
 								<p>Mannual time Allowed</p>
 							</div>
-							<div class="td">Yes</div>
+							<div class="td"><p>Yes</p></div>
 						</div>
 					</div>
 				</div>
 				<div class="sitebar">
+					<div class="table">
+						<div class="tr">
+							<div class="th">
+								<h4 class="title">Agency Contractor</h4>
+							</div>
+						</div>
+						<div class="tr">
+							<div class="td">
+								<div class="img" style="background-image: url(img/mb-logo-2.png);"></div>
+								<div class="description">
+									<h4 class="name">Mark Ronson</h4>
+									<p>It’s Mon 4:45 PM in Country</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
+					<div class="table">
+						<div class="tr">
+							<div class="th">
+								<h4 class="title">Client</h4>
+							</div>
+						</div>
+						<div class="tr">
+							<div class="td">
+								<div class="img" style="background-image: url(img/mb-logo-2.png);"></div>
+								<div class="description">
+									<h4 class="name">Mark Ronson</h4>
+									<p>It’s Mon 4:45 PM in Country</p>
+								</div>
+							</div>
+						</div>
+						<div class="tr">
+							<div class="td">
+								<a href="#" class="button"><i class="fa fa-envelope-o" aria-hidden="true"></i> Messages</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="table contract-details">
+						<div class="tr">
+							<div class="th">
+								<h4 class="title">Contract Details</h4>
+							</div>
+						</div>
+						<div class="tr">
+							<div class="td">
+								<h4 class="status">Active</h4>
+								<p>Since Now 5, 2016 - Contract ID 1234567890</p>
+								<a href="#">View original job post</a>
+								<a href="#">View offer</a>
+								<a href="#">Escrow Instructions</a>
+							</div>
+						</div>
+						<div class="tr">
+							<div class="td">
+								<a href="#" class="button"><img src="img/refund.svg" alt="">Give a Refund</a>
+								<a href="#" class="button"><img src="img/close.svg" alt="">End Contract</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -130,7 +190,28 @@
 </section>
 </footer>
 <!--END FOOTER-->
+<!--START MODAL-->
+ <div class="modal fade change-hourly-rate" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Change contract rate</h4>
+                </div>
+                <form action="#">
+                    <p>Contract Rate <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Easy Work Fee <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Total amount  <span><b>$</b> <input type="text" value="20.00"> /hr</span></p>
+                    <div class="right-button">
+                        <a href="#" class="button green">Save</a>
+                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+                </form>
 
+            </div>
+        </div>
+    </div>
+<!--END MODAL-->
 
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jscript.js"></script>
