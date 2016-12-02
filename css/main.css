@@ -10,7 +10,8 @@ textarea:focus {
 header.clj_header .personal .sign_up a:hover,
 .detailed-view-of-contracts-page .content a:hover,
 .detailed-view-of-contracts-page .sitebar .table.contract-details a:hover,
-.detailed-view-of-contracts-page .content .table .tr .td span:hover{
+.detailed-view-of-contracts-page .content .table .tr .td span:hover,
+.payment-schedule .tr .cancel:hover{
     color: #59de00;
 }
 
@@ -21,7 +22,8 @@ header.clj_header .personal .sign_up a:hover .icon-correct {
 header.clj_header .personal .sign_up a:focus,
 .detailed-view-of-contracts-page .content a:focus,
 .detailed-view-of-contracts-page .sitebar .table.contract-details a:focus,
-.detailed-view-of-contracts-page .content .table .tr .td span:focus{
+.detailed-view-of-contracts-page .content .table .tr .td span:focus,
+.payment-schedule .tr .cancel:focus{
     color: #489c5a;
 }
 
@@ -57,7 +59,8 @@ section.clj_cognos form input[type='submit']:hover,
 .end-contract-page .publik-feedback .form_button .bth_green_snip:hover,
 .add-manual-time .modal-content .button:hover,
 .work-diary .button:hover,
-.detailed-view-of-contracts-page .sitebar .table .button:hover{
+.detailed-view-of-contracts-page .sitebar .table .button:hover,
+.payment-schedule .tr .button:hover{
     background: #59de00;
     border-color: #bcf662;
 }
@@ -83,7 +86,8 @@ section.clj_cognos form input[type='submit']:focus,
 .end-contract-page .publik-feedback .form_button .bth_green_snip:focus,
 .add-manual-time .modal-content .button:focus,
 .work-diary .button:focus,
-.detailed-view-of-contracts-page .sitebar .table .button:focus{
+.detailed-view-of-contracts-page .sitebar .table .button:focus,
+.payment-schedule .tr .button:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -9694,4 +9698,9 @@ textarea#contactform-message {
 .application-page,
 .find-job{
     margin-top: 4px !important;
+}
+.add-employment .checkboxs [type="checkbox"]:not(:checked) + label::before,
+.add-employment .checkboxs [type="checkbox"]:checked + label::before
+{
+	top: 4px;
 }
