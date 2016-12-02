@@ -652,4 +652,410 @@ img {
 .th {
       background: #f3f3f3; } }
 
+/* line 623, D:/Claus-master/Claus-master/css/styles.scss */
+.end-contract-page
+h5.title {
+  font-size: 18px;
+  font-family: Open Sans;
+  color: #6e6e6e;
+  font-weight: 600;
+  margin-bottom: 35px;
+  line-height: 36px; }
+
+/* line 632, D:/Claus-master/Claus-master/css/styles.scss */
+.end-contract-page
+h3.title {
+  font-size: 24px;
+  font-family: Open Sans;
+  font-weight: 300;
+  vertical-align: middle;
+  margin-bottom: 0; }
+  /* line 639, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+h3.title
+img {
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: top;
+    margin-top: 4px; }
+  /* line 647, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+h3.title + p {
+    font-size: 12px;
+    font-family: Open Sans;
+    color: #6e6e6e;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 25px; }
+
+/* line 660, D:/Claus-master/Claus-master/css/styles.scss */
+.end-contract-page
+.exp-description
+.vis-screen {
+  vertical-align: top; }
+
+/* line 664, D:/Claus-master/Claus-master/css/styles.scss */
+.end-contract-page
+.exp-description
+ul {
+  display: inline-block; }
+  /* line 667, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+.exp-description
+ul
+li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    line-height: 1.1; }
+    /* line 673, D:/Claus-master/Claus-master/css/styles.scss */
+    .end-contract-page
+.exp-description
+ul
+li
+p {
+      margin-bottom: 0;
+      margin-top: 0; }
+    /* line 678, D:/Claus-master/Claus-master/css/styles.scss */
+    .end-contract-page
+.exp-description
+ul
+li
+label {
+      margin-right: 0 !important; }
+      /* line 682, D:/Claus-master/Claus-master/css/styles.scss */
+      .end-contract-page
+.exp-description
+ul
+li
+label:before {
+        margin-right: 0 !important; }
+
+/* line 692, D:/Claus-master/Claus-master/css/styles.scss */
+.end-contract-page
+.publik-feedback
+.feedback-to-client {
+  background: #fff;
+  border: 1px solid #dadada;
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 30px; }
+  /* line 699, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+.publik-feedback
+.feedback-to-client
+h5 {
+    font-size: 14px;
+    font-family: Open Sans;
+    color: #6e6e6e;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  /* line 710, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+.publik-feedback
+.feedback-to-client
+ul
+li {
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 300;
+    margin-top: 5px; }
+    /* line 716, D:/Claus-master/Claus-master/css/styles.scss */
+    .end-contract-page
+.publik-feedback
+.feedback-to-client
+ul
+li
+.rate_row {
+      display: inline-block;
+      margin-right: 5px;
+      line-height: 1;
+      margin-top: 0; }
+  /* line 726, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+.publik-feedback
+.feedback-to-client
+.total-score {
+    font-size: 14px;
+    font-family: Open Sans;
+    color: #757575;
+    font-weight: 300; }
+    /* line 733, D:/Claus-master/Claus-master/css/styles.scss */
+    .end-contract-page
+.publik-feedback
+.feedback-to-client
+.total-score
+span {
+      font-size: 18px;
+      font-weight: 600; }
+  /* line 739, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+.publik-feedback
+.feedback-to-client
+label {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6e6e6e;
+    display: block; }
+  /* line 747, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+.publik-feedback
+.feedback-to-client
+textarea {
+    width: 526px;
+    height: 175px;
+    padding: 10px 15px;
+    border: 1px solid #d9d9d9; }
+
+/* line 757, D:/Claus-master/Claus-master/css/styles.scss */
+.end-contract-page
+.publik-feedback
+.form_button
+.bth_green_snip {
+  width: 139px;
+  height: 35px;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px; }
+  /* line 767, D:/Claus-master/Claus-master/css/styles.scss */
+  .end-contract-page
+.publik-feedback
+.form_button
+.bth_green_snip + a {
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: Open Sans;
+    color: #83c124; }
+
+/* line 783, D:/Claus-master/Claus-master/css/styles.scss */
+.detailed-view-of-contracts-page
+.content
+h2.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #727272;
+  margin: 25px 0 33px; }
+
+/* line 790, D:/Claus-master/Claus-master/css/styles.scss */
+.detailed-view-of-contracts-page
+.content
+h1.title {
+  font-size: 36px;
+  color: #6e6e6e;
+  font-weight: 400;
+  font-family: Open Sans; }
+
+/* line 801, D:/Claus-master/Claus-master/css/styles.scss */
+.work-diary
+.select {
+  width: 680px;
+  position: relative; }
+  /* line 806, D:/Claus-master/Claus-master/css/styles.scss */
+  .work-diary
+.select:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    border: 7px solid transparent;
+    border-top: 9px solid #83c124;
+    pointer-events: none; }
+  /* line 816, D:/Claus-master/Claus-master/css/styles.scss */
+  .work-diary
+.select
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none !important;
+    border: 1px solid #81bf23;
+    width: 100%;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    font: 300 14px/36px Open Sans;
+    padding-left: 25px; }
+    /* line 833, D:/Claus-master/Claus-master/css/styles.scss */
+    .work-diary
+.select
+select::-ms-expand {
+      display: none; }
+
+/* line 842, D:/Claus-master/Claus-master/css/styles.scss */
+.add-manual-time
+.modal-content {
+  padding: 40px; }
+  /* line 844, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+button.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 60px;
+    font-weight: 300; }
+  /* line 854, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+h2.title {
+    font-size: 28px;
+    font-family: Open Sans;
+    color: #757575; }
+  /* line 861, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content .date,
+  .add-manual-time
+.modal-content
+.time-zone {
+    color: #757575;
+    font-size: 14px;
+    font-family: Open Sans;
+    margin-top: 34px; }
+    /* line 867, D:/Claus-master/Claus-master/css/styles.scss */
+    .add-manual-time
+.modal-content .date
+span
+,
+    .add-manual-time
+.modal-content
+.time-zone
+span {
+      width: 100px;
+      display: inline-block;
+      font-weight: 400; }
+    /* line 873, D:/Claus-master/Claus-master/css/styles.scss */
+    .add-manual-time
+.modal-content .date + label
+,
+    .add-manual-time
+.modal-content
+.time-zone + label {
+      margin-right: 40px; }
+  /* line 879, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+.date {
+    font-weight: 600; }
+  /* line 883, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+label {
+    font-size: 16px;
+    color: #757575;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0px 5px; }
+  /* line 891, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+.select {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+    /* line 897, D:/Claus-master/Claus-master/css/styles.scss */
+    .add-manual-time
+.modal-content
+.select:before {
+      content: '\f107';
+      font-family: FontAwesome;
+      position: absolute;
+      top: 3px;
+      color: #83c124;
+      right: 7px; }
+    /* line 907, D:/Claus-master/Claus-master/css/styles.scss */
+    .add-manual-time
+.modal-content
+.select
+select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      -ms-appearance: none;
+      appearance: none !important;
+      padding: 0 30px 0 15px;
+      color: #83c124;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 30px;
+      height: 29px;
+      border: 1px solid #d9d9d9; }
+      /* line 922, D:/Claus-master/Claus-master/css/styles.scss */
+      .add-manual-time
+.modal-content
+.select
+select::-ms-expand {
+        display: none; }
+  /* line 928, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+.textarea {
+    vertical-align: top; }
+    /* line 931, D:/Claus-master/Claus-master/css/styles.scss */
+    .add-manual-time
+.modal-content
+.textarea
+label {
+      margin-right: 31px;
+      vertical-align: top; }
+    /* line 936, D:/Claus-master/Claus-master/css/styles.scss */
+    .add-manual-time
+.modal-content
+.textarea
+textarea {
+      width: 385px;
+      height: 160px;
+      border: 1px solid #d9d9d9;
+      padding: 10px 15px; }
+    /* line 943, D:/Claus-master/Claus-master/css/styles.scss */
+    .add-manual-time
+.modal-content
+.textarea
+p {
+      font: 300 12px Open Sans;
+      margin-left: 88px;
+      width: 220px; }
+  /* line 950, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+.button {
+    background-color: #83c124;
+    font-size: 16px;
+    color: #fff;
+    width: 139px;
+    height: 35px;
+    margin-left: 0; }
+  /* line 959, D:/Claus-master/Claus-master/css/styles.scss */
+  .add-manual-time
+.modal-content
+a.cancel {
+    font-size: 16px;
+    font-weight: 600;
+    color: #83c124;
+    display: inline-block;
+    margin-left: 20px; }
+
+/* line 972, D:/Claus-master/Claus-master/css/styles.scss */
+.work-diary
+.button {
+  background-color: #83c124;
+  padding: 0 20px;
+  height: 35px;
+  line-height: 33px;
+  border-right: 5px;
+  font-size: 16px;
+  font-family: Open Sans;
+  color: #ffffff;
+  border: 1px solid #83c124;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-left: 20px; }
+
 /*# sourceMappingURL=styles.css.map */

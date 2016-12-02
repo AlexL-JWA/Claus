@@ -540,6 +540,10 @@
         display: inline-block;
         width: calc(100% / 3 - 124px);
     }
+	.work-diary .date {
+    margin-left: 35px !important;
+
+	}
 }
 
 
@@ -1538,6 +1542,14 @@
         display: inline-block;
         width: calc(100% / 3 - 94px);
     }
+	.work-diary .date {
+    margin-left: 15px !important;
+}
+	.work-diary .button
+	{
+		margin-left: 0px !important;
+		margin-top: 10px !important;
+	}
 }
 
 @media screen and (max-width:845px) {
@@ -2697,6 +2709,26 @@
     .subscribe {
         padding-left: 0 !important;
     }
+	.end-contract-page .publik-feedback .feedback-to-client
+	{
+    	padding: 20px 10px 20px 10px;
+	}
+	.end-page .exp-description
+	{
+    	padding: 10px;
+	}
+	.end-contract-page .exp-description ul + .vis-screen
+	{
+		margin-right: 0 !important;
+	}
+	.end-contract-page .exp-description ul li
+	{
+		margin-right: 10px;
+	}
+	.work-diary .select
+	{
+		width: 100% !important;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -2749,6 +2781,31 @@
     .block-1 .login .already {
         font-size: 14px;
     }
+	.add-manual-time .modal-content .textarea textarea
+	{
+		margin-top: 10px;
+		display: block;
+		width: 100% !important;
+	}
+	.add-manual-time .modal-content .textarea p
+	{
+		margin-left: 0 !important;
+	}
+	.add-manual-time .modal-content
+	{
+    	padding: 10px !important;
+	}
+	.add-manual-time .modal-content .button
+	{
+    	width: 100% !important;
+    	margin-bottom: 20px !important;
+	}
+	.add-manual-time .modal-content a.cancel
+	{
+    	display: table !important;
+    	margin: 0 auto 20px !important;
+	}
+
 }
 
 @media only screen and (max-width: 660px) {
@@ -2910,6 +2967,11 @@
     .about-us .human {
         width: calc(100% / 2.05 - 17px) !important;
     }
+	.work-diary .button
+	{
+		display: table;
+		margin: 0 auto !important;
+	}
 }
 
 @media only screen and (max-width: 630px) {
@@ -3023,6 +3085,11 @@
     .modal.subscribe .modal-dialog .modal-content {
         padding: 60px 15px;
     }
+	.end-contract-page .publik-feedback .feedback-to-client textarea
+	{
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width:589px) {
@@ -3366,6 +3433,16 @@
     .find-job .item .skills ul li.skills_li {
         margin-right: 5px;
     }
+	.end-contract-page .exp-description ul
+	{
+		display: block;
+		text-align: center;
+	}
+	.end-contract-page .exp-description ul + .vis-screen
+	{
+		display: block;
+		text-align: right;
+	}
 }
 
 @media only screen and (max-width: 560px) {
@@ -4856,6 +4933,15 @@
 }
 
 @media screen and (max-width:395px) {
+	.add-manual-time .modal-content .date + label, .add-manual-time .modal-content .time-zone + label
+	{
+    	margin-right: 5px !important;
+		margin-left: 0 !important;
+	}
+	.add-manual-time .modal-content .select select
+	{
+    	padding: 0 20px 0 15px !important;
+	}
     .my-profil h3 i {
         left: 10px;
         margin-right: 10px;
@@ -5270,9 +5356,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .end-page .exp-description span.vis-screen {
-        display: none;
-    }
+
     .end-page .exp-description span.vis-mobile {
         display: block;
     }
