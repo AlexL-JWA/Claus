@@ -970,26 +970,27 @@ span
 .th
 span {
       margin-left: 5px;
-      color: #83c124; }
-    /* line 886, D:/Claus-master/Claus-master/css/styles.scss */
+      color: #83c124;
+      cursor: pointer; }
+    /* line 887, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .content
 .table
 .tr:nth-of-type(2n) {
       background: #fff; }
 
-/* line 893, D:/Claus-master/Claus-master/css/styles.scss */
+/* line 894, D:/Claus-master/Claus-master/css/styles.scss */
 .detailed-view-of-contracts-page
 .sitebar {
   width: 380px;
   display: inline-block;
   vertical-align: top; }
-  /* line 899, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 900, D:/Claus-master/Claus-master/css/styles.scss */
   .detailed-view-of-contracts-page
 .sitebar
 .table {
     border: 1px solid #d9d9d9; }
-    /* line 902, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 903, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .table
@@ -1000,19 +1001,19 @@ h4.title {
       font-weight: 400;
       margin-left: 15px;
       padding: 5px 0; }
-    /* line 911, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 912, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .table
 .tr {
       border-bottom: 1px solid #d9d9d9; }
-      /* line 915, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 916, D:/Claus-master/Claus-master/css/styles.scss */
       .detailed-view-of-contracts-page
 .sitebar
 .table
 .tr:last-of-type {
         border-bottom: none; }
-    /* line 920, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 921, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .table
@@ -1025,14 +1026,14 @@ h4.title {
       padding: 5px;
       display: table;
       margin: 10px 10px 10px 15px; }
-      /* line 931, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 932, D:/Claus-master/Claus-master/css/styles.scss */
       .detailed-view-of-contracts-page
 .sitebar
 .table
 .button
 i:before {
         font-size: 16px; }
-    /* line 936, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 937, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .table
@@ -1045,7 +1046,7 @@ i:before {
       margin-left: 15px;
       margin-top: 0;
       padding-top: 10px; }
-      /* line 947, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 948, D:/Claus-master/Claus-master/css/styles.scss */
       .detailed-view-of-contracts-page
 .sitebar
 .table
@@ -1054,7 +1055,7 @@ i:before {
         margin: 0 10px 0 15px;
         color: #6e6e6e;
         font-weight: 400; }
-    /* line 957, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 958, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .table.contract-details
@@ -1065,19 +1066,19 @@ a {
       color: #83c124;
       font-weight: 400;
       margin-left: 15px; }
-      /* line 965, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 966, D:/Claus-master/Claus-master/css/styles.scss */
       .detailed-view-of-contracts-page
 .sitebar
 .table.contract-details
 a:first-of-type {
         margin-top: 10px; }
-      /* line 969, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 970, D:/Claus-master/Claus-master/css/styles.scss */
       .detailed-view-of-contracts-page
 .sitebar
 .table.contract-details
 a:last-of-type {
         margin-bottom: 20px; }
-    /* line 974, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 975, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .table.contract-details
@@ -1086,13 +1087,13 @@ a:last-of-type {
       color: #fff;
       margin-bottom: 10px !important;
       margin-right: 3px; }
-      /* line 980, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 981, D:/Claus-master/Claus-master/css/styles.scss */
       .detailed-view-of-contracts-page
 .sitebar
 .table.contract-details
 .button:nth-of-type(2) {
         margin-left: 0; }
-      /* line 984, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 985, D:/Claus-master/Claus-master/css/styles.scss */
       .detailed-view-of-contracts-page
 .sitebar
 .table.contract-details
@@ -1102,7 +1103,7 @@ img {
         vertical-align: middle;
         margin-right: 5px;
         margin-top: -2px; }
-  /* line 996, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 997, D:/Claus-master/Claus-master/css/styles.scss */
   .detailed-view-of-contracts-page
 .sitebar
 .img {
@@ -1113,14 +1114,14 @@ img {
     display: inline-block;
     vertical-align: middle;
     margin: 10px 20px; }
-  /* line 1007, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1008, D:/Claus-master/Claus-master/css/styles.scss */
   .detailed-view-of-contracts-page
 .sitebar
 .description {
     display: inline-block;
     width: calc(100% - 117px);
     vertical-align: middle; }
-    /* line 1013, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1014, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .description
@@ -1129,7 +1130,7 @@ h4.name {
       color: #7b7b7b;
       font-weight: 600;
       font-family: Open Sans; }
-    /* line 1020, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1021, D:/Claus-master/Claus-master/css/styles.scss */
     .detailed-view-of-contracts-page
 .sitebar
 .description
@@ -1140,12 +1141,12 @@ p {
       color: #6e6e6e;
       line-height: 36px; }
 
-/* line 1033, D:/Claus-master/Claus-master/css/styles.scss */
+/* line 1034, D:/Claus-master/Claus-master/css/styles.scss */
 .work-diary
 .select {
   width: 680px;
   position: relative; }
-  /* line 1038, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1039, D:/Claus-master/Claus-master/css/styles.scss */
   .work-diary
 .select:before {
     content: "";
@@ -1155,7 +1156,7 @@ p {
     border: 7px solid transparent;
     border-top: 9px solid #83c124;
     pointer-events: none; }
-  /* line 1048, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1049, D:/Claus-master/Claus-master/css/styles.scss */
   .work-diary
 .select
 select {
@@ -1172,17 +1173,17 @@ select {
     border-radius: 3px;
     font: 300 14px/36px Open Sans;
     padding-left: 25px; }
-    /* line 1065, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1066, D:/Claus-master/Claus-master/css/styles.scss */
     .work-diary
 .select
 select::-ms-expand {
       display: none; }
 
-/* line 1074, D:/Claus-master/Claus-master/css/styles.scss */
+/* line 1075, D:/Claus-master/Claus-master/css/styles.scss */
 .add-manual-time
 .modal-content {
   padding: 40px; }
-  /* line 1076, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1077, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 button.close {
@@ -1191,14 +1192,14 @@ button.close {
     top: 10px;
     font-size: 60px;
     font-weight: 300; }
-  /* line 1086, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1087, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 h2.title {
     font-size: 28px;
     font-family: Open Sans;
     color: #757575; }
-  /* line 1093, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1094, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content .date,
   .add-manual-time
@@ -1208,7 +1209,7 @@ h2.title {
     font-size: 14px;
     font-family: Open Sans;
     margin-top: 34px; }
-    /* line 1099, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1100, D:/Claus-master/Claus-master/css/styles.scss */
     .add-manual-time
 .modal-content .date
 span
@@ -1220,7 +1221,7 @@ span {
       width: 100px;
       display: inline-block;
       font-weight: 400; }
-    /* line 1105, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1106, D:/Claus-master/Claus-master/css/styles.scss */
     .add-manual-time
 .modal-content .date + label
 ,
@@ -1228,12 +1229,12 @@ span {
 .modal-content
 .time-zone + label {
       margin-right: 40px; }
-  /* line 1111, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1112, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 .date {
     font-weight: 600; }
-  /* line 1115, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1116, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 label {
@@ -1242,7 +1243,7 @@ label {
     font-weight: 400;
     display: inline-block;
     margin: 0px 5px; }
-  /* line 1123, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1124, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 .select {
@@ -1250,7 +1251,7 @@ label {
     position: relative;
     margin-bottom: 30px;
     margin-top: 30px; }
-    /* line 1129, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1130, D:/Claus-master/Claus-master/css/styles.scss */
     .add-manual-time
 .modal-content
 .select:before {
@@ -1260,7 +1261,7 @@ label {
       top: 3px;
       color: #83c124;
       right: 7px; }
-    /* line 1139, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1140, D:/Claus-master/Claus-master/css/styles.scss */
     .add-manual-time
 .modal-content
 .select
@@ -1278,25 +1279,25 @@ select {
       line-height: 30px;
       height: 29px;
       border: 1px solid #d9d9d9; }
-      /* line 1154, D:/Claus-master/Claus-master/css/styles.scss */
+      /* line 1155, D:/Claus-master/Claus-master/css/styles.scss */
       .add-manual-time
 .modal-content
 .select
 select::-ms-expand {
         display: none; }
-  /* line 1160, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1161, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 .textarea {
     vertical-align: top; }
-    /* line 1163, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1164, D:/Claus-master/Claus-master/css/styles.scss */
     .add-manual-time
 .modal-content
 .textarea
 label {
       margin-right: 31px;
       vertical-align: top; }
-    /* line 1168, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1169, D:/Claus-master/Claus-master/css/styles.scss */
     .add-manual-time
 .modal-content
 .textarea
@@ -1305,7 +1306,7 @@ textarea {
       height: 160px;
       border: 1px solid #d9d9d9;
       padding: 10px 15px; }
-    /* line 1175, D:/Claus-master/Claus-master/css/styles.scss */
+    /* line 1176, D:/Claus-master/Claus-master/css/styles.scss */
     .add-manual-time
 .modal-content
 .textarea
@@ -1313,7 +1314,7 @@ p {
       font: 300 12px Open Sans;
       margin-left: 88px;
       width: 220px; }
-  /* line 1182, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1183, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 .button {
@@ -1323,7 +1324,7 @@ p {
     width: 139px;
     height: 35px;
     margin-left: 0; }
-  /* line 1191, D:/Claus-master/Claus-master/css/styles.scss */
+  /* line 1192, D:/Claus-master/Claus-master/css/styles.scss */
   .add-manual-time
 .modal-content
 a.cancel {
@@ -1333,7 +1334,7 @@ a.cancel {
     display: inline-block;
     margin-left: 20px; }
 
-/* line 1204, D:/Claus-master/Claus-master/css/styles.scss */
+/* line 1205, D:/Claus-master/Claus-master/css/styles.scss */
 .work-diary
 .button {
   background-color: #83c124;

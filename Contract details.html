@@ -68,7 +68,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h2 class="title">Detailed view of contracts</h2>
+				<h2 class="title">Contract details</h2>
 				<h1 class="title">Mark Ronson - Mark Ronson</h1>
 				<div class="content">
 					<ul>
@@ -84,7 +84,7 @@
 							</div>
 							<div class="td">
 								<p>$ 0.00</p>
-								<span>Decrase rate</span>
+								<span aria-hidden="true" data-toggle="modal" data-target=".change-hourly-rate">Decrase rate</span>
 							</div>
 						</div>
 						<div class="tr">
@@ -190,7 +190,28 @@
 </section>
 </footer>
 <!--END FOOTER-->
+<!--START MODAL-->
+ <div class="modal fade change-hourly-rate" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Change contract rate</h4>
+                </div>
+                <form action="#">
+                    <p>Contract Rate <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Easy Work Fee <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Total amount  <span><b>$</b> <input type="text" value="20.00"> /hr</span></p>
+                    <div class="right-button">
+                        <a href="#" class="button green">Save</a>
+                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+                </form>
 
+            </div>
+        </div>
+    </div>
+<!--END MODAL-->
 
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jscript.js"></script>

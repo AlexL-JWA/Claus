@@ -9,7 +9,8 @@ textarea:focus {
 }
 header.clj_header .personal .sign_up a:hover,
 .detailed-view-of-contracts-page .content a:hover,
-.detailed-view-of-contracts-page .sitebar .table.contract-details a:hover{
+.detailed-view-of-contracts-page .sitebar .table.contract-details a:hover,
+.detailed-view-of-contracts-page .content .table .tr .td span:hover{
     color: #59de00;
 }
 
@@ -19,7 +20,8 @@ header.clj_header .personal .sign_up a:hover .icon-correct {
 
 header.clj_header .personal .sign_up a:focus,
 .detailed-view-of-contracts-page .content a:focus,
-.detailed-view-of-contracts-page .sitebar .table.contract-details a:focus{
+.detailed-view-of-contracts-page .sitebar .table.contract-details a:focus,
+.detailed-view-of-contracts-page .content .table .tr .td span:focus{
     color: #489c5a;
 }
 
