@@ -93,7 +93,7 @@
 								<div class="date">
 									<p>
 									<a href="#" class="fa fa-angle-left"></a>
-										 <b>Tue, May 3, 2016 <i class="fa fa-calendar" id="datetimepicker1"></i></b> <a href="#" class="fa fa-angle-right"></a>
+										 <b>Tue, May 3, 2016 <i class="fa fa-calendar" ></i></b> <a href="#" class="fa fa-angle-right"></a>
 									<a href="#"><span>Today</span></a></p>
 								</div>
 								<button class="button" data-toggle="modal" data-target=".add-manual-time">Add manual time</button>
@@ -398,47 +398,45 @@
 <script src="js/jscript.js"></script>
 <script src="js/main.js"></script>
 <script>
-	$(document).ready(function(){
-		var b = $('.sizes').height();
-		var t1 =$('.time-block').height();
-		var t =$('.Manual-times .time-block');
-		var b2 = $('.size');
-		function resiseW(){
-			b = $('.sizes').height() + 20;
-			t1 =$('.sizes').height() ;
-			console.log(t);
-			t.css('height',t);
-			b2.css('height',b);
+$(document).ready(function(){
+	var b = $('.sizes').height();
+	var t1 =$('.time-block').height();
+	var t =$('.Manual-times .time-block');
+	var b2 = $('.size');
+	function resiseW(){
+		b = $('.sizes').height() + 20;
+		t1 =$('.sizes').height() ;
+		console.log(t);
+		t.css('height',t);
+		b2.css('height',b);
+	}
+	resiseW();
+	$(window).resize(resiseW);
+
+
+
+
+
+	$('.time-zone select').click(function(){
+		$('.time-zone').addClass('active');
+	});
+
+
+
+	$(".time-zone select").change(function(){
+		$('.time-zone').removeClass('active');
+	});
+	$(document).mouseup(function (e)  {
+		var folder = $(".time-zone");
+
+		if (!folder.is(e.target) && folder.has(e.target).length === 0) {
+			folder.removeClass('active');
 		}
-		resiseW();
-		$(window).resize(resiseW);
-
-
-
-
-
-		$('.time-zone select').click(function(){
-			$('.time-zone').addClass('active');
+	});
+	$('.fa-calendar').datepicker({
+		   autoclose: true
 		});
-
-
-
-		$(".time-zone select").change(function(){
-			$('.time-zone').removeClass('active');
-		});
-		$(document).mouseup(function (e)  {
-			var folder = $(".time-zone");
-
-			if (!folder.is(e.target) && folder.has(e.target).length === 0) {
-				folder.removeClass('active');
-			}
-		});
-
-
-
-
-		</script>
-
-
-	</body>
+});
+</script>
+</body>
 </html>
