@@ -3548,6 +3548,10 @@
 		display: block;
 		text-align: right;
 	}
+	.payment-schedule .tr .th
+	{
+		width: 160px;
+	}
 }
 
 @media only screen and (max-width: 560px) {
@@ -3733,7 +3737,7 @@
     .pagination li:last-of-type .pagination_control {
         padding: 0 7px;
     }
-    ..pagination li .pagination_control .fa-caret-left {
+    .pagination li .pagination_control .fa-caret-left {
         margin-right: 2px;
     }
     .pagination li .pagination_control .fa-caret-right {
@@ -4521,6 +4525,19 @@
     .find-job.application-page #outputMulti.active {
         padding: 20px 10px 0;
     }
+	.payment-schedule .tr .th
+	{
+    	width: 100%;
+    	margin-bottom: 10px;
+	}
+	.payment-schedule .tr .td
+	{
+		margin-left: 0;
+	}
+	.payment-schedule .tr
+	{
+    	margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width:454px) {

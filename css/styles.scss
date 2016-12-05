@@ -685,6 +685,7 @@ a.view-job,
 					vertical-align: middle;
 					border-radius: 50%;
 					padding: 2px;
+					min-height: 18px;
 
 					&:before
 					{
@@ -718,7 +719,8 @@ a.view-job,
 			.td,
 			.th
 			{
-				vertical-align: top
+				vertical-align: top;
+
 			}
 			.td
 			{
