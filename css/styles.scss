@@ -1400,3 +1400,19 @@ a.view-job,
 
 	}
 }
+.chosen
+{
+	.bd-skills
+	{
+		.list
+		{
+			min-height: 355px;
+			position: relative;
+		}
+		.btn
+		{
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}

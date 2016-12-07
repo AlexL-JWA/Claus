@@ -5958,10 +5958,13 @@ section.section-offers .skills ul {
     padding: 10px 15px;
     margin: 0;
 }
-
+.chosen .bd-skills .list ul
+{
+	padding: 10px 15px 55px;
+}
 .bd-skills .list ul li {
     display: inline-block;
-    margin: 0;
+    margin:2.5px 0;
     padding: 0;
     height: auto;
     border: none;
@@ -6053,10 +6056,27 @@ section.section-offers .skills ul {
     padding: 5px 0;
     text-decoration: none;
     transition: .3s;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-bottom: 15px;
 }
-
+.chosen .bd-skills .list
+{
+	min-height: 355px;
+	position: relative;
+}
+.chosen .bd-skills .btn
+{
+	position: absolute;
+	bottom: 0;
+}
+.sm-text.counter-skl i
+{
+	font-style: normal;
+}
+.sm-text.counter-skl b
+{
+	font-weight: 600;
+}
 .chosen .bd-skills a.btn:hover {
     background-color: #8fdd17;
 }

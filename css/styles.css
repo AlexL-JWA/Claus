@@ -1561,4 +1561,18 @@ a.cancel {
   vertical-align: middle;
   margin-left: 20px; }
 
+/* line 1407, D:/Claus-master/Claus-master/css/styles.scss */
+.chosen
+.bd-skills
+.list {
+  min-height: 355px;
+  position: relative; }
+
+/* line 1412, D:/Claus-master/Claus-master/css/styles.scss */
+.chosen
+.bd-skills
+.btn {
+  position: absolute;
+  bottom: 0; }
+
 /*# sourceMappingURL=styles.css.map */
