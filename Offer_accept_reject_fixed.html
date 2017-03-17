@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>View_offer_fixed</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+<!--START HEADER-->
+<!-- header -->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
+					<span class="greeting">WELCOME</span>
+					<a href="" class="log-view">&lt; iloveart &gt;</a>
+					<a href="#" class="greeting logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- navigation -->
+	<nav class="clj_nav">
+		<div class="container">
+			<span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
+			<ul class="no-messages">
+				<li><a href="#">My jobs</a></li>
+				<li><a href="#">Post a Job</a></li>
+				<li><a href="#">Contracts</a></li>
+				<li><a href="#">find freelancer</a></li>
+				<li><a href="#">Reports</a></li>
+				<li class="myProfile">
+					<a href="#">My Profile</a>
+<!-- 					<ul class="submenu">
+						<li><a href="#"><img src="images/photo.png" alt="">Zaitsev Nikita</a></li>
+						<li><a href="#">Reports</a></li>
+					</ul> -->
+				</li>
+				<li>
+					<a href="#">Messages
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!--END HEADER-->
+
+<!--START CONTENT-->
+<section class="ndra-container">
+	<div class="container detailed-view_container offer_container">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="" class="green"><b>&lt;  Back To Offers</b></a>
+				<p class="title">View Offer</p>
+
+				<span class="button accept" data-toggle="modal" data-target=".accept-modal">Accept</span>
+				<span class="button reject" data-toggle="modal" data-target=".reject-modal">Reject</span>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<table class="contract-table">
+					<tr>
+						<td>Contract title</td>
+						<td>Logo Design</td>
+					</tr>
+					<tr>
+						<td>Related Job Opening</td>
+						<td><a class="green" href="">Logo Design</a></td>
+					</tr>
+					<tr>
+						<td>Budget</td>
+						<td><b>$50.00</b> (funded)</td>
+					</tr>
+					<tr>
+						<td>Offer Date</td>
+						<td>February 25, 2016</td>
+					</tr>
+					<tr>
+						<td>Client Message</td>
+						<td>
+						<p>Hi Evelyn</p>
+						<p>Your profile looks like a good match for the job. Hoe you will accept.</p>
+						<p>Claus</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-parties">
+				<div class="parties-list">
+					<div class="heading">Parties</div>
+					<div class="managers">
+						<p><b>Offer made by:</b></p>
+						<div class="personal-card offer-by clearfix">
+							<a href=""><i></i></a>
+							<a href=""><p class="name">Claus Bergh</p></a>
+							<p>Approve It</p>
+						</div>
+					</div>
+					<div class="managers">
+						<p><b>Offer made to:</b></p>
+						<div class="personal-card offer-to clearfix">
+							<a href=""><i></i></a>
+							<a href=""><p class="name">Evelyn Jahnige</p></a>
+							<p>Design your presence</p>
+						</div>
+						<!-- <p>Staffed by: <a class="green">Evelyn Jahnige</a></p> -->
+					</div>
+				</div>
+<!-- 				<div class="parties-list">
+					<div class="heading">Related links</div>
+					<div class="managers">
+						<a href="" class="green rel-a">View original proposal</a>
+						<a href="" class="green rel-a">View messages</a>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade modal-contact_form" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Send Message</h4>
+			    	</div>
+				    <div class="modal-body">
+						<div class="account">
+							<p class="f-capt">To</p>
+							<a href="#" class="logo-view"></a>
+							<p class="view-logo_caption">Olga Ronson</p>
+							<p class="participant-specialty">E-Books, Logo Design, Branding, Infographics, Web, Print Graphics</p>
+						</div>
+						<div class="onj_form_content">
+								<div>
+									<p class="f-capt">Job Posting</p>
+									<div class="select_arrow">
+										<select>
+											<option>PSD to HTMLS</option>
+											<option>PSD to HTML5</option>
+											<option>PSD to HTML5</option>
+											<option>PSD to HTML5</option>
+											<option>PSD to HTML5</option>
+										</select>
+									</div>
+								</div>
+								<div>
+									<p class="f-capt">Job Posting</p>
+									<textarea name="mess-mod" id="mess-mod"></textarea>
+								</div>
+							</div>
+					   	</div>
+				   	<div class="clearfix"></div>
+				    <div class="modal-footer">
+				    	<a href="" class="button-contact b-attach">Attach a file</a>
+				    	<div>
+					    	<a href="" class="button-contact">Send</a>
+					    	<a href="" class="button-contact button-grey" data-dismiss="modal">Cancel</a>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+        <div class="modal fade accept-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Accept</h4>
+                </div>
+                <p>You are accepting the offer and a contract will be created</p>
+                <div class="buttons-block">
+                    <a href="#" class="button green">Confirm</a>
+                    <a href="#" class="button close" data-dismiss="modal" aria-hidden="true">Cancel</a>
+                </div>
+            </div>
+          </div>
+        </div>
+		<div class="modal fade reject-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Reject</h4>
+                </div>
+                <p>Are you sure you want to reject the offer for this job</p>
+                <div class="buttons-block">
+                    <a href="" class="button green">Confirm</a>
+                    <a href="" class="button close" data-dismiss="modal" aria-hidden="true">Cancel</a>
+                </div>
+            </div>
+          </div>
+        </div>
+		<!--End modal window-->
+
+	</div>
+</section>
+<!--END CONTENT-->
+
+<!--START FOOTER-->
+<footer>
+<section>
+    <div class="wrapper footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</footer>
+<!--END FOOTER-->
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jscript.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
