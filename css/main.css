@@ -9753,7 +9753,9 @@ textarea#contactform-message {
     cursor: pointer;
 }
 .accept-modal p,
-.reject-modal p
+.reject-modal p,
+.give-a-refund-modal p,
+.end-contract-modal p
 {
     font-size: 25px;
     text-align: center;
@@ -9762,19 +9764,28 @@ textarea#contactform-message {
 .accept-modal .modal-content,
 .reject-modal .modal-content,
 .reject-modal .modal-sm,
-.accept-modal .modal-sm
+.accept-modal .modal-sm,
+.give-a-refund-modal .modal-content,
+.end-contract-modal .modal-content,
+.give-a-refund-modal .modal-sm,
+.end-contract-modal .modal-sm
 {
     max-width: 450px;
     width: 100%;
     height: auto;
 }
 .accept-modal .modal-content,
-.reject-modal .modal-content
+.reject-modal .modal-content,
+.give-a-refund-modal .modal-content,
+.end-contract-modal .modal-content
 {
     padding-bottom: 50px;
 }
 .accept-modal .button.close,
-.reject-modal .button.close{
+.reject-modal .button.close,
+.give-a-refund-modal .button.close,
+.end-contract-modal .button.close
+{
     background: none;
     color: #000;
     border: none;
@@ -9785,24 +9796,46 @@ textarea#contactform-message {
     opacity: 1;
 }
 .accept-modal .button.close:hover,
-.reject-modal .button.close:hover
+.reject-modal .button.close:hover,
+.give-a-refund-modal .button.close:hover,
+.end-contract-modal .button.close:hover
 {
     opacity: 0.3;
 }
 .accept-modal .button.green,
-.reject-modal .button.green
+.reject-modal .button.green,
+.give-a-refund-modal .button.green,
+.end-contract-modal .button.green
 {
     color: #fff !important;
     margin-left: 0;
 }
 .accept-modal .button.green:hover,
-.reject-modal .button.green:hover
+.reject-modal .button.green:hover,
+.give-a-refund-modal .button.green:hover,
+.end-contract-modal .button.green:hover
 {
     color: #fff !important;
 }
 .accept-modal .buttons-block,
-.reject-modal .buttons-block
+.reject-modal .buttons-block,
+.give-a-refund-modal .buttons-block,
+.end-contract-modal .buttons-block
 {
     display: table;
     margin: 0 auto;
 }
+.give-a-refund-modal input
+{
+    border: 1px solid #cccccc;
+    width: 90%;
+    padding: 3px 15px;
+    margin-right: 5px;
+}
+.give-a-refund-modal .input
+{
+    display: table;
+    margin: 50px auto 0;
+    width: 90%;
+}
+
