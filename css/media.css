@@ -2837,7 +2837,11 @@
     .accept-modal .modal-content,
     .reject-modal .modal-content,
     .reject-modal .modal-sm,
-    .accept-modal .modal-sm
+    .accept-modal .modal-sm,
+    .give-a-refund-modal .modal-content,
+    .end-contract-modal .modal-content,
+    .give-a-refund-modal .modal-sm,
+    .end-contract-modal .modal-sm
     {
         display: table;
         margin: 60px auto 0;
@@ -4547,12 +4551,16 @@
     	margin-bottom: 20px;
 	}
     .accept-modal .button,
-    .reject-modal .button
+    .reject-modal .button,
+    .give-a-refund-modal .button,
+    .end-contract-modal .button
     {
         display: inline-block;
     }
     .reject-modal .modal-sm,
-    .accept-modal .modal-sm
+    .accept-modal .modal-sm,
+    .give-a-refund-modal .modal-sm,
+    .end-contract-modal .modal-sm
     {
         width: 90%;
     }
