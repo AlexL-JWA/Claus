@@ -60,7 +60,9 @@ section.clj_cognos form input[type='submit']:hover,
 .add-manual-time .modal-content .button:hover,
 .work-diary .button:hover,
 .detailed-view-of-contracts-page .sitebar .table .button:hover,
-.payment-schedule .tr .button:hover{
+.payment-schedule .tr .button:hover,
+.ndra-container .button.accept:hover,
+.ndra-container .button.reject:hover{
     background: #59de00;
     border-color: #bcf662;
 }
@@ -87,7 +89,9 @@ section.clj_cognos form input[type='submit']:focus,
 .add-manual-time .modal-content .button:focus,
 .work-diary .button:focus,
 .detailed-view-of-contracts-page .sitebar .table .button:focus,
-.payment-schedule .tr .button:focus{
+.payment-schedule .tr .button:focus,
+.ndra-container .button.accept:focus,
+.ndra-container .button.reject:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -1189,7 +1193,8 @@ h5.title-2 img {
 .block-1 .button,
 .block-7 .button,
 .form-edit a.button,
-.form-edit input[type='submit'] {
+.form-edit input[type='submit'],
+{
     background-color: #83c124;
     font-size: 36px;
     text-transform: uppercase;
@@ -2039,7 +2044,9 @@ h5.title-2 img {
     margin-right: 30px;
 }
 
-.modal-content .button {
+.modal-content .button ,
+.ndra-container .button.accept,
+.ndra-container .button.reject{
     background: #83c124;
     padding: 5px 22px;
     color: #fff;
@@ -9723,4 +9730,64 @@ textarea#contactform-message {
 .add-employment .checkboxs [type="checkbox"]:checked + label::before
 {
 	top: 4px;
+}
+.ndra-container .button.accept,
+.ndra-container .button.reject
+{
+    margin: 0 30px 30px 0;
+    cursor: pointer;
+}
+.accept-modal p,
+.reject-modal p
+{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+}
+.accept-modal .modal-content,
+.reject-modal .modal-content,
+.reject-modal .modal-sm,
+.accept-modal .modal-sm
+{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+}
+.accept-modal .modal-content,
+.reject-modal .modal-content
+{
+    padding-bottom: 50px;
+}
+.accept-modal .button.close,
+.reject-modal .button.close{
+    background: none;
+    color: #000;
+    border: none;
+    height: 43px;
+    line-height: 43px;
+    margin-top: 0;
+    float: none;
+    opacity: 1;
+}
+.accept-modal .button.close:hover,
+.reject-modal .button.close:hover
+{
+    opacity: 0.3;
+}
+.accept-modal .button.green,
+.reject-modal .button.green
+{
+    color: #fff !important;
+    margin-left: 0;
+}
+.accept-modal .button.green:hover,
+.reject-modal .button.green:hover
+{
+    color: #fff !important;
+}
+.accept-modal .buttons-block,
+.reject-modal .buttons-block
+{
+    display: table;
+    margin: 0 auto;
 }

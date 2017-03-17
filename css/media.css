@@ -2834,6 +2834,14 @@
 	{
     	width: 46%;
 	}
+    .accept-modal .modal-content,
+    .reject-modal .modal-content,
+    .reject-modal .modal-sm,
+    .accept-modal .modal-sm
+    {
+        display: table;
+        margin: 60px auto 0;
+    }
 }
 
 @media only screen and (max-width: 710px) {
@@ -4538,6 +4546,16 @@
 	{
     	margin-bottom: 20px;
 	}
+    .accept-modal .button,
+    .reject-modal .button
+    {
+        display: inline-block;
+    }
+    .reject-modal .modal-sm,
+    .accept-modal .modal-sm
+    {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:454px) {
