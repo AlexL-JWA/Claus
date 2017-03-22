@@ -2846,6 +2846,10 @@
         display: table;
         margin: 60px auto 0;
     }
+    .detailed-view-of-contracts-page .content ul
+    {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 710px) {
