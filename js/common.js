@@ -26,6 +26,12 @@
 
 });
 
+$('body').on('click', '#tr_sing_up', function(e) {
+	e.preventDefault();
+
+	$($('header .login a')[0]).click();
+});
+
 
 // call initialization file
 if (window.File && window.FileList && window.FileReader) {
