@@ -1193,7 +1193,7 @@ h5.title-2 img {
 .block-1 .button,
 .block-7 .button,
 .form-edit a.button,
-.form-edit input[type='submit'],
+.form-edit input[type='submit']
 {
     background-color: #83c124;
     font-size: 36px;
