@@ -62,7 +62,8 @@ section.clj_cognos form input[type='submit']:hover,
 .detailed-view-of-contracts-page .sitebar .table .button:hover,
 .payment-schedule .tr .button:hover,
 .ndra-container .button.accept:hover,
-.ndra-container .button.reject:hover{
+.ndra-container .button.reject:hover,
+.form-edit a.button:hover{
     background: #59de00;
     border-color: #bcf662;
 }
@@ -91,7 +92,8 @@ section.clj_cognos form input[type='submit']:focus,
 .detailed-view-of-contracts-page .sitebar .table .button:focus,
 .payment-schedule .tr .button:focus,
 .ndra-container .button.accept:focus,
-.ndra-container .button.reject:focus{
+.ndra-container .button.reject:focus,
+.form-edit a.button:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -1582,7 +1584,7 @@ h5.title-2 img {
 
 .form-edit {
     background: #f7f7f7 url(../images/icons-bg-form.png)no-repeat;
-    min-height: 874px;
+    min-height: 799px;
     padding-top: 70px;
     background-position: center 100px;
     position: relative;
@@ -9855,4 +9857,9 @@ p.pp_to15
 {
 	color: #62cb31;
 }
-
+.form-edit-block
+{
+    display: table;
+    margin: 100px auto 0;
+    float: none !important;
+}

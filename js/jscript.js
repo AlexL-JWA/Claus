@@ -1,39 +1,42 @@
 /*slide down (detailed view page) detailed view of company*/
 $(document).ready(function () {
 
-    /*
+
     var totalHeight = 0;
     var minHeight = 0;
     var minLines = $(".wrapper-history").data('lines') || 3;
 
-    $(".history-line").each(function (index) {
-        if (index < minLines) {
-            minHeight += parseInt($(this).outerHeight(), 10);
-        }
-        totalHeight += parseInt($(this).outerHeight(), 10);
-    });
-    $(".wrapper-history").height(minHeight);
+    if('.history-line'){
+         $(".history-line").each(function (index) {
+            if (index < minLines) {
+                minHeight += parseInt($(this).outerHeight(), 10);
+            }
+            totalHeight += parseInt($(this).outerHeight(), 10);
+        });
+        $(".wrapper-history").height(minHeight);
 
-    $("#show-history").click(function () {
-        var height_hist = $(".wrapper-history").height();
+        $("#show-history").click(function () {
+            var height_hist = $(".wrapper-history").height();
 
-        if (height_hist < totalHeight) {
-            $(".wrapper-history").height(totalHeight);
-            $("#show-history").css({
-                '-webkit-transform': 'rotate(180deg)',
-                '-moz-transform': 'rotate(180deg)',
-                'transform': 'rotate(180deg)'
-            });
-        } else {
-            $(".wrapper-history").height(minHeight);
-            $("#show-history").css({
-                '-webkit-transform': 'rotate(0deg)',
-                '-moz-transform': 'rotate(0deg)',
-                'transform': 'rotate(0deg)'
-            });
-        };
-    });
-    */
+            if (height_hist < totalHeight) {
+                $(".wrapper-history").height(totalHeight);
+                $("#show-history").css({
+                    '-webkit-transform': 'rotate(180deg)',
+                    '-moz-transform': 'rotate(180deg)',
+                    'transform': 'rotate(180deg)'
+                });
+            } else {
+                $(".wrapper-history").height(minHeight);
+                $("#show-history").css({
+                    '-webkit-transform': 'rotate(0deg)',
+                    '-moz-transform': 'rotate(0deg)',
+                    'transform': 'rotate(0deg)'
+                });
+            };
+        });
+    };
+
+
 
     /*fading-bg*/
     $(".fading-bg").click(function(){
