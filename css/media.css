@@ -1595,6 +1595,15 @@
 	{
 		font-size: 14px;
 	}
+    .form-edit .right-block h5
+    {
+        font-size: 24px;
+    }
+    .form-edit .right-block p
+    {
+        font-size: 22px;
+    }
+
 }
 
 @media screen and (max-width:845px) {
@@ -2849,6 +2858,29 @@
     .detailed-view-of-contracts-page .content ul
     {
         margin-bottom: 20px;
+    }
+
+    .form-edit .right-block,
+    .form-edit .left-block
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .form-edit i
+    {
+        float: none;
+        margin-right: 0;
+    }
+    .form-edit .right-block
+    {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #919191;
+        margin-top: 40px;
+    }
+    .form-edit .right-block .button
+    {
+        float: none;
     }
 }
 
@@ -4794,9 +4826,7 @@
         font-size: 14px;
         margin: 15px 0 0 0;
     }
-    .form-edit i::before {
-        font-size: 35px;
-    }
+
     .form-edit h3 i {
         width: 89px;
         height: 89px;
@@ -4827,10 +4857,7 @@
     .my-profil .experience {
         width: 55%;
     }
-    .form-edit i {
-        width: 89px;
-        height: 89px;
-    }
+
     .form-edit h2 {
         top: 355px;
     }
@@ -5729,11 +5756,7 @@
         left: -15px;
         vertical-align: -5px !important;
     }
-    .form-edit i::before {
-        padding: 14px 15px 16px;
-        font-size: 32px;
-        margin-top: 3px;
-    }
+
     .form-edit input {
         font-size: 15px;
     }
@@ -5748,10 +5771,7 @@
     .my-profil textarea {
         width: 70%;
     }
-    .form-edit i {
-        width: 70px;
-        height: 70px;
-    }
+
     .form-edit h2 {
         top: 420px;
     }
