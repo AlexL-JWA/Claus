@@ -2,631 +2,481 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<!--<meta name="viewport" content="width=device-width">-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>My_profile</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/Glyphter.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script src="js/jquery-2.1.4.min.js"></script>
-
-
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My_profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
-	<!--START HEADER-->
-	<!-- header -->
-	<header class="clj_header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-					<a href="index.html" class="logo">
-						<img src="img/logo(black-background).svg" alt="">
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
-					<span class="greeting">WELCOME</span>
-					<a href="" class="log-view">&lt; iloveart &gt;</a>
-					<a href="#" class="greeting logout">Logout</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- navigation -->
-	<nav class="clj_nav">
-		<div class="container">
-			<span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
-			<ul>
-				<li><a href="#">My jobs</a></li>
-				<li><a href="#">Post a Job</a></li>
-				<li><a href="#">Contracts</a></li>
-				<li><a href="#">find freelancer</a></li>
-				<li><a href="#">Reports</a></li>
-				<li class="myProfile">
-					<a href="#">My Profile</a>
-<!-- 					<ul class="submenu">
+    <!--START HEADER-->
+    <!-- header -->
+    <header class="clj_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <a href="index.html" class="logo"> <img src="img/logo(black-background).svg" alt=""> </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance"> <span class="greeting">WELCOME</span> <a href="" class="log-view">&lt; iloveart &gt;</a> <a href="#" class="greeting logout">Logout</a> </div>
+            </div>
+        </div>
+    </header>
+    <!-- navigation -->
+    <nav class="clj_nav">
+        <div class="container"> <span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
+            <ul>
+                <li><a href="#">My jobs</a></li>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#">Contracts</a></li>
+                <li><a href="#">find freelancer</a></li>
+                <li><a href="#">Reports</a></li>
+                <li class="myProfile"> <a href="#">My Profile</a>
+                    <!-- 					<ul class="submenu">
 						<li><a href="#"><img src="images/photo.png" alt="">Zaitsev Nikita</a></li>
 						<li><a href="#">Reports</a></li>
 					</ul> -->
-				</li>
-				<li>
-					<a href="#">Messages
+                </li>
+                <li> <a href="#">Messages
 						<span>
 							<img src="img/messages.png">
 							<i>15</i>
 						</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!--END HEADER-->
-	<!--START CONTENT-->
-	<section class="ndra-container">
-		<div class="container detailed-view_container view-participant my-profile">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 view-logo_cont">
-					<h2 class="title">My profile</h2>
-					<div class="description">
-						<div class="my-description">
-							<div>
-								<a href="#" class="logo-view" data-toggle="modal" data-target=".bs-example-modal-lg"></a>
-								<p class="view-logo_caption">Mark Ronson</p>
-								<p class="participant-specialty" >Cognos design <i class="fa fa-pencil edit" data-toggle="modal" data-target=".participant-specialty-modal" aria-hidden="true"></i></p>
-								<p class="participant-country">Ukraine</p>
-							</div>
-							<div class="clearfix"></div>
-							<ul class="participant-skills">
-								<li>Skills:</li>
-								<li><a href="">Cognos</a></li>
-								<li><a href="">Photoshop</a></li>
-								<li><a href="">Adobe PDF</a></li>
-								<li class="edits"><i class="fa fa-pencil edit" aria-hidden="true"></i></li>
-							</ul>
-						</div>
-						<p class="currency" aria-hidden="true" data-toggle="modal" data-target=".change-hourly-rate" >$22,00/hr <i class="fa fa-pencil edit" ></i></p>
-						<div class="overview">
-							<div>
-								<h3>About Myself <i class="fa fa-pencil edit" aria-hidden="true" data-toggle="modal" data-target=".About-Myself"></i></h3>
-								<p>COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1–Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools.</p>
-							</div>
-							<div>
-								<h3>Overview <i class="fa fa-pencil edit" aria-hidden="true" data-toggle="modal" data-target=".edit-overview"></i></h3>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-								<br> Claritas est etiam.</p>
-							</div>
-						</div>
-					</div>
-					<div class="buttons">
-					    <a href="#" data-toggle="modal" data-target=".basis-data">Basis data</a>
-					    <a href="#" data-toggle="modal" data-target=".new-password">New password</a>
-					</div>
-					<div class="my-portfolio">
-						<div class="portfolio-header">
-							<h3>Portfolio</h3>
-							<a class="add"><i class="fa fa-plus-circle" aria-hidden="true" data-toggle="modal" data-target=".edit-portfolio"></i></a>
-							<div class="select">
-								<select name="#" id="#">
-									<option value="#">Category</option>
-									<option value="#">Category</option>
-									<option value="#">Category</option>
-								</select>
-							</div>
-
-						</div>
-						<div class="items">
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio">
-								<img src="images/porfolio.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item " data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-3">
-								<img src="img/hiring-img.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-
-						<div class="hide-item" >
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-							<div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2">
-								<img src="images/portfolio-item.png" alt="">
-								<div class="item-object">
-									<div>
-										<h4>Project 1</h4>
-										<a>View details</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<a class="button">Show more</a>
-					</div>
-
-
-
-
-					<div class="my-portfolio">
-						<div class="portfolio-header">
-							<h3>Certifications</h3>
-							<a class="add" data-toggle="modal" data-target=".add-certification"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-						</div>
-						<h4 class="title-description">No items to display</h4>
-					</div>
-
-
-					<div class="my-portfolio">
-						<div class="portfolio-header">
-							<h3>Employment history</h3>
-							<a  class="add" data-toggle="modal" data-target=".add-employment"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-						</div>
-						<h4 class="title-description">Web-Designer in Alscon Web, <span>from 02/10/15 till now</span> <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>
-</a></h4>
-					</div>
-
-
-
-					<div class="my-portfolio">
-						<div class="portfolio-header">
-							<h3>Education</h3>
-							<a data-toggle="modal" data-target=".add-education" class="add"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-						</div>
-						<h4 class="title-description">Web-Designer in Alscon Web, <span>from 02/10/15 till now</span> <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>
-</a></h4>
-					</div>
-
-
-
-
-					<div class="my-portfolio">
-						<div class="portfolio-header">
-							<h3>Other experiences</h3>
-							<a data-toggle="modal" data-target=".add-other-experiences" class="add"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-						</div>
-						<h4 class="title-description">Web-Designer in Alscon Web, <span>from 02/10/15 till now</span> <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>
-</a></h4>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--END CONTENT-->
-
-	<!--START FOOTER-->
-	<footer>
-		<section>
-			<div class="wrapper footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<ul class="footer-menu">
-								<li><a href="#">Terms and conditions</a></li>
-								<li><a href="#">News</a></li>
-								<li class="active"><a href="#">About Us</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</footer>
-	<!--END FOOTER-->
-
-	<!--START MODEL-->
-
-	<div class="modal fade add-other-experiences" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Add other experiences</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<label for="">Subject</label>
-					<input type="text">
-					<label for="#">Description</label>
-					<textarea name="#" id=""></textarea>
-					<input type="submit" value="Add experience">
-					<input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="modal fade add-education" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Add education</h4>
-				</div>
-				<form action="#" class="modal-form">
-				    <label for="">Education</label>
-					<input type="text">
-					<label for="">School/university</label>
-					<input type="text">
-					<label for="">Dates attended</label>
-					<div id="start_data" class="input_date input-daterange">
-						<p>from</p>
-						<input readonly="" type="text" value="mm/yy">
-					</div>
-					<div class="input_date input-daterange">
-						<p>to</p>
-						<input readonly="" type="text" placeholder="mm/yy (or graduation date)">
-					</div>
-					<label for="">Degree</label>
-					<input type="text">
-
-					<label for="#">Description (optional)</label>
-					<textarea name="#" id=""></textarea>
-					<input type="submit" value="Save">
-					<input type="submit" value="Save and add more" class="save-add-more">
-					<input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<div class="modal fade add-employment" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Add employment</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<label for="">Company name</label>
-					<input type="text">
-					<label for="">Location</label>
-					<input type="text" class="mini" placeholder="City">
-					<div class="select">
-						<select name="" id="">
-							<option value="">Select country</option>
-							<option value="">Select country</option>
-							<option value="">Select country</option>
-							<option value="">Select country</option>
-						</select>
-					</div>
-					<label for="">Role</label>
-					<input type="text" class="mini">
-					<label for="">Period</label>
-
-					<div class="input_date first-date input-daterange">
-						<p>from</p>
-						<input readonly="" type="text" value="mm/yy">
-					</div>
-					<div class="input_date input-daterange">
-						<p>to</p>
-						<input readonly="" type="text" placeholder="mm/yy (or graduation date)">
-					</div>
-					<p class="checkboxs form-edit">
-						<input id="checkbox-16" type="checkbox">
-						<label for="checkbox-16">I currently work here</label>
-					</p>
-					<div class="clearfix"></div>
-					<label for="#">Description (optional)</label>
-					<textarea name="#" id=""></textarea>
-					<input type="submit" value="Save">
-					<input type="submit" value="Save and add more" class="save-add-more">
-					<input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-	<div class="modal fade add-certification-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Add certification</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<h5>Adobe certification expert</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-					<input type="submit" value="Add certification">
-					<input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<div class="modal fade add-certification" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-md">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Add certification</h4>
-				</div>
-				<form action="#" class="modal-form">
-
+					</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <!--END HEADER-->
+    <!--START CONTENT-->
+    <section class="ndra-container">
+        <div class="container detailed-view_container view-participant my-profile">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 view-logo_cont">
+                    <h2 class="title">My profile</h2>
+                    <div class="description">
+                        <div class="my-description">
+                            <div>
+                                <a href="#" class="logo-view" data-toggle="modal" data-target=".bs-example-modal-lg"></a>
+                                <p class="view-logo_caption">Mark Ronson</p>
+                                <p class="participant-specialty">Cognos design <i class="fa fa-pencil edit" data-toggle="modal" data-target=".participant-specialty-modal" aria-hidden="true"></i></p>
+                                <p class="participant-country">Ukraine</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <ul class="participant-skills">
+                                <li>Skills:</li>
+                                <li><a href="">Cognos</a></li>
+                                <li><a href="">Photoshop</a></li>
+                                <li><a href="">Adobe PDF</a></li>
+                                <li class="edits"><i class="fa fa-pencil edit" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                        <p class="currency" aria-hidden="true" data-toggle="modal" data-target=".change-hourly-rate">$22,00/hr <i class="fa fa-pencil edit"></i></p>
+                        <div class="overview">
+                            <div>
+                                <h3>About Myself <i class="fa fa-pencil edit" aria-hidden="true" data-toggle="modal" data-target=".About-Myself"></i></h3>
+                                <p>COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1–Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools.</p>
+                            </div>
+                            <div>
+                                <h3>Overview <i class="fa fa-pencil edit" aria-hidden="true" data-toggle="modal" data-target=".edit-overview"></i></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                                    <br> Claritas est etiam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" data-toggle="modal" data-target=".basis-data">Basis data</a>
+                        <a href="#" data-toggle="modal" data-target=".new-password">New password</a>
+                        <a href="#" data-toggle="modal" data-target=".agency-dashboard">Agency dashboard</a>
+                    </div>
+                    <div class="my-portfolio">
+                        <div class="portfolio-header">
+                            <h3>Portfolio</h3> <a class="add"><i class="fa fa-plus-circle" aria-hidden="true" data-toggle="modal" data-target=".edit-portfolio"></i></a>
+                            <div class="select">
+                                <select name="#" id="#">
+                                    <option value="#">Category</option>
+                                    <option value="#">Category</option>
+                                    <option value="#">Category</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio"> <img src="images/porfolio.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item " data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-3"> <img src="img/hiring-img.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hide-item">
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                            <div class="portolio-item" data-toggle="modal" data-target=".modal-portfolio-2"> <img src="images/portfolio-item.png" alt="">
+                                <div class="item-object">
+                                    <div>
+                                        <h4>Project 1</h4> <a>View details</a> </div>
+                                </div>
+                            </div>
+                        </div> <a class="button">Show more</a> </div>
+                    <div class="my-portfolio">
+                        <div class="portfolio-header">
+                            <h3>Certifications</h3> <a class="add" data-toggle="modal" data-target=".add-certification"><i class="fa fa-plus-circle" aria-hidden="true"></i></a> </div>
+                        <h4 class="title-description">No items to display</h4> </div>
+                    <div class="my-portfolio">
+                        <div class="portfolio-header">
+                            <h3>Employment history</h3> <a class="add" data-toggle="modal" data-target=".add-employment"><i class="fa fa-plus-circle" aria-hidden="true"></i></a> </div>
+                        <h4 class="title-description">Web-Designer in Alscon Web, <span>from 02/10/15 till now</span> <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>
+</a></h4> </div>
+                    <div class="my-portfolio">
+                        <div class="portfolio-header">
+                            <h3>Education</h3> <a data-toggle="modal" data-target=".add-education" class="add"><i class="fa fa-plus-circle" aria-hidden="true"></i></a> </div>
+                        <h4 class="title-description">Web-Designer in Alscon Web, <span>from 02/10/15 till now</span> <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>
+</a></h4> </div>
+                    <div class="my-portfolio">
+                        <div class="portfolio-header">
+                            <h3>Other experiences</h3> <a data-toggle="modal" data-target=".add-other-experiences" class="add"><i class="fa fa-plus-circle" aria-hidden="true"></i></a> </div>
+                        <h4 class="title-description">Web-Designer in Alscon Web, <span>from 02/10/15 till now</span> <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>
+</a></h4> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END CONTENT-->
+    <!--START FOOTER-->
+    <footer>
+        <section>
+            <div class="wrapper footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="footer-menu">
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">News</a></li>
+                                <li class="active"><a href="#">About Us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--END FOOTER-->
+    <!--START MODEL-->
+    <div class="modal fade add-other-experiences" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add other experiences</h4> </div>
+                <form action="#" class="modal-form">
+                    <label for="">Subject</label>
+                    <input type="text">
+                    <label for="#">Description</label>
+                    <textarea name="#" id=""></textarea>
+                    <input type="submit" value="Add experience">
+                    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade add-education" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add education</h4> </div>
+                <form action="#" class="modal-form">
+                    <label for="">Education</label>
+                    <input type="text">
+                    <label for="">School/university</label>
+                    <input type="text">
+                    <label for="">Dates attended</label>
+                    <div id="start_data" class="input_date input-daterange">
+                        <p>from</p>
+                        <input readonly="" type="text" value="mm/yy"> </div>
+                    <div class="input_date input-daterange">
+                        <p>to</p>
+                        <input readonly="" type="text" placeholder="mm/yy (or graduation date)"> </div>
+                    <label for="">Degree</label>
+                    <input type="text">
+                    <label for="#">Description (optional)</label>
+                    <textarea name="#" id=""></textarea>
+                    <input type="submit" value="Save">
+                    <input type="submit" value="Save and add more" class="save-add-more">
+                    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade add-employment" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add employment</h4> </div>
+                <form action="#" class="modal-form">
+                    <label for="">Company name</label>
+                    <input type="text">
+                    <label for="">Location</label>
+                    <input type="text" class="mini" placeholder="City">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">Select country</option>
+                            <option value="">Select country</option>
+                            <option value="">Select country</option>
+                            <option value="">Select country</option>
+                        </select>
+                    </div>
+                    <label for="">Role</label>
+                    <input type="text" class="mini">
+                    <label for="">Period</label>
+                    <div class="input_date first-date input-daterange">
+                        <p>from</p>
+                        <input readonly="" type="text" value="mm/yy"> </div>
+                    <div class="input_date input-daterange">
+                        <p>to</p>
+                        <input readonly="" type="text" placeholder="mm/yy (or graduation date)"> </div>
+                    <p class="checkboxs form-edit">
+                        <input id="checkbox-16" type="checkbox">
+                        <label for="checkbox-16">I currently work here</label>
+                    </p>
+                    <div class="clearfix"></div>
+                    <label for="#">Description (optional)</label>
+                    <textarea name="#" id=""></textarea>
+                    <input type="submit" value="Save">
+                    <input type="submit" value="Save and add more" class="save-add-more">
+                    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade add-certification-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add certification</h4> </div>
+                <form action="#" class="modal-form">
+                    <h5>Adobe certification expert</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <input type="submit" value="Add certification">
+                    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade add-certification" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add certification</h4> </div>
+                <form action="#" class="modal-form">
                     <div class="mini">
-                        <label for="">Name of certification<input type="text"></label>
+                        <label for="">Name of certification
+                            <input type="text">
+                        </label>
                     </div>
                     <div class="mini">
-                        <label for="">Certification description<textarea></textarea></label>
+                        <label for="">Certification description
+                            <textarea></textarea>
+                        </label>
                     </div>
                     <div class="mini">
                         <div class="input-group input-daterange">
                             <label for="#">Certification obtained</label>
                             <label for="#">
-                                <input type="text" class="form-control" placeholder="Start Date">
-                            </label>
+                                <input type="text" class="form-control" placeholder="Start Date"> </label>
                             <label for="">
-                                <input type="text" class="form-control" placeholder="End Date">
-                            </label>
+                                <input type="text" class="form-control" placeholder="End Date"> </label>
                         </div>
                     </div>
                     <div class="mini">
-                        <label for="">Issuer of the certification (optional)<textarea></textarea></label>
+                        <label for="">Issuer of the certification (optional)
+                            <textarea></textarea>
+                        </label>
                     </div>
                     <div class="mini">
-                        <label for="">Certification number (optional) <input type="text"></label>
+                        <label for="">Certification number (optional)
+                            <input type="text">
+                        </label>
                     </div>
-
-
-					<input type="submit" value="Add certification" >
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="modal fade edit-portfolio" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Add project</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<div class="mini">
-						<label for="">Project title</label>
-						<input type="text">
-					</div>
-					<div class="mini">
-						<label for="">Was this project done on EasyWork?</label>
-						<div class="select">
-						    <select name="" id="">
-						        <option value="">Select related project</option>
-						        <option value="">Project 1</option>
-						        <option value="">Project 2</option>
-						        <option value="">Project 3</option>
-						        <option value="">Project 4</option>
-						        <option value="">Project 5</option>
-						        <option value="">Project 6</option>
-						    </select>
-						</div>
-					</div>
-					<div class="mini ">
-						<label for="" >Project description</label>
-						<textarea name="" id=""></textarea>
-					</div>
-
-					<div class="mini">
-						<label for="">Category</label>
-						<div class="select">
-							<select name="" id="">
-								<option value="">Category</option>
-								<option value="">Category</option>
-								<option value="">Category</option>
-								<option value="">Category</option>
-							</select>
-						</div>
-						<label for="">Project URL (optional)</label>
-						<input type="text">
-					</div>
-					<div class="mini">
-						<p>Project image</p>
-						<a href="#"><input type="file"><span>upload</span> project image</a>
-						<div class="img-content one-img">
-						    <img src="images/portfolio-item.png" alt="">
-						</div>
-						<p>Project files</p>
-						<a href="#"><input type="file"><span>upload</span> project files</a>
-						<div class="img-content">
-						    <img src="images/portfolio-item.png" alt="">
-						    <img src="images/porfolio.png" alt="">
-						</div>
-					</div>
-
-					<div class="mini">
+                    <input type="submit" value="Add certification"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade edit-portfolio" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add project</h4> </div>
+                <form action="#" class="modal-form">
+                    <div class="mini">
+                        <label for="">Project title</label>
+                        <input type="text"> </div>
+                    <div class="mini">
+                        <label for="">Was this project done on EasyWork?</label>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="">Select related project</option>
+                                <option value="">Project 1</option>
+                                <option value="">Project 2</option>
+                                <option value="">Project 3</option>
+                                <option value="">Project 4</option>
+                                <option value="">Project 5</option>
+                                <option value="">Project 6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mini ">
+                        <label for="">Project description</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <div class="mini">
+                        <label for="">Category</label>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="">Category</option>
+                                <option value="">Category</option>
+                                <option value="">Category</option>
+                                <option value="">Category</option>
+                            </select>
+                        </div>
+                        <label for="">Project URL (optional)</label>
+                        <input type="text"> </div>
+                    <div class="mini">
+                        <p>Project image</p>
+                        <a href="#">
+                            <input type="file"><span>upload</span> project image</a>
+                        <div class="img-content one-img"> <img src="images/portfolio-item.png" alt=""> </div>
+                        <p>Project files</p>
+                        <a href="#">
+                            <input type="file"><span>upload</span> project files</a>
+                        <div class="img-content"> <img src="images/portfolio-item.png" alt=""> <img src="images/porfolio.png" alt=""> </div>
+                    </div>
+                    <div class="mini">
                         <div class="input-group input-daterange">
-                            <label for="#">
-                                Start Date
-                                <input type="text" class="form-control" placeholder="Start Date">
-                            </label>
-                            <label for="">
-                                End Date
-                                <input type="text" class="form-control" placeholder="End Date">
-                            </label>
+                            <label for="#"> Start Date
+                                <input type="text" class="form-control" placeholder="Start Date"> </label>
+                            <label for=""> End Date
+                                <input type="text" class="form-control" placeholder="End Date"> </label>
                         </div>
                         <label for="#" class="skills">Used skills (optional)</label>
                         <div class="input cat">
-
                             <select name="" id="tokenize" multiple="multiple" class="tokenize-sample">
-                              <option value="1">HTML</option>
-                              <option value="2">CSS</option>
-                              <option value="3">PHP</option>
-                              <option value="4">JQUERY</option>
-                              <option value="5">JAVA</option>
+                                <option value="1">HTML</option>
+                                <option value="2">CSS</option>
+                                <option value="3">PHP</option>
+                                <option value="4">JQUERY</option>
+                                <option value="5">JAVA</option>
                             </select>
                         </div>
-					</div>
-
-					    <input type="submit" value="Add project">
-					    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
-
-
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="modal fade edit-overview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Edit overview</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
-					<textarea name="" id="" ></textarea>
-					<input type="submit" value="Save">
-					<input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
-
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="modal fade About-Myself" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Edit About Myself</h4>
-				</div>
-				<form action="#" class="modal-form">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
-					<textarea name="" id="" ></textarea>
-					<input type="submit" value="Save">
-					<input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true">
-
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade modal-portfolio modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
+                    </div>
+                    <input type="submit" value="Add project">
+                    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade edit-overview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Edit overview</h4> </div>
+                <form action="#" class="modal-form">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
+                    <textarea name="" id=""></textarea>
+                    <input type="submit" value="Save">
+                    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade About-Myself" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Edit About Myself</h4> </div>
+                <form action="#" class="modal-form">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
+                    <textarea name="" id=""></textarea>
+                    <input type="submit" value="Save">
+                    <input type="button" value="Cancel" data-dismiss="modal" aria-hidden="true"> </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-portfolio modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
                 <div class="portfolio-slider">
                     <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
                             <p class="date">Done from <span>01</span> Jun 2015 to <span>09</span> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
@@ -635,16 +485,12 @@
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="images/porfolio.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="images/porfolio.png" alt=""> </form>
                     </div>
                     <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
                             <p class="date">Done from <span>25</span> Jun 2015 to <span>27</span> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
@@ -653,43 +499,36 @@
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="img/hiring-img.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="img/hiring-img.png" alt=""> </form>
                     </div>
                     <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
-                            <p class="date">Done from <sapn>11</sapn> Jun 2015 to <sapn>23</sapn> Sep 2016</p>
+                            <p class="date">Done from
+                                <sapn>11</sapn> Jun 2015 to
+                                <sapn>23</sapn> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
                             <ul>
                                 <li>Used skils:</li>
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="images/portfolio-item.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="images/portfolio-item.png" alt=""> </form>
                     </div>
-
                 </div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade modal-portfolio-3 modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-portfolio-3 modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
                 <div class="portfolio-slider">
-                   <div class="item">
+                    <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
                             <p class="date">Done from <span>25</span> Jun 2015 to <span>27</span> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
@@ -698,81 +537,67 @@
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="img/hiring-img.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="img/hiring-img.png" alt=""> </form>
                     </div>
                     <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
-                            <p class="date">Done from <span>01</span> Jun 2015 to <sapn>09</sapn> Sep 2016</p>
+                            <p class="date">Done from <span>01</span> Jun 2015 to
+                                <sapn>09</sapn> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
                             <ul>
                                 <li>Used skils:</li>
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="images/porfolio.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="images/porfolio.png" alt=""> </form>
                     </div>
-
                     <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
-                            <p class="date">Done from <sapn>11</sapn> Jun 2015 to <sapn>23</sapn> Sep 2016</p>
+                            <p class="date">Done from
+                                <sapn>11</sapn> Jun 2015 to
+                                <sapn>23</sapn> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
                             <ul>
                                 <li>Used skils:</li>
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="images/portfolio-item.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="images/portfolio-item.png" alt=""> </form>
                     </div>
-
                 </div>
-			</div>
-		</div>
-	</div>
-
-   	<div class="modal fade modal-portfolio-2 modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-portfolio-2 modal-portfolios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
                 <div class="portfolio-slider">
-                   <div class="item">
+                    <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
-                            <p class="date">Done from <sapn>11</sapn> Jun 2015 to <sapn>23</sapn> Sep 2016</p>
+                            <p class="date">Done from
+                                <sapn>11</sapn> Jun 2015 to
+                                <sapn>23</sapn> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
                             <ul>
                                 <li>Used skils:</li>
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="images/portfolio-item.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="images/portfolio-item.png" alt=""> </form>
                     </div>
                     <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
                             <p class="date">Done from <span>01</span> Jun 2015 to <span>09</span> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
@@ -781,16 +606,12 @@
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="images/porfolio.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="images/porfolio.png" alt=""> </form>
                     </div>
                     <div class="item">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Travel Agency</h4>
-                        </div>
+                            <h4 class="modal-title">Travel Agency</h4> </div>
                         <form action="#" class="modal-form">
                             <p class="date">Done from <span>25</span> Jun 2015 to <span>27</span> Sep 2016</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
@@ -799,313 +620,384 @@
                                 <li><a href="#">Cognos</a></li>
                                 <li><a href="#">Photoshop</a></li>
                                 <li><a href="#">Adobe PDF</a></li>
-                            </ul>
-                            <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a>
-                            <img src="img/hiring-img.png" alt="">
-                        </form>
+                            </ul> <a href="#" class="site"><i class="fa fa-link" aria-hidden="true"></i>www.vacations.com</a> <img src="img/hiring-img.png" alt=""> </form>
                     </div>
-
-
                 </div>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+    <div class="modal fade change-hourly-rate" tabindex="-1" role="dialog"  data-aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Your profile portrait</h4>
-                </div>
-                <form action="#" method="post" enctype="multipart/form-data" id="dragarea">
-                    <p class="upload">
-                        <label>
-                            <input type="file" name="images" accept="image/*;capture=camera" title="#" id="inputFile" />
-                            <span id="preview" class="button"></span>
-                        </label>
-                    </p>
+                    <h4 class="modal-title">Change hourly rate</h4> </div>
+                <form action="#">
+                    <p>Your Rate <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Easy Work Fee <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
+                    <p>Total amount shown on you profile <span><b>$</b> <input type="text" value="20.00"> /hr</span></p>
+                    <div class="right-button"> <a href="#" class="button green">Save</a> <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a> </div>
                 </form>
-                <a href="#" class="button attach-picture">Attach Picture</a>
-                <div class="right-button">
-                    <a href="#" class="button">Save</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade participant-specialty-modal" role="dialog" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Headline</h4> </div>
+                <form action="#">
+                    <input type="text" placeholder="Add headline">
+                    <div class="right-button"> <a href="#" class="button green">Save</a> <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade basis-data" role="dialog" data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Basis data</h4> </div>
+                <form action="#">
+                    <div class="input-mini">
+                        <label for=""> First name
+                            <input type="text"> </label>
+                    </div>
+                    <div class="input-mini"> Last name
+                        <label for="">
+                            <input type="text"> </label>
+                    </div>
+                    <div class="input-mini"> Adress line 1
+                        <label for="">
+                            <input type="text"> </label>
+                    </div>
+                    <div class="input-mini"> Adress line 2
+                        <label for="">
+                            <input type="text"> </label>
+                    </div>
+                    <div class="input-mini"> Country
+                        <label for="">
+                            <input type="text"> </label>
+                    </div>
+                    <div class="input-mini"> City
+                        <label for="">
+                            <input type="text"> </label>
+                    </div>
+                    <div class="input-mini namber"> Telephone number (optional)
+                        <label for="">
+                            <input type="text"> </label>
+                    </div>
+                    <div class="input-mini postal-code"> Postal code
+                        <label for="">
+                            <input type="text"> </label>
+                    </div>
+                    <div class="inputWrapper checkParent">
+                        <input id="add-company" type="checkbox">
+                        <label for="add-company">Add company details</label>
+                    </div>
+                    <div class="hide addCompany">
+                        <div>
+                            <div class="input-mini"> Company name
+                                <label for="">
+                                    <input type="text"> </label>
+                            </div>
+                            <div class="input-mini"> VAT/Tax number
+                                <label for="">
+                                    <input type="text"> </label>
+                            </div>
+                        </div>
+                        <div class="inputWrapper checkParent">
+                            <input id="address-above" type="checkbox">
+                            <label for="address-above"> Company address is the same as the address above</label>
+                        </div>
+                        <div class="address-above">
+                            <div>
+                                <div class="input-mini"> Adress line 1
+                                    <label for="">
+                                        <input type="text"> </label>
+                                </div>
+                                <div class="input-mini"> Adress line 2
+                                    <label for="">
+                                        <input type="text"> </label>
+                                </div>
+                                <div class="input-mini"> Country
+                                    <label for="">
+                                        <input type="text"> </label>
+                                </div>
+                                <div class="input-mini"> City
+                                    <label for="">
+                                        <input type="text"> </label>
+                                </div>
+                                <div class="input-mini postal-code"> Postal code
+                                    <label for="">
+                                        <input type="text"> </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=""> <a href="#" class="button green">Save</a> <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade new-password" role="dialog" data-aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Password</h4> </div>
+                <form action="#">
+                    <label for=""> Old Password
+                        <input type="text"> </label>
+                    <label for=""> New Password
+                        <input type="text"> </label>
+                    <label for=""> Confirm Password
+                        <input type="text"> </label>
+                    <div> <a href="#" class="button green">Save</a> <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade agency-dashboard" role="dialog" data-aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Agency dashboard</h4>
+                </div>
+                <p>With this function you can create an agency and invite other freelancers to work for you</p>
+                <div class="buttons">
+                    <a href="#" class="button green">Continue</a>
                     <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="modal fade change-hourly-rate" tabindex="-1" role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Change hourly rate</h4>
-                </div>
-                <form action="#">
-                    <p>Your Rate <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
-                    <p>Easy Work Fee <span><b>$</b>  <input type="text" value="20.00"> /hr</span></p>
-                    <p>Total amount shown on you profile  <span><b>$</b> <input type="text" value="20.00"> /hr</span></p>
-                    <div class="right-button">
-                        <a href="#" class="button green">Save</a>
-                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </div>
-     <div class="modal fade participant-specialty-modal"  role="dialog" data-aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Headline</h4>
-                </div>
-                <form action="#">
-                    <input type="text" placeholder="Add headline">
-                    <div class="right-button">
-                        <a href="#" class="button green">Save</a>
-                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade basis-data"  role="dialog" data-aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Basis data</h4>
-                </div>
-                <form action="#">
-                    <div class="input-mini">
-                        <label for="">
-                            First name
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="input-mini">
-                        Last name
-                        <label for="">
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="input-mini">
-                        Adress line 1
-                        <label for="">
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="input-mini">
-                        Adress line 2
-                        <label for="">
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="input-mini">
-                        Country
-                        <label for="">
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="input-mini">
-                        City
-                        <label for="">
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="input-mini namber">
-                        Telephone number (optional)
-                        <label for="">
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="input-mini postal-code">
-                        Postal code
-                        <label for="">
-                            <input type="text">
-                        </label>
-                    </div>
-
-                    <div class="inputWrapper checkParent">
-                        <input id="add-company" type="checkbox">
-                        <label for="add-company">Add company details</label>
-
-                    </div>
-
-                    <div class="hide addCompany">
-                        <div>
-                            <div class="input-mini">
-                                Company name
-                                <label for="">
-                                    <input type="text">
-                                </label>
-                            </div>
-                            <div class="input-mini">
-                                VAT/Tax number
-                                <label for="">
-                                    <input type="text">
-                                </label>
-                            </div>
-                        </div>
-
-
-                        <div class="inputWrapper checkParent">
-                            <input id="address-above" type="checkbox">
-                            <label for="address-above"> Company address is the same as the address above</label>
-                        </div>
-                    <div class="address-above">
-                        <div>
-                            <div class="input-mini">
-                                Adress line 1
-                                <label for="">
-                                    <input type="text">
-                                </label>
-                            </div>
-                            <div class="input-mini">
-                                Adress line 2
-                                <label for="">
-                                    <input type="text">
-                                </label>
-                            </div>
-                            <div class="input-mini">
-                                Country
-                                <label for="">
-                                    <input type="text">
-                                </label>
-                            </div>
-                            <div class="input-mini">
-                                City
-                                <label for="">
-                                    <input type="text">
-                                </label>
-                            </div>
-                            <div class="input-mini postal-code">
-                                Postal code
-                                <label for="">
-                                    <input type="text">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-
-
-                    <div class="">
-                        <a href="#" class="button green">Save</a>
-                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="modal fade new-password"  role="dialog" data-aria-hidden="true">
+    <div class="modal fade agency-dashboard-create" role="dialog" data-aria-hidden="true">
         <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">New Password</h4>
+                    <h4 class="modal-title">Agency dashboard</h4>
                 </div>
-                <form action="#">
-                    <label for="">
-                        Old Password
+                <form>
+                    <div class="input-min">
+                        <label for="">Agency Name</label>
                         <input type="text">
-                    </label>
-
-                    <label for="">
-                        New Password
+                    </div>
+                    <div class="add-icon">
+                        <label for="">Agency logo</label>
+                        <div class="img" style="background-image:url(images/add-img.png)"></div>
+                    </div>
+                    <div class="input-min">
+                        <label for="">Address</label>
                         <input type="text">
-                    </label>
-
-                    <label for="">
-                        Confirm Password
+                    </div>
+                    <div class="input-min">
+                        <label for="">E-mail</label>
                         <input type="text">
-                    </label>
-                    <div>
-                        <a href="#" class="button green">Save</a>
-                        <a href="#" class="button" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+                    <div class="input-min">
+                        <label for="">County</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-min">
+                        <label for="">Phone Number</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-min">
+                        <label for="">City</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-min">
+                        <label for="">Your web-site</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-min">
+                        <label for="">State</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-min">
+                        <label for="">Postal Code</label>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">VAT</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-min">
+                        <label for="">Choose the services</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-min">
+                        <label for="">Choose the main category</label>
+                        <input type="text">
+                    </div>
+                    <div class="textarea">
+                        <label>About Agency</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="button green">Create</a>
+                        <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
                     </div>
                 </form>
-
             </div>
         </div>
     </div>
-	<!--END MODEL-->
+    <div class="modal fade bs-example-modal-lg"  role="dialog"  data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Your profile portrait</h4> </div>
+                <form action="#" method="post" enctype="multipart/form-data" id="dragarea">
+                    <p class="upload">
+                        <label>
+                            <input type="file" name="images" accept="image/*;capture=camera" title="#" id="inputFile" /> <span id="preview" class="button"></span> </label>
+                    </p>
+                </form> <a href="#" class="button attach-picture">Attach Picture</a>
+                <div class="right-button">
+                    <a href="#" class="button green">Save</a>
+                    <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade agency-dashboard-add-team"  role="dialog"  data-aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Agency dashboard</h4>
+                </div>
+               <div class="left-block">
+                   <div class="img" style="background-image:url(img/web.jpg)"></div>
+               </div>
+               <div class="right-block">
+                    <h3>Globa Software <i class="icon-pencils"></i></h3>
+                    <h4>Experts in Cognos</h4>
+                    <p class="country">India</p>
+                    <p>COGNOS 10.2 – Query Studio, Report Studio, Analysis Studio, Framework manager, Transformer, Business Insight(Workspace). COGNOS 8.1,8.3,8.4 10.1– Query Studio, Report Studio, Analysis Studio, Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools. Event Studio, Framework manager,Dashboarding, Transformer. Cognos Enterprise Business Intelligence Tools.</p>
+                    <div class="buttons">
+                        <a href="#" class="button green">Add team</a>
+                        <a href="#" class="button gray" data-dismiss="modal" data-aria-hidden="true">Cancel</a>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!--END MODEL-->
+    <script src="js/jquery.uploadThumbs.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.tokenize.js"></script>
+    <script>
+        $('.agency-dashboard .green').click(function(){
+            $('.agency-dashboard').modal('hide');
+            $('.agency-dashboard-create').modal('show');
+            setTimeout(function(){
+                $('body').addClass('modal-open');
+            },500)
+        });
+        $('.agency-dashboard-create .img').click(function(){
+            $('.agency-dashboard-create').modal('hide');
+            $('.bs-example-modal-lg').modal('show');
+            setTimeout(function(){
+                $('body').addClass('modal-open');
+            },500);
+        });
+        $('.bs-example-modal-lg .right-button .green').click(function(){
 
-	<script src="js/jquery.uploadThumbs.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/common.js"></script>
-	<script src="js/jquery.tokenize.js"></script>
-
-
-	<script>
-		$(document).ready(function () {
-			$('.my-portfolio .button').click(function () {
-				$('.my-portfolio .hide-item').slideToggle();
-			});
+            var imgPreview = $('#preview img').attr('src');
+            console.log(imgPreview)
+            $('.bs-example-modal-lg').modal('hide');
+            $('.agency-dashboard-create').modal('show');
+            $('.agency-dashboard-create .img').css('background-image', 'url(' + imgPreview + ')');
+            setTimeout(function(){
+                $('body').addClass('modal-open');
+            },500);
+        });
+        $('.agency-dashboard-create .green').click(function(){
+            $('.agency-dashboard-create').modal('hide');
+            $('.agency-dashboard-add-team').modal('show');
+            setTimeout(function(){
+                $('body').addClass('modal-open');
+            },500);
+        });
+        $('.agency-dashboard-add-team .icon-pencils').click(function(){
+            $('.agency-dashboard-add-team').modal('hide');
+            $('.agency-dashboard-create').modal('show');
+            setTimeout(function(){
+                $('body').addClass('modal-open');
+            },500);
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.my-portfolio .button').click(function () {
+                $('.my-portfolio .hide-item').slideToggle();
+            });
             if ($(".portfolio-slider").length > 0) {
                 $('.portfolio-slider').slick({
-                    adaptiveHeight:true,
-                    fade: true,
-                    speed: 300,
-                    cssEase: 'linear'
+                    adaptiveHeight: true
+                    , fade: true
+                    , speed: 300
+                    , cssEase: 'linear'
                 });
             }
-                $('.portolio-item').click(function(){
-                   $('.slick-list').css('height','inherit');
-                });
-
-                $('.input-daterange input').datepicker({
-                    autoclose: true
-                });
-		});
-
-            $("#add-company").click(function(){
-                $('.addCompany').toggleClass('hide');
-
+            $('.portolio-item').click(function () {
+                $('.slick-list').css('height', 'inherit');
             });
-            $("#address-above").click(function(){
-                $('.address-above').toggleClass('hide');
-
+            $('.input-daterange input').datepicker({
+                autoclose: true
             });
-            $('.attach-picture').click(function(){
-                $('#preview').click()
-            })
-
-
-	</script>
-
-	<script>
-    if ($("#tokenize").length > 0) {
-    var source = [
-                  {label: 'HTML', value: 'HTML'},
-                  {label: 'CSS', value: 'CSS'},
-                  {label: 'JQUERY', value: 'JQUERY'},
-                  {label: 'JAVA', value: 'JAVA'}
-                  ];
-        $('#tokenize').tokenize({
-        onDropdownAddItem: function() {
-          $(".Dropdown li").each(function (e) {
-          });
-        }
         });
-    }
-        $('.datepicker .day').click(function(){
-                $('.datepicker').hide()
-            })
+        $("#add-company").click(function () {
+            $('.addCompany').toggleClass('hide');
+        });
+        $("#address-above").click(function () {
+            $('.address-above').toggleClass('hide');
+        });
+        $('.attach-picture').click(function () {
+            $('#preview').click()
+        });
+
+    </script>
+    <script>
+        if ($("#tokenize").length > 0) {
+            var source = [
+                {
+                    label: 'HTML'
+                    , value: 'HTML'
+                }
+                , {
+                    label: 'CSS'
+                    , value: 'CSS'
+                }
+                , {
+                    label: 'JQUERY'
+                    , value: 'JQUERY'
+                }
+                , {
+                    label: 'JAVA'
+                    , value: 'JAVA'
+                }
+                  ];
+            $('#tokenize').tokenize({
+                onDropdownAddItem: function () {
+                    $(".Dropdown li").each(function (e) {});
+                }
+            });
+        }
+        $('.datepicker .day').click(function () {
+            $('.datepicker').hide()
+        })
     </script>
 </body>
 

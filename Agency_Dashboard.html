@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Agency Dashboard</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/Glyphter.css">
+</head>
+<body>
+	<!--START HEADER-->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
+					<span class="greeting">WELCOME</span>
+					<a href="" class="log-view">&lt; iloveart &gt;</a>
+					<a href="#" class="greeting logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- navigation -->
+	<nav class="clj_nav">
+		<div class="container"> <span class="visible-xs pull-right mobile_menu" id="mobile_menu"><img src="img/mobile_menu.png" alt="mobile_menu"></span>
+			<ul class="no-messages">
+				<li><a href="#">My jobs</a></li>
+				<li><a href="#">Post a Job</a></li>
+				<li><a href="#">Contracts</a></li>
+				<li><a href="#">find freelancer</a></li>
+				<li><a href="#">Reports</a></li>
+				<li class="myProfile">
+					<a href="#">My Profile</a>
+				</li>
+				<li>
+					<a href="#">Messages
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--START SEARCH-->
+	<section class="agency-dashbord-page">
+		<div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1>Add team</h1>
+                        <h4>Add team of your dream!</h4>
+                        <div class="left-block top">
+                            <h3>Send invitation to:</h3>
+                            <p>Select the management rights for the employee. Manager can hire and remove employees, as well as negotiate on behalf of the company and conclude / conduct transactions.</p>
+                            <p>Freelancer is a performer</p>
+                            <div class="radiobutton">
+                                <input name="invitation" id="manager" checked="" type="radio">
+                                <label for="manager">Manager</label>
+                            </div>
+                            <div class="radiobutton">
+                                <input name="invitation" id="freelancer" type="radio">
+                                <label for="freelancer">Freelancer</label>
+                            </div>
+                            <a href="#" class="button green">Find performer</a>
+                        </div>
+                        <div class="right-block top">
+                            <div class="img" style="background-image: url(img/web.jpg);"></div>
+                            <h2>WebStudio <i class="icon-pencils"></i></h2>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h3>List invitations</h3>
+                        <div class="left-block bottom">
+                           <p>Show:</p>
+                            <div class="radiobutton">
+                                <input name="sorting" id="sorting-all" checked="" type="radio">
+                                <label for="sorting-all">All</label>
+                            </div>
+                            <div class="radiobutton">
+                                <input name="sorting" id="sorting-manager"  type="radio">
+                                <label for="sorting-manager">Manager</label>
+                            </div>
+                            <div class="radiobutton">
+                                <input name="sorting" id="sorting-freelancer"  type="radio">
+                                <label for="sorting-freelancer">Freelancer</label>
+                            </div>
+                        </div>
+                        <div class="right-block bottom">
+                            <ul class="internally_nav">
+                                <li class="internally_nav_li">
+                                    <a class="prevent_link" href="">
+                                        Any category
+                                        <span class="icon-media"></span>
+                                    </a>
+                                    <ul class="internally_nav_sub" style="display: none;">
+                                        <li>
+                                            <a href="#">Web, Mobile and Software</a>
+                                            <span>+</span>
+                                            <ul class="internally_nav_sub_sub">
+                                                <li><a href="#">1All sub categories</a></li>
+                                                <li><a href="#">Hello World</a></li>
+                                                <li><a href="#">One more</a></li>
+                                                <li><a href="#">Ip adresses config</a></li>
+                                                <li><a href="#">Cable adjust</a></li>
+                                                <li><a href="#">Other</a></li>
+                                                <li><a href="#">Mac addreeaa</a></li>
+                                                <li><a href="#">Mybe another</a></li>
+                                                <li><a href="#">Number 2 sub cat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Net working</a>
+                                            <span>+</span>
+                                            <ul class="internally_nav_sub_sub">
+                                                <li><a href="#">2All sub categories</a></li>
+                                                <li><a href="#">Hello World</a></li>
+                                                <li><a href="#">One more</a></li>
+                                                <li><a href="#">Ip adresses config</a></li>
+                                                <li><a href="#">Cable adjust</a></li>
+                                                <li><a href="#">Other</a></li>
+                                                <li><a href="#">Mac addreeaa</a></li>
+                                                <li><a href="#">Mybe another</a></li>
+                                                <li><a href="#">Number 2 sub cat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Writing</a>
+                                            <span>+</span>
+                                            <ul class="internally_nav_sub_sub">
+                                                <li><a href="#">3All sub categories</a></li>
+                                                <li><a href="#">Hello World</a></li>
+                                                <li><a href="#">One more</a></li>
+                                                <li><a href="#">Ip adresses config</a></li>
+                                                <li><a href="#">Cable adjust</a></li>
+                                                <li><a href="#">Other</a></li>
+                                                <li><a href="#">Mac addreeaa</a></li>
+                                                <li><a href="#">Mybe another</a></li>
+                                                <li><a href="#">Number 2 sub cat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Design and Creative</a>
+                                            <span>+</span>
+                                            <ul class="internally_nav_sub_sub">
+                                                <li><a href="#">4All sub categories</a></li>
+                                                <li><a href="#">Hello World</a></li>
+                                                <li><a href="#">One more</a></li>
+                                                <li><a href="#">Ip adresses config</a></li>
+                                                <li><a href="#">Cable adjust</a></li>
+                                                <li><a href="#">Other</a></li>
+                                                <li><a href="#">Mac addreeaa</a></li>
+                                                <li><a href="#">Mybe another</a></li>
+                                                <li><a href="#">Number 2 sub cat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Legal Support</a>
+                                            <span>+</span>
+                                            <ul class="internally_nav_sub_sub">
+                                                <li><a href="#">5All sub categories</a></li>
+                                                <li><a href="#">Hello World</a></li>
+                                                <li><a href="#">One more</a></li>
+                                                <li><a href="#">Ip adresses config</a></li>
+                                                <li><a href="#">Cable adjust</a></li>
+                                                <li><a href="#">Other</a></li>
+                                                <li><a href="#">Mac addreeaa</a></li>
+                                                <li><a href="#">Mybe another</a></li>
+                                                <li><a href="#">Number 2 sub cat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Admin Support</a>
+                                            <span>+</span>
+                                            <ul class="internally_nav_sub_sub">
+                                                <li><a href="#">6All sub categories</a></li>
+                                                <li><a href="#">Hello World</a></li>
+                                                <li><a href="#">One more</a></li>
+                                                <li><a href="#">Ip adresses config</a></li>
+                                                <li><a href="#">Cable adjust</a></li>
+                                                <li><a href="#">Other</a></li>
+                                                <li><a href="#">Mac addreeaa</a></li>
+                                                <li><a href="#">Mybe another</a></li>
+                                                <li><a href="#">Number 2 sub cat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Accounting</a>
+                                            <span>+</span>
+                                            <ul class="internally_nav_sub_sub">
+                                                <li><a href="#">7All sub categories</a></li>
+                                                <li><a href="#">Hello World</a></li>
+                                                <li><a href="#">One more</a></li>
+                                                <li><a href="#">Ip adresses config</a></li>
+                                                <li><a href="#">Cable adjust</a></li>
+                                                <li><a href="#">Other</a></li>
+                                                <li><a href="#">Mac addreeaa</a></li>
+                                                <li><a href="#">Mybe another</a></li>
+                                                <li><a href="#">Number 2 sub cat</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="internally_nav_li">
+                                    <a class="prevent_link" href="">
+                                        Any hourly rate
+                                        <span class="icon-media"></span>
+                                    </a>
+                                    <ul class="internally_nav_sub" style="display: none;">
+                                        <li>
+                                            <a href="#">Web, Mobile and Software</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Net working</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Writing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Design and Creative</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Legal Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Admin Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Accounting</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                       <div class="tabs tabs-contracts">
+                            <ul>
+                                <li data-page="0" class="active">Active (9)</li>
+                                <li data-page="1" >Waiting (5)</li>
+                                <li data-page="2">Canceled (2)</li>
+                            </ul>
+                            <div>
+                                <div class="table">
+                                    <div class="table_edit table_contracts">
+                                        <div class="contracts-items">
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status" id="status-manager"  type="radio">
+                                                            <label for="status-manager">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status" id="status-freelancer"  type="radio">
+                                                            <label for="status-freelancer">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-2" id="status-manager-2"  type="radio">
+                                                            <label for="status-manager-2">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-2" id="status-freelancer-2"  type="radio">
+                                                            <label for="status-freelancer-2">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-3" id="status-manager-3"  type="radio">
+                                                            <label for="status-manager-3">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-3" id="status-freelancer-3"  type="radio">
+                                                            <label for="status-freelancer-3">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-4" id="status-manager-4"  type="radio">
+                                                            <label for="status-manager-4">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-4" id="status-freelancer-4"  type="radio">
+                                                            <label for="status-freelancer-4">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-5" id="status-manager-5"  type="radio">
+                                                            <label for="status-manager-5">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-5" id="status-freelancer-5"  type="radio">
+                                                            <label for="status-freelancer-5">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-6" id="status-manager-6"  type="radio">
+                                                            <label for="status-manager-6">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-6" id="status-freelancer-6"  type="radio">
+                                                            <label for="status-freelancer-6">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-7" id="status-manager-7"  type="radio">
+                                                            <label for="status-manager-7">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-7" id="status-freelancer-7"  type="radio">
+                                                            <label for="status-freelancer-7">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-8" id="status-manager-8"  type="radio">
+                                                            <label for="status-manager-8">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-8" id="status-freelancer-8"  type="radio">
+                                                            <label for="status-freelancer-8">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <div class="status">
+                                                        <div class="radiobutton">
+                                                            <input name="status-9" id="status-manager-9"  type="radio">
+                                                            <label for="status-manager-9">Manager</label>
+                                                        </div>
+                                                        <div class="radiobutton">
+                                                            <input name="status-9" id="status-freelancer-9"  type="radio">
+                                                            <label for="status-freelancer-9">Freelancer</label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="more"><i class="icon-arrow">View more</i></div>
+                                </div>
+                                <div class="table">
+                                    <div class="table_edit table_contracts">
+                                        <div class="table_edit table_contracts">
+                                        <div class="contracts-items">
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <p class="status">Manager</p>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <p class="status">Freelancer</p>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <p class="status">Freelancer</p>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <p class="status">Manager</p>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <p class="status">Freelancer</p>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="more"><i class="icon-arrow">View more</i></div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <div class="table_edit table_contracts">
+                                        <div class="table_edit table_contracts">
+                                        <div class="contracts-items">
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <p class="status">Manager</p>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="contracts-item">
+                                                <div class="photo" style="background-image: url(img/mb-logo-2.png);">
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#">
+                                                        <h4 class="title">Mark Ronson<span>Cognos design</span></h4>
+                                                    </a>
+                                                    <p class="price">Hourly rate $22,00</p>
+                                                    <p class="date">Invited at <span>2017/09/06 16:19</span></p>
+                                                    <p class="status">Manager</p>
+                                                    <a href="#" class="del">
+                                                        <i class="icon-businessman"></i>
+                                                        <i class="icon-add"></i>
+                                                        <span>Delite</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                        <div class="more"><i class="icon-arrow">View more</i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+	<!--END SEARCH-->
+	<!--END HEADER-->
+	<!--START FOOTER-->
+	<footer>
+		<div class="wrapper footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="footer-menu">
+							<li><a href="#">Terms and conditions</a></li>
+							<li><a href="#">News</a></li>
+							<li class="active"><a href="#">About Us</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--END FOOTER-->
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+        $('.contracts-item:nth-child(n+6)').addClass('hide')
+        $('.agency-dashbord-page .icon-arrow').click(function(){
+            if($('.contracts-item').hasClass('hide')){
+                $('.contracts-item').removeClass('hide');
+                $(this).addClass('open');
+            }else{
+                $('.contracts-item:nth-child(n+6)').addClass('hide');
+                $(this).removeClass('open');
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
