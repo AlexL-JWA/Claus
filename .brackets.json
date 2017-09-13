@@ -1,0 +1,30 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "css/styles.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "includePaths": [
+                    "../bower_components/bourbon/app/assets/stylesheets/"
+                ],
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false,
+            "brackets-git.gitPath": "git",
+            "brackets-minimap.width": 84,
+            "eqFTP.projectsPaths": [
+                "D:/ftp",
+                "D:/ftp",
+                "C:/Users/Alscon/Documents/eqFTP Projects/Claus/",
+                "C:/Users/Alscon/Documents/eqFTP Projects/Alscon_ftp/",
+                "C:/Users/Alscon/Documents/eqFTP Projects/Ordordina/",
+                "C:/Users/Alscon/Documents/eqFTP Projects/ordinx/",
+                "C:/Users/Alscon/Documents/eqFTP Projects/Диктор/"
+            ]
+        }
+    }
+}
