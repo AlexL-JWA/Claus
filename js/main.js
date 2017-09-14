@@ -1,10 +1,21 @@
 jQuery(document).ready(function($) {
 
-	$(".prevent_link").click(function (e) {
-		e.preventDefault();
-		$(this).addClass('active');
-		$(this).siblings('.internally_nav_sub').show();
-	});
+    $('body').on('click', '.prevent_link', function(e) {
+        e.preventDefault();
+        if($(this).hasClass('active')){
+            $(this).next().slideUp(300);
+            $('.internally_nav .prevent_link').removeClass('active');
+        }else{
+            $('.internally_nav .prevent_link').removeClass('active');
+            $(this).addClass('active');
+            $('.internally_nav .internally_nav_sub').slideUp();
+            $(this).next().slideDown(300);
+        }
+    });
+    $('.internally_nav_sub').mouseleave(function(){
+        $('.internally_nav .internally_nav_sub').slideUp();
+        $('.internally_nav .prevent_link').removeClass('active');
+    });
 
 //	/* datepicker */
 ////	if( $("#start_data").length || $(".input-daterange").length/* || $("#datepicker-work-diary").length */)
@@ -47,7 +58,7 @@ jQuery(document).ready(function($) {
 	/*accordeon*/
 
 	$(".internally_nav_sub li span").click(function() {
-		if ($(window).width()<1200) {
+		if ($(window).width() < 1200) {
 			if( $(this).next(".internally_nav_sub_sub").is(":visible") ) {
 				$(this).next(".internally_nav_sub_sub").slideUp("fast");
 				$(this).removeClass("open_sub");
@@ -103,22 +114,22 @@ $(window).resize(function(){
 	}
 });
 
-$(document).mouseup(function (e){
-	var sub_menu = $(".internally_nav_sub");
-
-	if (!sub_menu.is(e.target) && sub_menu.has(e.target).length === 0) {
-		sub_menu.hide();
-		$(".prevent_link").removeClass("active");
-	}
-
-	var sub_sub = $(".internally_nav_sub_sub");
-
-	if (!sub_sub.is(e.target) && sub_sub.has(e.target).length === 0 && $(window).width()<1200) {
-		$(".internally_nav_sub_sub").slideUp("fast");
-		$(".internally_nav_sub li span").removeClass("open_sub");
-	}
-
-});
+//$(document).mouseup(function (e){
+//	var sub_menu = $(".internally_nav_sub");
+//
+//	if (!sub_menu.is(e.target) && sub_menu.has(e.target).length === 0) {
+//		sub_menu.hide();
+//		$(".prevent_link").removeClass("active");
+//	}
+//
+//	var sub_sub = $(".internally_nav_sub_sub");
+//
+//	if (!sub_sub.is(e.target) && sub_sub.has(e.target).length === 0 && $(window).width()<1200) {
+//		$(".internally_nav_sub_sub").slideUp("fast");
+//		$(".internally_nav_sub li span").removeClass("open_sub");
+//	}
+//
+//});
 
 /*sticky footer*/
 
