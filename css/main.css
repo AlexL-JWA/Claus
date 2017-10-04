@@ -63,7 +63,8 @@ section.clj_cognos form input[type='submit']:hover,
 .payment-schedule .tr .button:hover,
 .ndra-container .button.accept:hover,
 .ndra-container .button.reject:hover,
-.form-edit a.button:hover{
+.form-edit a.button:hover,
+.role .button:hover{
     background: #59de00;
     border-color: #bcf662;
 }
@@ -93,7 +94,8 @@ section.clj_cognos form input[type='submit']:focus,
 .payment-schedule .tr .button:focus,
 .ndra-container .button.accept:focus,
 .ndra-container .button.reject:focus,
-.form-edit a.button:focus{
+.form-edit a.button:focus,
+.role .button:focus{
     background: #489c5a;
     border-color: #659914;
 }
@@ -4704,6 +4706,7 @@ nav.clj_nav ul li:last-of-type a {
     border: 1px solid #cdcdcd;
     margin: 0 -3px -1px;
     vertical-align: top;
+
 }
 
 .fr-search ul li i {
@@ -4713,7 +4716,6 @@ nav.clj_nav ul li:last-of-type a {
 .fr-search ul li i:before {
     margin-top: 30px;
     font-size: 48px;
-    color: #5cc300;
 }
 
 .fr-search ul li:hover a {
@@ -4721,13 +4723,18 @@ nav.clj_nav ul li:last-of-type a {
 }
 
 .fr-search ul li:hover i:before {
-    color: #727272;
+    color: #5cc300;
 }
 
 .fr-search ul li a {
     font: 400 13px / 36px Open Sans;
     text-transform: uppercase;
     color: #727272;
+     -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
 }
 
 .fr-search .menu-search {
@@ -10474,4 +10481,213 @@ p.pp_to15
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 0 0 3px #aaa;
+}
+.role .button
+    {
+        display: table;
+        margin: 0 auto;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #a5ca94;
+        background-color: #5cc200;
+        width: 160px;
+        height: 50px;
+        text-align: center;
+        font-family: 'Source Sans Pro';
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 48px;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+        margin-bottom: 50px;
+    }
+
+    .role h1
+    {
+        text-align: center;
+        font-family: Open Sans;
+        color: #83c124;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-top: 2.5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .role h1 span
+    {
+        display: block;
+        font-weight: 400;
+        color: #727272;
+    }
+
+    .role .radio-buttons
+    {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .role .radio-button
+    {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .role .radio-button:nth-of-type(1) div
+    {
+        transform: translateX(17%);
+    }
+
+    .role .radio-button:nth-of-type(2) div
+    {
+        transform: translateX(-17%);
+    }
+
+    .role .radio-button input
+    {
+        display: none;
+    }
+
+    .role .radio-button input:checked + div label
+    {
+        width: 520px;
+        height: 520px;
+    }
+
+    .role .radio-button input:checked + div span b.create
+    {
+        display: block;
+    }
+
+    .role .radio-button input:checked + div span b.switch
+    {
+        display: none;
+    }
+
+    .role .radio-button input:not(:checked) + div
+    {
+        z-index: 10;
+    }
+
+    .role .radio-button input:not(:checked) + div:after
+    {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        top: -30px;
+        bottom: 0;
+        left: -30px;
+        right: 0;
+        z-index: -1;
+        width: 382px;
+        height: 382px;
+        animation: animation-circle 2s infinite linear;
+        border: 15px solid rgba(92, 194, 0, 0.4);
+        box-shadow: inset 0 0 0 15px rgba(92, 194, 0, 0.2), 0 0 0 15px rgba(92, 194, 0, 0.6);
+    }
+
+    .role .radio-button input:not(:checked) + div span:before
+    {
+        animation: animation-circle 2s infinite linear;
+    }
+
+    .role .radio-button input:not(:checked) + div span b.create
+    {
+        display: none;
+    }
+
+    .role .radio-button input:not(:checked) + div span b.switch
+    {
+        display: block;
+    }
+
+    .role .radio-button div
+    {
+        display: block;
+        position: relative;
+    }
+
+    .role .radio-button label
+    {
+        width: 322px;
+        height: 322px;
+        border-radius: 50%;
+        background-size: 100%;
+        background-position: center center;
+        position: relative;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .role .radio-button span
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        font-family: Open Sans;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .role .radio-button span:before
+    {
+        content: '';
+        border-radius: 50%;
+        background-color: #5cc200;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+@keyframes animation-circle
+{
+    0%
+    {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50%
+    {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    100%
+    {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
 }

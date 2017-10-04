@@ -601,6 +601,11 @@
     {
         width: 115px;
     }
+    .role .radio-button input:checked + div label
+    {
+        width: 500px;
+        height: 500px;
+    }
 }
 
 
@@ -746,6 +751,7 @@
     .my-profile .overview div .edit {
         top: 5px;
     }
+
 
 }
 
@@ -5755,6 +5761,27 @@
     .about-us .teams p.text {
         padding: 0;
     }
+    .role .radio-button input:checked + div label
+    {
+        width: 400px;
+        height: 400px;
+    }
+    .role .radio-button input:not(:checked) + div:after
+    {
+        width: 370px;
+        height: 370px;
+    }
+    .role .radio-button label
+    {
+        width: 310px;
+        height: 310px;
+    }
+    .role .radio-button label span
+    {
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -5838,6 +5865,35 @@
     }
     .about-us .human {
         width: calc(100% / 2.05 - 15px);
+    }
+    .role .radio-button input:checked + div label
+    {
+        width: 220px;
+        height: 220px;
+    }
+    .role .radio-button input:not(:checked) + div:after
+    {
+        width: 210px;
+        height: 210px;
+        border: 5px solid rgba(92, 194, 0, 0.4);
+        box-shadow: inset 0 0 0 5px rgba(92, 194, 0, 0.2), 0 0 0 5px rgba(92, 194, 0, 0.6);
+        top: -10px;
+        left: -10px;
+    }
+    .role .radio-button input:not(:checked) + div span:before
+    {
+        animation: none;
+    }
+    .role .radio-button label
+    {
+        width: 195px;
+        height: 195px;
+    }
+    .role .radio-button label span
+    {
+        width: 70px;
+        height: 70px;
+        font-size: 10px;
     }
 }
 
@@ -5926,6 +5982,29 @@
     }
     .change-hourly-rate span {
         margin-top: 20px;
+    }
+    .role .radio-button input:checked + div label
+    {
+        width: 150px;
+        height: 150px;
+    }
+    .role .radio-button input:not(:checked) + div:after
+    {
+        width: 135px;
+        height: 135px;
+        left: -5px;
+        top: -5px;
+    }
+    .role .radio-button label
+    {
+        width: 125px;
+        height: 125px;
+    }
+    .role .radio-button label span
+    {
+        width: 55px;
+        height: 55px;
+        font-size: 8px;
     }
 }
 

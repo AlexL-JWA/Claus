@@ -1299,6 +1299,153 @@ a.view-job:focus,
         border: 2px solid #fff;
         box-shadow: 0 0 0 3px #aaa; }
 
+.role .button {
+  display: table;
+  margin: 0 auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a5ca94;
+  background-color: #5cc200;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Source Sans Pro';
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  margin-bottom: 50px; }
+
+.role h1 {
+  text-align: center;
+  font-family: Open Sans;
+  color: #83c124;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: 2.5vw;
+  margin-bottom: 1.5vw; }
+  .role h1 span {
+    display: block;
+    font-weight: 400;
+    color: #727272; }
+
+.role .radio-buttons {
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+
+.role .radio-button {
+  display: inline-block;
+  vertical-align: middle; }
+  .role .radio-button:nth-of-type(1) div {
+    transform: translateX(17%); }
+  .role .radio-button:nth-of-type(2) div {
+    transform: translateX(-17%); }
+  .role .radio-button input {
+    display: none; }
+    .role .radio-button input:checked + div label {
+      width: 520px;
+      height: 520px; }
+    .role .radio-button input:checked + div span b.create {
+      display: block; }
+    .role .radio-button input:checked + div span b.switch {
+      display: none; }
+    .role .radio-button input:not(:checked) + div {
+      z-index: 10; }
+      .role .radio-button input:not(:checked) + div:after {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        top: -30px;
+        bottom: 0;
+        left: -30px;
+        right: 0;
+        z-index: -1;
+        width: 382px;
+        height: 382px;
+        animation: animation-circle 2s infinite linear;
+        border: 15px solid rgba(92, 194, 0, 0.4);
+        box-shadow: inset 0 0 0 15px rgba(92, 194, 0, 0.2), 0 0 0 15px rgba(92, 194, 0, 0.6); }
+      .role .radio-button input:not(:checked) + div span:before {
+        animation: animation-circle 2s infinite linear; }
+      .role .radio-button input:not(:checked) + div span b.create {
+        display: none; }
+      .role .radio-button input:not(:checked) + div span b.switch {
+        display: block; }
+  .role .radio-button div {
+    display: block;
+    position: relative; }
+  .role .radio-button label {
+    width: 322px;
+    height: 322px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+  .role .radio-button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-family: Open Sans;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .role .radio-button span:before {
+      content: '';
+      border-radius: 50%;
+      background-color: #5cc200;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1; }
+
+@keyframes animation-circle {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7); }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
 @media only screen and (max-width: 1199px) {
   .agency-dashbord-page ul.internally_nav li.internally_nav_li.last_li .internally_nav_sub {
     left: inherit; }
@@ -1323,7 +1470,10 @@ a.view-job:focus,
       .agency-dashbord-page .tabs-contracts .table_contracts .description p.status {
         width: 115px; }
     .agency-dashbord-page .tabs-contracts .table_contracts .description .status {
-      width: 115px; } }
+      width: 115px; }
+  .role .radio-button input:checked + div label {
+    width: 500px;
+    height: 500px; } }
 
 @media only screen and (max-width: 991px) {
   .modal-dialog {
@@ -1358,7 +1508,20 @@ a.view-job:focus,
         .agency-dashbord-page .tabs-contracts .table_contracts .description p.date span {
           display: block; }
     .agency-dashbord-page .tabs-contracts .table_contracts .description .status {
-      width: 105px !important; } }
+      width: 105px !important; }
+  .role .radio-button input:checked + div label {
+    width: 400px;
+    height: 400px; }
+  .role .radio-button input:not(:checked) + div:after {
+    width: 370px;
+    height: 370px; }
+  .role .radio-button label {
+    width: 310px;
+    height: 310px; }
+    .role .radio-button label span {
+      width: 100px;
+      height: 100px;
+      font-size: 12px; } }
 
 @media only screen and (max-width: 767px) {
   .agency-dashboard-add-team .left-block {
@@ -1465,7 +1628,26 @@ a.view-job:focus,
           width: 100%;
           right: 0 !important; }
         .agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li a.prevent_link .icon-media {
-          right: 10px; } }
+          right: 10px; }
+  .role .radio-button input:checked + div label {
+    width: 220px;
+    height: 220px; }
+  .role .radio-button input:not(:checked) + div:after {
+    width: 210px;
+    height: 210px;
+    border: 5px solid rgba(92, 194, 0, 0.4);
+    box-shadow: inset 0 0 0 5px rgba(92, 194, 0, 0.2), 0 0 0 5px rgba(92, 194, 0, 0.6);
+    top: -10px;
+    left: -10px; }
+  .role .radio-button input:not(:checked) + div span:before {
+    animation: none; }
+  .role .radio-button label {
+    width: 195px;
+    height: 195px; }
+    .role .radio-button label span {
+      width: 70px;
+      height: 70px;
+      font-size: 10px; } }
 
 @media only screen and (max-width: 480px) {
   .agency-dashboard-add-team .right-block {
@@ -1507,7 +1689,22 @@ a.view-job:focus,
     font-size: 13px; }
   .agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li .internally_nav_sub {
     width: 290px;
-    left: 0 !important; } }
+    left: 0 !important; }
+  .role .radio-button input:checked + div label {
+    width: 150px;
+    height: 150px; }
+  .role .radio-button input:not(:checked) + div:after {
+    width: 135px;
+    height: 135px;
+    left: -5px;
+    top: -5px; }
+  .role .radio-button label {
+    width: 125px;
+    height: 125px; }
+    .role .radio-button label span {
+      width: 55px;
+      height: 55px;
+      font-size: 8px; } }
 
 @media only screen and (max-width: 380px) {
   .my-profile .buttons a:last-of-type {
