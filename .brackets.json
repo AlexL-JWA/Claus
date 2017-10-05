@@ -13,7 +13,7 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false,
+            "linting.collapsed": true,
             "brackets-git.gitPath": "git",
             "brackets-minimap.width": 84,
             "eqFTP.projectsPaths": [
@@ -24,7 +24,15 @@
                 "C:/Users/Alscon/Documents/eqFTP Projects/Ordordina/",
                 "C:/Users/Alscon/Documents/eqFTP Projects/ordinx/",
                 "C:/Users/Alscon/Documents/eqFTP Projects/Диктор/"
-            ]
+            ],
+            "eqFTP.eqFTP": {
+                "misc": {
+                    "first_start": true,
+                    "last_settings_file": "D:/work/settings.eqftp",
+                    "debug": true
+                }
+            },
+            "mikaeljorhult.bracketsPHPLintTools.php-available": false
         }
     }
 }
