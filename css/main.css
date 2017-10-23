@@ -1642,10 +1642,39 @@ h5.title-2 img {
     transform: translate(-50%,-50%);
 
 }
-.form-edit .right-block
+.form-edit.my-profil
+{
+    float: none;
+    left: 0;
+}
+.form-edit.my-profil h3 i
+{
+    vertical-align: middle;
+    float: none;
+}
+.transaction.reports-buyer .nav-tabs > li
+{
+    width: calc(100% / 3);
+}
+.update-profile.my-profil h3
+{
+    display: block;
+}
+.update-profile.my-profil .button-top
+{
+    float: right !important;
+    left: initial !important;
+    right: initial !important;
+}
+.update-profile.my-profil .bottom-buttom.gray
+{
+    float: right !important;
+}
+.form-edit .right-block.r
 {
     padding: 50px 0 50px 50px;
     border-left: 1px solid #919191;
+    width: 41.66666667%;
 }
 .form-edit .right-block,
 .form-edit .left-block
