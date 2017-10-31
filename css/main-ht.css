@@ -22,18 +22,18 @@ header.clj_header.header-ht-slider {
 
 .header-ht .search {
     display: inline-block;
-    margin-left: 30px;
-    padding: 0;
+    padding: 0 0 0 30px;
 }
 
 .header-ht .search input[type="search"] {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 3px;
     border: 1px solid rgba(136, 136, 136, 0.9);
-    width: 303px;
+    max-width: 303px;
     height: 36px;
     padding-left: 12px;
     line-height: 1;
+    width: 100%;
 }
 
 .header-ht .search input[type="submit"] {
@@ -814,9 +814,13 @@ section.banner-area.bottom-banner {
     header.clj_header.header-ht-slider .personal .login span+b {
         display: none;
     }
+    header.clj_header.header-ht-slider .personal .login
+    {
+        position: relative;
+        right: -11px;
+    }
     header.clj_header.header-ht-slider .personal .sign_up,
     header.clj_header.header-ht-slider .personal .login {
-        float: right;
         margin: 0;
     }
 }
@@ -902,6 +906,11 @@ section.banner-area.bottom-banner {
     .header-ht.header-ht-slider .search input[type="search"] {
         width: 230px;
     }
+    header.clj_header.header-ht-slider .personal .sign_up span,
+    header.clj_header.header-ht-slider .personal .login span
+    {
+        display: none;
+    }
 }
 
 @media screen and (max-width:630px) {
@@ -936,17 +945,9 @@ section.banner-area.bottom-banner {
     }
 }
 
-@media screen and (max-width:580px) {
-    .header-ht.header-ht-slider .search {
-        display: none;
-    }
-}
 
 @media screen and (max-width:480px) {
-    .header-ht .search,
-    .header-ht .head-button {
-        display: none;
-    }
+
     .header-ht .col-logo {
         float: left;
     }
@@ -1077,10 +1078,7 @@ section.banner-area.bottom-banner {
 }
 
 @media screen and (max-width:400px) {
-    header.clj_header.header-ht-slider .personal .sign_up .icon-check31-01,
-    header.clj_header.header-ht-slider .personal .login .icon-login {
-        display: inline-block;
-    }
+
 }
 
 .one-slide {
@@ -1531,6 +1529,14 @@ nav.slides-navigation .prev {
     }
     .mobile-content .payments .methods .method-item:nth-of-type(1) {
         margin-right: 0px;
+    }
+    .header-ht .mt.personal
+    {
+        padding: 0 0px 0 7px;
+    }
+    header.clj_header.header-ht-slider .personal .sign_up
+    {
+        margin-right: 7px !important;
     }
 }
 @media (max-width: 530px)
