@@ -15,15 +15,8 @@
 @media (min-width: 992px) {
 	.how-to-page {
 		overflow: hidden;
+        padding-bottom: 0 !important;
 	}
-}
-
-@media (min-width: 992px)
-{
-    .how-to-page
-    {
-        overflow: hidden;
-    }
 }
 @media (max-width: 1280px) {
 	#describe {
@@ -93,8 +86,8 @@
 		margin-top: -305.5px;
 	}
 }
-@media only screen and (max-width: 1200px) {
-	.my-profil-2 .button-top {
+@media screen and (max-width:1199px) {
+    .my-profil-2 .button-top {
 		right: 295px;
 	}
 	.my-profil textarea {
@@ -165,10 +158,6 @@
 	.block-4 .text.white p {
 		margin-bottom: 15px;
 	}
-}
-@media screen and (max-width:1199px) {
-	/*nav.clj_nav*/
-	/*internally_nav*/
 	section ul.internally_nav li.internally_nav_li a.prevent_link {
 		padding: 4px 7px;
 	}
@@ -366,659 +355,43 @@
     {
         margin: 15px auto;
     }
-}
-
-
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width: 425px) {
-    .form-edit input[type="submit"],
-    .my-profil a.button {
-        width: 100%;
-        font-size: 14px;
-        margin: 15px 0 0 0;
-    }
-
-    .form-edit h3 i {
-        width: 89px;
-        height: 89px;
-        vertical-align: -10px !important;
-    }
-    .my-profil .right-block input {
-        width: 75%;
-    }
-    .my-profil .edit {
-        margin: 0 0px 0 10px;
-    }
-    .button-block {
-        display: block;
-        margin: 0 auto 15px;
-    }
-    .my-profil span {
-        width: 80%;
-    }
-    .my-profil select {
-        width: 100%;
-    }
-    .my-profil .right-block.r input {
-        width: 80%;
-    }
-    .my-profil textarea {
-        width: 75%;
-    }
-    .my-profil .experience {
-        width: 55%;
-    }
-
-    .form-edit h2 {
-        top: 355px;
-    }
-    .form-edit h2::before {
-        width: 125px;
-    }
-    .form-edit h2::after {
-        margin-left: -167px;
-        width: 125px;
-    }
-    .block-5 {
-        min-height: 420px;
-        background-position: bottom center;
-        -webkit-background-size: 300px;
-        background-size: 300px;
-    }
-    .update-profile .icon-teacher
+    .workings-time.form-edit ul
     {
-        width: 89px;
-        height: 89px;
+        width: calc(100% - 40px);
     }
-    .update-profile .icon-teacher:before
+    .workings-time.form-edit ul li
     {
-
-        font-size: 37px;
-        padding: 18px 18px 18px;
-
+        width: calc(100% / 6 - 4px);
     }
-    .my-profile .buttons a
+    .workings-time.form-edit .time-block
     {
         width: 100%;
-        margin-left: 0;
-        margin-bottom: 15px !important;
+        position: relative;
+        overflow: hidden;
     }
+    .workings-time.form-edit .time-block img
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        height: 100%;
+        width: auto;
+    }
+    .progress
+    {
+        width: 60px;
+    }
+    .onj_table .table_edit thead tr th {
+        font-size: 18px;}
 }
-
-@media only screen and (max-width: 400px) {
-    .my_button_withdraw {
-        margin: 0 4% 20px 21px;
-        display: block;
-        float: none;
-        margin-top: 30px;
-        margin-left: 5px;
-    }
-    header.clj_header .personal .sign_up .icon-check31-01 {
-        display: none;
-    }
-    header.clj_header .personal .login .icon-login {
-        display: none;
-    }
-    section.clj_freelancers .information .title {
-        display: block;
-        text-align: center;
-    }
-    section.clj_freelancers .information .title h2 {
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-    section.clj_freelancers .information .title h4 {
-        margin-bottom: 5px;
-    }
-    section.clj_freelancers .information .price {
-        float: left !important;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    section.clj_freelancers .information .about {
-        margin: 12px 0;
-    }
-    .onj_form {
-        margin-bottom: 20px;
-    }
-    .onj_form .form_button input[type="submit"] {
-        display: block;
-        width: 120px;
-        height: 40px;
-        line-height: 20px;
-    }
-    .onj_form .form_button input[type="submit"] + input[type="submit"] {
-        display: block;
-        margin: 0 auto;
-        margin-top: 16px;
-    }
-    .onj_form_content .input_date input[type="text"] {
-        width: 100% !important;
-    }
-    .onj_form_content .input-daterange.input_date .input_start {
-        width: 100% !important;
-        padding-right: 0;
-    }
-    .onj_form_content .input-daterange.input_date .input_start input {
-        width: 100% !important;
-    }
-    .onj_form_content .input-daterange.input_date .input_end {
-        width: 100% !important;
-        padding-left: 0;
-    }
-    .onj_form_content .input-daterange.input_date .input_end input {
-        width: 100% !important;
-    }
-    .onj_form_content .input-daterange.input_date + div.onj_check {
-        margin-bottom: 4px;
-    }
-    .onj_form_content div.onj_check {
-        margin-bottom: 20px;
-    }
-    .onj_form_content div.onj_check_wrap {
-        width: 100%;
-        padding-right: 0;
-    }
-    .onj_form_content div.onj_check_wrap + .onj_check_wrap {
-        padding-left: 0;
-        margin-bottom: 16px;
-    }
-    .onj_form_content .onj_radio .wrapper_how_long {
-        padding-left: calc((100% - 244px)/2);
-        padding-left: -moz-calc((100% - 244px)/2);
-        padding-left: -webkit-calc((100% - 244px)/2);
-        padding-left: -o-calc((100% - 244px)/2);
-    }
-    .onj_form_content .onj_radio label:nth-of-type(3),
-    .onj_form_content .onj_radio label:nth-of-type(5) {
-        clear: both;
-    }
-    .onj_form_content .onj_radio label:nth-of-type(4) {
-        clear: none;
-    }
-    .block-1 .login ul {
-        margin-top: 0;
-    }
-    .block-1 .login i {
-        display: none;
-    }
-    .block-1 .login a {
-        font-size: 14px;
-    }
-    .block-1 .login li {
-        display: inline-block;
-        margin-left: 20px;
-    }
-    .block-1 .title {
-        font-size: 24.8px;
-        margin: 180px 0 30px 0px;
-    }
-    .block-1 .title-2 {
-        font-size: 22px;
-    }
-    .block-1 .button,
-    .block-7 .button {
-        font-size: 24px;
-    }
-    .block-2 .title {
-        padding: 5px 10px;
-        line-height: 20px;
-    }
-    .block-1 .login {
-        vertical-align: middle;
-    }
-    .block-1 .search {
-        width: 135px;
-    }
-    .header-entrance a.log-view {
-        margin-left: 10px;
-    }
-    .header-entrance .greeting,
-    .header-entrance a {
-        font-size: 14px;
-    }
-    .block-1 .header-mnu.edet-form .login .already {
-        width: 80px;
-        line-height: 10px;
-    }
-    .detailed-view_container.view-participant a.logo-view {
-        margin-left: 0;
-        margin-right: 10px;
-    }
-    /*Ark-16*/
-    .page-correspond .correspond-window .button-contact {
-        margin-right: 2%;
-        width: 100px;
-        height: 40px;
-        line-height: 35px;
-        font-size: 15px;
-    }
-    .page-correspond .account-companion {
-        margin-left: 0;
-        padding-left: 0;
-        width: 50%;
-    }
-    .page-correspond .account-companion .view-logo_caption {
-        font-size: 22px;
-    }
-    .page-correspond .account-companion .participant-specialty {
-        font-size: 19px;
-    }
-    .view-participant {
-        padding-bottom: 52px;
-    }
-    .messages-container .message .message-author {
-        width: 26%;
-    }
-    .messages-container .message .message-text {
-        width: 74%;
-    }
-    .messages-container .message-author .mes-author_photo {
-        width: 65px;
-        height: 65px;
-    }
-    .clj_freelancers .button-contact.b-reject {
-        margin-left: 0px;
-    }
-    /**/
-    .tabs ul li {
-        font-size: 16px;
-        width: 44%;
-    }
-    /*payments*/
-    .payment_wrapper h3 {
-        display: block;
-        text-align: center;
-    }
-    .payment_wrapper .button-contact {
-        float: none;
-        width: 110px;
-        font-size: 15px;
-        display: block;
-        height: 38px;
-        line-height: 35px;
-        margin: 10px auto;
-    }
-    /*cancel job modal*/
-    .close-job_modal input.radio-deposit + label {
-        font-size: 15px;
-    }
-    .close-job_modal p.rsn {
-        font-size: 18px;
-    }
-    /*page skills*/
-    .fr-search ul.category li {
-        width: 100%;
-        border-right-color: transparent;
-    }
-    .fr-search .hd-skills,
-    .bd-skills .top {
-        padding: 15px 10px;
-    }
-    .fr-search .hd-skills span.sm-text.counter-skl {
-        right: 10px;
-        bottom: auto;
-        top: 23px;
-    }
-    .bd-skills .top {
-        text-align: center;
-    }
-    .bd-skills .top span {
-        display: inline-block;
-        float: none;
-        width: 100%;
-        line-height: 1;
-        margin-bottom: 10px;
-    }
-    .bd-skills .top a {
-        display: inline-block;
-        float: none;
-    }
-    header.clj_header .personal .sign_up a, header.clj_header .personal .login a {
-        font-size: 14px;}
-}
-
-@media screen and (max-width:395px) {
-	.add-manual-time .modal-content .date + label, .add-manual-time .modal-content .time-zone + label
-	{
-    	margin-right: 5px !important;
-        margin-left: 0 !important;
-    }
-	.create-account_appeal a {
-		float: left;
-		width: 100%;
-	}
-	/*ARK-16*/
-	.page-correspond .recent-history .account {
-		padding-left: 0;
-	}
-	.page-correspond .account a.logo-view {
-		margin-right: 15px;
-	}
-	.page-correspond .account .view-logo_caption {
-		font-size: 24px;
-	}
-	.history-list .account-history_line {
-		padding-left: 10px;
-	}
-	.history-list .account-history_line .logo-view {
-		margin-right: 15px;
-	}
-	.page-correspond .account-companion .view-logo_caption {
-		font-size: 24px;
-	}
-	.page-correspond .account-companion .participant-specialty {
-		font-size: 21px;
-	}
-	/*onj_table*/
-	.onj_table .table_edit tbody tr .first_col {
-		width: 30%;
-	}
-	.onj_table .table_edit tbody tr .second_col {
-		width: 17%;
-	}
-	.onj_table .table_edit tbody tr .second_col span {
-		margin-left: 15px;
-	}
-	.onj_table .table_edit tbody tr .last_col {
-		width: 16%;
-	}
-	/*ark-25*/
-	.p-ark-25 .button-contact {
-		margin-left: 0;
-	}
-	.p-ark-25 p.contr-st-date {
-		font-size: 17px;
-		margin-top: 15px;
-	}
-	.view-participant.p-ark-25 .view-rating {
-		padding-top: 50px;
-	}
-	.view-participant.p-ark-25 {
-		padding-bottom: 20px;
-	}
-	.open-job .modal-lg,
-	.open-job .modal-content {
-		width: 950px !important;
-		height: 455px !important;
-	}
-	.workings-time .time-block {
-		width: 146px;
-		height: 100px;
-	}
-	.progress {
-		width: 67px;
-	}
-	/*payments*/
-	.method-item li.ver_itm b,
-	.method-item li.pend_itm b {
-		font-size: 16px;
-	}
-	.wrapper.copiright ul:first-child {
-		padding-left: 0px;
-	}
-	.wrapper.copiright ul:last-child {
-		padding-right: 0;
-	}
-	.block-4 img {
-		margin-right: -30%;
-	}
-	.transaction .Timesheet ul.days li {
-		width: 110px;
-		margin-right: -4.8px;
-	}
-	.transaction .Timesheet .table .tr:first-of-type .th:nth-of-type(2) {
-		width: 44.4%;
-	}
-	.transaction .Timesheet .table .tr:first-of-type .th:nth-of-type(4) {
-		width: 18.8%;
-	}
-	nav.clj_nav.clj_msg ul li:nth-of-type(4) {
-		text-align: center;
-	}
-	nav.clj_nav.clj_msg ul li:nth-of-type(5) {
-		text-align: center;
-	}
-	.myProfile a::before {
-		left: 0;
-	}
-	nav.clj_nav ul li {
-		padding: 0 12px;
-	}
-	nav.clj_nav ul.no-messages li {
-		padding: 0 17px;
-	}
-	nav.clj_nav ul.no-messages li:first-of-type {
-		padding-left: 0;
-	}
-	nav.clj_nav ul.no-messages li:last-of-type {
-		padding-right: 0;
-	}
-	header.clj_header.header-ht {
-		height: auto;
-		overflow: auto;
-		line-height: 60px;
-	}
-	.header-ht .text-line {
-		float: right;
-	}
-	header.clj_header.header-ht .personal .sign_up {
-		margin-left: 10px;
-	}
-	header.clj_header.header-ht .personal .sign_up .icon-check31-01 {
-		top: 16px;
-	}
-	.header-ht .head-button {
-		margin-top: 13px;
-	}
-	section.navigation .nav {
-		width: 80%;
-	}
-	section.protection .col-protect-pad {
-		padding-left: 15px;
-	}
-	.sect-ht .text-column {
-		padding-right: 25px;
-		margin-bottom: 50px;
-	}
-	section.sect-ht p.p-h1 {
-		margin-top: 60px;
-	}
-	.sect-ht .col-lg-6.bg {
-		height: auto;
-		min-height: 675px;
-	}
-	section.sect-ht p {
-		line-height: 1.2;
-	}
-	.text-column::after {
-		width: 83%;
-		top: 30%;
-		height: 330px;
-	}
-	section.monitoring.sect-ht .text-column::after {
-		-webkit-background-size: contain;
-		background-size: contain;
-		top: 30%;
-	}
-	.col-protect-pad::before {
-		top: 12%;
-	}
-	.sect-centr-ht {
-		padding: 50px 0;
-	}
-	.sect-centr-ht p.ht-title {
-		font-size: 40px;
-	}
-	.sect-centr-ht p {
-		font-size: 21px;
-		line-height: 1.4;
-	}
-	section.sect-ht p.p-h1 {
-		font-size: 40px;
-	}
-	section.hiring,
-	section.protection {
-		font-size: 21px;
-	}
-	section.question .quest span {
-		font-size: 27px;
-		margin-bottom: 15px;
-	}
-	section.question .quest {
-		margin-bottom: 15px;
-	}
-	section.question .col-quest-img img {
-		margin-top: 6px;
-	}
-	.scrollup {
-		right: 75px;
-	}
-	/*slider vers*/
-	.slider-categories {
-		top: 60px;
-	}
-	.slider-categories ul li {
-		font-size: 16px;
-	}
-	.slider-full-width {
-		padding-top: 110px;
-	}
-	.slider-full-width .item {
-		height: calc(100vh - 110px);
-	}
-	#describe .block-right {
-		background-size: 55%;
-	}
-	.text-column::after {
-		top: 50%;
-		margin-top: -205px;
-	}
-	.hiring .bg::before {
-		top: 50%;
-		margin-top: -55px;
-	}
-	#describe .block-left {
-		padding-right: 30px;
-		padding-left: 30px;
-	}
-	.sect-ht ul li {
-		position: relative;
-		padding-left: 20px;
-		font-size: 15px;
-	}
-	.payments .paytmen {
-		margin-top: -220.5px;
-	}
-	#describe .block-right {
-		width: 500px;
-		padding-right: 15px;
-	}
-	.slider-full-width .main-tips-title {
-		right: 40%;
-	}
-	.col-protect-pad::before {
-		left: -80%;
-	}
-	.sect-ht .col-lg-6.bg {
-		padding-left: 45px;
-	}
-
-	.my-profile .buttons {
-		float: right;
-	}
-	.block-4 ul {
-		margin: 20px 0 0px 57px;
-	}
-	.block-4 .text .title,
-	.block-3 .text .title,
-	.block-5 .text .title {
-		font-size: 35px;
-	}
-	.block-3 .text .title {
-		margin-left: 0;
-	}
-	.block-2 .title {
-		font-size: 20px;
-		width: 438px;
-	}
-	.about-us .human .img {
-		width: 200px;
-		height: 200px;
-	}
-	.freelancer-menu li {
-		width: calc(100% / 6.17);
-	}
-	.freelancer-menu li a {
-		font-size: 16px;
-	}
-	.contracts_freelancer .tabs-contracts .table_contracts .description .price,
-	.contracts_freelancer .tabs-contracts .table_contracts .description .title,
-	.contracts_freelancer .tabs-contracts .table_contracts .description .hours-worked {
-		width: calc(100% / 3.05);
-	}
-	.contracts_freelancer .tabs-contracts .table_contracts .tr .td,
-	.contracts_freelancer .tabs-contracts .table_contracts .tr .th {
-		display: inline-block;
-		width: calc(100% / 3 - 124px);
-	}
-	.work-diary .date {
-		margin-left: 35px !important;
-	}
-	.detailed-view-of-contracts-page .content .table .tr .td p,
-	.detailed-view-of-contracts-page .content .table .tr .th p {
-		padding: 22.2px 10px;
-	}
-	.detailed-view-of-contracts-page .content ul li {
-		padding-left: 10px !important;
-	}
-	.agency-dashbord-page ul.internally_nav li.internally_nav_li.last_li .internally_nav_sub {
-		left: inherit;
-	}
-	.agency-dashbord-page .right-block {
-		padding-left: 0px;
-	}
-	.agency-dashbord-page .right-block h2 {
-		margin-left: 20px;
-	}
-	.agency-dashbord-page .radiobutton label {
-		font-size: 14px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .photo {
-		margin: 20px 20px 20px 20px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description {
-		width: calc(100% - 117px);
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description h4.title {
-		width: 180px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p {
-		font-size: 14px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p.price {
-		width: 180px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p.date {
-		width: 220px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p.status {
-		width: 115px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .status {
-		width: 115px;
-	}
-	.role .radio-button input:checked + div label {
-		width: 500px;
-		height: 500px;
-	}
-}
-
-/* Medium Devices, Desktops */
-
-@media only screen and (max-width: 992px) {
-	.my-profil-2 .button-top {
+@media screen and (max-width:991px) {
+    .my-profil-2 .button-top {
 		right: 185px;
 	}
 	.form-edit form.mini {
@@ -1155,8 +528,6 @@
 	.my-profile .overview div .edit {
 		top: 5px;
 	}
-}
-@media screen and (max-width:991px) {
 	.form-edit {
 		padding-top: 30px;
 	}
@@ -2074,6 +1445,189 @@
     {
         float: right;
     }
+    .col-parties {
+		margin-top: 20px;
+	}
+	.hide-item {
+		padding-left: 68px !important;
+	}
+	.my-portfolio .portolio-item {
+		height: 190px;
+		margin-bottom: 5px !important;
+	}
+	.modal-portfolios li {
+		margin-right: 15px;
+	}
+	.wrapper.copiright p {
+		font-size: 16px;
+	}
+	.myProfile a::before {
+		left: 0px;
+	}
+	.clj_nav .submenu {
+		margin-top: -2px;
+	}
+	nav.clj_nav ul li {
+		padding: 0px 8px;
+	}
+	.onj_table .table_edit.table_contracts tbody tr td {
+		padding: 0px;
+	}
+	.onj_table .table_edit.table_contracts tbody tr .first_col,
+	.onj_table .table_edit.table_contracts tbody tr .second_col,
+	.onj_table .table_edit.table_contracts tbody tr .last_col {
+		padding: 15px;
+	}
+	.onj_table .table_edit tbody tr {
+		margin-bottom: 0;
+	}
+	.onj_table .table_edit tbody tr:first-of-type {
+		border-width: 0;
+	}
+	.onj_table .table_edit tbody tr:first-of-type td:last-of-type {
+		border-bottom: 1px solid #dedede;
+	}
+	.next_link,
+	.prev_link {
+		top: 160px;
+	}
+	.modal-dialog {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.modal-dialog .modal-content {
+		width: 100%;
+	}
+	.agency-dashbord-page .right-block h2 {
+		font-size: 22px;
+	}
+	.agency-dashbord-page .right-block h2 i:before {
+		font-size: 24px;
+	}
+	.agency-dashbord-page .radiobutton label {
+		padding-left: 20px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .photo {
+		width: 52px;
+		height: 52px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description {
+		width: calc(100% - 98px);
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .title {
+		font-size: 16px;
+		width: 140px !important;
+		padding-right: 10px !important;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .title span {
+		font-size: 14px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p {
+		padding-right: 10px !important;
+		vertical-align: middle;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p.price {
+		width: 160px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p.date {
+		width: 130px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p.date span {
+		display: block;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .status {
+		width: 105px !important;
+	}
+    .onj_table .table_edit tbody tr .third_col
+    {
+        text-align: right;
+    }
+    .creation-profile .input {
+    width: calc(100% / 3 - 40px);
+    float: left;
+    padding-left: 10px;
+    margin-bottom: 20px; }
+    .creation-profile .input label {
+      font-size: 14px; }
+    .creation-profile .input.mini {
+      width: 90px; }
+  .creation-profile .inputs:nth-of-type(1) .input {
+    margin-right: 10px; }
+  .creation-profile .inputs:nth-of-type(2) .input {
+    margin-right: 10px; }
+  .creation-profile .inputs:nth-of-type(3) .input {
+    margin-right: 10px; }
+    .section-offers .mb-status .status-line {
+		font-size: 20px;
+	}
+	.section-offers .mb-status a {
+		margin-bottom: 10px;
+	}
+	.section-offers .mb-logo {
+		width: auto;
+		margin-right: 10px;
+	}
+	/**/
+	.end-page h2.ttl {
+		font-size: 24px;
+	}
+	.end-page .exp-description textarea {
+		width: 100%;
+	}
+	.end-page .exp-description .note {
+		max-width: 100%;
+	}
+	.onj_table .table_edit.table_jobs tbody tr .third_col {
+		text-align: right;
+	}
+	.about-us .banner-text {
+		width: 100%;
+	}
+	.about-us .human {
+		width: calc(100% / 2.05 - 14px);
+	}
+	.about-us .human:nth-of-type(3n) {
+		margin-right: 40px;
+	}
+	.about-us .human:nth-of-type(2n) {
+		margin-right: 0;
+	}
+	.about-us .teams p.text {
+		padding: 0;
+	}
+	.role .radio-button input:checked + div label {
+		width: 400px;
+		height: 400px;
+	}
+	.role .radio-button input:not(:checked) + div:after {
+		width: 370px;
+		height: 370px;
+	}
+	.role .radio-button label {
+		width: 310px;
+		height: 310px;
+	}
+	.role .radio-button label span {
+		width: 100px;
+		height: 100px;
+		font-size: 12px;
+	}
+    .detailed-view_container .button-contact
+    {
+        margin: 0px 0 25px auto !important;
+    }
+    .p-ark-25 .participant-pricing, .p-ark-25 p.contr-st-date
+    {
+        text-align: right;
+    }
+    .workings-time.form-edit ul
+    {
+        overflow-x: auto;
+    }
+    .workings-time.form-edit ul li
+    {
+        width: 166px;
+    }
 }
 @media screen and (max-width:845px) {
 	/*form-14*/
@@ -2084,11 +1638,104 @@
 		left: 0;
 	}
 }
-
-/* Small Devices, Tablets */
-
-@media only screen and (max-width: 768px) {
-	.button-block-top {
+@media only screen and (max-height: 768px) {
+	#slides .slides-container {
+		top: 120px;
+	}
+	.container.cont-description {
+		top: 50%;
+		transform: translate(0px, -50%);
+	}
+	#describe .block-right {
+		background-size: 55%;
+	}
+	#describe .block-right ul li {
+		line-height: 22px;
+	}
+	#describe .block-right p.text {
+		line-height: 22px;
+	}
+	#describe .block-left h5.title {
+		margin-bottom: 0;
+	}
+	#describe .block-left p.text {
+		line-height: 22px;
+	}
+	#describe .container {
+		margin-top: -220.5px;
+	}
+	.sect-centr-ht p.ht-title {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+	.sect-centr-ht p {
+		line-height: 1.4;
+		margin-bottom: 5px;
+	}
+	.payments .methods .method-item {
+		width: 170px;
+	}
+	.payments .paytmen {
+		margin-top: -297.5px;
+	}
+	.sect-ht p.p-h1 {
+		line-height: 35px;
+		font-size: 31px;
+		margin-bottom: 10px;
+	}
+	.sect-ht ul li {
+		line-height: 24px;
+	}
+	.sect-ht ul li:before {
+		top: 9px;
+	}
+	.col-protect-pad {
+		margin-top: -280px;
+	}
+	.col-protect-pad:before {
+		width: 70%;
+		top: 18%;
+		left: -80%;
+	}
+	.text-column:after {
+		left: 115%;
+		top: 19%;
+		background-size: 78%;
+	}
+	.one-slide {
+		background-position: center 20%;
+	}
+	#postJob .col-lg-6.bg {
+		background: none !important;
+	}
+	.edit-portfolio .input.cat {
+		margin-right: 10px;
+	}
+	.go-to-work#postJob .text-column:after {
+		top: 50%;
+		margin-top: 0;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+    .view-participant.hiring-page .hire-buttons
+    {
+        margin: 30px auto 30px auto;
+        overflow: hidden;
+    }
+    .view-participant.hiring-page .hire-buttons a
+    {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .text-column::after {
+        height: 395px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .button-block-top {
 		width: 355px;
 		display: table;
 		margin: 0 auto;
@@ -2336,91 +1983,6 @@
 	.modal-portfolios .modal-content {
 		width: 460px;
 	}
-}
-@media only screen and (max-height: 768px) {
-	#slides .slides-container {
-		top: 120px;
-	}
-	.container.cont-description {
-		top: 50%;
-		transform: translate(0px, -50%);
-	}
-	#describe .block-right {
-		background-size: 55%;
-	}
-	#describe .block-right ul li {
-		line-height: 22px;
-	}
-	#describe .block-right p.text {
-		line-height: 22px;
-	}
-	#describe .block-left h5.title {
-		margin-bottom: 0;
-	}
-	#describe .block-left p.text {
-		line-height: 22px;
-	}
-	#describe .container {
-		margin-top: -220.5px;
-	}
-	.sect-centr-ht p.ht-title {
-		font-size: 40px;
-		margin-bottom: 10px;
-	}
-	.sect-centr-ht p {
-		line-height: 1.4;
-		margin-bottom: 5px;
-	}
-	.payments .methods .method-item {
-		width: 170px;
-	}
-	.payments .paytmen {
-		margin-top: -297.5px;
-	}
-	.sect-ht p.p-h1 {
-		line-height: 35px;
-		font-size: 31px;
-		margin-bottom: 10px;
-	}
-	.sect-ht ul li {
-		line-height: 24px;
-	}
-	.sect-ht ul li:before {
-		top: 9px;
-	}
-	.col-protect-pad {
-		margin-top: -280px;
-	}
-	.col-protect-pad:before {
-		width: 70%;
-		top: 18%;
-		left: -80%;
-	}
-	.text-column:after {
-		left: 115%;
-		top: 19%;
-		background-size: 78%;
-	}
-	.one-slide {
-		background-position: center 20%;
-	}
-	#postJob .col-lg-6.bg {
-		background: none !important;
-	}
-	.edit-portfolio .input.cat {
-		margin-right: 10px;
-	}
-	.go-to-work#postJob .text-column:after {
-		top: 50%;
-		margin-top: 0;
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-}
-@media only screen and (max-width: 767px) {
 	header.clj_header .personal {
 		text-align: right;
 	}
@@ -3388,15 +2950,302 @@
     {
         float: none;
     }
-
+    .offer_container {
+		padding: 40px 15px;
+	}
+	section.clj_freelancers .skills ul {
+		padding-left: 0;
+	}
+	.my-portfolio .hide-item {
+		padding: 0 15px !important;
+	}
+	.my-portfolio .portolio-item {
+		max-height: calc(344px - 100px);
+	}
+	.clj_nav .submenu {
+		position: absolute !important;
+		width: 100%;
+		margin-top: 36px;
+	}
+	.clj_nav ul li {
+		display: block !important;
+		width: 100%;
+		float: inherit !important;
+	}
+	.agency-dashboard-add-team .left-block {
+		width: 100%;
+	}
+	.agency-dashboard-add-team .right-block {
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.agency-dashboard .modal-dialog .modal-content {
+		height: auto;
+		min-height: inherit;
+		padding-bottom: 30px;
+	}
+	.agency-dashboard .modal-dialog .modal-content p {
+		padding: 20px 20px 0;
+	}
+	.agency-dashboard .modal-dialog .modal-content .buttons {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.agency-dashboard-create form {
+		padding: 40px 15px 30px;
+	}
+	.agency-dashboard-create .input-min,
+	.agency-dashboard-create .add-icon {
+		width: calc(100% / 2 - 10.5px);
+	}
+	.agency-dashboard-create .input-min:nth-of-type(2n),
+	.agency-dashboard-create .add-icon:nth-of-type(2n) {
+		margin-left: 15px;
+	}
+	.agency-dashboard-create .input + .input-min {
+		margin-left: 0;
+	}
+	.agency-dashboard-create .input + .input-min + .input-min {
+		margin-left: 15px;
+	}
+	.agency-dashboard-create label {
+		font-size: 14px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .contracts-item {
+		padding-bottom: 30px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .photo {
+		display: table;
+		margin: 20px auto 10px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description {
+		width: 100%;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description h4.title {
+		width: 100% !important;
+		font-size: 22px;
+		text-align: center;
+		padding-right: 0 !important;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description h4.title span {
+		font-size: 20px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p {
+		width: 100% !important;
+		padding: 0 !important;
+		text-align: center;
+		font-size: 16px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p.price {
+		margin-bottom: 15px;
+		margin-top: 20px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .status {
+		width: 100% !important;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .del {
+		display: table;
+		margin: 10px auto 0px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .radiobutton {
+		display: table;
+		margin: 10px auto 0;
+		width: 120px;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .radiobutton label {
+		font-size: 16px;
+	}
+	.agency-dashbord-page .left-block.top {
+		padding: 25px 25px;
+		width: 100%;
+		margin-right: 0px;
+	}
+	.agency-dashbord-page .left-block.bottom {
+		margin-top: 20px;
+		width: 100%;
+		margin-right: 0;
+		padding-bottom: 10px;
+	}
+	.agency-dashbord-page .left-block.bottom .radiobutton {
+		margin-left: 10px;
+	}
+	.agency-dashbord-page .left-block.bottom label {
+		font-size: 14px;
+		padding-left: 15px;
+	}
+	.agency-dashbord-page .left-block.bottom label:before {
+		width: 9px;
+		height: 9px;
+	}
+	.agency-dashbord-page .left-block.bottom p {
+		font-size: 14px;
+	}
+	.agency-dashbord-page .right-block.top {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		float: initial;
+		text-align: center;
+	}
+	.agency-dashbord-page .right-block.bottom {
+		margin-top: 0px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.agency-dashbord-page .right-block.bottom .internally_nav {
+		margin-top: 0;
+	}
+	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li {
+		width: 50%;
+		float: left;
+	}
+	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li:nth-of-type(2) .internally_nav_sub {
+		left: inherit !important;
+	}
+	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li .internally_nav_sub {
+		width: 100%;
+		right: 0 !important;
+	}
+	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li a.prevent_link .icon-media {
+		right: 10px;
+	}
+    nav.clj_nav ul
+    {
+        display: block;
+    }
+    .section-offers .offer-item {
+		padding-bottom: 20px;
+		width: 380px;
+		margin: 0 auto;
+	}
+	.fr-offers-wrap .offer-item {
+		padding-top: 20px;
+	}
+	.section-offers .mb-logo {
+		width: 100%;
+		padding: 0;
+		float: none;
+		margin: 0 auto;
+	}
+	.section-offers .mb-logo a {
+		background-repeat: no-repeat;
+		-webkit-background-size: cover!important;
+		background-size: cover!important;
+		width: 140px;
+		height: 60px;
+	}
+	.section-offers .mb-info {
+		float: none;
+		padding-top: 10px;
+	}
+	.section-offers .mb-info h2 {
+		margin-bottom: 11px;
+		line-height: 1;
+		text-align: center;
+	}
+	.section-offers .mb-status {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.section-offers .mb-status a {
+		display: block;
+		margin-top: 0;
+		margin-left: 0 !important;
+		font-size: 14px;
+		line-height: 35px;
+		height: 35px;
+		width: 100px;
+		float: left;
+	}
+	.section-offers .mb-info h3 {
+		line-height: 1;
+		font-size: 19px;
+		text-align: center;
+	}
+	.section-offers .mb-status .status-line {
+		font-size: 18px;
+		float: right;
+	}
+	.fr-offers-wrap .mb-logo a {
+		width: 60px;
+		height: 60px;
+	}
+	.fr-offers-wrap .mb-info h2 {
+		margin-top: -8px;
+		margin-bottom: 20px;
+	}
+	.sect-offers-title h3 {
+		text-align: center;
+	}
+	/**/
+	.end-page .exp-description {
+		padding: 15px;
+	}
+	.end-page.hiring-page-b input.radio-deposit + label {
+		margin-right: 0;
+	}
+	.my-profile .overview div:last-child h3 {
+		margin-top: 30px;
+	}
+	.about-us .banner-text h2.title {
+		font: 700 60px/1 Open Sans;
+	}
+	.about-us .human {
+		width: calc(100% / 2.05 - 15px);
+	}
+	.role .radio-button input:checked + div label {
+		width: 220px;
+		height: 220px;
+	}
+	.role .radio-button input:not(:checked) + div:after {
+		width: 210px;
+		height: 210px;
+		border: 5px solid rgba(92, 194, 0, 0.4);
+		box-shadow: inset 0 0 0 5px rgba(92, 194, 0, 0.2), 0 0 0 5px rgba(92, 194, 0, 0.6);
+		top: -10px;
+		left: -10px;
+	}
+	.role .radio-button input:not(:checked) + div span:before {
+		animation: none;
+	}
+	.role .radio-button label {
+		width: 195px;
+		height: 195px;
+	}
+	.role .radio-button label span {
+		width: 70px;
+		height: 70px;
+		font-size: 10px;
+	}
+    .ff body
+    {
+        padding-bottom: 130px !important;
+    }
+    .header-ht .mt.personal
+    {
+        padding: 0 15px 0 7px;
+    }
+    .creation-profile .inputs .input {
+    width: calc(100% / 3 - 7px);
+    padding-left: 0; }
+  .creation-profile .inputs:nth-of-type(2) .input:nth-of-type(3) {
+    margin-right: 0; }
+  .creation-profile .inputs:nth-of-type(2) .input:nth-of-type(4) {
+    margin-right: 10px; }
+  .creation-profile .inputs:nth-of-type(2) .input:last-of-type {
+    margin-right: 0px; }
+  .creation-profile .company-address .inputs .input:nth-of-type(3) {
+    margin-right: 0; }
 }
 @media only screen and (max-width: 710px) {
 	.my_button_withdraw {
 		margin: 0 4% 20px 21px;
 	}
-}
-@media only screen and (max-width: 710px) {
-	.block-1 .icon-login::before {
+    .block-1 .icon-login::before {
 		margin-left: 40px;
 	}
 }
@@ -3607,6 +3456,82 @@
     }
     .slider-categories {
         top: 90px;
+    }
+}
+@media only screen and (max-width: 650px) {
+	.end-page h2.ttl {
+		font-size: 22px;
+	}
+	.hiring-page-b input.radio-deposit + label::before {
+		margin: 0;
+	}
+	.hiring-page-b input.radio-liking + label::before {
+		margin-right: 5px;
+	}
+	.end-page .exp-description span {
+		margin-right: 5px;
+		font-size: 13px;
+	}
+	.change-hourly-rate p {
+		width: 94%;
+	}
+	.change-hourly-rate span {
+		float: initial;
+		display: block;
+	}
+	.change-hourly-rate p {
+		text-align: center;
+	}
+	.change-hourly-rate form {
+		padding-right: 45px;
+		padding-bottom: 45px;
+	}
+	.change-hourly-rate .modal-content {
+		height: auto;
+	}
+	.change-hourly-rate .right-button {
+		text-align: center;
+	}
+	.add-certification .input-group.input-daterange label:nth-of-type(2),
+	.add-certification .input-group.input-daterange label:nth-of-type(3) {
+		width: 110px !important;
+	}
+    .p-ark-25 .col-xs-5,
+    .p-ark-25 .col-xs-7
+    {
+        width: 100%;
+    }
+    .p-ark-25 .col-xs-5 .currency.cur-biz
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .detailed-view_container .button-contact
+    {
+        margin: 0 auto 25px !important;
+    }
+    .detailed-view_container.view-participant .button-contact {
+        margin: 10px 0 20px auto !important;
+    }
+    .p-ark-25 .participant-pricing, .p-ark-25 p.contr-st-date
+    {
+        text-align: center;
+
+    }
+    .p-ark-25.view-participant
+    {
+        padding-bottom: 0;
+    }
+    .view-participant .view-rating {
+        padding-top: 40px;
+    }
+    .detailed-view_container.view-participant.p-ark-25 p.contr-st-date
+    {
+        text-align: center !important;
+    }
+    .detailed-view_container.view-participant.p-ark-25 .button-contact
+    {
+        margin: 10px auto  20px auto !important;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -4186,6 +4111,16 @@
 	.payment-schedule .tr .th {
 		width: 160px;
 	}
+    .creation-profile .inputs .input {
+    width: calc(100% / 2 - 5px); }
+  .creation-profile .inputs .capcha input[type="text"] {
+    width: 100px; }
+  .creation-profile .inputs .capcha img {
+    margin-right: 10px; }
+  .creation-profile .inputs .input:nth-of-type(3) {
+    margin-right: 10px !important; }
+  .creation-profile .inputs .input:nth-of-type(2n) {
+    margin-right: 0 !important; }
 }
 @media only screen and (max-width: 560px) {
 	.form-edit h2 {
@@ -4456,10 +4391,16 @@
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
+    .block-7 .title
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    body
+    {
+        padding-bottom: 130px !important;
+    }
 }
-
-/* Extra Small Devices, Phones */
-
 @media only screen and (max-width: 520px) {
 	.my-profil .right-block input {
 		width: 75%;
@@ -5184,9 +5125,214 @@
 	.end-contract-modal .modal-sm {
 		width: 90%;
 	}
+    .offer_container table.contract-table tr td {
+		display: block;
+		width: 100% !important;
+		border-bottom: 1px solid #bebebe;
+	}
+	.agency-dashboard-add-team .right-block {
+		padding: 0 5px 0 5px;
+	}
+	.agency-dashboard-add-team .right-block h3 {
+		font-size: 24px;
+	}
+	.agency-dashboard-add-team .right-block .green {
+		width: 100%;
+	}
+	.agency-dashboard-add-team .modal-dialog {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.agency-dashboard .modal-dialog .modal-content .buttons .gray {
+		float: none;
+	}
+	.agency-dashboard-create form {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+	}
+	.agency-dashboard-create form .add-icon {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		order: -1;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.agency-dashboard-create .input-min,
+	.agency-dashboard-create .add-icon {
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
+	.agency-dashboard-create .textarea {
+		margin-bottom: 22px;
+	}
+	.agency-dashbord-page .tabs ul li {
+		font-size: 13px;
+	}
+	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li .internally_nav_sub {
+		width: 290px;
+		left: 0 !important;
+	}
+    .end-page .exp-description span.vis-mobile {
+        display: block;
+    }
+    .end-page p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .end-page h2.ttl {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .end-page .exp-ttl {
+        margin-top: 0;
+    }
+    .end-page .exp-description .button-contact {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        margin: 10px 20px 10px 0;
+    }
+    .end-page .exp-description .button-contact + a.green {
+        font-size: 16px;
+    }
+    .end-page .exp-ttl {
+        font-size: 19px;
+    }
+    .end-page .exp-description .note {
+        font-size: 13px;
+    }
+    .change-hourly-rate .button.gray,
+    .change-hourly-rate .right-button .button {
+        margin: 0 auto !important;
+        line-height: 43px !important;
+    }
+    .change-hourly-rate form {
+        padding: 45px 0;
+    }
+    .change-hourly-rate p {
+        line-height: 20px;
+    }
+    .change-hourly-rate span {
+        margin-top: 20px;
+    }
+    .role .radio-button input:checked + div label
+    {
+        width: 150px;
+        height: 150px;
+    }
+    .role .radio-button input:not(:checked) + div:after
+    {
+        width: 135px;
+        height: 135px;
+        left: -5px;
+        top: -5px;
+    }
+    .role .radio-button label
+    {
+        width: 125px;
+        height: 125px;
+    }
+    .role .radio-button label span
+    {
+        width: 55px;
+        height: 55px;
+        font-size: 8px;
+    }
+    .update-profile.my-profil h3
+    {
+        margin-bottom: 30px;
+    }
+    .update-profile.my-profil h3 i
+    {
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+	.end-page .exp-description span.vis-mobile {
+		display: block;
+	}
+	.end-page p {
+		font-size: 16px;
+		line-height: 1.2;
+	}
+	.end-page h2.ttl {
+		font-size: 20px;
+		margin: 20px 0;
+	}
+	.end-page .exp-ttl {
+		margin-top: 0;
+	}
+	.end-page .exp-description .button-contact {
+		width: 120px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		margin: 10px 20px 10px 0;
+	}
+	.end-page .exp-description .button-contact + a.green {
+		font-size: 16px;
+	}
+	.end-page .exp-ttl {
+		font-size: 19px;
+	}
+	.end-page .exp-description .note {
+		font-size: 13px;
+	}
+	.change-hourly-rate .button.gray,
+	.change-hourly-rate .right-button .button {
+		margin: 0 auto !important;
+		line-height: 43px !important;
+	}
+	.change-hourly-rate form {
+		padding: 45px 0;
+	}
+	.change-hourly-rate p {
+		line-height: 20px;
+	}
+	.change-hourly-rate span {
+		margin-top: 20px;
+	}
+	.role .radio-button input:checked + div label {
+		width: 150px;
+		height: 150px;
+	}
+	.role .radio-button input:not(:checked) + div:after {
+		width: 135px;
+		height: 135px;
+		left: -5px;
+		top: -5px;
+	}
+	.role .radio-button label {
+		width: 125px;
+		height: 125px;
+	}
+	.role .radio-button label span {
+		width: 55px;
+		height: 55px;
+		font-size: 8px;
+	}
+	.update-profile.my-profil h3 {
+		margin-bottom: 30px;
+	}
+	.update-profile.my-profil h3 i {
+		display: table;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+	}
 }
 @media screen and (max-width:454px) {
-	/*detailed view company*/
 	.history-line {
 		padding: 10px 15px 7px 15px;
 	}
@@ -5253,7 +5399,9 @@
 	.logo.logout img {
 		width: 100%;
 	}
-
+    .my-portfolio .portolio-item {
+		max-height: calc(344px - 200px);
+	}
 }
 @media only screen and (max-width: 430px) {
 	.ff nav.clj_nav ul {
@@ -5399,10 +5547,79 @@
         width: 100%;
     }
 }
-
-/* Custom, iPhone Retina */
-
 @media only screen and (max-width: 425px) {
+    .form-edit input[type="submit"],
+    .my-profil a.button {
+        width: 100%;
+        font-size: 14px;
+        margin: 15px 0 0 0;
+    }
+
+    .form-edit h3 i {
+        width: 89px;
+        height: 89px;
+        vertical-align: -10px !important;
+    }
+    .my-profil .right-block input {
+        width: 75%;
+    }
+    .my-profil .edit {
+        margin: 0 0px 0 10px;
+    }
+    .button-block {
+        display: block;
+        margin: 0 auto 15px;
+    }
+    .my-profil span {
+        width: 80%;
+    }
+    .my-profil select {
+        width: 100%;
+    }
+    .my-profil .right-block.r input {
+        width: 80%;
+    }
+    .my-profil textarea {
+        width: 75%;
+    }
+    .my-profil .experience {
+        width: 55%;
+    }
+
+    .form-edit h2 {
+        top: 355px;
+    }
+    .form-edit h2::before {
+        width: 125px;
+    }
+    .form-edit h2::after {
+        margin-left: -167px;
+        width: 125px;
+    }
+    .block-5 {
+        min-height: 420px;
+        background-position: bottom center;
+        -webkit-background-size: 300px;
+        background-size: 300px;
+    }
+    .update-profile .icon-teacher
+    {
+        width: 89px;
+        height: 89px;
+    }
+    .update-profile .icon-teacher:before
+    {
+
+        font-size: 37px;
+        padding: 18px 18px 18px;
+
+    }
+    .my-profile .buttons a
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px !important;
+    }
 	body {
 		padding-bottom: 133px !important;
 	}
@@ -5471,7 +5688,262 @@
 		padding: 18px 18px 18px;
 	}
 }
+@media only screen and (max-width: 410px) {
+	.section-offers .offer-item {
+		width: 295px;
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+	section.section-offers .skills ul li,
+	section.section-offers .skills ul li.skills_li {
+		margin-right: 10px;
+	}
+	.section-offers .mb-info {
+		padding-bottom: 5px;
+	}
+	.section-offers .mb-info div p {
+		vertical-align: -11px;
+	}
+	.section-offers .mb-info div p span {
+		display: block;
+	}
+	.add-certification .input-group.input-daterange label:nth-of-type(2),
+	.add-certification .input-group.input-daterange label:nth-of-type(3) {
+		width: 100% !important;
+		margin-bottom: 20px;
+	}
+}
 @media only screen and (max-width: 400px) {
+     .my_button_withdraw {
+        margin: 0 4% 20px 21px;
+        display: block;
+        float: none;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    header.clj_header .personal .sign_up .icon-check31-01 {
+        display: none;
+    }
+    header.clj_header .personal .login .icon-login {
+        display: none;
+    }
+    section.clj_freelancers .information .title {
+        display: block;
+        text-align: center;
+    }
+    section.clj_freelancers .information .title h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    section.clj_freelancers .information .title h4 {
+        margin-bottom: 5px;
+    }
+    section.clj_freelancers .information .price {
+        float: left !important;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    section.clj_freelancers .information .about {
+        margin: 12px 0;
+    }
+    .onj_form {
+        margin-bottom: 20px;
+    }
+    .onj_form .form_button input[type="submit"] {
+        display: block;
+        width: 120px;
+        height: 40px;
+        line-height: 20px;
+    }
+    .onj_form .form_button input[type="submit"] + input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    .onj_form_content .input_date input[type="text"] {
+        width: 100% !important;
+    }
+    .onj_form_content .input-daterange.input_date .input_start {
+        width: 100% !important;
+        padding-right: 0;
+    }
+    .onj_form_content .input-daterange.input_date .input_start input {
+        width: 100% !important;
+    }
+    .onj_form_content .input-daterange.input_date .input_end {
+        width: 100% !important;
+        padding-left: 0;
+    }
+    .onj_form_content .input-daterange.input_date .input_end input {
+        width: 100% !important;
+    }
+    .onj_form_content .input-daterange.input_date + div.onj_check {
+        margin-bottom: 4px;
+    }
+    .onj_form_content div.onj_check {
+        margin-bottom: 20px;
+    }
+    .onj_form_content div.onj_check_wrap {
+        width: 100%;
+        padding-right: 0;
+    }
+    .onj_form_content div.onj_check_wrap + .onj_check_wrap {
+        padding-left: 0;
+        margin-bottom: 16px;
+    }
+    .onj_form_content .onj_radio .wrapper_how_long {
+        padding-left: calc((100% - 244px)/2);
+        padding-left: -moz-calc((100% - 244px)/2);
+        padding-left: -webkit-calc((100% - 244px)/2);
+        padding-left: -o-calc((100% - 244px)/2);
+    }
+    .onj_form_content .onj_radio label:nth-of-type(3),
+    .onj_form_content .onj_radio label:nth-of-type(5) {
+        clear: both;
+    }
+    .onj_form_content .onj_radio label:nth-of-type(4) {
+        clear: none;
+    }
+    .block-1 .login ul {
+        margin-top: 0;
+    }
+    .block-1 .login i {
+        display: none;
+    }
+    .block-1 .login a {
+        font-size: 14px;
+    }
+    .block-1 .login li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .block-1 .title {
+        font-size: 24.8px;
+        margin: 180px 0 30px 0px;
+    }
+    .block-1 .title-2 {
+        font-size: 22px;
+    }
+    .block-1 .button,
+    .block-7 .button {
+        font-size: 24px;
+    }
+    .block-2 .title {
+        padding: 5px 10px;
+        line-height: 20px;
+    }
+    .block-1 .login {
+        vertical-align: middle;
+    }
+    .block-1 .search {
+        width: 135px;
+    }
+    .header-entrance a.log-view {
+        margin-left: 10px;
+    }
+    .header-entrance .greeting,
+    .header-entrance a {
+        font-size: 14px;
+    }
+    .block-1 .header-mnu.edet-form .login .already {
+        width: 80px;
+        line-height: 10px;
+    }
+    .detailed-view_container.view-participant a.logo-view {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    /*Ark-16*/
+    .page-correspond .correspond-window .button-contact {
+        margin-right: 2%;
+        width: 100px;
+        height: 40px;
+        line-height: 35px;
+        font-size: 15px;
+    }
+    .page-correspond .account-companion {
+        margin-left: 0;
+        padding-left: 0;
+        width: 50%;
+    }
+    .page-correspond .account-companion .view-logo_caption {
+        font-size: 22px;
+    }
+    .page-correspond .account-companion .participant-specialty {
+        font-size: 19px;
+    }
+    .view-participant {
+        padding-bottom: 52px;
+    }
+    .messages-container .message .message-author {
+        width: 26%;
+    }
+    .messages-container .message .message-text {
+        width: 74%;
+    }
+    .messages-container .message-author .mes-author_photo {
+        width: 65px;
+        height: 65px;
+    }
+    .clj_freelancers .button-contact.b-reject {
+        margin-left: 0px;
+    }
+    /**/
+    .tabs ul li {
+        font-size: 16px;
+        width: 44%;
+    }
+    /*payments*/
+    .payment_wrapper h3 {
+        display: block;
+        text-align: center;
+    }
+    .payment_wrapper .button-contact {
+        float: none;
+        width: 110px;
+        font-size: 15px;
+        display: block;
+        height: 38px;
+        line-height: 35px;
+        margin: 10px auto;
+    }
+    /*cancel job modal*/
+    .close-job_modal input.radio-deposit + label {
+        font-size: 15px;
+    }
+    .close-job_modal p.rsn {
+        font-size: 18px;
+    }
+    /*page skills*/
+    .fr-search ul.category li {
+        width: 100%;
+        border-right-color: transparent;
+    }
+    .fr-search .hd-skills,
+    .bd-skills .top {
+        padding: 15px 10px;
+    }
+    .fr-search .hd-skills span.sm-text.counter-skl {
+        right: 10px;
+        bottom: auto;
+        top: 23px;
+    }
+    .bd-skills .top {
+        text-align: center;
+    }
+    .bd-skills .top span {
+        display: inline-block;
+        float: none;
+        width: 100%;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    .bd-skills .top a {
+        display: inline-block;
+        float: none;
+    }
+    header.clj_header .personal .sign_up a, header.clj_header .personal .login a {
+        font-size: 14px;}
 	.my_button_withdraw {
 		margin: 0 4% 20px 21px;
 		display: block;
@@ -5701,6 +6173,339 @@
 
 }
 @media screen and (max-width:395px) {
+    .add-manual-time .modal-content .date + label, .add-manual-time .modal-content .time-zone + label
+	{
+    	margin-right: 5px !important;
+        margin-left: 0 !important;
+    }
+	.create-account_appeal a {
+		float: left;
+		width: 100%;
+	}
+	/*ARK-16*/
+	.page-correspond .recent-history .account {
+		padding-left: 0;
+	}
+	.page-correspond .account a.logo-view {
+		margin-right: 15px;
+	}
+	.page-correspond .account .view-logo_caption {
+		font-size: 24px;
+	}
+	.history-list .account-history_line {
+		padding-left: 10px;
+	}
+	.history-list .account-history_line .logo-view {
+		margin-right: 15px;
+	}
+	.page-correspond .account-companion .view-logo_caption {
+		font-size: 24px;
+	}
+	.page-correspond .account-companion .participant-specialty {
+		font-size: 21px;
+	}
+	/*onj_table*/
+	.onj_table .table_edit tbody tr .first_col {
+		width: 30%;
+	}
+	.onj_table .table_edit tbody tr .second_col {
+		width: 17%;
+	}
+	.onj_table .table_edit tbody tr .second_col span {
+		margin-left: 15px;
+	}
+	.onj_table .table_edit tbody tr .last_col {
+		width: 16%;
+	}
+	/*ark-25*/
+	.p-ark-25 .button-contact {
+		margin-left: 0;
+	}
+	.p-ark-25 p.contr-st-date {
+		font-size: 17px;
+		margin-top: 15px;
+	}
+	.view-participant.p-ark-25 .view-rating {
+		padding-top: 50px;
+	}
+	.view-participant.p-ark-25 {
+		padding-bottom: 20px;
+	}
+	.open-job .modal-lg,
+	.open-job .modal-content {
+		width: 950px !important;
+		height: 455px !important;
+	}
+	.workings-time .time-block {
+		width: 146px;
+		height: 100px;
+	}
+	.progress {
+		width: 67px;
+	}
+	/*payments*/
+	.method-item li.ver_itm b,
+	.method-item li.pend_itm b {
+		font-size: 16px;
+	}
+	.wrapper.copiright ul:first-child {
+		padding-left: 0px;
+	}
+	.wrapper.copiright ul:last-child {
+		padding-right: 0;
+	}
+	.block-4 img {
+		margin-right: -30%;
+	}
+	.transaction .Timesheet ul.days li {
+		width: 110px;
+		margin-right: -4.8px;
+	}
+	.transaction .Timesheet .table .tr:first-of-type .th:nth-of-type(2) {
+		width: 44.4%;
+	}
+	.transaction .Timesheet .table .tr:first-of-type .th:nth-of-type(4) {
+		width: 18.8%;
+	}
+	nav.clj_nav.clj_msg ul li:nth-of-type(4) {
+		text-align: center;
+	}
+	nav.clj_nav.clj_msg ul li:nth-of-type(5) {
+		text-align: center;
+	}
+	.myProfile a::before {
+		left: 0;
+	}
+	nav.clj_nav ul li {
+		padding: 0 12px;
+	}
+	nav.clj_nav ul.no-messages li {
+		padding: 0 17px;
+	}
+	nav.clj_nav ul.no-messages li:first-of-type {
+		padding-left: 0;
+	}
+	nav.clj_nav ul.no-messages li:last-of-type {
+		padding-right: 0;
+	}
+	header.clj_header.header-ht {
+		height: auto;
+		overflow: auto;
+		line-height: 60px;
+	}
+	.header-ht .text-line {
+		float: right;
+	}
+	header.clj_header.header-ht .personal .sign_up {
+		margin-left: 10px;
+	}
+	header.clj_header.header-ht .personal .sign_up .icon-check31-01 {
+		top: 16px;
+	}
+	.header-ht .head-button {
+		margin-top: 13px;
+	}
+	section.navigation .nav {
+		width: 80%;
+	}
+	section.protection .col-protect-pad {
+		padding-left: 15px;
+	}
+	.sect-ht .text-column {
+		padding-right: 25px;
+		margin-bottom: 50px;
+	}
+	section.sect-ht p.p-h1 {
+		margin-top: 60px;
+	}
+	.sect-ht .col-lg-6.bg {
+		height: auto;
+		min-height: 675px;
+	}
+	section.sect-ht p {
+		line-height: 1.2;
+	}
+	.text-column::after {
+		width: 83%;
+		top: 30%;
+		height: 330px;
+	}
+	section.monitoring.sect-ht .text-column::after {
+		-webkit-background-size: contain;
+		background-size: contain;
+		top: 30%;
+	}
+	.col-protect-pad::before {
+		top: 12%;
+	}
+	.sect-centr-ht {
+		padding: 50px 0;
+	}
+	.sect-centr-ht p.ht-title {
+		font-size: 40px;
+	}
+	.sect-centr-ht p {
+		font-size: 21px;
+		line-height: 1.4;
+	}
+	section.sect-ht p.p-h1 {
+		font-size: 40px;
+	}
+	section.hiring,
+	section.protection {
+		font-size: 21px;
+	}
+	section.question .quest span {
+		font-size: 27px;
+		margin-bottom: 15px;
+	}
+	section.question .quest {
+		margin-bottom: 15px;
+	}
+	section.question .col-quest-img img {
+		margin-top: 6px;
+	}
+	.scrollup {
+		right: 75px;
+	}
+	/*slider vers*/
+	.slider-categories {
+		top: 60px;
+	}
+	.slider-categories ul li {
+		font-size: 16px;
+	}
+	.slider-full-width {
+		padding-top: 110px;
+	}
+	.slider-full-width .item {
+		height: calc(100vh - 110px);
+	}
+	#describe .block-right {
+		background-size: 55%;
+	}
+	.text-column::after {
+		top: 50%;
+		margin-top: -205px;
+	}
+	.hiring .bg::before {
+		top: 50%;
+		margin-top: -55px;
+	}
+	#describe .block-left {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.sect-ht ul li {
+		position: relative;
+		padding-left: 20px;
+		font-size: 15px;
+	}
+	.payments .paytmen {
+		margin-top: -220.5px;
+	}
+	#describe .block-right {
+		width: 500px;
+		padding-right: 15px;
+	}
+	.slider-full-width .main-tips-title {
+		right: 40%;
+	}
+	.col-protect-pad::before {
+		left: -80%;
+	}
+	.sect-ht .col-lg-6.bg {
+		padding-left: 45px;
+	}
+
+	.my-profile .buttons {
+		float: right;
+	}
+	.block-4 ul {
+		margin: 20px 0 0px 57px;
+	}
+	.block-4 .text .title,
+	.block-3 .text .title,
+	.block-5 .text .title {
+		font-size: 35px;
+	}
+	.block-3 .text .title {
+		margin-left: 0;
+	}
+	.block-2 .title {
+		font-size: 20px;
+		width: 438px;
+	}
+	.about-us .human .img {
+		width: 200px;
+		height: 200px;
+	}
+	.freelancer-menu li {
+		width: calc(100% / 6.17);
+	}
+	.freelancer-menu li a {
+		font-size: 16px;
+	}
+	.contracts_freelancer .tabs-contracts .table_contracts .description .price,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .title,
+	.contracts_freelancer .tabs-contracts .table_contracts .description .hours-worked {
+		width: calc(100% / 3.05);
+	}
+	.contracts_freelancer .tabs-contracts .table_contracts .tr .td,
+	.contracts_freelancer .tabs-contracts .table_contracts .tr .th {
+		display: inline-block;
+		width: calc(100% / 3 - 124px);
+	}
+	.work-diary .date {
+		margin-left: 35px !important;
+	}
+	.detailed-view-of-contracts-page .content .table .tr .td p,
+	.detailed-view-of-contracts-page .content .table .tr .th p {
+		padding: 22.2px 10px;
+	}
+	.detailed-view-of-contracts-page .content ul li {
+		padding-left: 10px !important;
+	}
+	.agency-dashbord-page ul.internally_nav li.internally_nav_li.last_li .internally_nav_sub {
+		left: inherit;
+	}
+	.agency-dashbord-page .right-block {
+		padding-left: 0px;
+	}
+	.agency-dashbord-page .right-block h2 {
+		margin-left: 20px;
+	}
+	.agency-dashbord-page .radiobutton label {
+		font-size: 14px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .photo {
+		margin: 20px 20px 20px 20px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description {
+		width: calc(100% - 117px);
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description h4.title {
+		width: 180px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p {
+		font-size: 14px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p.price {
+		width: 180px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p.date {
+		width: 220px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description p.status {
+		width: 115px;
+	}
+	.agency-dashbord-page .tabs-contracts .table_contracts .description .status {
+		width: 115px;
+	}
+	.role .radio-button input:checked + div label {
+		width: 500px;
+		height: 500px;
+	}
 	.add-manual-time .modal-content .date + label,
 	.add-manual-time .modal-content .time-zone + label {
 		margin-right: 5px !important;
@@ -5859,766 +6664,6 @@
         font-size: 20px;
     }
 }
-
-@media only screen and (max-width: 991px) {
-	.col-parties {
-		margin-top: 20px;
-	}
-	.hide-item {
-		padding-left: 68px !important;
-	}
-	.my-portfolio .portolio-item {
-		height: 190px;
-		margin-bottom: 5px !important;
-	}
-	.modal-portfolios li {
-		margin-right: 15px;
-	}
-	.wrapper.copiright p {
-		font-size: 16px;
-	}
-	.myProfile a::before {
-		left: 0px;
-	}
-	.clj_nav .submenu {
-		margin-top: -2px;
-	}
-	nav.clj_nav ul li {
-		padding: 0px 8px;
-	}
-	.onj_table .table_edit.table_contracts tbody tr td {
-		padding: 0px;
-	}
-	.onj_table .table_edit.table_contracts tbody tr .first_col,
-	.onj_table .table_edit.table_contracts tbody tr .second_col,
-	.onj_table .table_edit.table_contracts tbody tr .last_col {
-		padding: 15px;
-	}
-	.onj_table .table_edit tbody tr {
-		margin-bottom: 0;
-	}
-	.onj_table .table_edit tbody tr:first-of-type {
-		border-width: 0;
-	}
-	.onj_table .table_edit tbody tr:first-of-type td:last-of-type {
-		border-bottom: 1px solid #dedede;
-	}
-	.next_link,
-	.prev_link {
-		top: 160px;
-	}
-	.modal-dialog {
-		width: 90%;
-		margin: 0 auto;
-	}
-	.modal-dialog .modal-content {
-		width: 100%;
-	}
-	.agency-dashbord-page .right-block h2 {
-		font-size: 22px;
-	}
-	.agency-dashbord-page .right-block h2 i:before {
-		font-size: 24px;
-	}
-	.agency-dashbord-page .radiobutton label {
-		padding-left: 20px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .photo {
-		width: 52px;
-		height: 52px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description {
-		width: calc(100% - 98px);
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .title {
-		font-size: 16px;
-		width: 140px !important;
-		padding-right: 10px !important;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .title span {
-		font-size: 14px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p {
-		padding-right: 10px !important;
-		vertical-align: middle;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p.price {
-		width: 160px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p.date {
-		width: 130px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p.date span {
-		display: block;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .status {
-		width: 105px !important;
-	}
-    .onj_table .table_edit tbody tr .third_col
-    {
-        text-align: right;
-    }
-}
-@media only screen and (max-width: 767px) {
-	.offer_container {
-		padding: 40px 15px;
-	}
-	section.clj_freelancers .skills ul {
-		padding-left: 0;
-	}
-	.my-portfolio .hide-item {
-		padding: 0 15px !important;
-	}
-	.my-portfolio .portolio-item {
-		max-height: calc(344px - 100px);
-	}
-	.clj_nav .submenu {
-		position: absolute !important;
-		width: 100%;
-		margin-top: 36px;
-	}
-	.clj_nav ul li {
-		display: block !important;
-		width: 100%;
-		float: inherit !important;
-	}
-	.agency-dashboard-add-team .left-block {
-		width: 100%;
-	}
-	.agency-dashboard-add-team .right-block {
-		width: 100%;
-		text-align: center;
-		padding-top: 20px;
-	}
-	.agency-dashboard .modal-dialog .modal-content {
-		height: auto;
-		min-height: inherit;
-		padding-bottom: 30px;
-	}
-	.agency-dashboard .modal-dialog .modal-content p {
-		padding: 20px 20px 0;
-	}
-	.agency-dashboard .modal-dialog .modal-content .buttons {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	.agency-dashboard-create form {
-		padding: 40px 15px 30px;
-	}
-	.agency-dashboard-create .input-min,
-	.agency-dashboard-create .add-icon {
-		width: calc(100% / 2 - 10.5px);
-	}
-	.agency-dashboard-create .input-min:nth-of-type(2n),
-	.agency-dashboard-create .add-icon:nth-of-type(2n) {
-		margin-left: 15px;
-	}
-	.agency-dashboard-create .input + .input-min {
-		margin-left: 0;
-	}
-	.agency-dashboard-create .input + .input-min + .input-min {
-		margin-left: 15px;
-	}
-	.agency-dashboard-create label {
-		font-size: 14px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .contracts-item {
-		padding-bottom: 30px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .photo {
-		display: table;
-		margin: 20px auto 10px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description {
-		width: 100%;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description h4.title {
-		width: 100% !important;
-		font-size: 22px;
-		text-align: center;
-		padding-right: 0 !important;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description h4.title span {
-		font-size: 20px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p {
-		width: 100% !important;
-		padding: 0 !important;
-		text-align: center;
-		font-size: 16px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description p.price {
-		margin-bottom: 15px;
-		margin-top: 20px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .status {
-		width: 100% !important;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .del {
-		display: table;
-		margin: 10px auto 0px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .radiobutton {
-		display: table;
-		margin: 10px auto 0;
-		width: 120px;
-		text-align: left;
-		padding-left: 10px;
-	}
-	.agency-dashbord-page .tabs-contracts .table_contracts .description .radiobutton label {
-		font-size: 16px;
-	}
-	.agency-dashbord-page .left-block.top {
-		padding: 25px 25px;
-		width: 100%;
-		margin-right: 0px;
-	}
-	.agency-dashbord-page .left-block.bottom {
-		margin-top: 20px;
-		width: 100%;
-		margin-right: 0;
-		padding-bottom: 10px;
-	}
-	.agency-dashbord-page .left-block.bottom .radiobutton {
-		margin-left: 10px;
-	}
-	.agency-dashbord-page .left-block.bottom label {
-		font-size: 14px;
-		padding-left: 15px;
-	}
-	.agency-dashbord-page .left-block.bottom label:before {
-		width: 9px;
-		height: 9px;
-	}
-	.agency-dashbord-page .left-block.bottom p {
-		font-size: 14px;
-	}
-	.agency-dashbord-page .right-block.top {
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-		float: initial;
-		text-align: center;
-	}
-	.agency-dashbord-page .right-block.bottom {
-		margin-top: 0px;
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	.agency-dashbord-page .right-block.bottom .internally_nav {
-		margin-top: 0;
-	}
-	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li {
-		width: 50%;
-		float: left;
-	}
-	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li:nth-of-type(2) .internally_nav_sub {
-		left: inherit !important;
-	}
-	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li .internally_nav_sub {
-		width: 100%;
-		right: 0 !important;
-	}
-	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li a.prevent_link .icon-media {
-		right: 10px;
-	}
-    nav.clj_nav ul
-    {
-        display: block;
-    }
-    .ff body
-    {
-        padding-bottom: 130px !important;
-    }
-    .header-ht .mt.personal
-    {
-        padding: 0 15px 0 7px;
-    }
-}
-@media only screen and (max-width: 480px) {
-	.offer_container table.contract-table tr td {
-		display: block;
-		width: 100% !important;
-		border-bottom: 1px solid #bebebe;
-	}
-	.agency-dashboard-add-team .right-block {
-		padding: 0 5px 0 5px;
-	}
-	.agency-dashboard-add-team .right-block h3 {
-		font-size: 24px;
-	}
-	.agency-dashboard-add-team .right-block .green {
-		width: 100%;
-	}
-	.agency-dashboard-add-team .modal-dialog {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.agency-dashboard .modal-dialog .modal-content .buttons .gray {
-		float: none;
-	}
-	.agency-dashboard-create form {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex-direction: column;
-	}
-	.agency-dashboard-create form .add-icon {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex-direction: column;
-		order: -1;
-		flex-wrap: wrap;
-		align-items: center;
-	}
-	.agency-dashboard-create .input-min,
-	.agency-dashboard-create .add-icon {
-		width: 100% !important;
-		margin-left: 0 !important;
-	}
-	.agency-dashboard-create .textarea {
-		margin-bottom: 22px;
-	}
-	.agency-dashbord-page .tabs ul li {
-		font-size: 13px;
-	}
-	.agency-dashbord-page .right-block.bottom .internally_nav li.internally_nav_li .internally_nav_sub {
-		width: 290px;
-		left: 0 !important;
-	}
-}
-
-/*media for pending offers page and End contract page*/
-
-@media only screen and (max-width: 991px) {
-	.section-offers .mb-status .status-line {
-		font-size: 20px;
-	}
-	.section-offers .mb-status a {
-		margin-bottom: 10px;
-	}
-	.section-offers .mb-logo {
-		width: auto;
-		margin-right: 10px;
-	}
-	/**/
-	.end-page h2.ttl {
-		font-size: 24px;
-	}
-	.end-page .exp-description textarea {
-		width: 100%;
-	}
-	.end-page .exp-description .note {
-		max-width: 100%;
-	}
-	.onj_table .table_edit.table_jobs tbody tr .third_col {
-		text-align: right;
-	}
-	.about-us .banner-text {
-		width: 100%;
-	}
-	.about-us .human {
-		width: calc(100% / 2.05 - 14px);
-	}
-	.about-us .human:nth-of-type(3n) {
-		margin-right: 40px;
-	}
-	.about-us .human:nth-of-type(2n) {
-		margin-right: 0;
-	}
-	.about-us .teams p.text {
-		padding: 0;
-	}
-	.role .radio-button input:checked + div label {
-		width: 400px;
-		height: 400px;
-	}
-	.role .radio-button input:not(:checked) + div:after {
-		width: 370px;
-		height: 370px;
-	}
-	.role .radio-button label {
-		width: 310px;
-		height: 310px;
-	}
-	.role .radio-button label span {
-		width: 100px;
-		height: 100px;
-		font-size: 12px;
-	}
-    .detailed-view_container .button-contact
-    {
-        margin: 0px 0 25px auto !important;
-    }
-    .p-ark-25 .participant-pricing, .p-ark-25 p.contr-st-date
-    {
-        text-align: right;
-    }
-}
-@media only screen and (max-width: 768px) {
-	.section-offers .offer-item {
-		padding-bottom: 20px;
-		width: 380px;
-		margin: 0 auto;
-	}
-	.fr-offers-wrap .offer-item {
-		padding-top: 20px;
-	}
-	.section-offers .mb-logo {
-		width: 100%;
-		padding: 0;
-		float: none;
-		margin: 0 auto;
-	}
-	.section-offers .mb-logo a {
-		background-repeat: no-repeat;
-		-webkit-background-size: cover!important;
-		background-size: cover!important;
-		width: 140px;
-		height: 60px;
-	}
-	.section-offers .mb-info {
-		float: none;
-		padding-top: 10px;
-	}
-	.section-offers .mb-info h2 {
-		margin-bottom: 11px;
-		line-height: 1;
-		text-align: center;
-	}
-	.section-offers .mb-status {
-		float: none;
-		padding: 0;
-		width: 100%;
-	}
-	.section-offers .mb-status a {
-		display: block;
-		margin-top: 0;
-		margin-left: 0 !important;
-		font-size: 14px;
-		line-height: 35px;
-		height: 35px;
-		width: 100px;
-		float: left;
-	}
-	.section-offers .mb-info h3 {
-		line-height: 1;
-		font-size: 19px;
-		text-align: center;
-	}
-	.section-offers .mb-status .status-line {
-		font-size: 18px;
-		float: right;
-	}
-	.fr-offers-wrap .mb-logo a {
-		width: 60px;
-		height: 60px;
-	}
-	.fr-offers-wrap .mb-info h2 {
-		margin-top: -8px;
-		margin-bottom: 20px;
-	}
-	.sect-offers-title h3 {
-		text-align: center;
-	}
-	/**/
-	.end-page .exp-description {
-		padding: 15px;
-	}
-	.end-page.hiring-page-b input.radio-deposit + label {
-		margin-right: 0;
-	}
-	.my-profile .overview div:last-child h3 {
-		margin-top: 30px;
-	}
-	.about-us .banner-text h2.title {
-		font: 700 60px/1 Open Sans;
-	}
-	.about-us .human {
-		width: calc(100% / 2.05 - 15px);
-	}
-	.role .radio-button input:checked + div label {
-		width: 220px;
-		height: 220px;
-	}
-	.role .radio-button input:not(:checked) + div:after {
-		width: 210px;
-		height: 210px;
-		border: 5px solid rgba(92, 194, 0, 0.4);
-		box-shadow: inset 0 0 0 5px rgba(92, 194, 0, 0.2), 0 0 0 5px rgba(92, 194, 0, 0.6);
-		top: -10px;
-		left: -10px;
-	}
-	.role .radio-button input:not(:checked) + div span:before {
-		animation: none;
-	}
-	.role .radio-button label {
-		width: 195px;
-		height: 195px;
-	}
-	.role .radio-button label span {
-		width: 70px;
-		height: 70px;
-		font-size: 10px;
-	}
-}
-@media only screen and (max-width: 650px) {
-	.end-page h2.ttl {
-		font-size: 22px;
-	}
-	.hiring-page-b input.radio-deposit + label::before {
-		margin: 0;
-	}
-	.hiring-page-b input.radio-liking + label::before {
-		margin-right: 5px;
-	}
-	.end-page .exp-description span {
-		margin-right: 5px;
-		font-size: 13px;
-	}
-	.change-hourly-rate p {
-		width: 94%;
-	}
-	.change-hourly-rate span {
-		float: initial;
-		display: block;
-	}
-	.change-hourly-rate p {
-		text-align: center;
-	}
-	.change-hourly-rate form {
-		padding-right: 45px;
-		padding-bottom: 45px;
-	}
-	.change-hourly-rate .modal-content {
-		height: auto;
-	}
-	.change-hourly-rate .right-button {
-		text-align: center;
-	}
-	.add-certification .input-group.input-daterange label:nth-of-type(2),
-	.add-certification .input-group.input-daterange label:nth-of-type(3) {
-		width: 110px !important;
-	}
-    .p-ark-25 .col-xs-5,
-    .p-ark-25 .col-xs-7
-    {
-        width: 100%;
-    }
-    .p-ark-25 .col-xs-5 .currency.cur-biz
-    {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .detailed-view_container .button-contact
-    {
-        margin: 0 auto 25px !important;
-    }
-    .detailed-view_container.view-participant .button-contact {
-        margin: 10px auto 20px auto !important;
-    }
-    .p-ark-25 .participant-pricing, .p-ark-25 p.contr-st-date
-    {
-        text-align: center;
-
-    }
-    .p-ark-25.view-participant
-    {
-        padding-bottom: 0;
-    }
-    .view-participant .view-rating {
-    padding-top: 40px;
-}
-}
-@media only screen and (max-width: 480px) {
-
-    .end-page .exp-description span.vis-mobile {
-        display: block;
-    }
-    .end-page p {
-        font-size: 16px;
-        line-height: 1.2;
-    }
-    .end-page h2.ttl {
-        font-size: 20px;
-        margin: 20px 0;
-    }
-    .end-page .exp-ttl {
-        margin-top: 0;
-    }
-    .end-page .exp-description .button-contact {
-        width: 120px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        margin: 10px 20px 10px 0;
-    }
-    .end-page .exp-description .button-contact + a.green {
-        font-size: 16px;
-    }
-    .end-page .exp-ttl {
-        font-size: 19px;
-    }
-    .end-page .exp-description .note {
-        font-size: 13px;
-    }
-    .change-hourly-rate .button.gray,
-    .change-hourly-rate .right-button .button {
-        margin: 0 auto !important;
-        line-height: 43px !important;
-    }
-    .change-hourly-rate form {
-        padding: 45px 0;
-    }
-    .change-hourly-rate p {
-        line-height: 20px;
-    }
-    .change-hourly-rate span {
-        margin-top: 20px;
-    }
-    .role .radio-button input:checked + div label
-    {
-        width: 150px;
-        height: 150px;
-    }
-    .role .radio-button input:not(:checked) + div:after
-    {
-        width: 135px;
-        height: 135px;
-        left: -5px;
-        top: -5px;
-    }
-    .role .radio-button label
-    {
-        width: 125px;
-        height: 125px;
-    }
-    .role .radio-button label span
-    {
-        width: 55px;
-        height: 55px;
-        font-size: 8px;
-    }
-    .update-profile.my-profil h3
-    {
-        margin-bottom: 30px;
-    }
-    .update-profile.my-profil h3 i
-    {
-        display: table;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 20px;
-    }
-	.end-page .exp-description span.vis-mobile {
-		display: block;
-	}
-	.end-page p {
-		font-size: 16px;
-		line-height: 1.2;
-	}
-	.end-page h2.ttl {
-		font-size: 20px;
-		margin: 20px 0;
-	}
-	.end-page .exp-ttl {
-		margin-top: 0;
-	}
-	.end-page .exp-description .button-contact {
-		width: 120px;
-		height: 40px;
-		line-height: 40px;
-		font-size: 16px;
-		margin: 10px 20px 10px 0;
-	}
-	.end-page .exp-description .button-contact + a.green {
-		font-size: 16px;
-	}
-	.end-page .exp-ttl {
-		font-size: 19px;
-	}
-	.end-page .exp-description .note {
-		font-size: 13px;
-	}
-	.change-hourly-rate .button.gray,
-	.change-hourly-rate .right-button .button {
-		margin: 0 auto !important;
-		line-height: 43px !important;
-	}
-	.change-hourly-rate form {
-		padding: 45px 0;
-	}
-	.change-hourly-rate p {
-		line-height: 20px;
-	}
-	.change-hourly-rate span {
-		margin-top: 20px;
-	}
-	.role .radio-button input:checked + div label {
-		width: 150px;
-		height: 150px;
-	}
-	.role .radio-button input:not(:checked) + div:after {
-		width: 135px;
-		height: 135px;
-		left: -5px;
-		top: -5px;
-	}
-	.role .radio-button label {
-		width: 125px;
-		height: 125px;
-	}
-	.role .radio-button label span {
-		width: 55px;
-		height: 55px;
-		font-size: 8px;
-	}
-	.update-profile.my-profil h3 {
-		margin-bottom: 30px;
-	}
-	.update-profile.my-profil h3 i {
-		display: table;
-		margin-right: auto;
-		margin-left: auto;
-		margin-bottom: 20px;
-	}
-}
-@media only screen and (max-width: 450px) {
-	.my-portfolio .portolio-item {
-		max-height: calc(344px - 200px);
-	}
-}
-@media only screen and (max-width: 410px) {
-	.section-offers .offer-item {
-		width: 295px;
-		padding-left: 10px;
-		padding-right: 5px;
-	}
-	section.section-offers .skills ul li,
-	section.section-offers .skills ul li.skills_li {
-		margin-right: 10px;
-	}
-	.section-offers .mb-info {
-		padding-bottom: 5px;
-	}
-	.section-offers .mb-info div p {
-		vertical-align: -11px;
-	}
-	.section-offers .mb-info div p span {
-		display: block;
-	}
-	.add-certification .input-group.input-daterange label:nth-of-type(2),
-	.add-certification .input-group.input-daterange label:nth-of-type(3) {
-		width: 100% !important;
-		margin-bottom: 20px;
-	}
-}
 @media only screen and (max-width: 380px) {
 	.block-1 .search input[type="search"] {
 		padding-right: 30px;
@@ -6738,6 +6783,15 @@
 	.my-profile .buttons a:last-of-type {
 		margin-top: 10px;
 	}
+    .creation-profile .inputs .input {
+    width: 100%;
+    margin-right: 0 !important; }
+    .creation-profile .inputs .input input {
+      max-width: none; }
+  .creation-profile .capcha {
+    display: block; }
+    .creation-profile .capcha img {
+      width: calc(100% - 115px); }
 }
 @media only screen and (max-width: 368px) {
 	.my-profil .right-block input {

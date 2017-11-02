@@ -1710,4 +1710,240 @@ a.view-job:focus,
   .my-profile .buttons a:last-of-type {
     margin-top: 10px; } }
 
+.creation-profile {
+  padding-top: 65px; }
+  .creation-profile input[type="submit"] {
+    border-radius: 5px;
+    border: 1px solid #95cb93;
+    background-color: #5cc200;
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    display: table;
+    margin: 0 auto 50px;
+    clear: both; }
+  .creation-profile h3 {
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    color: #727272;
+    margin-bottom: 30px;
+    margin-top: 0; }
+  .creation-profile .inputs {
+    clear: both; }
+    .creation-profile .inputs p {
+      color: #5cc200;
+      font-size: 14px;
+      font-weight: 400;
+      position: relative;
+      line-height: 26px; }
+      .creation-profile .inputs p:before {
+        content: '';
+        position: absolute;
+        width: 185px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: #5cc200; }
+    .creation-profile .inputs:nth-of-type(1) .input {
+      margin-right: 50px; }
+      .creation-profile .inputs:nth-of-type(1) .input:last-of-type {
+        margin-right: 0; }
+    .creation-profile .inputs:nth-of-type(2) .input {
+      margin-right: 50px; }
+      .creation-profile .inputs:nth-of-type(2) .input:nth-of-type(4) {
+        margin-right: 0; }
+    .creation-profile .inputs:nth-of-type(3) .input {
+      margin-right: 50px; }
+      .creation-profile .inputs:nth-of-type(3) .input:last-of-type {
+        margin-right: 0; }
+  .creation-profile .input {
+    width: calc(100% / 3 - 90px);
+    float: left;
+    padding-left: 20px;
+    margin-bottom: 20px; }
+    .creation-profile .input.mini {
+      width: 120px; }
+    .creation-profile .input label {
+      display: block;
+      font-family: Open Sans;
+      color: #727272;
+      font-size: 18px;
+      font-weight: 400; }
+    .creation-profile .input input {
+      max-width: 300px;
+      width: 100%; }
+      .creation-profile .input input[type="text"], .creation-profile .input input[type="email"], .creation-profile .input input[type="password"] {
+        border: 1px solid #dbdbdb;
+        background-color: #ffffff;
+        height: 45px;
+        padding: 0 10px; }
+  .creation-profile .capcha {
+    display: table;
+    clear: both;
+    margin: 0px auto; }
+    .creation-profile .capcha input[type="text"] {
+      width: 215px;
+      vertical-align: bottom;
+      border: 1px solid #dbdbdb;
+      background-color: #ffffff;
+      height: 45px;
+      padding: 0 10px; }
+    .creation-profile .capcha img {
+      vertical-align: bottom;
+      width: 215px;
+      margin-right: 50px;
+      margin-top: 20px; }
+  .creation-profile .checkboxs {
+    display: table;
+    margin: 30px auto; }
+  .creation-profile .input-checkbox {
+    clear: both; }
+    .creation-profile .input-checkbox input[type="checkbox"] {
+      display: none; }
+    .creation-profile .input-checkbox input:checked + label:before {
+      content: '\004b'; }
+    .creation-profile .input-checkbox label {
+      color: #727272;
+      font-size: 12px;
+      font-weight: 400;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer; }
+      .creation-profile .input-checkbox label:before {
+        content: '';
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        line-height: 15px;
+        text-align: center;
+        color: #5cc200;
+        border: 1px solid #dbdbdb;
+        border-radius: 2px;
+        left: 0;
+        font-family: 'Glyphter';
+        top: 0px !important; }
+
+.add-company .input-checkbox {
+  display: table;
+  margin: 30px auto; }
+
+.datepicker-days .today,
+.datepicker-years .today,
+.datepicker-months .today {
+  display: none !important; }
+
+.datepicker-years,
+.datepicker-months {
+  width: 160px;
+  cursor: pointer; }
+  .datepicker-years .month,
+  .datepicker-months .month {
+    text-align: center; }
+  .datepicker-years .prev,
+  .datepicker-years .next,
+  .datepicker-months .prev,
+  .datepicker-months .next {
+    position: relative; }
+    .datepicker-years .prev:before,
+    .datepicker-years .next:before,
+    .datepicker-months .prev:before,
+    .datepicker-months .next:before {
+      content: "\004d";
+      position: absolute;
+      font-family: 'Glyphter'; }
+  .datepicker-years .prev:before,
+  .datepicker-months .prev:before {
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .datepicker-years .next:before,
+  .datepicker-months .next:before {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -moz-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    -o-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg); }
+  .datepicker-years thead tr:nth-of-type(2),
+  .datepicker-months thead tr:nth-of-type(2) {
+    background-color: #83c124;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600; }
+  .datepicker-years .year,
+  .datepicker-years .month,
+  .datepicker-months .year,
+  .datepicker-months .month {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 5px 0; }
+    .datepicker-years .year:hover,
+    .datepicker-years .month:hover,
+    .datepicker-months .year:hover,
+    .datepicker-months .month:hover {
+      background: #e5e5e5; }
+
+@media only screen and (max-width: 991px) {
+  .creation-profile .input {
+    width: calc(100% / 3 - 40px);
+    float: left;
+    padding-left: 10px;
+    margin-bottom: 20px; }
+    .creation-profile .input label {
+      font-size: 14px; }
+    .creation-profile .input.mini {
+      width: 90px; }
+  .creation-profile .inputs:nth-of-type(1) .input {
+    margin-right: 10px; }
+  .creation-profile .inputs:nth-of-type(2) .input {
+    margin-right: 10px; }
+  .creation-profile .inputs:nth-of-type(3) .input {
+    margin-right: 10px; } }
+
+@media only screen and (max-width: 767px) {
+  .creation-profile .inputs .input {
+    width: calc(100% / 3 - 7px);
+    padding-left: 0; }
+  .creation-profile .inputs:nth-of-type(2) .input:nth-of-type(3) {
+    margin-right: 0; }
+  .creation-profile .inputs:nth-of-type(2) .input:nth-of-type(4) {
+    margin-right: 10px; }
+  .creation-profile .inputs:nth-of-type(2) .input:last-of-type {
+    margin-right: 0px; }
+  .creation-profile .company-address .inputs .input:nth-of-type(3) {
+    margin-right: 0; } }
+
+@media only screen and (max-width: 580px) {
+  .creation-profile .inputs .input {
+    width: calc(100% / 2 - 5px); }
+  .creation-profile .inputs .capcha input[type="text"] {
+    width: 100px; }
+  .creation-profile .inputs .capcha img {
+    margin-right: 10px; }
+  .creation-profile .inputs .input:nth-of-type(3) {
+    margin-right: 10px !important; }
+  .creation-profile .inputs .input:nth-of-type(2n) {
+    margin-right: 0 !important; } }
+
+@media only screen and (max-width: 380px) {
+  .creation-profile .inputs .input {
+    width: 100%;
+    margin-right: 0 !important; }
+    .creation-profile .inputs .input input {
+      max-width: none; }
+  .creation-profile .capcha {
+    display: block; }
+    .creation-profile .capcha img {
+      width: calc(100% - 115px); } }
+
 /*# sourceMappingURL=styles.css.map */

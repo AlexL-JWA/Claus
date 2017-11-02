@@ -18,12 +18,12 @@ jQuery(document).ready(function($) {
     });
 
 //	/* datepicker */
-////	if( $("#start_data").length || $(".input-daterange").length/* || $("#datepicker-work-diary").length */)
-////		$('#start_data input,.input-daterange'/*,#datepicker-work-diary'*/).datepicker({
-////			format: "dd.mm.yyyy",
-////			autoclose: true
-////		});
-//	/* end */
+//	if( $("#start_data").length || $(".input-daterange").length/* || $("#datepicker-work-diary").length */)
+//		$('#start_data input,.input-daterange'/*,#datepicker-work-diary'*/).datepicker({
+//			format: "dd.mm.yyyy",
+//			autoclose: true
+//		});
+	/* end */
 
 	/* mobile menu */
 	$('#mobile_menu img').click(function() {
