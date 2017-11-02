@@ -8683,7 +8683,7 @@ textarea#contactform-message {
 	width: 90%;
 }
 div.pp_to15.modal-content {
-	padding: 60px 50px 35px !important;
+	padding: 60px 40px 35px !important;
 }
 p.pp_to15 {
 	font-size: 18px !important;
@@ -9597,3 +9597,42 @@ p.pp_to15 {
     .datepicker-months .year:hover,
     .datepicker-months .month:hover {
       background: #e5e5e5; }
+.modal.subscribe h3
+{
+    font-size: 30px !important;
+}
+.modal.subscribe h3 img
+{
+    width: 190px;
+    display: inline-block;
+}
+.modal.subscribe .subscribe-content .text + p
+{
+    font-size: 18px;
+}
+.modal.subscribe .subscribe-content .text
+{
+    margin-bottom: 0 !important;
+}
+.modal.subscribe .subscribe-content h5
+{
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    font-weight: 700;
+}
+.modal.subscribe .buttons
+{
+    display: table;
+    margin: 0 auto;
+}
+.modal.subscribe .signup
+{
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+.modal.subscribe .login
+{
+    margin-left: 5px!important;
+    margin-top: 0 !important;
+}
