@@ -6816,6 +6816,10 @@
     display: block; }
     .creation-profile .capcha img {
       width: calc(100% - 115px); }
+    .cookie-policy
+    {
+        padding-left: 0 !important;
+    }
 }
 @media only screen and (max-width: 368px) {
 	.my-profil .right-block input {
