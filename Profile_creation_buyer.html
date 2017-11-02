@@ -74,55 +74,123 @@
 
 <!--START CONTENT-->
 <section class="ndra-container">
-    <div class="wrapper form-edit">
+    <div class="wrapper creation-profile">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h3>Step №2 <span>Create a free buyer account?</span></h3>
-                    <form class="mini">
-                        <input type="text" placeholder="First name" required>
-                        <input type="text" placeholder="Second name">
-                        <input type="text" placeholder="Age">
-                        <input type="text" placeholder="Address">
-                        <input type="text" placeholder="Postal code">
-                        <input type="text" placeholder="City">
-                        <input type="text" placeholder="Country">
-                        <input type="text" placeholder="Email (also user name)">
-                        <input type="text" placeholder="Mobile">
-                        <input type="text" placeholder="Password">
-                        <input type="text" placeholder="Repeate password">
-                        <img src="images/capcha.png" alt="">
-                        <input type="text" placeholder="">
-                        <p class="checkbox-form">
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox">I accept the terms and conditions</label>
-                        </p>
-                        <div class="profil-2">
-
+                    <h3>Create a free Freelancer account?</h3>
+                    <form>
+                        <div class="inputs">
+                            <p>Personal info</p>
+                            <div class="input">
+                                <label>First name</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Surname</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Date of birth</label>
+                                <input type="text" placeholder="24/01/2015" class="datepicker">
+                            </div>
                         </div>
-                        <p class="checkboxs">
-                        <input id="checkbox-5" type="checkbox">
-                        <label for="checkbox-5"></label>
-                        <b>Add company details</b>
-                    </p>
-                    <div class="hide-block">
-                        <input type="text" placeholder="Company name">
-                        <input type="text" placeholder="VAT/Tax number">
-                        <p class="checkboxs">
-                            <input id="checkbox-6" type="checkbox">
-                            <label for="checkbox-6"></label>
-                            <b>If company address is different <br> from the address above</b>
-                        </p>
-                        <div class="hide-block">
-                            <input type="text" placeholder="Address line 1">
-                            <input type="text" placeholder="Address line 2">
-                            <input type="text" placeholder="City">
-                            <input type="text" placeholder="Postal code">
-                            <input type="text" placeholder="Country">
+                        <div class="inputs">
+                            <p>Contact info</p>
+                            <div class="input">
+                                <label>Country</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>City</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Adress</label>
+                                <input type="text">
+                            </div>
+                            <div class="input mini">
+                                <label>Zip code</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>E-mail (also user name)</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Mobile</label>
+                                <input type="text">
+                            </div>
                         </div>
-                    </div>
-                        <input type="submit" class="create-buyer" value="Create Buyer">
+                        <div class="inputs">
+                            <p>End registration</p>
+                            <div class="input">
+                                <label>Password</label>
+                                <input type="password">
+                            </div>
+                            <div class="input">
+                                <label>Repeate password</label>
+                                <input type="password">
+                            </div>
+                            <div class="capcha">
+                                <img src="images/capcha.png">
+                                <input type="text">
 
+                            </div>
+                            <div class="checkboxs">
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <label for="checkbox">I accept the terms and conditions</label>
+                                </div>
+                                <div class="input-checkbox">
+                                    <input id="add-company" type="checkbox">
+                                    <label for="add-company">Add company details</label>
+                                </div>
+                            </div>
+                            <div class="hide-block add-company">
+                                <div class="inputs">
+                                    <p>Add company details</p>
+                                    <div class="input">
+                                        <label>Company name</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="input">
+                                        <label>VAT/Tax number</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="input-checkbox">
+                                    <input id="company-address" type="checkbox">
+                                    <label for="company-address">If company address is different <br> from the address above</label>
+                                </div>
+                                <div class="hide-block company-address">
+                                    <div class="inputs">
+                                        <p>Different address</p>
+                                        <div class="input">
+                                            <label>Address line 1</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="input">
+                                            <label>Address line 2</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="input">
+                                            <label>City</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="input">
+                                            <label>Postal code</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="input">
+                                            <label>Country</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Create Freelancer">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -195,22 +263,30 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/materialize.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
 	<script src="js/common.js"></script>
     <script>
-    var hideBlock = 1
-
     $(document).ready(function(){
-       $('body').on('click', '.checkboxs', function(){
-           if ($(this).find("input[type='checkbox']").prop('checked') === true){
-               $(this).addClass('active');
-               hideBlock = 1;
+        $('body').on('click', '#add-company', function(){
+           if ($(this).prop('checked') === true){
+               $('.add-company').show();
            }else{
-               $(this).removeClass('active');
-               hideBlock = 0;
+               $('.add-company').hide();
            }
-
-
-       });
+        });
+        $('body').on('click', '#company-address', function(){
+           if ($(this).prop('checked') === true){
+               $('.company-address').show();
+           }else{
+               $('.company-address').hide();
+           }
+        });
+        $('.datepicker').datepicker({
+            startView: 2,
+            maxViewMode: 2,
+            todayBtn: true,
+             autoclose: true
+		});
     });
     </script>
 </body>

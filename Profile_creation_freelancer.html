@@ -74,30 +74,76 @@
 
 <!--START CONTENT-->
 <section class="ndra-container">
-    <div class="wrapper form-edit">
+    <div class="wrapper creation-profile">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h3><span>Create a free Freelancer account?</span></h3>
-                    <form class="mini">
-                        <input type="text" placeholder="First name" required>
-                        <input type="text" placeholder="Second name">
-                        <input type="text" placeholder="Age">
-                        <input type="text" placeholder="Address">
-                        <input type="text" placeholder="Postal code">
-                        <input type="text" placeholder="City">
-                        <input type="text" placeholder="Country">
-                        <input type="text" placeholder="Email (also user name)">
-                        <input type="text" placeholder="Mobile">
-                        <input type="text" placeholder="Password">
-                        <input type="text" placeholder="Repeate password">
-                        <img src="images/capcha.png" alt="">
-                        <input type="text" placeholder="">
-                        <p>
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox">I accept the terms and conditions</label>
-                        </p>
-                        <input type="submit" value="Create Freelancer">
+                    <h3>Create a free Freelancer account?</h3>
+                    <form>
+                        <div class="inputs">
+                            <p>Personal info</p>
+                            <div class="input">
+                                <label>First name</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Surname</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Date of birth</label>
+                                <input type="text" placeholder="24/01/2015" class="datepicker">
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <p>Contact info</p>
+                            <div class="input">
+                                <label>Country</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>City</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Adress</label>
+                                <input type="text">
+                            </div>
+                            <div class="input mini">
+                                <label>Zip code</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>E-mail (also user name)</label>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <label>Mobile</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <p>End registration</p>
+                            <div class="input">
+                                <label>Password</label>
+                                <input type="password">
+                            </div>
+                            <div class="input">
+                                <label>Repeate password</label>
+                                <input type="password">
+                            </div>
+                            <div class="capcha">
+                                <img src="images/capcha.png">
+                                <input type="text">
+                            </div>
+                            <div class="checkboxs">
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <label for="checkbox">I accept the terms and conditions</label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Create Freelancer">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -128,6 +174,14 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/common.js"></script>
-
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $('.datepicker').datepicker({
+            startView: 2,
+            maxViewMode: 2,
+            todayBtn: true,
+             autoclose: true
+		});
+    </script>
 </body>
 </html>
