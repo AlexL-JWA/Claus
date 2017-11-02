@@ -3758,6 +3758,30 @@
 	.end-contract-page .publik-feedback .feedback-to-client textarea {
 		width: 100%;
 	}
+    .modal.subscribe .modal-dialog .modal-content
+    {
+        width: calc(100% - 30px);
+    }
+    .modal.subscribe .subscribe-content .text + p
+    {
+        text-align: center;
+    }
+    .modal.subscribe .button
+    {
+        display: inline-block !important;
+    }
+    .modal.subscribe .buttons
+    {
+        width: 186px;
+    }
+    .modal.subscribe .modal-content
+    {
+        padding: 60px 15px 35px !important;
+    }
+    .modal.subscribe .subscribe-content .ico
+    {
+        width: 70px;
+    }
 }
 @media screen and (max-width:589px) {
 	/*detailed view company*/
