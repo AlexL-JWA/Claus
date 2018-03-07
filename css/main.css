@@ -4854,7 +4854,6 @@ section.section-offers .skills ul {
 	font-size: 20px;
 }
 .method-item li.right_itm {
-	float: right;
 	width: 80px;
 	border-left: 1px solid #dbdbdb;
 	text-align: center;
@@ -4881,19 +4880,23 @@ section.section-offers .skills ul {
 	color: #acacac;
 }
 .method-item li.img_itm {
-	width: 160px;
-	padding-left: 30px;
-	text-align: left;
+	text-align: center;
+    display: block;
+    margin: 0 auto 35px;
 }
 .method-item li.img_itm img {
 	display: inline-block;
 	max-width: 100%;
 	height: auto;
-	max-height: 100%;
+	max-height: 30px;
 }
 .method-item li.ver_itm,
 .method-item li.pend_itm {
 	width: 22.5%;
+}
+.wire-transfer li.img_itm img
+{
+    max-height: 70px;
 }
 .method-item li.ver_itm b,
 .method-item li.pend_itm b {
@@ -5021,17 +5024,22 @@ section.section-offers .skills ul {
 .payment_wrapper .add-method-item {
 	height: auto;
 	overflow: visible;
+    position: relative;
 }
 .payment_wrapper .add-method-item .right_itm {
-	width: 16%;
 	border-left: none;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    display: table;
+    margin: 0 auto;
 }
 .payment_wrapper .add-method-item li {
 	line-height: 1.2;
-	padding-top: 15px;
 }
 .payment_wrapper .add-method-item li p {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	line-height: 1.2;
 	font-size: 16px;
 }
@@ -5048,6 +5056,7 @@ section.section-offers .skills ul {
 }
 .payment_wrapper .add-method-item li p a {
 	color: #83c124;
+    display: block;
 }
 
 /*Modal window close job*/
@@ -9635,4 +9644,23 @@ p.pp_to15 {
 {
     margin-left: 5px!important;
     margin-top: 0 !important;
+}
+.method-items
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.method-items .method-item
+{
+    width: calc(100% / 3 - 10px);
+    margin-top: 15px;
+    padding: 40px 30px 110px;
+
 }
