@@ -10,20 +10,31 @@ header.clj_header .personal .sign_up a:hover,
 .detailed-view-of-contracts-page .content a:hover,
 .detailed-view-of-contracts-page .sitebar .table.contract-details a:hover,
 .detailed-view-of-contracts-page .content .table .tr .td span:hover,
-.payment-schedule .tr .cancel:hover {
+.payment-schedule .tr .cancel:hover,
+.overview-page .view-all-transactions:hover,
+.payment-transfer-wire-transfer .buttons .button:nth-of-type(2):hover
+{
 	color: #59de00;
 }
-header.clj_header .personal .sign_up a:hover .icon-correct {
+.payment-transfer-wire-transfer .input input[type="submit"]:hover,
+header.clj_header .personal .sign_up a:hover .icon-correct,
+.payment-transfer-wire-transfer .buttons .button.green:hover,
+.overview-page .table .button.green:hover{
 	background: #59de00;
 }
 header.clj_header .personal .sign_up a:focus,
 .detailed-view-of-contracts-page .content a:focus,
 .detailed-view-of-contracts-page .sitebar .table.contract-details a:focus,
 .detailed-view-of-contracts-page .content .table .tr .td span:focus,
-.payment-schedule .tr .cancel:focus {
+.payment-schedule .tr .cancel:focus,
+.overview-page .view-all-transactions:focus,
+.payment-transfer-wire-transfer .buttons .button:nth-of-type(2):focus{
 	color: #489c5a;
 }
-header.clj_header .personal .sign_up a:focus .icon-correct {
+header.clj_header .personal .sign_up a:focus .icon-correct,
+.payment-transfer-wire-transfer .input input[type="submit"]:focus,
+.payment-transfer-wire-transfer .buttons .button.green:focus,
+.overview-page .table .button.green:focus{
 	background: #489c5a;
 }
 .bth_green_snip,
@@ -5047,7 +5058,7 @@ section.section-offers .skills ul {
 	font-size: 18px;
 }
 .payment_wrapper .add-method-item .button-contact {
-	width: 125px;
+	min-width: 125px;
 	margin: 0;
 	height: 40px;
 	line-height: 38px;
@@ -9664,3 +9675,573 @@ p.pp_to15 {
     padding: 40px 30px 110px;
 
 }
+.withdraw-money .left-block,
+.withdraw-money .right-block
+{
+    width: calc(100% / 2);
+    float: left;
+}
+.withdraw-money .right-block
+{
+    float: right;
+}
+.withdraw-money p
+{
+    clear: both;
+}
+.withdraw-money .left-block img
+{
+    height: 30px;
+    margin-bottom: 50px;
+}
+.withdraw-money .left-block [type="radio"]
+{
+    display: none;
+}
+.withdraw-money .left-block label
+{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.withdraw-money .left-block label:before
+{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    left: 0;
+    box-shadow: inset 0 0 0 2px #fff;
+    background: #5cc200;
+    top: 1px;
+}
+.withdraw-money .left-block a
+{
+    font-size: 14px;
+    color:  #00bd07;
+    display: block;
+    margin-bottom: 45px;
+}
+.withdraw-money [type="text"]
+{
+    border-radius: 3px;
+    border:1px solid #898989;
+    border-color:  rgba(118, 118, 118, 53);
+    background-color:  #ffffff;
+    opacity: 0.9;
+    max-width: 303px;
+    width: 100%;
+    height: 38px;
+    padding: 0 40px;
+    color: #727272;
+}
+.withdraw-money .modal-dialog {
+  width: auto; }
+
+.withdraw-money .buttons {
+  display: table;
+  margin: 0 auto; }
+  .withdraw-money .buttons .button {
+    width: 120px;
+    text-align: center;
+    margin: 30px 55px 0; }
+
+.withdraw-money .modal-body {
+  padding: 30px 40px; }
+
+.withdraw-money .text {
+  color: #727272;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #f9f9f9;
+  padding: 20px 30px; }
+
+.withdraw-money .input {
+  display: table;
+  position: relative; }
+  .withdraw-money .input:before {
+    content: '$';
+    position: absolute;
+    left: 15px;
+    top: 5.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #727272;
+    z-index: 1; }
+  .withdraw-money .input p {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 20px; }
+
+.withdraw-money i {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  background: #fff;
+  top: 1px;
+  right: 1px;
+  position: absolute;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 19px; }
+  .withdraw-money i:before {
+    font-size: 24px;
+    color: #5cc200; }
+
+.withdraw-money ul.conclusion {
+  max-width: 303px;
+  width: 100%;
+  border: 1px solid #898989;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  border-top: none;
+  position: absolute;
+  display: none; }
+  .withdraw-money ul.conclusion li {
+    padding: 5px 20px;
+    border-bottom: 1px solid #898989;
+    cursor: pointer; }
+    .withdraw-money ul.conclusion li:last-of-type {
+      border-bottom: none; }
+    .withdraw-money ul.conclusion li:hover {
+      background: #f0ebeb; }
+
+.withdraw-money .right-block h3 {
+  color: #727272;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  display: table;
+  margin: 0 0 0 auto; }
+  .withdraw-money .right-block h3 b {
+    font-size: 16px;
+    font-weight: 600;
+    display: block; }
+  .withdraw-money .right-block h3 span {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    display: block; }
+
+.overview-page {
+  background: url(../images/icons-bg-form.png) no-repeat;
+  background-position: center 35px; }
+  .overview-page .view-all-transactions {
+    display: block;
+    float: right;
+    color: #a8db8c;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px; }
+    .overview-page .view-all-transactions span {
+      position: relative;
+      top: 1px; }
+  .overview-page h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700; }
+  .overview-page .tooltips:hover span {
+    display: block; }
+  .overview-page .tooltips span {
+    font-family: Open Sans;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    right: -19px;
+    top: 25px;
+    width: 150px;
+    margin: 0 auto;
+    display: table;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #727272;
+    z-index: 10;
+    display: none; }
+    .overview-page .tooltips span:before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      background: #fff;
+      position: absolute;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: -5px;
+      right: 20px; }
+  .overview-page .available {
+    background: #5cc200;
+    color: #fff;
+    display: table;
+    padding: 17px 110px 17px 40px; }
+    .overview-page .available h4 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0; }
+    .overview-page .available p {
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 600; }
+      .overview-page .available p i {
+        font-size: 15px;
+        margin-left: 10px;
+        cursor: pointer;
+        position: relative; }
+  .overview-page .table {
+    padding: 30px 40px;
+    border: 1px solid #8fc739;
+    background: #f9f9f9;
+    overflow: hidden; }
+    .overview-page .table .red {
+      color: #d10000; }
+    .overview-page .table .green {
+      color: #5cc200; }
+    .overview-page .table h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #727272;
+      margin-top: 25px;
+      position: relative;
+      padding-right: 20px; }
+      .overview-page .table h2 i {
+        font-size: 15px;
+        margin-left: 10px;
+        cursor: pointer;
+        position: relative;
+        float: right;
+        position: absolute;
+        bottom: 4px;
+        right: 0; }
+    .overview-page .table .tr {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      color: #727272;
+      border-bottom: 1px solid #727272;
+      margin-top: 10px; }
+      .overview-page .table .tr .th,
+      .overview-page .table .tr .td {
+        padding-left: 15px; }
+        .overview-page .table .tr .th:nth-of-type(1),
+        .overview-page .table .tr .td:nth-of-type(1) {
+          width: 155px; }
+        .overview-page .table .tr .th:nth-of-type(2),
+        .overview-page .table .tr .td:nth-of-type(2) {
+          width: 185px; }
+        .overview-page .table .tr .th:nth-of-type(3),
+        .overview-page .table .tr .td:nth-of-type(3) {
+          width: 420px; }
+        .overview-page .table .tr .th:nth-of-type(4),
+        .overview-page .table .tr .td:nth-of-type(4) {
+          width: 165px; }
+        .overview-page .table .tr .th:nth-of-type(5),
+        .overview-page .table .tr .td:nth-of-type(5) {
+          width: calc(100% - 925px); }
+          .overview-page .table .tr .th:nth-of-type(5) p,
+          .overview-page .table .tr .td:nth-of-type(5) p {
+            font-size: 20px;
+            font-weight: 600; }
+      .overview-page .table .tr .th h5 {
+        font-size: 20px;
+        font-weight: 700; }
+    .overview-page .table .button {
+      width: 160px;
+      height: 50px;
+      line-height: 50px;
+      display: block; }
+      .overview-page .table .button.green {
+        background: #5cc200;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px; }
+
+.payment-methods .method-item li {
+  display: inline-block; }
+  .payment-methods .method-item li:nth-of-type(1) {
+    width: 160px; }
+  .payment-methods .method-item li:nth-of-type(2) {
+    width: calc(100% - 680px); }
+
+.payment-transfer-wire-transfer {
+  background: url(../images/icons.png) no-repeat;
+  background-position: center 20px;
+  padding-top: 30px;
+  padding-bottom: 60px; }
+  .payment-transfer-wire-transfer h3 {
+    text-align: center;
+    color: #454545;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 47px; }
+  .payment-transfer-wire-transfer form .error-messages {
+    display: none; }
+  .payment-transfer-wire-transfer form.no-valide .error-messages {
+    display: block; }
+  .payment-transfer-wire-transfer form h4 {
+    font-size: 24px;
+    color: #83c124;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 25px; }
+    .payment-transfer-wire-transfer form h4:before {
+      content: '';
+      background: #83c124;
+      height: 2px;
+      width: 35%;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+  .payment-transfer-wire-transfer .input {
+    position: relative;
+    float: left;
+    width: calc(100% / 3);
+    margin-bottom: 40px; }
+    .payment-transfer-wire-transfer .input div {
+      display: inline-block;
+      position: relative;
+      max-width: none;
+      vertical-align: middle; }
+      .payment-transfer-wire-transfer .input div i {
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+    .payment-transfer-wire-transfer .input.error p,
+    .payment-transfer-wire-transfer .input.error i:before {
+      color: #f00; }
+    .payment-transfer-wire-transfer .input.iban-number input, .payment-transfer-wire-transfer .input.name-account input {
+      max-width: 180px;
+      display: inline-block;
+      vertical-align: top; }
+    .payment-transfer-wire-transfer .input.iban-number p, .payment-transfer-wire-transfer .input.name-account p {
+      display: inline-block;
+      width: 145px;
+      font-size: 14px;
+      vertical-align: top;
+      line-height: 1.2;
+      margin-bottom: 0;
+      margin-left: 8px; }
+    .payment-transfer-wire-transfer .input.name-account p {
+      width: 105px; }
+    .payment-transfer-wire-transfer .input.mobile input:nth-of-type(1) {
+      width: 62px;
+      padding: 0 15px; }
+    .payment-transfer-wire-transfer .input.mobile input:nth-of-type(2) {
+      width: 213px;
+      margin-left: 21px; }
+    .payment-transfer-wire-transfer .input input {
+      height: 47px;
+      border: 1px solid #dbdbdb;
+      padding: 0 35px 0 15px;
+      width: 300px; }
+      .payment-transfer-wire-transfer .input input[type="submit"] {
+        width: 60px;
+        height: 47px;
+        line-height: 47px;
+        border-radius: 5px;
+        background-color: #83c124;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 13px; }
+    .payment-transfer-wire-transfer .input label {
+      color: #727272;
+      font-size: 20px;
+      font-weight: 400;
+      display: block; }
+    .payment-transfer-wire-transfer .input p {
+      color: #9f9f9f;
+      font-size: 14px;
+      font-weight: 400; }
+.payment-transfer-wire-transfer .bank-code input[type="submit"]{
+    padding: 0 !important;
+}
+  .payment-transfer-wire-transfer ul {
+    clear: both;
+    width: 57%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 40px; }
+    .payment-transfer-wire-transfer ul li {
+      width: calc(100% / 3);
+      color: #727272;
+      font-size: 20px;
+      font-weight: 400; }
+      .payment-transfer-wire-transfer ul li b {
+        color: #424242;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+        margin-top: 7px; }
+      .payment-transfer-wire-transfer ul li span {
+        color: #b0b0b0;
+        font-size: 18px;
+        font-weight: 400;
+        display: block; }
+  .payment-transfer-wire-transfer .tooltips {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    cursor: pointer; }
+    .payment-transfer-wire-transfer .tooltips:before {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      line-height: 18px;
+      border: 2px solid #dbdbdb;
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #dbdbdb; }
+    .payment-transfer-wire-transfer .tooltips:hover span {
+      display: block; }
+    .payment-transfer-wire-transfer .tooltips span {
+      font-family: Open Sans;
+      position: absolute;
+      background: #fff;
+      border: 1px solid #ccc;
+      right: -19px;
+      top: 25px;
+      width: 150px;
+      margin: 0 auto;
+      display: table;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #727272;
+      z-index: 10;
+      display: none; }
+      .payment-transfer-wire-transfer .tooltips span:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background: #fff;
+        position: absolute;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: -5px;
+        right: 20px; }
+  .payment-transfer-wire-transfer .select {
+    clear: both;
+    float: left;
+    width: calc(100% / 3); }
+    .payment-transfer-wire-transfer .select label {
+      color: #727272;
+      font-size: 20px;
+      font-weight: 400;
+      display: block; }
+    .payment-transfer-wire-transfer .select div {
+      position: relative;
+      display: table; }
+      .payment-transfer-wire-transfer .select div:before {
+        content: '';
+        border: 7px solid transparent;
+        border-top: 7px solid #83c124;
+        position: absolute;
+        right: 13px;
+        top: calc(50% + 3.5px);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        pointer-events: none; }
+    .payment-transfer-wire-transfer .select select {
+      height: 47px;
+      border: 1px solid #dbdbdb;
+      padding: 0 35px 0 15px;
+      max-width: 300px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none !important;
+      width: 300px; }
+      .payment-transfer-wire-transfer .select select:-ms-expand {
+        display: none; }
+  .payment-transfer-wire-transfer .buttons {
+    clear: both;
+    display: table;
+    margin: 50px auto 0; }
+    .payment-transfer-wire-transfer .buttons .button {
+      border-radius: 5px;
+      width: 160px;
+      height: 50px;
+      border: none;
+      background: transparent;
+      color: #5cc200;
+      font-size: 18px;
+      font-weight: 400; }
+      .payment-transfer-wire-transfer .buttons .button.green {
+        border: 1px solid #95cb93;
+        background-color: #5cc200;
+        color: #fff;
+        margin-right: 90px; }
+  .payment-transfer-wire-transfer .checkbox {
+    position: relative;
+    clear: both;
+    left: 0px; }
+    .payment-transfer-wire-transfer .checkbox input {
+      display: none; }
+      .payment-transfer-wire-transfer .checkbox input:checked + label:before {
+        content: "\f00c"; }
+    .payment-transfer-wire-transfer .checkbox label {
+      position: relative;
+      left: 0px;
+      padding-left: 30px;
+      display: table;
+      margin: 0 auto; }
+      .payment-transfer-wire-transfer .checkbox label:before {
+        content: '';
+        width: 17px;
+        height: 17px;
+        border: 1px solid #dbdbdb;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        line-height: 15px;
+        text-align: center;
+        font-family: 'FontAwesome';
+        color: #83c124;
+        font-size: 14px; }
+
+.error-messages {
+  color: #f00;
+  font-size: 16px;
+  margin-top: 40px; }
+  .error-messages b {
+    display: block; }

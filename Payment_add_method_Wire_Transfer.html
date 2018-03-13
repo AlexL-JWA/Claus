@@ -13,6 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/Glyphter.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!--START HEADER-->
@@ -36,14 +37,88 @@
 
 <!--START CONTENT-->
 <section class="ndra-container">
-    <div class="payment_transfer_wrapper">
+    <div class="payment-transfer-wire-transfer">
         <div class="container">
             <div class="row">
             	<div class="col-lg-12">
-            		<h3>Add payment method Wire Transfer</h3>
-					<h4>Wire funds directly to your bank. <a href="#">Learn more about Wire Transfer</a></h4>
-                    <form>
-                        <h2></h2>
+                    <h3>Add payment method Wire Transfer</h3>
+                    <form class="no-valide">
+                        <h4>Bank information</h4>
+                        <div class="input bank-code">
+                            <label>Bank Swift Code</label>
+                            <div>
+                                <input type="text">
+                                <i class="tooltips fa fa-info"><span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></i>
+                            </div>
+                            <input type="submit" class="button green" value="GO">
+                            <p>SWIFT codes are 8 or 11 characters</p>
+                        </div>
+                        <ul>
+                            <li>Bank Swift Code<b>PJDV Privatbank</b><span>Zhitomir Ukraine</span></li>
+                            <li>Account currency <b>US Dollar (USD)</b></li>
+                            <li>Withdrawal Fee <b>$30 USD per withdrawal</b></li>
+                        </ul>
+                        <h4>Account Holder Information</h4>
+                        <div class="input iban-number">
+                            <label>IBAN Number</label>
+                            <input type="text">
+                            <p>IBAN is different than account number and may vary by country</p>
+                        </div>
+                        <div class="input name-account error">
+                            <label>Name on Account</label>
+                            <div>
+                                <input type="text">
+                                <i class="fa-exclamation fa"></i>
+                            </div>
+                            <p>Please enter your Name on Account</p>
+                        </div>
+                        <div class="select сountry">
+                            <label>Country</label>
+                            <div>
+                                <select>
+                                    <option>Bangladesh</option>
+                                    <option>China</option>
+                                    <option>India</option>
+                                    <option>Indonesia</option>
+                                    <option>Malaysia</option>
+                                    <option>Nepal</option>
+                                    <option>Pakistan</option>
+                                    <option>Philippines</option>
+                                    <option>Singapore</option>
+                                    <option>Sri Lanka</option>
+                                    <option>Thailand</option>
+                                    <option>Vietnam</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input city">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                        <div class="input adress">
+                            <label>Adress</label>
+                            <input type="text">
+                        </div>
+                        <div class="input mobile">
+                            <label>Mobile</label>
+                            <input type="text">
+                            <input type="text">
+                            <p>Area code plus phone number</p>
+                        </div>
+                        <div class="input remittance">
+                            <label>Remittance information</label>
+                            <input type="text">
+                            <p>(optional)</p>
+                        </div>
+                        <div class="checkbox confirm">
+                            <input type="checkbox" id="i-confirm">
+                            <label for="i-confirm">I attest that I am the owner and have full authorization to this bank account.</label>
+                        </div>
+                        <p class="error-messages"><b>Please double-check your account info!</b>Incorrect or mismatched account name and number can result in withdrawal delays and fees.</p>
+                        <div class="buttons">
+                            <input type="submit" class="button green" value="Next">
+                            <input type="submit" class="button" value="Cancel">
+                        </div>
                     </form>
             	</div>
             </div>

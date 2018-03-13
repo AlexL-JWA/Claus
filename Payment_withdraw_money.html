@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Payment-add method</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!--START HEADER-->
+<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">
+						<img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right header-entrance">
+					<span class="greeting">WELCOME</span>
+					<a href="" class="log-view">&lt; iloveart &gt;</a>
+					<a href="#" class="greeting logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</header>
+<!--END HEADER-->
+
+<!--START CONTENT-->
+<section class="ndra-container">
+    <div class="payment_wrapper">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12">
+            		<h3>Add payment method</h3>
+            		<div class="method-items">
+                        <ul class="method-item add-method-item clearfix">
+                            <li class="img_itm">
+                                <img src="images/PayPal.svg" alt="">
+                            </li>
+                            <li>
+                                <p><b>PayPal</b></p>
+                                <p>You must have a verified PayPal account</p>
+                                <p>Don't have a verified PayPal account? <a href="https://www.paypal.com/">Visit PayPal</a></p>
+                            </li>
+                            <li class="right_itm">
+                                <a href="https://www.paypal.com/" class="button-contact" data-toggle="modal" data-target=".withdraw-money">Withdraw money</a>
+                            </li>
+                        </ul>
+                        <ul class="method-item add-method-item clearfix">
+                            <li class="img_itm">
+                                <img src="images/Payoneer.svg" alt="#">
+                            </li>
+                            <li>
+                                <p><b>Payoneer</b></p>
+                                <p>You must have a verified Payoneer account</p>
+                                <p>Don't have a verified Payoneer account? <a href="#">Visit Payoneer</a></p>
+                            </li>
+                            <li class="right_itm">
+                                <a href="#" class="button-contact" data-toggle="modal" data-target=".withdraw-money">Withdraw money</a>
+                            </li>
+                        </ul>
+                        <ul class="method-item add-method-item clearfix">
+                            <li class="img_itm">
+                                <img src="images/Skrill.svg" alt="#">
+                            </li>
+                            <li>
+                                <p><b>Skrill</b></p>
+                                <p>You must have a verified Skrill account</p>
+                                <p>Don't have a verified Skrill account? <a href="#">Visit Skrill</a></p>
+                            </li>
+                            <li class="right_itm">
+                                <a href="#" class="button-contact" data-toggle="modal" data-target=".withdraw-money">Withdraw money</a>
+                            </li>
+                        </ul>
+                        <ul class="method-item add-method-item clearfix wire-transfer">
+                            <li class="img_itm">
+                                <img src="images/wire-transfer.svg" alt="#">
+                            </li>
+                            <li>
+                                <p><b>Wire Transfer</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </li>
+                            <li class="right_itm">
+                                <a href="#" class="button-contact" data-toggle="modal" data-target=".withdraw-money">Withdraw money</a>
+                            </li>
+                        </ul>
+                    </div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--END CONTENT-->
+
+<!--START FOOTER-->
+<footer>
+	<div class="wrapper footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="footer-menu">
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">News</a></li>
+						<li class="active"><a href="#">About Us</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+ <!--END FOOTER-->
+
+<!--START MOdaL-->
+<div class="modal fade payment_modal" id="pm_add" tabindex="-1" data-role="dialog" data-aria-labelledby="myLargeModalLabel" data-aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+		<div class="modal-header">
+	       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	       <h4 class="modal-title">Add card</h4>
+	    </div>
+	    <div class="modal-body">
+	       <form action="">
+		       <label for="" class="st-pm_label">Name and surname</label>
+		       <input type="text" class="st-pm_input" placeholder="Name Surname">
+		       <label for="" class="st-pm_label">Card number</label>
+		       <input type="text" class="st-pm_input" placeholder="087654983134353">
+		       <label for="" class="st-pm_label">Expiration date</label>
+		       <div class="select-wrap">
+			       <select name="month" id="month">
+			       		<option value="1">01</option>
+			       		<option value="2">02</option>
+			       		<option value="3">03</option>
+			       		<option value="4">04</option>
+			       		<option value="5">05</option>
+			       		<option value="6">06</option>
+			       		<option value="7">07</option>
+			       		<option value="8">08</option>
+			       		<option value="9">09</option>
+			       		<option value="10">10</option>
+			       		<option value="11">11</option>
+			       		<option value="12">12</option>
+			       	</select>
+		       	</div>
+		       	<div class="select-wrap">
+			       <select name="year" id="year">
+			       		<option value="1">2016</option>
+			       		<option value="2">2017</option>
+			       		<option value="3">2018</option>
+			       		<option value="4">2019</option>
+			       		<option value="5">2020</option>
+			       		<option value="6">2021</option>
+			       		<option value="7">2022</option>
+			       		<option value="8">2023</option>
+			       		<option value="9">2024</option>
+			       	</select>
+		       	</div>
+		       	<label for="" class="st-pm_label">Security code</label>
+		       	<input type="text" class="st-pm_input sm-pm_input" placeholder="353">
+		       	<span class="st-pm_capt">The last three digits displayed on the back of your card</span>
+                <a href="" class="button-contact">Add card</a>
+                <span class="note">By clicking this button, you authorize the use of your credit card for this deposit and future payments.</span>
+	       </form>
+	    </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade withdraw-money" data-aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title">PayPal method to get money</h4>
+            </div>
+            <div class="modal-body">
+                <div class="left-block">
+                    <img src="images/PayPal.svg" alt="#">
+                    <ul>
+                        <li>
+                            <input type="radio" name="account" id="user-account">
+                            <label for="user-account">username@gmail.com</label>
+                        </li>
+                    </ul>
+                    <a href="#">Add a PayPal account</a>
+                    <p>The amount to withdraw </p>
+                    <div class="input">
+                        <input type="text" value="0.000">
+                        <i class="fa fa-caret-down"></i>
+                        <ul class="conclusion">
+                            <li>50</li>
+                            <li>100</li>
+                            <li>200</li>
+                            <li>300</li>
+                            <li>400</li>
+                            <li>500</li>
+                            <li>1000</li>
+                        </ul>
+                        <p>Lorem ipsum dolor set</p>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <h3><b>Available funds </b>$ 0.000 USD<span>Lorem ipsum dolor set</span></h3>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <div class="buttons">
+                    <a href="#" class="button green">Apply</a>
+                    <a href="#" class="button gray">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END MODaL-->
+
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/jquery.uploadThumbs.js"></script>
+	<script src="js/fixed.js"></script>
+	<script src="js/browser.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+        $('body').on('click', '.input .fa-caret-down', function(){
+            if($(this).next().hasClass('open')){
+                $(this).next().removeClass('open');
+                $(this).next().slideUp();
+            }else{
+                $(this).next().addClass('open');
+                $(this).next().slideDown();
+            }
+        })
+        $('body').on('click','.conclusion li',function(){
+            var valueLi = $(this).text();
+            $('.input [type="text"]').val(valueLi);
+            $('.input [type="text"]').attr('value',valueLi);
+            $(this).parent().removeClass('open');
+            $(this).parent().slideUp();
+
+        });
+        $('.input [type="text"]').keyup(function(){
+            var valInput = $(this).val()
+            $(this).attr('value', valInput);
+        });
+    </script>
+</body>
+</html>

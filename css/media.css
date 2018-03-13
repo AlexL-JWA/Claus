@@ -389,6 +389,40 @@
     }
     .onj_table .table_edit thead tr th {
         font-size: 18px;}
+    .overview-page .table .tr .td:nth-of-type(1),
+  .overview-page .table .tr .th:nth-of-type(1) {
+    width: 120px; }
+  .overview-page .table .tr .td:nth-of-type(2),
+  .overview-page .table .tr .th:nth-of-type(2) {
+    width: 150px; }
+  .overview-page .table .tr .td:nth-of-type(3),
+  .overview-page .table .tr .th:nth-of-type(3) {
+    width: 330px; }
+  .overview-page .table .tr .td:nth-of-type(4),
+  .overview-page .table .tr .th:nth-of-type(4) {
+    width: 130px; }
+  .overview-page .table .tr .td:nth-of-type(5),
+  .overview-page .table .tr .th:nth-of-type(5) {
+    width: calc(100% - 730px); }
+  .overview-page .table .tr .th h5 {
+    font-size: 16px; }
+  .overview-page .table .tr .td p {
+    font-size: 14px; }
+  .payment-methods .method-item li {
+    font-size: 14px; }
+    .payment-methods .method-item li:nth-of-type(2) {
+      width: calc(100% - 635px); }
+  .payment-transfer-wire-transfer ul {
+    width: 75%; }
+  .payment-transfer-wire-transfer .input input {
+    width: 230px; }
+  .payment-transfer-wire-transfer .input.mobile input:nth-of-type(2) {
+    width: 158px;
+    margin-left: 5px; }
+  .payment-transfer-wire-transfer .input.iban-number input, .payment-transfer-wire-transfer .input.name-account input {
+    width: 140px; }
+  .payment-transfer-wire-transfer .select select {
+    width: 230px; }
 }
 @media screen and (max-width:991px) {
     .method-items .method-item
@@ -1630,6 +1664,53 @@
     {
         width: 166px;
     }
+    .overview-page .table {
+    padding: 30px 15px; }
+    .overview-page .table .tr .td,
+    .overview-page .table .tr .th {
+      padding-left: 0;
+      padding-right: 5px; }
+      .overview-page .table .tr .td:nth-of-type(1),
+      .overview-page .table .tr .th:nth-of-type(1) {
+        width: 105px; }
+      .overview-page .table .tr .td:nth-of-type(2),
+      .overview-page .table .tr .th:nth-of-type(2) {
+        width: 135px; }
+      .overview-page .table .tr .td:nth-of-type(3),
+      .overview-page .table .tr .th:nth-of-type(3) {
+        width: 220px; }
+      .overview-page .table .tr .td:nth-of-type(4),
+      .overview-page .table .tr .th:nth-of-type(4) {
+        width: 130px; }
+      .overview-page .table .tr .td:nth-of-type(5),
+      .overview-page .table .tr .th:nth-of-type(5) {
+        width: calc(100% - 590px); }
+  .overview-page .tooltips span {
+    right: -8px; }
+    .overview-page .tooltips span:before {
+      right: 9px; }
+  .payment-methods .method-item li.img_itm {
+    position: initial; }
+  .payment-methods .method-item li:nth-of-type(1) {
+    width: 130px; }
+  .payment-methods .method-item li:nth-of-type(2) {
+    width: calc(100% - 470px); }
+  .payment-methods .method-item li.ver_itm, .payment-methods .method-item li.pend_itm {
+    width: 10.5%; }
+  .payment-transfer-wire-transfer ul {
+    width: 100%; }
+  .payment-transfer-wire-transfer .select {
+    width: calc(100% / 2); }
+    .payment-transfer-wire-transfer .select select {
+      width: 280px; }
+  .payment-transfer-wire-transfer .input {
+    width: calc(100% / 2); }
+    .payment-transfer-wire-transfer .input input {
+      width: 280px; }
+    .payment-transfer-wire-transfer .input.iban-number input, .payment-transfer-wire-transfer .input.name-account input {
+      width: 170px; }
+    .payment-transfer-wire-transfer .input.mobile input:nth-of-type(2) {
+      width: 208px; }
 }
 @media screen and (max-width:845px) {
 	/*form-14*/
@@ -3236,6 +3317,101 @@
     margin-right: 0px; }
   .creation-profile .company-address .inputs .input:nth-of-type(3) {
     margin-right: 0; }
+    .overview-page .table .tr {
+    border-bottom: none;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .overview-page .table .tr:nth-of-type(1) {
+      display: none; }
+    .overview-page .table .tr .td {
+      padding-right: 10px;
+      position: relative; }
+      .overview-page .table .tr .td:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #727272;
+        bottom: 0;
+        left: 0;
+        right: -10px; }
+      .overview-page .table .tr .td:before {
+        content: attr(data-title);
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-bottom: 1px solid #727272;
+        width: calc(100% + 10px); }
+      .overview-page .table .tr .td:nth-of-type(1) {
+        width: 50%; }
+      .overview-page .table .tr .td:nth-of-type(2) {
+        width: 50%; }
+      .overview-page .table .tr .td:nth-of-type(3) {
+        width: calc(100% - 160px); }
+      .overview-page .table .tr .td:nth-of-type(4) {
+        width: 80px; }
+      .overview-page .table .tr .td:nth-of-type(5) {
+        width: 80px; }
+  .payment-methods .method-item {
+    height: auto;
+    overflow: hidden; }
+    .payment-methods .method-item li.img_itm {
+      position: initial;
+      margin-bottom: 0; }
+    .payment-methods .method-item li:nth-of-type(1) {
+      width: 130px;
+      border-bottom: 1px solid #dbdbdb;
+      float: left; }
+    .payment-methods .method-item li:nth-of-type(2) {
+      width: calc(100% - 130px);
+      border-bottom: 1px solid #dbdbdb;
+      float: left;
+      border-left: 1px solid #dbdbdb;
+      padding-left: 20px; }
+    .payment-methods .method-item li.ver_itm, .payment-methods .method-item li.pend_itm {
+      width: 10.5%; }
+    .payment-methods .method-item li:nth-of-type(3), .payment-methods .method-item li:nth-of-type(4), .payment-methods .method-item li:nth-of-type(5), .payment-methods .method-item li:nth-of-type(6) {
+      width: calc(100% / 4);
+      float: left; }
+  .payment-transfer-wire-transfer .buttons .button.green {
+    margin-right: 10px; }
+  .payment-transfer-wire-transfer ul {
+    width: 100%; }
+    .payment-transfer-wire-transfer ul li {
+      margin-bottom: 20px;
+      padding-right: 20px;
+      width: calc(100% / 2); }
+  .payment-transfer-wire-transfer .input {
+    width: calc(100% / 2 - 10px); }
+    .payment-transfer-wire-transfer .input div {
+      width: 100%; }
+    .payment-transfer-wire-transfer .input input {
+      width: 100%;
+      display: block;
+      max-width: none !important; }
+    .payment-transfer-wire-transfer .input.bank-code div {
+      width: calc(100% - 78px); }
+    .payment-transfer-wire-transfer .input.name-account, .payment-transfer-wire-transfer .input.city, .payment-transfer-wire-transfer .input.mobile {
+      margin-left: 20px; }
+    .payment-transfer-wire-transfer .input.mobile input {
+      display: inline-block; }
+      .payment-transfer-wire-transfer .input.mobile input:nth-of-type(2) {
+        width: calc(100% - 72px);
+        margin-left: 5px; }
+    .payment-transfer-wire-transfer .input.iban-number input, .payment-transfer-wire-transfer .input.name-account input {
+      width: 100%; }
+    .payment-transfer-wire-transfer .input.iban-number p, .payment-transfer-wire-transfer .input.name-account p {
+      width: 100%;
+      margin-left: 0; }
+  .payment-transfer-wire-transfer .select {
+    width: calc(100% / 2 - 10px); }
+    .payment-transfer-wire-transfer .select div {
+      width: 100%; }
+    .payment-transfer-wire-transfer .select select {
+      width: 100%;
+      max-width: none; }
 }
 @media only screen and (max-width: 710px) {
 	.my_button_withdraw {
@@ -3347,6 +3523,10 @@
     header.header-ht-slider .col-logo
     {
         width: 100% !important;
+    }
+    .payment-transfer-wire-transfer form h4:before
+    {
+        width: 350px !important;
     }
 }
 @media only screen and (max-width: 660px) {
@@ -3825,7 +4005,7 @@
 }
 @media only screen and (max-width: 580px) {
     .method-items .method-item {
-    width: 100%;Ъ
+        width: 100%;}
 	.basis-data .input-mini {
 		width: calc(100% / 2.014 - 17px);
 	}
@@ -4237,6 +4417,19 @@
 	.cookie-policy .modal-content p a {
 		font-size: 19px;
 	}
+    .withdraw-money .buttons {
+    width: 260px; }
+    .withdraw-money .buttons .button {
+      width: 120px;
+      text-align: center;
+      margin: 30px 10px 0;
+      display: inline-block !important; }
+      .withdraw-money .buttons .button:nth-of-type(1) {
+        margin-left: 0; }
+      .withdraw-money .buttons .button:nth-of-type(2) {
+        margin-right: 0; }
+  .payment-methods .method-item li:last-of-type {
+    border-left: 1px solid #dbdbdb; }
 }
 @media only screen and (max-width: 540px) {
 	.search .search-input {
@@ -5344,6 +5537,35 @@
 		margin-left: auto;
 		margin-bottom: 20px;
 	}
+    .withdraw-money .modal-header h4 {
+    padding-left: 15px; }
+  .withdraw-money .modal-header .close {
+    margin-right: 15px; }
+  .withdraw-money .modal-body {
+    padding: 30px 15px; }
+  .withdraw-money .left-block,
+  .withdraw-money .right-block {
+    width: 100%; }
+  .withdraw-money .right-block {
+    margin-bottom: 30px; }
+    .withdraw-money .right-block h3 {
+      margin: 0 auto; }
+  .payment-methods .method-item li:nth-of-type(2), .payment-methods .method-item li:nth-of-type(1) {
+    width: 100%;
+    border-left: none;
+    text-align: center; }
+  .payment-transfer-wire-transfer ul {
+    margin-bottom: 20px; }
+    .payment-transfer-wire-transfer ul li {
+      width: 100%;
+      padding-right: 0; }
+  .payment-transfer-wire-transfer .buttons .button {
+    width: 130px; }
+  .payment-transfer-wire-transfer .input,
+  .payment-transfer-wire-transfer .select {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-bottom: 20px; }
 }
 @media screen and (max-width:454px) {
 	.history-line {
@@ -6809,6 +7031,16 @@
     {
         padding-left: 0 !important;
     }
+    .overview-page .table h2 {
+    font-size: 22px; }
+  .overview-page .table .tr .td:nth-of-type(3) {
+    width: 100%; }
+  .overview-page .table .tr .td:nth-of-type(4) {
+    width: 50%; }
+  .overview-page .table .tr .td:nth-of-type(5) {
+    width: 50%; }
+  .payment-transfer-wire-transfer form h4:before {
+    display: none; }
 }
 @media only screen and (max-width: 368px) {
 	.my-profil .right-block input {
