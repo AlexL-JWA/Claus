@@ -5045,6 +5045,7 @@ section.section-offers .skills ul {
     right: 0;
     display: table;
     margin: 0 auto;
+    width: 100%;
 }
 .payment_wrapper .add-method-item li {
 	line-height: 1.2;
