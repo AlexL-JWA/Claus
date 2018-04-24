@@ -363,8 +363,27 @@
 		</div>
 	</div>
 </div>
-
-
+<div class="modal fade download" tabindex="-1" role="dialog"  aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3>Choose your operation system</h3>
+			<form>
+				<div class="inputs">
+					<div class="input windows">
+						<input type="radio" id="windows" name="system">
+						<label for="windows"></label>
+					</div>
+					<div class="input mac">
+						<input type="radio" id="mac" name="system">
+						<label for="mac"></label>
+					</div>
+				</div>
+				<input type="submit" value="Download">
+			</form>
+		</div>
+	</div>
+</div>
 
 
 
@@ -450,6 +469,10 @@
            }
         }
     }
+
+	$('.download').modal({
+		show:true
+	});
 	$('.subscribe').modal({
 		show:true
 

@@ -19,7 +19,9 @@ header.clj_header .personal .sign_up a:hover,
 .payment-transfer-wire-transfer .input input[type="submit"]:hover,
 header.clj_header .personal .sign_up a:hover .icon-correct,
 .payment-transfer-wire-transfer .buttons .button.green:hover,
-.overview-page .table .button.green:hover{
+.overview-page .table .button.green:hover,
+.download .modal-content input[type="submit"]:hover
+{
 	background: #59de00;
 }
 header.clj_header .personal .sign_up a:focus,
@@ -34,7 +36,8 @@ header.clj_header .personal .sign_up a:focus,
 header.clj_header .personal .sign_up a:focus .icon-correct,
 .payment-transfer-wire-transfer .input input[type="submit"]:focus,
 .payment-transfer-wire-transfer .buttons .button.green:focus,
-.overview-page .table .button.green:focus{
+.overview-page .table .button.green:focus,
+.download .modal-content input[type="submit"]:focus{
 	background: #489c5a;
 }
 .bth_green_snip,
@@ -10246,3 +10249,108 @@ p.pp_to15 {
   margin-top: 40px; }
   .error-messages b {
     display: block; }
+.download .modal-content,
+.download .modal-dialog
+{
+	max-width: 600px;
+	width: 100%;
+}
+.download .modal-content
+{
+	height: auto;
+	padding: 60px 10px 35px;
+}
+.download .modal-content h3
+{
+	font-family: 'Open Sans', sans-serif;
+	color:  #212121;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.download .modal-content .input input[type="radio"]
+{
+	display: none;
+}
+.download .modal-content .inputs
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.download .modal-content .input
+{
+	margin: 0 2.5px;
+}
+.download .modal-content .input label
+{
+	border-radius: 5px;
+	border: 1px solid rgba(114, 114, 114, 17);
+	background-color:  #ffffff;
+	box-shadow: 0px 3px 6.51px 0.49px rgba(0, 0, 0, 0.27);
+	width: 130px;
+	height: 130px;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	cursor: pointer;
+}
+.download .modal-content .input.windows label
+{
+	background-image: url(../img/windows.svg);
+	background-size: 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.download .modal-content .input.mac label
+{
+	background-image: url(../img/apple.svg);
+	background-size: 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.download .modal-content .input input[type="radio"]:checked + label
+{
+	-webkit-transform: scale(1.23);
+	-moz-transform: scale(1.23);
+	-ms-transform: scale(1.23);
+	-o-transform: scale(1.23);
+	transform: scale(1.23);
+	border: 3px solid  #65bd3a;
+	background-color:  #ffffff;
+}
+.download .modal-content input[type="submit"]
+{
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 5px;
+	background-color:  #87c232;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	display: table;
+	margin: 55px auto 0;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-ms-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+.download .modal-content .close
+{
+	position: absolute;
+	top: 4px;
+	right: 12px;
+	font-size: 40px;
+	color: #87c232;
+	opacity: 1;
+}
