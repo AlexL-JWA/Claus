@@ -20,7 +20,8 @@ header.clj_header .personal .sign_up a:hover,
 header.clj_header .personal .sign_up a:hover .icon-correct,
 .payment-transfer-wire-transfer .buttons .button.green:hover,
 .overview-page .table .button.green:hover,
-.download .modal-content input[type="submit"]:hover
+.download .modal-content input[type="submit"]:hover,
+.job-view-page .button:hover
 {
 	background: #59de00;
 }
@@ -37,7 +38,8 @@ header.clj_header .personal .sign_up a:focus .icon-correct,
 .payment-transfer-wire-transfer .input input[type="submit"]:focus,
 .payment-transfer-wire-transfer .buttons .button.green:focus,
 .overview-page .table .button.green:focus,
-.download .modal-content input[type="submit"]:focus{
+.download .modal-content input[type="submit"]:focus,
+.job-view-page .button:focus{
 	background: #489c5a;
 }
 .bth_green_snip,

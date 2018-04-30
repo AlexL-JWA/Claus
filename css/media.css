@@ -1394,7 +1394,12 @@
 	}
 	.job-view-page .job-view-description {
 		padding: 40px 15px;
-		width: calc(100% - 185px);
+		width: calc(100% - 265px);
+	}
+	.job-view-page .right-block
+	{
+		width: 260px;
+		padding-left: 15px;
 	}
 	.job-view-page .button {
 		width: 170px;
@@ -3412,6 +3417,22 @@
     .payment-transfer-wire-transfer .select select {
       width: 100%;
       max-width: none; }
+	.job-view-page .right-block
+	{
+		width: 100%;
+	}
+	.job-view-page .xs-hide
+	{
+		display: none;
+	}
+	.job-view-page .xs-show
+	{
+		display: block;
+	}
+	.job-view-description .user
+	{
+		margin-bottom: 20px;
+	}
 }
 @media only screen and (max-width: 710px) {
 	.my_button_withdraw {
@@ -7041,6 +7062,10 @@
     width: 50%; }
   .payment-transfer-wire-transfer form h4:before {
     display: none; }
+	.user-desc-modal .modal-content
+	{
+		padding: 30px 15px;
+	}
 }
 @media only screen and (max-width: 368px) {
 	.my-profil .right-block input {

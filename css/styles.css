@@ -1,3 +1,99 @@
+.job-view-page .right-block
+{
+	display: inline-block;
+	width:323px;
+	padding-left: 40px;
+	vertical-align: top;
+	margin-bottom: 50px;
+}
+.user-desc-modal .modal-content
+{
+	padding: 30px 50px;
+}
+.user-desc-modal .close
+{
+	font-size: 44px;
+	position: absolute;
+	right: 15px;
+	top: 0;
+	color: #83c124;
+	opacity: 1;
+}
+.user-desc-modal .close:hover
+{
+	opacity: 0.8;
+}
+.job-view-page .user .photo,
+.user-desc-modal .user .photo
+{
+	width: 68px;
+	height: 68px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	border: 2px solid #fff;
+    box-shadow: 0px 0px 0px 1px #d4d4d4;
+	display: inline-block;
+	vertical-align: middle;
+}
+.job-view-page .xs-show
+{
+	display: none;
+}
+.job-view-page .right-block h3,
+.user-desc-modal h3
+{
+	font-family: Open Sans;
+	color:  #5cc300;
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+.job-view-page .right-block ul li,
+.user-desc-modal ul li
+{
+	font-family: Open Sans;
+	color:  #000000;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 26px;
+	margin-bottom: 25px;
+}
+.job-view-page .right-block ul li span,
+.user-desc-modal ul li span
+{
+	font-family: Open Sans;
+	color:  #969696;
+	font-weight: 400;
+	display: block;
+}
+.job-view-page .user h4,
+.user-desc-modal .user h4
+{
+	font-family: Open Sans;
+	color:  #969696;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+}
+.job-view-page .user h5,
+.user-desc-modal .user h5
+{
+	font-family: Open Sans;
+	color:  #000000;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+}
+.job-view-page .user .description,
+.user-desc-modal .user .description
+{
+	display: inline-block;
+	width: calc(100% - 74px);
+	padding-left: 25px;
+	vertical-align: middle;
+}
 .job-view-page {
   padding-top: 50px; }
   .job-view-page .title p {
@@ -5,7 +101,7 @@
     color: #727272 !important;
     margin-bottom: 0 !important; }
   .job-view-page .job-view-description {
-    width: calc(100% - 265px);
+    width: calc(100% - 328px);
     display: inline-block;
     border: 1px solid #d9d9d9;
     border-radius: 3px;
@@ -33,14 +129,15 @@
     line-height: 43px;
     border-radius: 3px;
     text-align: center;
-    float: right;
     vertical-align: top;
     font-family: 'Source Sans Pro';
     font-size: 18px;
     color: #fff;
     font-weight: 400;
     background: #83c124;
-    margin-left: 55px; }
+	display: block;
+margin-bottom: 25px;
+transition: all 0.5s ease;}
   .job-view-page .about {
     width: 100% !important; }
     .job-view-page .about .text-hidden {
