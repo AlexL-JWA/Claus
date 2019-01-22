@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<!--<meta name="viewport" content="width=device-width">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Registration</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/Glyphter.css">
+</head>
+<body>
+
+<!-- header -->
+	<header class="clj_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					<a href="index.html" class="logo">
+					   <img src="img/logo(black-background).svg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 pull-right personal">
+
+					<div class="sign_up">
+						<a href="#">
+							<span class="icon-check31-01"></span>
+							Sign-up
+						</a>
+					</div>
+					<div class="login pull-right">
+						<a href="#">
+							<span class="icons-log-in-button"></span>
+							LOGIN
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!--START CONTENT-->
+<section>
+	<div class="wrapper registration-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3>Select what you want to do</h3>
+					<ul class="radio-buttons">
+						<li><input type="radio" id="hire" name="role"><label for="hire">I want to hire</label></li>
+						<li><input type="radio" id="freelancer"  name="role"><label for="freelancer">I want to become a Freelancer</label></li>
+					</ul>
+					<h4>Sign up <span>with your social networks</span></h4>
+					<ul class="buttons-soc">
+						<li class="fecebook"><a href="#" class="button"><i class="icons-facebook"></i>Facebook</a></li>
+						<li class="linkidin"><a href="#" class="button"><i class="icons-linkedin"></i>Linkedin</a></li>
+					</ul>
+					<p>or enter the information below</p>
+					<div class="inputs">
+						<div class="input">
+							<label for="" class="icons-avatar">First name</label>
+							<input type="text">
+						</div>
+						<div class="input">
+							<label for="" class="icons-avatar">Last name</label>
+							<input type="text">
+						</div>
+						<div class="input">
+							<label for="" class="icons-placeholder">Country</label>
+							<input type="text">
+						</div>
+						<div class="input">
+							<label for="" class="icons-email">Email</label>
+							<input type="email">
+						</div>
+						<div class="input">
+							<label for="" class="icons-key">Password</label>
+							<input type="password">
+						</div>
+						<div class="input-checkbox">
+							<input type="checkbox" id="terms-and-conditions">
+							<label for="terms-and-conditions">I accept the <a href="#">terms and conditions</a></label>
+						</div>
+					</div>
+					<a href="#" class="button">Join now</a>
+					<p>Already a member? <a href="#">Sign in</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--END CONTENT-->
+
+<!--START FOOTER-->
+<footer>
+	<div class="wrapper footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="footer-menu">
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">News</a></li>
+						<li class="active"><a href="#">About Us</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+ <!--END FOOTER-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			function preventDefault(e) {
+			   e.preventDefault();
+			}
+			if($('.registration-page input:not([type="radio"])').prop('checked') === false){
+				$('.registration-page input:not([type="radio"])').prop('disabled', true);
+				$('.registration-page .button').bind("click", preventDefault);
+				$('.registration-page .button, .registration-page h4 span, .registration-page .buttons-soc + p').addClass('disabled');
+			}
+			$('.registration-page .radio-buttons input').click(function(){
+				if($('.registration-page input:not([type="radio"])').prop('checked') === false){
+					$('.registration-page input:not([type="radio"])').prop('disabled', false);
+					$('.registration-page .button').unbind("click", preventDefault);
+					$('.registration-page .button, .registration-page h4 span, .registration-page .buttons-soc + p').removeClass('disabled');
+				}
+			});
+		});
+
+
+	</script>
+</body>
+</html>

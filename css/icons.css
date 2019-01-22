@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'icons';
-    src: url('../fonts/icons.eot');
-    src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/icons.woff') format('woff'),
-         url('../fonts/icons.ttf') format('truetype'),
-         url('../fonts/icons.svg#icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'icons';
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/icons.woff') format('woff'),
+		 url('../fonts/icons.ttf') format('truetype'),
+		 url('../fonts/icons.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 [class*='icons-']:before{
 	display: inline-block;
@@ -27,3 +27,9 @@
 .icons-Web:before{content:'\0048';}
 .icons-Write:before{content:'\0049';}
 .icons-log-in-button:before{content:'\004a';}
+.icons-avatar:before{content:'\004b';}
+.icons-email:before{content:'\004c';}
+.icons-facebook:before{content:'\004d';}
+.icons-key:before{content:'\004e';}
+.icons-linkedin:before{content:'\004f';}
+.icons-placeholder:before{content:'\0050';}
